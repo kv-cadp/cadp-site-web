@@ -15,9 +15,10 @@ export default function AnimatedCounter({
   prefix = "",
   suffix = "",
   label,
-  duration = 2000,
+  duration = 1500,
 }: AnimatedCounterProps) {
-  const [count, setCount] = useState(0);
+  // SSR: la vraie valeur est dans le HTML initial (visible par les bots SEO)
+  const [displayValue, setDisplayValue] = useState(value);
   const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -29,14 +30,18 @@ export default function AnimatedCounter({
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
           setHasAnimated(true);
-          const start = Date.now();
-          const animate = () => {
-            const elapsed = Date.now() - start;
+          // Reset à 0 puis animer vers la valeur
+          setDisplayValue(0);
+          const startTime = performance.now();
+
+          const animate = (currentTime: number) => {
+            const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.round(eased * value));
+            setDisplayValue(Math.round(eased * value));
             if (progress < 1) requestAnimationFrame(animate);
           };
+
           requestAnimationFrame(animate);
         }
       },
@@ -51,7 +56,7 @@ export default function AnimatedCounter({
     <div ref={ref} className="text-center">
       <div className="font-serif text-4xl md:text-5xl text-gold mb-2">
         {prefix}
-        {count}
+        {displayValue}
         {suffix}
       </div>
       <div className="text-gray-mid text-sm uppercase tracking-wider font-semibold">
