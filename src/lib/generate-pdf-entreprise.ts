@@ -39,7 +39,11 @@ interface PDFParams {
   effectif: string;
 }
 
-const fmt = (n: number) => Math.round(n).toLocaleString("fr-FR") + " EUR";
+const fmt = (n: number) => {
+  const rounded = Math.round(n);
+  const str = rounded.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  return str + " EUR";
+};
 
 // Descriptions orientées bénéfices employeur
 const formationBenefits: Record<string, string> = {
@@ -329,10 +333,10 @@ export function generateEntreprisePDF(params: PDFParams) {
 
   // Lignes du tableau
   const rows = [
-    ["Rémunération brute", fmt(sim.brutApp), fmt(sim.brutCDI)],
+    ["Remuneration brute", fmt(sim.brutApp), fmt(sim.brutCDI)],
     ["Charges employeur", fmt(sim.chargesApp), fmt(sim.chargesCDI)],
-    ["Aide à l'embauche", `- ${fmt(sim.aide)}`, "—"],
-    ["COÛT TOTAL", fmt(sim.coutNet), fmt(sim.coutCDI)],
+    ["Aide a l'embauche", `- ${fmt(sim.aide)}`, "-"],
+    ["COUT TOTAL", fmt(sim.coutNet), fmt(sim.coutCDI)],
   ];
 
   rows.forEach((row, i) => {
@@ -353,13 +357,14 @@ export function generateEntreprisePDF(params: PDFParams) {
 
   // Économie mise en avant
   y += 3;
-  doc.setFillColor(...GREEN);
+  doc.setFillColor(...NAVY);
   doc.roundedRect(m, y, contentW, 14, 3, 3, "F");
   doc.setFont("helvetica", "bold");
   doc.setFontSize(14);
-  doc.setTextColor(...WHITE);
-  doc.text(`Économie : ${fmt(sim.eco)}`, pw / 2, y + 7, { align: "center" });
+  doc.setTextColor(...GOLD);
+  doc.text(`Economie : ${fmt(sim.eco)}`, pw / 2, y + 7, { align: "center" });
   doc.setFontSize(9);
+  doc.setTextColor(...WHITE);
   doc.text(`soit ${Math.round(sim.ecoPct)}% d'economie sur ${sim.duree} mois`, pw / 2, y + 12, { align: "center" });
   y += 19;
 
