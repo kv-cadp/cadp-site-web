@@ -4,10 +4,13 @@ import type { Formation } from "@/types/formation";
 export function generateOrganizationJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": ["EducationalOrganization", "LocalBusiness"],
-    name: SITE.name,
-    alternateName: SITE.shortName,
-    url: SITE.url,
+    "@type": "EducationalOrganization",
+    name: "Campus Alternance Drôme Provence",
+    alternateName: "CADP",
+    url: "https://www.cadp.pro",
+    logo: "https://www.cadp.pro/logo-cadp.jpg",
+    description:
+      "Centre de formation en alternance à Pierrelatte (Drôme). BTS MCO, NDRC, GPME, CG, MOS et TP ADVF en promos de 10-12 étudiants.",
     telephone: "+33475003456",
     email: SITE.email,
     address: {
@@ -18,47 +21,86 @@ export function generateOrganizationJsonLd() {
       addressRegion: SITE.address.region,
       addressCountry: SITE.address.country,
     },
-    areaServed: SITE.areaServed,
-    foundingDate: "2024",
-    description: SITE.description,
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 44.3782,
+      longitude: 4.6931,
+    },
+    openingHours: "Mo-Fr 08:30-17:00",
+    foundingDate: "2024-09-02",
     parentOrganization: {
       "@type": "EducationalOrganization",
-      name: SITE.cfa,
+      name: "CFA IFIR",
+      url: "https://www.ifir.fr",
     },
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
-      credentialCategory: "Qualiopi (via CFA IFIR)",
+      credentialCategory: "Qualiopi",
+      name: "Certification Qualiopi — Actions de formation par apprentissage",
     },
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Drôme" },
+      { "@type": "AdministrativeArea", name: "Ardèche" },
+      { "@type": "AdministrativeArea", name: "Vaucluse" },
+      { "@type": "AdministrativeArea", name: "Gard" },
+    ],
   };
 }
 
 export function generateCourseJsonLd(formation: Formation) {
+  const isAdvf = formation.slug === "tp-advf";
+
   return {
     "@context": "https://schema.org",
     "@type": "Course",
-    name: `${formation.fullName} en alternance`,
+    name: `${formation.fullName} (${formation.code})`,
     description: formation.metaDescription,
+    url: `https://www.cadp.pro/formations/${formation.slug}`,
     provider: {
       "@type": "EducationalOrganization",
-      name: SITE.name,
-      sameAs: SITE.url,
+      name: "CADP — Campus Alternance Drôme Provence",
+      url: "https://www.cadp.pro",
+    },
+    educationalLevel: isAdvf ? "Niveau 3 (CAP/BEP)" : "Bac+2",
+    timeRequired: isAdvf ? "P1Y" : "P2Y",
+    occupationalCredentialAwarded: {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: isAdvf ? "Titre Professionnel" : "BTS",
+      name: formation.shortName,
+      educationalLevel: isAdvf ? "Niveau 3" : "Niveau 5",
+      recognizedBy: {
+        "@type": "Organization",
+        name: isAdvf
+          ? "Ministère du Travail"
+          : "Ministère de l'Enseignement supérieur",
+      },
     },
     hasCourseInstance: {
       "@type": "CourseInstance",
-      courseMode: "blended",
-      courseWorkload: "P2Y",
+      courseMode: "mixed",
+      courseWorkload:
+        "2-3 jours campus / 2-3 jours entreprise (alternance)",
+      startDate: "2026-09-01",
+      endDate: isAdvf ? "2027-06-30" : "2028-06-30",
       location: {
         "@type": "Place",
         name: "CADP Pierrelatte",
         address: {
           "@type": "PostalAddress",
+          streetAddress: SITE.address.street,
           addressLocality: SITE.address.city,
           postalCode: SITE.address.postalCode,
-          addressCountry: SITE.address.country,
         },
       },
     },
-    educationalCredentialAwarded: `${formation.shortName} (${formation.level})`,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "EUR",
+      description:
+        "Formation financée par l'OPCO de l'entreprise — gratuit pour l'alternant",
+      category: "Apprentissage",
+    },
   };
 }
 
@@ -83,7 +125,7 @@ export function generateContactJsonLd() {
     "@type": "LocalBusiness",
     name: SITE.name,
     alternateName: SITE.shortName,
-    url: SITE.url,
+    url: "https://www.cadp.pro",
     telephone: "+33475003456",
     email: SITE.email,
     address: {
@@ -109,19 +151,23 @@ export function generateContactJsonLd() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 44.3558,
-      longitude: 4.6908,
+      latitude: 44.3782,
+      longitude: 4.6931,
     },
   };
 }
 
-export function generateWebApplicationJsonLd(name: string, description: string, url: string) {
+export function generateWebApplicationJsonLd(
+  name: string,
+  description: string,
+  url: string
+) {
   return {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name,
     description,
-    url: `${SITE.url}${url}`,
+    url: `https://www.cadp.pro${url}`,
     applicationCategory: "EducationalApplication",
     operatingSystem: "All",
     offers: {
@@ -132,7 +178,7 @@ export function generateWebApplicationJsonLd(name: string, description: string, 
     provider: {
       "@type": "EducationalOrganization",
       name: SITE.name,
-      sameAs: SITE.url,
+      sameAs: "https://www.cadp.pro",
     },
   };
 }
