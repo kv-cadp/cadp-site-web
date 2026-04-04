@@ -129,7 +129,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS MCO ?",
         answer:
-          "En alternance, ta rémunération dépend de ton âge et de l'année de contrat. En moyenne, un alternant de 18-20 ans touche entre 750 € et 900 € net par mois en première année. Les plus de 21 ans perçoivent davantage, jusqu'à 80 % du SMIC en deuxième année.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
       },
       {
         question: "Quels métiers après un BTS MCO ?",
@@ -317,7 +317,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS NDRC ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans touche entre 750 € et 900 € net par mois en première année. Certains contrats prévoient des commissions sur les ventes, ce qui peut augmenter ta rémunération.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales. Certains contrats prévoient des commissions sur les ventes, ce qui peut augmenter ta rémunération.",
       },
       {
         question: "Quels métiers après un BTS NDRC ?",
@@ -507,7 +507,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS GPME ?",
         answer:
-          "En alternance, la rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit entre 750 € et 900 € net par mois en première année. Ce salaire augmente en deuxième année et selon ta tranche d'âge.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
       },
       {
         question: "Quels métiers après un BTS GPME ?",
@@ -685,7 +685,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS CG ?",
         answer:
-          "La rémunération dépend de ton âge et de ton année de contrat. Un alternant de 18-20 ans touche entre 750 € et 900 € net par mois en première année. La rémunération augmente en deuxième année et peut aller jusqu'à 80 % du SMIC pour les plus de 21 ans.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
       },
       {
         question: "Quels métiers après un BTS CG ?",
@@ -870,7 +870,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS MOS ?",
         answer:
-          "Un alternant de 18-20 ans touche entre 750 € et 900 € net par mois en première année. La rémunération augmente avec l'âge et l'année de contrat. Certaines entreprises de sécurité ajoutent des primes de nuit ou de week-end.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales. Certaines entreprises de sécurité ajoutent des primes de nuit ou de week-end.",
       },
       {
         question: "Quels métiers après un BTS MOS ?",
