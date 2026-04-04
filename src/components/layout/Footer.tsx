@@ -143,10 +143,33 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Logos partenaires */}
+        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col items-center gap-4">
+          <p className="text-xs text-cream/50 mb-2">UFA du CFA IFIR — Certifié Qualiopi</p>
+          <div className="flex items-center gap-8">
+            <a href="https://www.ifir.fr" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/logo-ifir.png"
+                alt="CFA IFIR"
+                width={60}
+                height={60}
+                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </a>
+            <Image
+              src="/logo-qualiopi.png"
+              alt="Certification Qualiopi — Actions de formation et actions de formation par apprentissage"
+              width={200}
+              height={100}
+              className="h-12 w-auto opacity-80"
+            />
+          </div>
+        </div>
+
         {/* Bottom bar */}
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-cream/50">
-          <p>&copy; 2024-{new Date().getFullYear()} {SITE.shortName}. Tous droits r&eacute;serv&eacute;s.</p>
-          <p>{SITE.cfa} &mdash; Certifi&eacute; Qualiopi &mdash; NDA : 84260401226</p>
+        <div className="border-t border-white/10 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-cream/50">
+          <p>&copy; 2024-{new Date().getFullYear()} {SITE.shortName}. Tous droits réservés.</p>
+          <p>NDA : 84260401226</p>
         </div>
       </div>
     </footer>
