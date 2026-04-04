@@ -147,7 +147,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col items-center gap-4">
           <p className="text-xs text-cream/50 mb-2">UFA du CFA IFIR — Certifié Qualiopi</p>
           <div className="flex items-center gap-8">
-            <a href="https://www.ifir.fr" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.ifir.fr/lifir/partenaires-formation/campus-drome-provence/" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/logo-ifir.png"
                 alt="CFA IFIR"
