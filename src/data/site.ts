@@ -19,8 +19,8 @@ export const SITE = {
   founded: 2024,
   social: {
     instagram: "https://www.instagram.com/cadp_pierrelatte/",
-    linkedin: "https://www.linkedin.com/company/cadp-pierrelatte/",
-    facebook: "https://www.facebook.com/CADPPierrelatte/",
+    linkedin: "https://fr.linkedin.com/company/campus-dr%C3%B4me-provence",
+    facebook: "https://www.facebook.com/p/Campus-Dr%C3%B4me-Provence-61565073280869/",
   },
   stats: [
     { value: 6, label: "formations", prefix: "", suffix: "" },
