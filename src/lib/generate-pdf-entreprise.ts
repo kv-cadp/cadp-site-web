@@ -39,54 +39,54 @@ interface PDFParams {
   effectif: string;
 }
 
-const fmt = (n: number) => Math.round(n).toLocaleString("fr-FR") + " €";
+const fmt = (n: number) => Math.round(n).toLocaleString("fr-FR") + " EUR";
 
 // Descriptions orientées bénéfices employeur
 const formationBenefits: Record<string, string> = {
-  mco: "Votre alternant sera formé à accueillir, conseiller et fidéliser vos clients, développer le chiffre d'affaires de votre point de vente, manager une équipe commerciale et piloter vos indicateurs de performance. Il deviendra rapidement autonome sur la gestion quotidienne de votre unité commerciale.",
-  ndrc: "Votre alternant sera formé à prospecter de nouveaux clients, négocier et conclure des ventes, animer votre relation client digitale (réseaux sociaux, e-commerce) et développer des partenariats durables. Un profil commercial complet, opérationnel dès les premières semaines.",
-  gpme: "Votre alternant sera le bras droit polyvalent de votre direction : gestion administrative, suivi comptable, relation clients et fournisseurs, RH (contrats, paie, planning) et organisation des projets. Il prendra en charge les tâches qui vous libèrent du temps pour développer votre activité.",
-  cg: "Votre alternant sera formé à la saisie comptable, aux déclarations fiscales (TVA, IS), à l'établissement des bulletins de paie, au suivi de trésorerie et à l'analyse financière. Un profil rigoureux qui fiabilise votre gestion et vous prépare aux échéances comptables en toute sérénité.",
-  mos: "Votre alternant sera formé à manager vos équipes de sécurité, organiser les plannings et les rondes, gérer les incidents et assurer la conformité réglementaire. Un futur responsable opérationnel capable de piloter la qualité de vos prestations de sécurité.",
-  advf: "Votre collaborateur sera formé à l'accompagnement des personnes fragiles dans les gestes du quotidien : aide à la toilette, préparation des repas, entretien du domicile, garde d'enfants. Un professionnel bienveillant et qualifié pour intervenir à domicile en toute confiance.",
+  mco: "Votre alternant sera forme a accueillir, conseiller et fideliser vos clients, developper le chiffre d'affaires de votre point de vente, manager une equipe commerciale et piloter vos indicateurs de performance. Il deviendra rapidement autonome sur la gestion quotidienne de votre unite commerciale.",
+  ndrc: "Votre alternant sera forme a prospecter de nouveaux clients, negocier et conclure des ventes, animer votre relation client digitale (reseaux sociaux, e-commerce) et developper des partenariats durables. Un profil commercial complet, operationnel des les premieres semaines.",
+  gpme: "Votre alternant sera le bras droit polyvalent de votre direction : gestion administrative, suivi comptable, relation clients et fournisseurs, RH (contrats, paie, planning) et organisation des projets. Il prendra en charge les taches qui vous liberent du temps pour developper votre activite.",
+  cg: "Votre alternant sera forme a la saisie comptable, aux declarations fiscales (TVA, IS), a l'etablissement des bulletins de paie, au suivi de tresorerie et a l'analyse financiere. Un profil rigoureux qui fiabilise votre gestion et vous prepare aux echeances comptables en toute serenite.",
+  mos: "Votre alternant sera forme a manager vos equipes de securite, organiser les plannings et les rondes, gerer les incidents et assurer la conformite reglementaire. Un futur responsable operationnel capable de piloter la qualite de vos prestations de securite.",
+  advf: "Votre collaborateur sera forme a l'accompagnement des personnes fragiles dans les gestes du quotidien : aide a la toilette, preparation des repas, entretien du domicile, garde d'enfants. Un professionnel bienveillant et qualifie pour intervenir a domicile en toute confiance.",
 };
 
 // Compétences reformulées en langage entreprise
 const formationCompetences: Record<string, string[]> = {
   mco: [
-    "Accueillir, conseiller et fidéliser vos clients",
+    "Accueillir, conseiller et fideliser vos clients",
     "Animer et dynamiser votre offre commerciale",
-    "Gérer les opérations courantes (stocks, commandes, CA)",
-    "Manager et motiver l'équipe de vente",
+    "Gerer les operations courantes (stocks, commandes, CA)",
+    "Manager et motiver l'equipe de vente",
   ],
   ndrc: [
-    "Prospecter et développer votre portefeuille clients",
-    "Négocier et conclure des ventes en face-à-face ou à distance",
-    "Animer votre présence digitale et vos réseaux sociaux",
-    "Fidéliser vos clients et développer des partenariats",
+    "Prospecter et developper votre portefeuille clients",
+    "Negocier et conclure des ventes en face-a-face ou a distance",
+    "Animer votre presence digitale et vos reseaux sociaux",
+    "Fideliser vos clients et developper des partenariats",
   ],
   gpme: [
-    "Gérer la relation avec vos clients et fournisseurs",
+    "Gerer la relation avec vos clients et fournisseurs",
     "Assurer le suivi administratif et comptable",
-    "Participer à la gestion RH (paie, contrats, planning)",
+    "Participer a la gestion RH (paie, contrats, planning)",
     "Organiser et coordonner les projets de l'entreprise",
   ],
   cg: [
-    "Réaliser la saisie comptable et les rapprochements",
-    "Préparer les déclarations fiscales et sociales",
-    "Produire les états financiers et le suivi de trésorerie",
-    "Contribuer au contrôle de gestion et aux prévisions",
+    "Realiser la saisie comptable et les rapprochements",
+    "Preparer les declarations fiscales et sociales",
+    "Produire les etats financiers et le suivi de tresorerie",
+    "Contribuer au controle de gestion et aux previsions",
   ],
   mos: [
-    "Manager les équipes de sécurité au quotidien",
-    "Piloter la conformité et la prévention des risques",
-    "Gérer les plannings, les ressources et le matériel",
+    "Manager les equipes de securite au quotidien",
+    "Piloter la conformite et la prevention des risques",
+    "Gerer les plannings, les ressources et le materiel",
     "Assurer la relation client et le reporting",
   ],
   advf: [
     "Accompagner les personnes dans les actes du quotidien",
-    "Assurer l'entretien du domicile et la préparation des repas",
-    "Prendre en charge la garde et l'éveil des enfants",
+    "Assurer l'entretien du domicile et la preparation des repas",
+    "Prendre en charge la garde et l'eveil des enfants",
     "Maintenir le lien social et l'autonomie des personnes",
   ],
 };
@@ -111,19 +111,19 @@ const debouches: Record<string, string[]> = {
 
 const missionLabels: Record<string, string> = {
   vente: "Vente et conseil client",
-  prospection: "Prospection et développement",
-  negociation: "Négociation commerciale",
+  prospection: "Prospection et developpement",
+  negociation: "Negociation commerciale",
   digital: "Communication digitale",
-  management: "Management d'équipe",
+  management: "Management d'equipe",
   accueil: "Accueil et standard",
-  secretariat: "Secrétariat et gestion documentaire",
-  compta: "Comptabilité et facturation",
+  secretariat: "Secretariat et gestion documentaire",
+  compta: "Comptabilite et facturation",
   rh: "Gestion RH et paie",
   stock: "Gestion des stocks",
   aide_personne: "Accompagnement de personnes",
   banque_conseil: "Conseil bancaire ou assurance",
-  qhse: "Qualité, Sécurité, Environnement",
-  rh_dev: "Développement RH et formation",
+  qhse: "Qualite, Securite, Environnement",
+  rh_dev: "Developpement RH et formation",
 };
 
 export function generateEntreprisePDF(params: PDFParams) {
@@ -156,16 +156,16 @@ export function generateEntreprisePDF(params: PDFParams) {
     doc.setFont("helvetica", "bold");
     doc.setFontSize(16);
     doc.setTextColor(...GOLD);
-    doc.text("Votre profil alternant personnalisé", 52, 17);
+    doc.text("Votre profil alternant personnalise", 52, 17);
 
     doc.setFontSize(9);
     doc.setTextColor(...WHITE);
-    doc.text(`Résultat de votre diagnostic — ${today}`, 52, 25);
+    doc.text(`Resultat de votre diagnostic - ${today}`, 52, 25);
 
     if (entreprise) {
       doc.setFontSize(8);
       doc.setTextColor(...GOLD);
-      doc.text(`${entreprise}${nom ? ` — ${prenom} ${nom}` : ""}${fonction ? ` (${fonction})` : ""}`, 52, 32);
+      doc.text(`${entreprise}${nom ? ` - ${prenom} ${nom}` : ""}${fonction ? ` (${fonction})` : ""}`, 52, 32);
     }
 
     y = 46;
@@ -188,7 +188,7 @@ export function generateEntreprisePDF(params: PDFParams) {
     doc.setFontSize(7);
     doc.setTextColor(...GOLD);
     doc.setFont("helvetica", "bold");
-    doc.text("CADP — Campus Alternance Drôme Provence", m, 9);
+    doc.text("CADP - Campus Alternance Drome Provence", m, 9);
     doc.setTextColor(...WHITE);
     doc.text("cadp.pro", pw - m, 9, { align: "right" });
     y = 22;
@@ -206,7 +206,7 @@ export function generateEntreprisePDF(params: PDFParams) {
     doc.setFontSize(7);
     doc.setTextColor(...GRAY_MID);
     doc.setFont("helvetica", "normal");
-    doc.text("Kévin Vidard — Directeur Général | 04 75 00 34 56 | contact@cadp.pro | cadp.pro | 2 Bd Frédéric Mistral, 26700 Pierrelatte", pw / 2, fy + 5, { align: "center" });
+    doc.text("Kevin Vidard - Directeur General | 04 75 00 34 56 | contact@cadp.pro | cadp.pro | 2 Bd Frederic Mistral, 26700 Pierrelatte", pw / 2, fy + 5, { align: "center" });
   }
 
   // ============================================================
@@ -215,7 +215,7 @@ export function generateEntreprisePDF(params: PDFParams) {
   drawHeader();
 
   // --- Section 1: Récapitulatif du besoin ---
-  sectionTitle("Voici ce que vous nous avez décrit");
+  sectionTitle("Voici ce que vous nous avez decrit");
 
   doc.setFont("helvetica", "normal");
   doc.setFontSize(9);
@@ -223,7 +223,7 @@ export function generateEntreprisePDF(params: PDFParams) {
 
   if (secteur) {
     doc.setFont("helvetica", "bold");
-    doc.text("Secteur d'activité : ", m, y);
+    doc.text("Secteur d'activite : ", m, y);
     const sw = doc.getTextWidth("Secteur d'activité : ");
     doc.setFont("helvetica", "normal");
     doc.text(secteur.charAt(0).toUpperCase() + secteur.slice(1), m + sw, y);
@@ -233,7 +233,7 @@ export function generateEntreprisePDF(params: PDFParams) {
   const allMissions = [...missionsComm, ...missionsAdmin, ...missionsSpec];
   if (allMissions.length > 0) {
     doc.setFont("helvetica", "bold");
-    doc.text("Missions souhaitées :", m, y);
+    doc.text("Missions souhaitees :", m, y);
     y += 5;
     doc.setFont("helvetica", "normal");
     doc.setFontSize(8);
@@ -252,13 +252,13 @@ export function generateEntreprisePDF(params: PDFParams) {
     const key = f.key || r.key;
 
     checkSpace(55);
-    sectionTitle(idx === 0 ? "Notre recommandation principale" : "Recommandation complémentaire");
+    sectionTitle(idx === 0 ? "Notre recommandation principale" : "Recommandation complementaire");
 
     // Nom formation
     doc.setFont("helvetica", "bold");
     doc.setFontSize(12);
     doc.setTextColor(...NAVY);
-    doc.text(`${f.name} — ${f.full}`, m, y);
+    doc.text(`${f.name} - ${f.full}`, m, y);
     y += 5;
 
     // Niveau + durée
@@ -286,7 +286,7 @@ export function generateEntreprisePDF(params: PDFParams) {
     doc.setFont("helvetica", "normal");
     doc.setTextColor(...GRAY);
     (formationCompetences[key] || f.missions).forEach((comp) => {
-      doc.text(`✓  ${comp}`, m + 4, y);
+      doc.text(`-  ${comp}`, m + 4, y);
       y += 4.5;
     });
     y += 2;
@@ -295,8 +295,8 @@ export function generateEntreprisePDF(params: PDFParams) {
     doc.setFont("helvetica", "bold");
     doc.setFontSize(8);
     doc.setTextColor(...NAVY);
-    doc.text("Débouchés métiers : ", m, y);
-    const dw = doc.getTextWidth("Débouchés métiers : ");
+    doc.text("Debouches metiers : ", m, y);
+    const dw = doc.getTextWidth("Debouches metiers : ");
     doc.setFont("helvetica", "normal");
     doc.setTextColor(...GRAY);
     doc.text((debouches[key] || []).join(", "), m + dw, y);
@@ -305,11 +305,11 @@ export function generateEntreprisePDF(params: PDFParams) {
 
   // --- Section 3: Comparatif coût ---
   checkSpace(65);
-  sectionTitle("Combien ça coûte réellement ?");
+  sectionTitle("Combien ca coute reellement ?");
 
   doc.setFontSize(8);
   doc.setTextColor(...GRAY_MID);
-  doc.text(`Estimation sur ${sim.duree} mois | Tranche d'âge : ${sim.tranche} (${Math.round(sim.taux * 100)}% du SMIC) | SMIC brut mensuel : 1 823 €`, m, y);
+  doc.text(`Estimation sur ${sim.duree} mois | Tranche d'age : ${sim.tranche} (${Math.round(sim.taux * 100)}% du SMIC) | SMIC brut mensuel : 1 823 EUR`, m, y);
   y += 7;
 
   // Tableau comparatif
@@ -360,14 +360,14 @@ export function generateEntreprisePDF(params: PDFParams) {
   doc.setTextColor(...WHITE);
   doc.text(`Économie : ${fmt(sim.eco)}`, pw / 2, y + 7, { align: "center" });
   doc.setFontSize(9);
-  doc.text(`soit ${Math.round(sim.ecoPct)}% d'économie sur ${sim.duree} mois`, pw / 2, y + 12, { align: "center" });
+  doc.text(`soit ${Math.round(sim.ecoPct)}% d'economie sur ${sim.duree} mois`, pw / 2, y + 12, { align: "center" });
   y += 19;
 
   // Mention
   doc.setFontSize(7);
   doc.setTextColor(...GRAY_MID);
   doc.setFont("helvetica", "italic");
-  const mention = "Estimation indicative basée sur le SMIC en vigueur. Un calcul personnalisé sera réalisé après prise de contact avec le CADP.";
+  const mention = "Estimation indicative basee sur le SMIC en vigueur. Un calcul personnalise sera realise apres prise de contact avec le CADP.";
   doc.text(mention, m, y);
   y += 8;
 
@@ -380,18 +380,18 @@ export function generateEntreprisePDF(params: PDFParams) {
   doc.setTextColor(...GRAY);
 
   const whyCadp = [
-    ["Promos de 10-12 étudiants maximum", "Un suivi réel, pas un numéro dans une liste."],
-    ["Formateurs en activité professionnelle", "Vos alternants apprennent les réalités du terrain."],
-    ["Accompagnement de A à Z", "Alternance Dating, matching candidat-entreprise, suivi en poste."],
-    ["20+ ans d'expérience des fondateurs", "Une expertise en formation et en insertion professionnelle."],
-    ["CFA IFIR, certifié Qualiopi", "Garantie qualité reconnue par l'État."],
+    ["Promos de 10-12 etudiants maximum", "Un suivi reel, pas un numero dans une liste."],
+    ["Formateurs en activite professionnelle", "Vos alternants apprennent les realites du terrain."],
+    ["Accompagnement de A a Z", "Alternance Dating, matching candidat-entreprise, suivi en poste."],
+    ["20+ ans d'experience des fondateurs", "Une expertise en formation et en insertion professionnelle."],
+    ["CFA IFIR, certifie Qualiopi", "Garantie qualite reconnue par l'Etat."],
   ];
 
   whyCadp.forEach(([title, desc]) => {
     checkSpace(10);
     doc.setFont("helvetica", "bold");
     doc.setTextColor(...NAVY);
-    doc.text(`▸  ${title}`, m, y);
+    doc.text(`>  ${title}`, m, y);
     y += 4;
     doc.setFont("helvetica", "normal");
     doc.setTextColor(...GRAY_MID);
@@ -403,7 +403,7 @@ export function generateEntreprisePDF(params: PDFParams) {
   doc.setFont("helvetica", "italic");
   doc.setFontSize(9);
   doc.setTextColor(...NAVY);
-  doc.text("« On ne vous envoie pas juste un CV. On forme, on suit, on s'assure que ça fonctionne. »", m, y);
+  doc.text('" On ne vous envoie pas juste un CV. On forme, on suit, on s\'assure que ca fonctionne. "', m, y);
   y += 10;
 
   // --- Section 5: Prochaines étapes ---
