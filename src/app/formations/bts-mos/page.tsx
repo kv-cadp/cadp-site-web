@@ -14,6 +14,8 @@ import FormationTestimonial from "@/components/formations/FormationTestimonial";
 import FormationCTA from "@/components/formations/FormationCTA";
 import CompetenceBlocks from "@/components/formations/CompetenceBlocks";
 import FurtherStudies from "@/components/formations/FurtherStudies";
+import GratuiteBlock from "@/components/formations/GratuiteBlock";
+import ResultatsBlock from "@/components/formations/ResultatsBlock";
 
 const formation = getFormationBySlug("bts-mos")!;
 
@@ -29,6 +31,7 @@ export default function BTSMOSPage() {
       <JsonLd data={generateCourseJsonLd(formation)} />
       <JsonLd data={generateFAQJsonLd(formation.faq)} />
       <FormationHero formation={formation} />
+      <GratuiteBlock />
       <CompetenceBlocks blocks={formation.competenceBlocks} />
       <ProgramSection program={formation.program} />
       <AlternanceRhythm rhythm={formation.rhythm} />
@@ -37,6 +40,7 @@ export default function BTSMOSPage() {
       <FormationTestimonial testimonial={formation.testimonial} />
       <FormationFAQ faq={formation.faq} formationName={formation.shortName} />
       <FormationCTA formationName={formation.shortName} />
+      <ResultatsBlock />
     </article>
   );
 }

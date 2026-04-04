@@ -20,9 +20,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      schoolDayIndices: [0, 1], // lundi-mardi
+      weekLong: [0, 1, 2], // lun-mar-mer (semaine A)
+      weekShort: [0, 1], // lun-mar (semaine B)
       description:
-        "2 jours en formation au campus (lundi-mardi) et 3 jours en entreprise (mercredi à vendredi). Ce rythme te permet d'appliquer immédiatement ce que tu apprends en cours.",
+        "Le rythme alterne entre semaines longues et courtes au campus : une semaine sur deux, tu es au campus le lundi, mardi et mercredi (3 jours) ; l'autre semaine, uniquement le lundi et mardi (2 jours). Le reste du temps, tu es en entreprise.",
     },
     competenceBlocks: [
       {
@@ -217,9 +218,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      schoolDayIndices: [3, 4], // jeudi-vendredi
+      weekLong: [2, 3, 4], // mer-jeu-ven (semaine A)
+      weekShort: [3, 4], // jeu-ven (semaine B)
       description:
-        "2 jours en formation au campus (jeudi-vendredi) et 3 jours en entreprise (lundi à mercredi). Tu mets en pratique tes techniques de vente et de négociation directement sur le terrain.",
+        "Le rythme alterne entre semaines longues et courtes au campus : une semaine sur deux, tu es au campus le mercredi, jeudi et vendredi (3 jours) ; l'autre semaine, uniquement le jeudi et vendredi (2 jours). Le reste du temps, tu es en entreprise pour prospecter, négocier et développer ton portefeuille client.",
     },
     competenceBlocks: [
       {
@@ -394,9 +396,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      schoolDayIndices: [0, 1], // lundi-mardi
+      weekLong: [0, 1, 2], // lun-mar-mer (semaine A)
+      weekShort: [0, 1], // lun-mar (semaine B)
       description:
-        "2 jours en formation au campus (lundi-mardi) et 3 jours en entreprise (mercredi à vendredi). Tu vis le quotidien d'une PME et tu apprends à gérer la diversité des missions.",
+        "Le rythme alterne entre semaines longues et courtes au campus : une semaine sur deux, tu es au campus le lundi, mardi et mercredi (3 jours) ; l'autre semaine, uniquement le lundi et mardi (2 jours). Le reste du temps, tu es en entreprise pour mettre en pratique la gestion, la comptabilité et l'administration au quotidien d'une PME et tu apprends à gérer la diversité des missions.",
     },
     competenceBlocks: [
       {
@@ -583,9 +586,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      schoolDayIndices: [3, 4], // jeudi-vendredi
+      weekLong: [2, 3, 4], // mer-jeu-ven (semaine A)
+      weekShort: [3, 4], // jeu-ven (semaine B)
       description:
-        "2 jours en formation au campus (jeudi-vendredi) et 3 jours en entreprise (lundi à mercredi). Tu mets en pratique la comptabilité, la paie et la fiscalité directement en cabinet ou en entreprise.",
+        "Le rythme alterne entre semaines longues et courtes au campus : une semaine sur deux, tu es au campus le mercredi, jeudi et vendredi (3 jours) ; l'autre semaine, uniquement le jeudi et vendredi (2 jours). En entreprise, tu pratiques la comptabilité, la paie et la fiscalité directement en cabinet ou en entreprise.",
     },
     competenceBlocks: [
       {
@@ -756,13 +760,14 @@ export const formations: Formation[] = [
       "Manage des équipes de sécurité, gère les risques, pilote les opérations. Le BTS MOS te prépare à devenir responsable dans un secteur qui recrute massivement.",
     duration: "2 ans",
     level: "Bac+2 — Niveau 5",
-    rncp: "RNCP38364",
+    rncp: "RNCP38365",
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      schoolDayIndices: [0, 1], // lundi-mardi
+      weekLong: [0, 1, 2], // lun-mar-mer (semaine A)
+      weekShort: [0, 1], // lun-mar (semaine B)
       description:
-        "2 jours en formation au campus (lundi-mardi) et 3 jours en entreprise de sécurité (mercredi à vendredi). Tu vis le terrain : rondes, gestion d'équipe, incidents, plannings.",
+        "Le rythme alterne entre semaines longues et courtes au campus : une semaine sur deux, tu es au campus le lundi, mardi et mercredi (3 jours) ; l'autre semaine, uniquement le lundi et mardi (2 jours). Le reste du temps, tu es sur le terrain en entreprise de sécurité. Tu vis le terrain : rondes, gestion d'équipe, incidents, plannings.",
     },
     competenceBlocks: [
       {
@@ -944,9 +949,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      schoolDayIndices: [2, 3], // mercredi-jeudi
+      weekLong: [2, 3], // mer-jeu (fixe, pas d'alternance)
+      weekShort: [2, 3], // mer-jeu (identique)
       description:
-        "2 jours en formation au campus (mercredi-jeudi) et 3 jours en stage ou en emploi (lundi-mardi et vendredi). Tu alternes entre les apports théoriques (gestes professionnels, communication, sécurité) et la pratique auprès des familles et des personnes accompagnées.",
+        "Tu es au campus le mercredi et le jeudi chaque semaine, et en entreprise le reste de la semaine (lundi, mardi et vendredi). Ce rythme stable te permet d'accompagner les familles et les personnes fragiles avec régularité.",
     },
     competenceBlocks: [
       {
