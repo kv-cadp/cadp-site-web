@@ -59,8 +59,8 @@ export default function Header() {
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
             >
-              <button
-                type="button"
+              <Link
+                href="/formations"
                 className="flex items-center gap-1 text-sm font-semibold text-white hover:text-gold-light transition-colors"
                 aria-expanded={dropdownOpen}
               >
@@ -74,7 +74,7 @@ export default function Header() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
+              </Link>
 
               {dropdownOpen && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
