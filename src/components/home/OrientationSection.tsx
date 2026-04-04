@@ -36,7 +36,7 @@ export default function OrientationSection() {
               les diplômes — on vous recommande le bon profil.
             </p>
             <Link
-              href="/entreprise-besoin"
+              href="/entreprises"
               className="inline-flex items-center gap-2 self-start px-7 py-3 border-2 border-gold text-gold rounded-lg font-semibold hover:bg-gold hover:text-navy-deep transition-colors"
             >
               Trouver le bon profil &rarr;
