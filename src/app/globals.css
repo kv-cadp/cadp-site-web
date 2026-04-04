@@ -59,3 +59,47 @@ body {
   background-color: var(--color-gold-pale);
   color: var(--color-navy-deep);
 }
+
+/* Blog article prose styling */
+.prose-cadp {
+  color: var(--color-gray-dark);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+.prose-cadp h2 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--color-navy-deep);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.prose-cadp h3 {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-navy-deep);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.prose-cadp p {
+  margin-bottom: 1rem;
+}
+.prose-cadp strong {
+  color: var(--color-navy-deep);
+  font-weight: 600;
+}
+.prose-cadp ul, .prose-cadp ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+.prose-cadp li {
+  margin-bottom: 0.4rem;
+}
+.prose-cadp a {
+  color: var(--color-gold);
+  font-weight: 600;
+  text-decoration: none;
+}
+.prose-cadp a:hover {
+  color: var(--color-gold-light);
+}
