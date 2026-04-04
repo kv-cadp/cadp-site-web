@@ -94,6 +94,7 @@ export default function Header() {
               )}
             </div>
 
+            <NavLink href="/equipe">L&apos;équipe</NavLink>
             <NavLink href="/contact">Contact</NavLink>
           </div>
 

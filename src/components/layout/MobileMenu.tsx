@@ -59,6 +59,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           ))}
         </div>
 
+        <NavLink href="/equipe" onClick={onClose} className="text-2xl">
+          L&apos;équipe
+        </NavLink>
+
         <NavLink href="/contact" onClick={onClose} className="text-2xl">
           Contact
         </NavLink>
