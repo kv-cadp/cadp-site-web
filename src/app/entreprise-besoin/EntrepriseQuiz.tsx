@@ -114,50 +114,20 @@ export default function EntrepriseQuiz() {
   };
 
   const exportPDF = async () => {
-    const { jsPDF } = await import("jspdf");
-    const doc = new jsPDF();
-    let y = 20;
-    const pw = doc.internal.pageSize.width;
-    const m = 20;
-
-    doc.setFontSize(14); doc.setTextColor(20, 30, 60); doc.setFont("helvetica", "bold");
-    doc.text("CADP — Recommandation de formation en alternance", pw / 2, y, { align: "center" });
-    y += 12;
-
-    if (contactForm.entreprise) {
-      doc.setFontSize(9); doc.setFont("helvetica", "normal"); doc.setTextColor(50, 50, 50);
-      doc.text(`Entreprise : ${contactForm.entreprise}`, m, y); y += 5;
-      if (contactForm.nom) doc.text(`Contact : ${contactForm.prenom} ${contactForm.nom}${contactForm.fonction ? " — " + contactForm.fonction : ""}`, m, y); y += 5;
-      if (contactForm.email) doc.text(`Email : ${contactForm.email} | Tel : ${contactForm.telephone || "-"}`, m, y); y += 10;
-    }
-
-    doc.setFontSize(11); doc.setFont("helvetica", "bold"); doc.setTextColor(20, 30, 60);
-    doc.text("Formations recommandees", m, y); y += 8;
-
-    doc.setFontSize(9);
-    results.slice(0, 3).forEach((r, i) => {
-      const d = r.formation;
-      const aide = getAide(d.nc, effectif, false);
-      doc.setFont("helvetica", "bold");
-      if (i === 0) doc.setTextColor(27, 107, 58); else doc.setTextColor(100, 100, 100);
-      doc.text(`${i + 1}. ${d.name} — ${d.full}`, m, y); y += 5;
-      doc.setFont("helvetica", "normal"); doc.setTextColor(100, 100, 100);
-      doc.text(`   ${d.niveau} | ${d.duree} | Aide : ${aide.toLocaleString("fr-FR")} EUR`, m, y); y += 7;
+    const { generateEntreprisePDF } = await import("@/lib/generate-pdf-entreprise");
+    generateEntreprisePDF({
+      entreprise: contactForm.entreprise,
+      nom: contactForm.nom,
+      prenom: contactForm.prenom,
+      fonction: contactForm.fonction,
+      secteur,
+      missionsComm: Array.from(missionsComm),
+      missionsAdmin: Array.from(missionsAdmin),
+      missionsSpec: Array.from(missionsSpec),
+      results,
+      sim,
+      effectif,
     });
-
-    y += 3;
-    doc.setFontSize(11); doc.setFont("helvetica", "bold"); doc.setTextColor(20, 30, 60);
-    doc.text("Simulation de cout", m, y); y += 7;
-    doc.setFontSize(9); doc.setFont("helvetica", "normal");
-    doc.text(`Cout CDI equivalent : ${fmt(sim.coutCDI)}`, m, y); y += 5;
-    doc.text(`Cout alternant (aide deduite) : ${fmt(sim.coutNet)}`, m, y); y += 5;
-    doc.setFont("helvetica", "bold"); doc.setTextColor(27, 107, 58);
-    doc.text(`Economie : ${fmt(sim.eco)} (soit ${Math.round(sim.ecoPct)}%)`, m, y);
-
-    doc.setFontSize(7); doc.setTextColor(150, 150, 150);
-    doc.text("CADP — Campus Alternance Drome Provence — 2 bd Frederic Mistral, 26700 Pierrelatte", pw / 2, doc.internal.pageSize.height - 10, { align: "center" });
-
-    doc.save(contactForm.entreprise ? `Recommandation_${contactForm.entreprise}.pdf` : "Recommandation_CADP.pdf");
   };
 
   const stepLabels = ["Activité", "·", "Missions", "·", "Critères"];
