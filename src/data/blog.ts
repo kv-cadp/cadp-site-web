@@ -446,6 +446,84 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 <p><strong>La poursuite d'études</strong> — Licence professionnelle en sécurité, bachelor management de la sécurité, ou passerelle vers les métiers de la défense et de la protection civile.</p>
 `,
   },
+  {
+    slug: "bts-gtla-transport-logistique-alternance",
+    title: "BTS GTLA en alternance : le transport-logistique recrute et ne s'arrête jamais",
+    metaTitle: "BTS GTLA en alternance : transport-logistique, un secteur qui recrute | CADP",
+    metaDescription: "1,8 million d'emplois, une croissance continue. Le BTS GTLA forme les cadres du transport et de la logistique. Ouverture au CADP Pierrelatte rentrée 2027.",
+    category: "orientation",
+    date: "Avril 2026",
+    dateISO: "2026-04-05",
+    excerpt: "1,8 million d'emplois en France, une croissance continue, et pas assez de cadres formés. Le BTS GTLA répond à ce besoin — et au CADP, on prépare son ouverture pour 2027.",
+    cta: "candidat",
+    content: `
+<p>Chaque produit que tu achètes, chaque colis que tu reçois, chaque pièce qui arrive dans une usine — quelqu'un a organisé son transport. Le secteur transport-logistique, c'est 1,8 million d'emplois en France, une croissance continue, et un problème récurrent : pas assez de cadres formés. Le BTS GTLA (Gestion des Transports et Logistique Associée) répond exactement à ce besoin.</p>
+
+<p>Et au CADP, on prépare son ouverture pour la rentrée 2027.</p>
+
+<h2>Un métier que l'IA ne remplacera pas</h2>
+
+<p>Les entrepôts se robotisent, les camions se digitalisent, les flux se complexifient — mais il faut toujours quelqu'un pour piloter tout ça. Le gestionnaire transport-logistique est l'humain au centre du système : il coordonne les transporteurs, gère les imprévus (retard, grève, panne, blocage douanier), optimise les coûts et les délais, et manage les équipes.</p>
+
+<p>C'est un métier où tu ne t'ennuies jamais. Un lundi, tu gères une urgence de livraison pour un client industriel. Un mardi, tu négocies un tarif avec un transporteur. Un mercredi, tu analyses les indicateurs de performance de la semaine. Un jeudi, tu planifies les expéditions du mois suivant.</p>
+
+<h2>Pourquoi la vallée du Rhône est le bon endroit</h2>
+
+<p>Pierrelatte est situé sur l'un des axes logistiques majeurs d'Europe : le corridor rhodanien, qui relie Lyon à Marseille. Dans un rayon de 50 km autour du campus, tu trouves :</p>
+
+<p>Des <strong>plateformes logistiques</strong> de grande envergure à Montélimar, Valence, Orange et Bollène — avec des acteurs comme Amazon, GLS, Chronopost, DB Schenker qui recrutent en permanence.</p>
+
+<p>Des <strong>transporteurs routiers</strong> régionaux qui cherchent des exploitants capables de gérer les plannings, les tournées et la relation client.</p>
+
+<p>Le <strong>site nucléaire du Tricastin</strong> et ses sous-traitants, qui ont des besoins spécifiques en logistique réglementée et transport de matières sensibles.</p>
+
+<p>Le <strong>port de Marseille-Fos</strong> à 2 heures, qui ouvre les perspectives du transport maritime et du transit international.</p>
+
+<p>Des <strong>entreprises agroalimentaires et industrielles</strong> de la Drôme provençale et de l'Ardèche qui expédient partout en France et en Europe.</p>
+
+<h2>Ce que le BTS GTLA t'apporte concrètement</h2>
+
+<p>Au-delà du diplôme (qui est un Bac+2 reconnu par l'État), le BTS GTLA te donne deux atouts rares :</p>
+
+<p><strong>L'attestation de capacité professionnelle de transport de marchandises par route.</strong> C'est le sésame pour créer ou diriger une entreprise de transport. Normalement, il faut passer un examen spécifique pour l'obtenir. Avec le BTS GTLA, tu l'as par équivalence. C'est un des seuls BTS qui ouvre directement la porte à l'entrepreneuriat.</p>
+
+<p><strong>L'attestation de capacité de commissionnaire de transport.</strong> Tu peux devenir organisateur de transport — le métier qui consiste à acheter du transport pour le revendre à des clients qui ont des marchandises à expédier. C'est un métier à forte valeur ajoutée.</p>
+
+<h2>Le profil idéal</h2>
+
+<p>Le BTS GTLA n'est pas réservé aux passionnés de camions. Il est fait pour toi si :</p>
+
+<ul>
+<li>Tu aimes organiser, planifier, coordonner.</li>
+<li>Tu es à l'aise avec les chiffres (coûts, marges, indicateurs) sans être un matheux.</li>
+<li>Tu as un bon niveau d'anglais (le transport international, c'est en anglais).</li>
+<li>Tu aimes résoudre des problèmes concrets sous pression.</li>
+<li>Tu es curieux du monde et de la géographie économique.</li>
+</ul>
+
+<p>Le BTS GTLA est accessible après un bac général, un bac STMG, ou un bac pro transport-logistique. Les profils en reconversion sont aussi les bienvenus.</p>
+
+<h2>Pourquoi au CADP ?</h2>
+
+<p><strong>Des promos de 10-12 étudiants.</strong> Le transport-logistique, ça s'apprend en résolvant des cas concrets. En petit groupe, chaque étudiant bénéficie d'un accompagnement individualisé.</p>
+
+<p><strong>Un réseau d'entreprises locales.</strong> Laurent Aubret, co-directeur du CADP, développe le réseau d'entreprises partenaires sur les 4 départements couverts (Drôme, Ardèche, Vaucluse, Gard). On te met en relation directe avec les transporteurs et plateformes logistiques qui recrutent.</p>
+
+<p><strong>L'alternance dès le premier jour.</strong> 3 jours en entreprise, 2 à 3 jours au campus. Tu apprends en gérant de vrais flux, pas des exercices théoriques.</p>
+
+<h2>Et après ?</h2>
+
+<p><strong>Insertion directe</strong> — Le marché recrute massivement. Exploitant transport, affréteur, gestionnaire de stocks, coordinateur logistique : les postes sont disponibles et les salaires progressent vite (24 000 à 28 000€ en début de carrière, 35 000 à 45 000€ avec expérience).</p>
+
+<p><strong>Poursuite d'études</strong> — Licence pro Logistique et Pilotage des Flux, Bachelor Responsable Transport, école de commerce en admission parallèle.</p>
+
+<p><strong>Création d'entreprise</strong> — Grâce aux attestations de capacité obtenues par équivalence avec le BTS.</p>
+
+<h2>Pré-inscriptions ouvertes</h2>
+
+<p>Le BTS GTLA ouvrira au CADP à la rentrée 2027. Les pré-inscriptions sont déjà ouvertes — et les premières places attribuées seront les mieux accompagnées dans la recherche d'entreprise.</p>
+`,
+  },
 ];
 
 export function getArticleBySlug(slug: string): BlogArticle | undefined {
