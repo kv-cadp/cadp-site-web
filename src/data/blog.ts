@@ -197,6 +197,80 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 <p><strong>Suivi individualisé</strong> — En promo de 10-12, on connaît ta situation et on adapte l'accompagnement.</p>
 `,
   },
+  {
+    slug: "bts-gpme-alternance-guide",
+    title: "BTS GPME en alternance : le couteau suisse des PME",
+    metaTitle: "BTS GPME en alternance : le couteau suisse des PME | CADP Pierrelatte",
+    metaDescription: "Tout savoir sur le BTS GPME en alternance : compétences, débouchés, salaire, pourquoi c'est le BTS idéal pour les PME de Drôme-Ardèche. Guide complet CADP.",
+    category: "orientation",
+    date: "Avril 2026",
+    dateISO: "2026-04-05",
+    excerpt: "Tu aimes toucher à tout ? Le BTS Gestion de la PME te forme à la compta, aux RH, à la com' et au commercial. Le profil polyvalent par excellence.",
+    cta: "candidat",
+    content: `
+<p>Tu aimes toucher à tout ? Tu veux comprendre comment fonctionne une entreprise de l'intérieur — la compta, les RH, la com', les fournisseurs, les clients ? Le BTS Gestion de la PME est fait pour toi. Et en alternance, c'est encore mieux : tu apprends le métier en le faisant.</p>
+
+<h2>Ce que fait un titulaire du BTS GPME</h2>
+
+<p>On l'appelle souvent le "bras droit du dirigeant", et ce n'est pas une formule vide. Dans une PME de 10, 20 ou 50 salariés, il n'y a pas un service RH, un service comptable, un service commercial avec chacun son équipe. Il y a une personne — ou deux — qui gère tout ça. C'est le profil GPME.</p>
+
+<p>Concrètement, ton quotidien en entreprise ressemble à ça :</p>
+
+<ul>
+<li>Le matin, tu traites le courrier, tu gères les relances fournisseurs, tu prépares un devis pour un client.</li>
+<li>En début d'après-midi, tu saisis des écritures comptables, tu prépares les éléments de paie pour le cabinet comptable.</li>
+<li>En fin de journée, tu rédiges un post LinkedIn pour l'entreprise ou tu organises la logistique d'un salon professionnel.</li>
+</ul>
+
+<p>C'est varié, c'est concret, et c'est indispensable.</p>
+
+<h2>Ce que tu apprends au CADP</h2>
+
+<p>La formation est organisée autour de 4 grands blocs de compétences :</p>
+
+<p><strong>Gérer la relation clients et fournisseurs (GRCF)</strong> — Tu apprends à gérer le cycle commercial complet : devis, commandes, factures, relances, litiges. Tu travailles sur des logiciels professionnels (EBP, Suite Office) et tu apprends à communiquer efficacement à l'oral comme à l'écrit.</p>
+
+<p><strong>Participer à la gestion des risques (GRI)</strong> — Tu identifies les risques de l'entreprise (financiers, juridiques, informatiques) et tu mets en place des procédures pour les réduire. C'est un bloc qui surprend souvent les étudiants par son côté stratégique.</p>
+
+<p><strong>Gérer les ressources humaines (GRH)</strong> — Tu participes au recrutement, tu gères les absences, tu prépares les éléments de paie, tu organises les formations. Dans une PME, les RH ne sont pas un service à part — c'est une compétence que tu maîtrises.</p>
+
+<p><strong>Soutenir le fonctionnement et le projet de développement de la PME (SFPME)</strong> — Tu analyses la situation financière de l'entreprise, tu participes au montage de projets (ouverture d'un nouveau point de vente, lancement d'un produit), tu assistes le dirigeant dans ses décisions.</p>
+
+<h2>Pourquoi le GPME est idéal en alternance</h2>
+
+<p>C'est probablement le BTS qui tire le plus profit de l'alternance. Pourquoi ? Parce que les compétences GPME ne s'apprennent pas dans un manuel — elles se vivent. Gérer un client mécontent, trouver une solution quand un fournisseur livre en retard, préparer un tableau de bord pour le dirigeant : tout ça s'apprend sur le terrain.</p>
+
+<p>Au CADP, le rythme d'alternance te donne 3 jours par semaine en entreprise. En deux ans, tu accumules l'équivalent de plus d'un an d'expérience professionnelle. À la sortie, tu es opérationnel — pas besoin de période d'adaptation.</p>
+
+<h2>Les débouchés dans la Drôme et l'Ardèche</h2>
+
+<p>Le bassin d'emploi autour de Pierrelatte, Montélimar et en Ardèche est composé majoritairement de PME et TPE. C'est exactement le tissu économique qui recrute des profils GPME :</p>
+
+<p><strong>PME industrielles du Tricastin</strong> — Les sous-traitants du nucléaire ont besoin d'assistants de gestion polyvalents pour gérer leur administratif, leur compta et leurs appels d'offres.</p>
+
+<p><strong>Artisans et TPE en croissance</strong> — Un artisan qui passe de 3 à 10 salariés a besoin de structurer sa gestion. Le profil GPME est la première embauche stratégique.</p>
+
+<p><strong>Cabinets d'expertise comptable</strong> — En support aux experts-comptables, pour la saisie, la relation client et la gestion interne du cabinet.</p>
+
+<p><strong>Associations et collectivités</strong> — Les structures associatives et les petites collectivités recrutent des profils polyvalents capables de gérer à la fois l'administratif, la compta et la communication.</p>
+
+<p>En termes de salaire, un assistant de gestion PME débute entre 22 000 et 26 000€ brut annuel. Avec 3-5 ans d'expérience, un office manager ou responsable administratif atteint 28 000 à 35 000€.</p>
+
+<h2>Le BTS GPME au CADP — ce qui fait la différence</h2>
+
+<p><strong>Des promos de 10-12 étudiants.</strong> En GPME, tu as besoin de poser des questions, de comprendre ta situation d'entreprise, de travailler sur tes cas concrets. C'est impossible dans un amphi de 35.</p>
+
+<p><strong>Des formateurs professionnels.</strong> Nos intervenants en GPME ont eux-mêmes géré des PME, travaillé en cabinet comptable, dirigé des équipes. Ils ne récitent pas un cours — ils partagent leur expérience.</p>
+
+<p><strong>Un accompagnement dans la recherche d'entreprise.</strong> On ne te lâche pas avec ton CV à la main. On te met en relation avec notre réseau de PME partenaires sur 4 départements (Drôme, Ardèche, Vaucluse, Gard).</p>
+
+<h2>Et après le BTS GPME ?</h2>
+
+<p>Tu peux entrer directement dans la vie active — c'est le choix de la majorité de nos diplômés, souvent embauchés dans leur entreprise d'alternance.</p>
+
+<p>Tu peux aussi poursuivre en licence professionnelle (gestion des organisations, RH, management) ou en bachelor (école de commerce, IAE). Le BTS GPME ouvre des portes vers des postes d'office manager, de responsable administratif et financier, ou de chargé de projet.</p>
+`,
+  },
 ];
 
 export function getArticleBySlug(slug: string): BlogArticle | undefined {
