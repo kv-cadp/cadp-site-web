@@ -53,6 +53,30 @@ export default function ContactPage() {
                 </svg>
               </Link>
             </div>
+
+            {/* Lien espaces CADP Connect */}
+            <div className="mt-6 pt-6 border-t border-gray-200 text-center">
+              <p className="text-gray-mid text-sm mb-3">Vous êtes déjà candidat ou entreprise partenaire ?</p>
+              <div className="flex gap-4 justify-center">
+                <a
+                  href="https://app.cadp.pro/connexion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+                >
+                  Espace candidat
+                </a>
+                <span className="text-gray-mid/30">|</span>
+                <a
+                  href="https://app.cadp.pro/connexion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+                >
+                  Espace entreprise
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -124,12 +124,12 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-cream/70">
               <li>
                 <Link href="/mentions-legales" className="hover:text-gold transition-colors">
-                  Mentions l&eacute;gales
+                  Mentions légales
                 </Link>
               </li>
               <li>
                 <Link href="/politique-de-confidentialite" className="hover:text-gold transition-colors">
-                  Politique de confidentialit&eacute;
+                  Politique de confidentialité
                 </Link>
               </li>
               <li>
@@ -139,6 +139,24 @@ export default function Footer() {
               </li>
               <li>
                 <span className="text-cream/50">Horaires : {SITE.hours}</span>
+              </li>
+              <li className="pt-2">
+                <span className="text-cream/40 text-xs font-semibold uppercase tracking-wider">Accès rapide</span>
+              </li>
+              <li>
+                <a href="https://app.cadp.pro/connexion" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+                  Espace candidat
+                </a>
+              </li>
+              <li>
+                <a href="https://app.cadp.pro/connexion" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+                  Espace entreprise
+                </a>
+              </li>
+              <li>
+                <a href="https://app.cadp.pro" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+                  Équipe pédagogique
+                </a>
               </li>
             </ul>
           </div>

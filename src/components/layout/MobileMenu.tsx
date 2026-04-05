@@ -83,6 +83,14 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         >
           Je candidate
         </Link>
+        <a
+          href="https://app.cadp.pro/connexion"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 inline-flex items-center px-8 py-3 border-2 border-gold text-gold rounded-lg font-semibold text-lg hover:bg-gold hover:text-navy-deep transition-colors"
+        >
+          Mon espace
+        </a>
       </div>
     </div>
   );

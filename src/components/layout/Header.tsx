@@ -102,12 +102,22 @@ export default function Header() {
           </div>
 
           {/* CTA desktop */}
-          <Link
-            href="/contact"
-            className="hidden md:inline-flex items-center px-5 py-2.5 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-colors"
-          >
-            Je candidate
-          </Link>
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href="https://app.cadp.pro/connexion"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 border-2 border-gold text-gold rounded-lg font-semibold text-sm hover:bg-gold hover:text-navy-deep transition-colors"
+            >
+              Mon espace
+            </a>
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-5 py-2.5 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-colors"
+            >
+              Je candidate
+            </Link>
+          </div>
 
           {/* Mobile hamburger */}
           <button

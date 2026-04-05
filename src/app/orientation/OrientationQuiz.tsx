@@ -663,12 +663,14 @@ export default function OrientationQuiz() {
                       {/* CTA */}
                       {isCadp ? (
                         <div className="mt-3 flex flex-wrap gap-2">
-                          <Link
-                            href={`/formations/${f.slug}`}
+                          <a
+                            href="https://app.cadp.pro/inscription"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="px-4 py-2 bg-gold text-navy-deep rounded-lg font-semibold text-xs hover:bg-gold-light transition-colors"
                           >
                             Candidater à cette formation
-                          </Link>
+                          </a>
                           <Link
                             href={`/formations/${f.slug}`}
                             className="px-4 py-2 border border-gray-300 text-gray-mid rounded-lg font-semibold text-xs hover:border-gold hover:text-gold transition-colors"

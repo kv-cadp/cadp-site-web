@@ -1,5 +1,3 @@
-import Button from "@/components/ui/Button";
-
 interface FormationCTAProps {
   formationName: string;
 }
@@ -15,12 +13,22 @@ export default function FormationCTA({ formationName }: FormationCTAProps) {
           Les places sont limitées à 12 par promo. Dépose ta candidature ou contacte-nous pour en savoir plus.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="/contact" variant="gold" className="px-8">
-            Je candidate
-          </Button>
-          <Button href="/contact" variant="white-outline" className="px-8">
-            Nous contacter
-          </Button>
+          <a
+            href="https://app.cadp.pro/inscription"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-base hover:bg-gold-light transition-colors"
+          >
+            Je candidate à cette formation
+          </a>
+          <a
+            href="https://app.cadp.pro/connexion"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-gold text-gold rounded-lg font-semibold text-base hover:bg-gold hover:text-navy-deep transition-colors"
+          >
+            Déjà inscrit ? Mon espace
+          </a>
         </div>
       </div>
     </section>

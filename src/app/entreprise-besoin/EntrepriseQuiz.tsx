@@ -435,13 +435,31 @@ export default function EntrepriseQuiz() {
                 <h3 className="font-serif text-gold text-lg mb-2">Prêt à recruter votre alternant ?</h3>
                 <p className="text-sm text-white/70 mb-4">Un conseiller CADP vous accompagne dans le recrutement et les démarches administratives.</p>
                 <div className="flex gap-3 justify-center flex-wrap">
-                  <button onClick={() => setShowContact(true)} className="px-6 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-all">
+                  <a
+                    href="https://app.cadp.pro/entreprise/inscription"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-all"
+                  >
+                    Créer mon espace entreprise
+                  </a>
+                  <a
+                    href="https://app.cadp.pro/connexion"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 border border-gold text-gold rounded-lg font-semibold text-sm hover:bg-gold hover:text-navy-deep transition-all"
+                  >
+                    Déjà partenaire ? Mon espace
+                  </a>
+                </div>
+                <div className="flex gap-3 justify-center flex-wrap mt-3">
+                  <button onClick={() => setShowContact(true)} className="px-5 py-2 bg-white/10 text-white border border-white/20 rounded-lg font-semibold text-xs hover:bg-white/20 transition-all">
                     Être recontacté(e)
                   </button>
-                  <button onClick={exportPDF} className="px-6 py-3 bg-white/10 text-white border border-white/20 rounded-lg font-semibold text-sm hover:bg-white/20 transition-all">
+                  <button onClick={exportPDF} className="px-5 py-2 bg-white/10 text-white border border-white/20 rounded-lg font-semibold text-xs hover:bg-white/20 transition-all">
                     Télécharger le PDF
                   </button>
-                  <button onClick={restart} className="px-6 py-3 bg-gray-200/20 text-white/70 rounded-lg font-semibold text-sm hover:bg-white/10 transition-all">
+                  <button onClick={restart} className="px-5 py-2 bg-gray-200/20 text-white/70 rounded-lg font-semibold text-xs hover:bg-white/10 transition-all">
                     Recommencer
                   </button>
                 </div>
