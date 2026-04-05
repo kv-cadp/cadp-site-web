@@ -357,6 +357,95 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 <p><strong>La poursuite d'études.</strong> Le DCG (Diplôme de Comptabilité et de Gestion, Bac+3) est la suite logique et donne accès au DSCG puis au stage d'expertise comptable. C'est un parcours exigeant mais qui mène à l'un des métiers les mieux rémunérés et les plus sécurisés de France.</p>
 `,
   },
+  {
+    slug: "bts-mos-alternance-securite-pierrelatte",
+    title: "BTS MOS en alternance à Pierrelatte : la sécurité, un secteur qui ne connaît pas le chômage",
+    metaTitle: "BTS MOS en alternance à Pierrelatte : sécurité et Tricastin | CADP",
+    metaDescription: "BTS MOS en alternance à Pierrelatte, au cœur du Tricastin. Management de la sécurité, débouchés nucléaire et industrie, salaires. Guide complet CADP.",
+    category: "orientation",
+    date: "Avril 2026",
+    dateISO: "2026-04-05",
+    excerpt: "185 000 salariés, une croissance continue, et un manque de cadres qualifiés. Le BTS MOS forme les managers de la sécurité — et à Pierrelatte, les débouchés sont à la porte du campus.",
+    cta: "candidat",
+    content: `
+<p>La sécurité privée en France, c'est 185 000 salariés, un chiffre d'affaires en croissance continue, et un problème récurrent : le manque de cadres qualifiés. Le BTS Management Opérationnel de la Sécurité (MOS) forme ces cadres. Et à Pierrelatte, au cœur du bassin nucléaire du Tricastin, les débouchés sont à la porte du campus.</p>
+
+<h2>Ce que fait un titulaire du BTS MOS</h2>
+
+<p>Le BTS MOS ne forme pas un agent de sécurité. Il forme celui qui manage les agents de sécurité. La différence est fondamentale.</p>
+
+<p>Au quotidien, un titulaire du BTS MOS :</p>
+
+<ul>
+<li>Réalise des diagnostics de sécurité et de sûreté pour identifier les risques d'un site.</li>
+<li>Organise les moyens humains et techniques : planning des agents, choix des équipements, mise en place des procédures.</li>
+<li>Encadre une équipe d'agents de prévention et de sécurité sur le terrain.</li>
+<li>Gère les incidents : intervention, rapport, analyse, retour d'expérience.</li>
+<li>Assure la conformité réglementaire : CNAPS, code de la sécurité intérieure, normes incendie.</li>
+<li>Participe à l'élaboration des appels d'offres et à la relation commerciale avec les clients donneurs d'ordre.</li>
+</ul>
+
+<p>C'est un métier à responsabilités, qui demande du sang-froid, du leadership et une bonne compréhension des enjeux juridiques et organisationnels.</p>
+
+<h2>Pourquoi Pierrelatte est l'endroit idéal pour un BTS MOS</h2>
+
+<p>Le site nucléaire du Tricastin est le plus grand site nucléaire d'Europe. Il concentre des dizaines de sous-traitants en sécurité et sûreté qui opèrent 24h/24, 365 jours par an. Les besoins en encadrement sécurité sont permanents et croissants.</p>
+
+<p>Mais ce n'est pas le seul débouché local :</p>
+
+<ul>
+<li><strong>Sites industriels SEVESO</strong> de la vallée du Rhône : chimie, logistique, énergie.</li>
+<li><strong>Événementiel</strong> : festivals, salons professionnels, événements sportifs.</li>
+<li><strong>Grande distribution</strong> : responsables sécurité de centres commerciaux et d'hypermarchés.</li>
+<li><strong>Collectivités</strong> : sécurité des bâtiments publics, vidéoprotection urbaine.</li>
+<li><strong>Entreprises de sécurité privée</strong> : Securitas, Fiducial, ICTS, Onet Sécurité — toutes présentes sur le bassin.</li>
+</ul>
+
+<p>Former un cadre en sécurité à Pierrelatte, c'est le former là où les employeurs se trouvent.</p>
+
+<h2>Ce que tu apprends au CADP</h2>
+
+<p><strong>DA1 — Réalisation d'un diagnostic de sécurité et de sûreté.</strong> Tu apprends à analyser un site, identifier les menaces (intrusion, vol, incendie, actes de malveillance), évaluer les vulnérabilités et proposer des solutions adaptées. C'est la compétence qui différencie un cadre d'un exécutant.</p>
+
+<p><strong>DA3 — Gestion de la relation client.</strong> La sécurité est un service. Tu apprends à répondre à un appel d'offre, à rédiger une proposition commerciale, à gérer la relation avec le donneur d'ordre, à mesurer la satisfaction client.</p>
+
+<p><strong>DA4 — Management et gestion de la sécurité globale.</strong> Tu apprends à planifier les ressources, à encadrer une équipe, à gérer un budget, à mettre en place une démarche qualité. C'est le cœur du management opérationnel.</p>
+
+<p><strong>GRH mutualisée</strong> — Le module de gestion des ressources humaines te donne les bases du droit du travail, du recrutement et de la gestion d'équipe — des compétences indispensables quand tu encadres des agents sur le terrain.</p>
+
+<p>En parallèle, tu passes ta carte professionnelle du CNAPS (obligatoire pour travailler dans la sécurité privée) et tu acquiers des compétences en SST (Sauveteur Secouriste du Travail).</p>
+
+<h2>L'alternance en sécurité : apprendre en conditions réelles</h2>
+
+<p>La sécurité ne s'enseigne pas en salle. Un diagnostic de sûreté, une gestion de crise, un briefing d'équipe — tout ça se vit sur le terrain. L'alternance te met en situation réelle dès le premier jour.</p>
+
+<p>En entreprise, tu es encadré par des professionnels expérimentés. Tu participes aux rondes, aux contrôles d'accès, aux levées de doute — puis progressivement tu prends des responsabilités d'encadrement. Au bout de deux ans, tu as géré de vraies situations, pas des cas d'école.</p>
+
+<p>Au CADP, ton formateur principal en BTS MOS est lui-même issu du terrain : pompier volontaire, auditeur sécurité, formateur SST. Il apporte à ses étudiants ce qu'aucun manuel ne peut enseigner.</p>
+
+<h2>Les débouchés et la rémunération</h2>
+
+<p>Le BTS MOS ouvre des postes d'encadrement intermédiaire dès la sortie :</p>
+
+<ul>
+<li>Chef de poste / Chef d'équipe sécurité</li>
+<li>Responsable de site</li>
+<li>Chargé de sécurité en entreprise</li>
+<li>Assistant responsable sûreté</li>
+<li>Coordinateur événementiel sécurité</li>
+</ul>
+
+<p>En termes de rémunération, un chef de poste débute entre 24 000 et 28 000€ brut annuel. Un responsable de site expérimenté atteint 32 000 à 40 000€. Les postes de responsable sûreté en milieu industriel (nucléaire, SEVESO) peuvent dépasser 45 000€ avec l'expérience.</p>
+
+<p>La particularité du secteur : les perspectives d'évolution sont rapides. Un titulaire du BTS MOS performant peut accéder à un poste de directeur d'agence en 5-7 ans.</p>
+
+<h2>Et après le BTS MOS ?</h2>
+
+<p><strong>L'insertion directe</strong> — C'est le choix majoritaire. Les entreprises de sécurité recrutent activement et les postes d'encadrement sont accessibles dès l'obtention du diplôme.</p>
+
+<p><strong>La poursuite d'études</strong> — Licence professionnelle en sécurité, bachelor management de la sécurité, ou passerelle vers les métiers de la défense et de la protection civile.</p>
+`,
+  },
 ];
 
 export function getArticleBySlug(slug: string): BlogArticle | undefined {
