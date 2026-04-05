@@ -9,6 +9,7 @@ const formationLinks = [
   { href: "/formations/bts-cg", label: "BTS CG" },
   { href: "/formations/bts-mos", label: "BTS MOS" },
   { href: "/formations/tp-advf", label: "TP ADVF" },
+  { href: "/formations/bts-gtla", label: "BTS GTLA (2027)" },
 ];
 
 export default function Footer() {

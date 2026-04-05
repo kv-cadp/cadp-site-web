@@ -13,6 +13,7 @@ const formations = [
   { href: "/formations/bts-cg", label: "BTS CG", full: "Comptabilité et Gestion" },
   { href: "/formations/bts-mos", label: "BTS MOS", full: "Management Opérationnel de la Sécurité" },
   { href: "/formations/tp-advf", label: "TP ADVF", full: "Assistant De Vie aux Familles" },
+  { href: "/formations/bts-gtla", label: "BTS GTLA", full: "Transports et Logistique — Rentrée 2027" },
 ];
 
 export default function Header() {
