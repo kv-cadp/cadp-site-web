@@ -664,7 +664,16 @@ export default function OrientationQuiz() {
                       {isCadp ? (
                         <div className="mt-3 flex flex-wrap gap-2">
                           <a
-                            href="https://app.cadp.pro/inscription"
+                            href={(() => {
+                              const params = new URLSearchParams();
+                              params.set("formation", f.key);
+                              params.set("source", "site_riasec");
+                              if (contactForm.prenom) params.set("prenom", contactForm.prenom);
+                              if (contactForm.nom) params.set("nom", contactForm.nom);
+                              if (contactForm.email) params.set("email", contactForm.email);
+                              if (contactForm.telephone) params.set("telephone", contactForm.telephone);
+                              return `https://app.cadp.pro/inscription?${params.toString()}`;
+                            })()}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-4 py-2 bg-gold text-navy-deep rounded-lg font-semibold text-xs hover:bg-gold-light transition-colors"

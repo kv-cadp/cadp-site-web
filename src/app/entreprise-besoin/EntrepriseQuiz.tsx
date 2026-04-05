@@ -436,7 +436,16 @@ export default function EntrepriseQuiz() {
                 <p className="text-sm text-white/70 mb-4">Un conseiller CADP vous accompagne dans le recrutement et les démarches administratives.</p>
                 <div className="flex gap-3 justify-center flex-wrap">
                   <a
-                    href="https://app.cadp.pro/entreprise/inscription"
+                    href={(() => {
+                      const params = new URLSearchParams();
+                      params.set("source", "site_questionnaire");
+                      if (results[0]) params.set("formation", results[0].key);
+                      if (contactForm.entreprise) params.set("entreprise", contactForm.entreprise);
+                      if (contactForm.nom) params.set("nom", contactForm.nom);
+                      if (contactForm.email) params.set("email", contactForm.email);
+                      if (contactForm.telephone) params.set("telephone", contactForm.telephone);
+                      return `https://app.cadp.pro/entreprise/inscription?${params.toString()}`;
+                    })()}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-all"

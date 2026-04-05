@@ -39,7 +39,7 @@ export default function BTSCGPage() {
       <FurtherStudies studies={formation.furtherStudies} prerequisites={formation.prerequisites} />
       <FormationTestimonial testimonial={formation.testimonial} />
       <FormationFAQ faq={formation.faq} formationName={formation.shortName} />
-      <FormationCTA formationName={formation.shortName} />
+      <FormationCTA formationName={formation.shortName} formationCode={formation.code.toLowerCase()} />
       <ResultatsBlock />
     </article>
   );

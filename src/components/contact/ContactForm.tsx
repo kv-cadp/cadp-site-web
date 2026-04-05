@@ -35,6 +35,7 @@ export default function ContactForm() {
     message: "",
   });
   const [status, setStatus] = useState<FormStatus>("idle");
+  const [lastObjet, setLastObjet] = useState("");
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
 
   function validate(): boolean {
@@ -78,6 +79,7 @@ export default function ContactForm() {
       const result = await response.json();
 
       if (result.success) {
+        setLastObjet(data.objet);
         setStatus("success");
         setData({ prenom: "", nom: "", email: "", telephone: "", objet: "", message: "" });
       } else {
@@ -109,8 +111,18 @@ export default function ContactForm() {
           On te recontacte sous 48h.
         </p>
         <p className="text-gray-mid text-sm">
-          Campus Alternance Dr&ocirc;me Provence &mdash; 04 75 00 34 56
+          Campus Alternance Drôme Provence — 04 75 00 34 56
         </p>
+        {lastObjet === "Je cherche une formation" && (
+          <a
+            href="https://app.cadp.pro/inscription?source=site_contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-4 text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+          >
+            Tu veux aller plus loin ? Crée ton espace candidat →
+          </a>
+        )}
         <button
           type="button"
           onClick={() => setStatus("idle")}
