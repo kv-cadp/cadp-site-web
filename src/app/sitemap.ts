@@ -101,6 +101,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/blog/bts-cg-alternance-guide`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/equipe`,
       lastModified: new Date(),
       changeFrequency: "monthly",

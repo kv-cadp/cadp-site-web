@@ -271,6 +271,92 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 <p>Tu peux aussi poursuivre en licence professionnelle (gestion des organisations, RH, management) ou en bachelor (école de commerce, IAE). Le BTS GPME ouvre des portes vers des postes d'office manager, de responsable administratif et financier, ou de chargé de projet.</p>
 `,
   },
+  {
+    slug: "bts-cg-alternance-guide",
+    title: "BTS Comptabilité et Gestion en alternance : bien plus que des chiffres",
+    metaTitle: "BTS CG en alternance : bien plus que des chiffres | CADP Pierrelatte",
+    metaDescription: "Tout savoir sur le BTS CG en alternance : comptabilité, fiscalité, paie, débouchés en cabinet et entreprise. Le guide complet du CADP Pierrelatte.",
+    category: "orientation",
+    date: "Avril 2026",
+    dateISO: "2026-04-05",
+    excerpt: "La comptabilité a une réputation injuste. La réalité en 2026 : un métier en tension, digitalisé, au cœur de la stratégie des entreprises — et un des meilleurs taux d'insertion.",
+    cta: "candidat",
+    content: `
+<p>La comptabilité a une réputation injuste : ennuyeuse, répétitive, austère. La réalité en 2026, c'est un métier en tension, digitalisé, au cœur de la stratégie des entreprises — et un des BTS avec le meilleur taux d'insertion professionnelle en France.</p>
+
+<h2>Ce que fait un titulaire du BTS CG</h2>
+
+<p>Oublie l'image du comptable seul devant ses classeurs. En entreprise ou en cabinet, un titulaire du BTS CG est un professionnel qui :</p>
+
+<ul>
+<li>Tient la comptabilité courante : saisie des écritures, rapprochements bancaires, lettrage des comptes.</li>
+<li>Prépare les déclarations fiscales : TVA mensuelle ou trimestrielle, déclarations de résultats, liasse fiscale.</li>
+<li>Participe à l'élaboration des bulletins de paie et des déclarations sociales.</li>
+<li>Produit des tableaux de bord et des analyses financières pour aider le dirigeant à piloter son activité.</li>
+<li>Utilise des logiciels professionnels au quotidien : Sage, Cegid, EBP, Excel avancé.</li>
+</ul>
+
+<p>La comptabilité, c'est le langage de l'entreprise. Celui qui le maîtrise comprend tout le reste.</p>
+
+<h2>Pourquoi le BTS CG est un choix stratégique</h2>
+
+<p><strong>Un marché de l'emploi en tension.</strong> Les cabinets d'expertise comptable peinent à recruter. En Drôme-Ardèche, la pénurie est réelle : les cabinets de Montélimar, Valence, Pierrelatte, Privas cherchent des collaborateurs formés. Un alternant en BTS CG qui fait ses preuves pendant 2 ans se voit proposer un CDI dans la grande majorité des cas.</p>
+
+<p><strong>Un diplôme qui ouvre la voie vers l'expertise.</strong> Le BTS CG est la première marche vers le DCG (Diplôme de Comptabilité et de Gestion) puis le DSCG et l'expertise comptable. Pour ceux qui visent loin, c'est un parcours balisé avec des perspectives de carrière et de rémunération excellentes.</p>
+
+<p><strong>Un métier à l'épreuve de l'automatisation.</strong> Oui, les logiciels automatisent la saisie. Mais l'analyse, le conseil, la relation client, la fiscalité complexe — tout ça reste humain. Le BTS CG forme à ces compétences à haute valeur ajoutée, pas juste à la saisie.</p>
+
+<h2>Ce que tu apprends au CADP</h2>
+
+<p>La formation couvre 6 processus complémentaires :</p>
+
+<p><strong>P1 — Contrôle et traitement comptable des opérations commerciales.</strong> Achats, ventes, TVA, suivi des créances et des dettes. C'est le socle du métier.</p>
+
+<p><strong>P2 — Contrôle et production de l'information financière.</strong> Inventaire, écritures de régularisation, élaboration des comptes annuels. Tu apprends à produire un bilan et un compte de résultat.</p>
+
+<p><strong>P3 — Gestion des obligations fiscales.</strong> Déclarations de TVA, d'IS, de CVAE, liasse fiscale. La fiscalité est un domaine où la précision et la rigueur sont essentielles.</p>
+
+<p><strong>P4 — Gestion des relations sociales.</strong> Paie, contrats de travail, déclarations sociales, droit du travail. Un bloc de compétences de plus en plus valorisé par les employeurs.</p>
+
+<p><strong>P5 — Analyse et prévision de l'activité.</strong> Calcul de coûts, budgets, seuils de rentabilité, analyse de la performance. C'est ici que la comptabilité devient un outil de pilotage stratégique.</p>
+
+<p><strong>P6 — Analyse de la situation financière.</strong> Analyse du bilan, tableau de financement, ratios financiers. Tu apprends à lire la santé d'une entreprise comme un médecin lit une radio.</p>
+
+<p>À ça s'ajoutent les mathématiques appliquées (statistiques, probabilités, suites numériques) qui sont un vrai outil de travail en gestion.</p>
+
+<h2>Le BTS CG en alternance — l'avantage concret</h2>
+
+<p>En cabinet comptable, l'alternance est un format naturel : tu travailles sur de vrais dossiers clients, tu vois passer des dizaines de situations comptables différentes, tu touches à la TVA d'un restaurant, à la paie d'un artisan, au bilan d'une PME industrielle. En deux ans, tu acquiers une variété d'expériences qu'un salarié débutant met 3-4 ans à accumuler.</p>
+
+<p>En entreprise, c'est différent mais tout aussi formateur : tu te spécialises sur la comptabilité d'une seule structure, tu la connais dans ses moindres détails, et tu deviens indispensable.</p>
+
+<h2>Les débouchés en Drôme-Ardèche</h2>
+
+<p><strong>Cabinets d'expertise comptable</strong> — C'est le débouché principal. Les cabinets de Montélimar, Valence, Pierrelatte, Aubenas recrutent en permanence. Un alternant formé sur leurs méthodes et leurs outils est un candidat idéal.</p>
+
+<p><strong>PME et ETI industrielles</strong> — Les entreprises du Tricastin, de la vallée du Rhône et de la Drôme provençale ont besoin de comptables juniors pour renforcer leurs services financiers.</p>
+
+<p><strong>Banques et assurances</strong> — Les compétences en analyse financière sont valorisées dans le secteur bancaire pour les postes de chargé de clientèle professionnelle.</p>
+
+<p><strong>Associations et collectivités</strong> — Comptabilité associative, gestion budgétaire publique : des postes stables et accessibles.</p>
+
+<p>En termes de rémunération, un comptable junior débute entre 24 000 et 28 000€ brut annuel. Un collaborateur confirmé en cabinet atteint 32 000 à 40 000€. Un expert-comptable diplômé : 50 000€ et plus.</p>
+
+<h2>Le BTS CG au CADP — ce qui fait la différence</h2>
+
+<p><strong>Des promos de 10-12 étudiants.</strong> La comptabilité demande de la rigueur et de la compréhension — pas du par cœur. En petit groupe, le formateur peut reprendre chaque point de blocage, vérifier que chaque étudiant maîtrise les mécanismes avant de passer au suivant.</p>
+
+<p><strong>Des formateurs issus du terrain.</strong> Nos intervenants en CG ont une expérience réelle en cabinet et en entreprise. Ils enseignent la comptabilité telle qu'elle se pratique, pas telle qu'elle s'écrit dans un manuel.</p>
+
+<p><strong>Un accompagnement concret vers l'emploi.</strong> Notre réseau de cabinets comptables partenaires sur la Drôme et l'Ardèche recrute activement nos alternants. On te met en relation directe.</p>
+
+<h2>Et après le BTS CG ?</h2>
+
+<p><strong>L'insertion professionnelle directe.</strong> Collaborateur comptable en cabinet, comptable en entreprise, assistant contrôleur de gestion. Avec le BTS CG et 2 ans d'alternance, tu es immédiatement opérationnel.</p>
+
+<p><strong>La poursuite d'études.</strong> Le DCG (Diplôme de Comptabilité et de Gestion, Bac+3) est la suite logique et donne accès au DSCG puis au stage d'expertise comptable. C'est un parcours exigeant mais qui mène à l'un des métiers les mieux rémunérés et les plus sécurisés de France.</p>
+`,
+  },
 ];
 
 export function getArticleBySlug(slug: string): BlogArticle | undefined {
