@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { articles, getArticleBySlug, categoryLabels } from "@/data/blog";
-import { JsonLd } from "@/lib/structured-data";
+import { JsonLd, generateBlogPostingJsonLd } from "@/lib/structured-data";
 import Button from "@/components/ui/Button";
 
 export function generateStaticParams() {
@@ -46,27 +46,7 @@ export default async function BlogArticlePage({
 
   return (
     <>
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          headline: article.title,
-          description: article.metaDescription,
-          datePublished: article.dateISO,
-          author: {
-            "@type": "Organization",
-            name: "CADP - Campus Alternance Drôme Provence",
-            url: "https://www.cadp.pro",
-          },
-          publisher: {
-            "@type": "Organization",
-            name: "CADP - Campus Alternance Drôme Provence",
-            url: "https://www.cadp.pro",
-          },
-          url: `https://www.cadp.pro/blog/${slug}`,
-          mainEntityOfPage: `https://www.cadp.pro/blog/${slug}`,
-        }}
-      />
+      <JsonLd data={generateBlogPostingJsonLd(article)} />
 
       {/* Hero */}
       <section className="bg-navy-deep py-16 md:py-20">

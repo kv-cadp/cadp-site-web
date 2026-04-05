@@ -4,12 +4,12 @@ import KeyFigures from "@/components/home/KeyFigures";
 import FormationsOverview from "@/components/home/FormationsOverview";
 import Testimonials from "@/components/home/Testimonials";
 import UpcomingEvents from "@/components/home/UpcomingEvents";
-import { JsonLd, generateOrganizationJsonLd } from "@/lib/structured-data";
+import { JsonLd, generateFullGraphJsonLd } from "@/lib/structured-data";
 
 export default function HomePage() {
   return (
     <>
-      <JsonLd data={generateOrganizationJsonLd()} />
+      <JsonLd data={generateFullGraphJsonLd()} />
       <HeroSection />
       <OrientationSection />
       <KeyFigures />

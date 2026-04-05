@@ -1,0 +1,217 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://cadp.pro/#organization",
+      "name": "Campus Alternance Drôme Provence",
+      "alternateName": "CADP",
+      "url": "https://cadp.pro",
+      "logo": "https://www.cadp.pro/logo-cadp.jpg",
+      "description": "Centre de formation en alternance à Pierrelatte (Drôme). BTS MCO, NDRC, GPME, CG, MOS et TP ADVF en promos de 10-12 étudiants. UFA du CFA IFIR Lyon, certifié Qualiopi.",
+      "foundingDate": "2024-09-02",
+      "telephone": "+33475003456",
+      "email": "contact@cadp.pro",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2 Boulevard Frédéric Mistral",
+        "addressLocality": "Pierrelatte",
+        "postalCode": "26700",
+        "addressRegion": "Drôme",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.3537,
+        "longitude": 4.6977
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Drôme" },
+        { "@type": "AdministrativeArea", "name": "Ardèche" },
+        { "@type": "AdministrativeArea", "name": "Vaucluse" },
+        { "@type": "AdministrativeArea", "name": "Gard" }
+      ],
+      "parentOrganization": {
+        "@type": "EducationalOrganization",
+        "name": "CFA IFIR Lyon",
+        "url": "https://www.ifir.fr"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Certification Qualiopi",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Certifopac"
+        }
+      },
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "minValue": 5,
+        "maxValue": 15
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/campus-alternance-drome-provence"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Formations en alternance",
+        "itemListElement": [
+          { "@type": "Course", "@id": "https://cadp.pro/formations/bts-mco#course" },
+          { "@type": "Course", "@id": "https://cadp.pro/formations/bts-ndrc#course" },
+          { "@type": "Course", "@id": "https://cadp.pro/formations/bts-gpme#course" },
+          { "@type": "Course", "@id": "https://cadp.pro/formations/bts-cg#course" },
+          { "@type": "Course", "@id": "https://cadp.pro/formations/bts-mos#course" },
+          { "@type": "Course", "@id": "https://cadp.pro/formations/tp-advf#course" }
+        ]
+      }
+    },
+    {
+      "@type": "Course",
+      "@id": "https://cadp.pro/formations/bts-mco#course",
+      "name": "BTS Management Commercial Opérationnel (MCO)",
+      "description": "Formation en alternance au management de point de vente, gestion d'équipe et animation commerciale. Diplôme d'État niveau Bac+2.",
+      "url": "https://cadp.pro/formations/bts-mco",
+      "provider": { "@id": "https://cadp.pro/#organization" },
+      "timeRequired": "P2Y",
+      "educationalLevel": "Bac+2",
+      "educationalCredentialAwarded": "BTS Management Commercial Opérationnel",
+      "occupationalCredentialAwarded": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Diplôme d'État",
+        "competencyRequired": "RNCP38362"
+      },
+      "courseMode": "blended",
+      "inLanguage": "fr",
+      "isAccessibleForFree": true,
+      "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
+      "availableLanguage": "fr",
+      "maximumEnrollment": 12,
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "blended",
+        "courseSchedule": {
+          "@type": "Schedule",
+          "repeatFrequency": "P1W",
+          "byDay": ["Thursday", "Friday"],
+          "scheduleTimezone": "Europe/Paris"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "Campus Alternance Drôme Provence",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2 Boulevard Frédéric Mistral",
+            "addressLocality": "Pierrelatte",
+            "postalCode": "26700",
+            "addressCountry": "FR"
+          }
+        }
+      }
+    },
+    {
+      "@type": "Course",
+      "@id": "https://cadp.pro/formations/bts-ndrc#course",
+      "name": "BTS Négociation et Digitalisation de la Relation Client (NDRC)",
+      "description": "Formation en alternance à la prospection, la négociation commerciale et la relation client digitale. Diplôme d'État niveau Bac+2.",
+      "url": "https://cadp.pro/formations/bts-ndrc",
+      "provider": { "@id": "https://cadp.pro/#organization" },
+      "timeRequired": "P2Y",
+      "educationalLevel": "Bac+2",
+      "educationalCredentialAwarded": "BTS Négociation et Digitalisation de la Relation Client",
+      "occupationalCredentialAwarded": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Diplôme d'État",
+        "competencyRequired": "RNCP38368"
+      },
+      "courseMode": "blended",
+      "inLanguage": "fr",
+      "isAccessibleForFree": true,
+      "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
+      "maximumEnrollment": 12
+    },
+    {
+      "@type": "Course",
+      "@id": "https://cadp.pro/formations/bts-gpme#course",
+      "name": "BTS Gestion de la PME (GPME)",
+      "description": "Formation en alternance à la gestion administrative, comptable et commerciale des PME. Le bras droit du dirigeant. Diplôme d'État niveau Bac+2.",
+      "url": "https://cadp.pro/formations/bts-gpme",
+      "provider": { "@id": "https://cadp.pro/#organization" },
+      "timeRequired": "P2Y",
+      "educationalLevel": "Bac+2",
+      "educationalCredentialAwarded": "BTS Gestion de la PME",
+      "occupationalCredentialAwarded": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Diplôme d'État",
+        "competencyRequired": "RNCP38363"
+      },
+      "courseMode": "blended",
+      "inLanguage": "fr",
+      "isAccessibleForFree": true,
+      "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
+      "maximumEnrollment": 12
+    },
+    {
+      "@type": "Course",
+      "@id": "https://cadp.pro/formations/bts-cg#course",
+      "name": "BTS Comptabilité et Gestion (CG)",
+      "description": "Formation en alternance à la comptabilité, la fiscalité et la gestion financière. Diplôme d'État niveau Bac+2.",
+      "url": "https://cadp.pro/formations/bts-cg",
+      "provider": { "@id": "https://cadp.pro/#organization" },
+      "timeRequired": "P2Y",
+      "educationalLevel": "Bac+2",
+      "educationalCredentialAwarded": "BTS Comptabilité et Gestion",
+      "occupationalCredentialAwarded": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Diplôme d'État",
+        "competencyRequired": "RNCP39159"
+      },
+      "courseMode": "blended",
+      "inLanguage": "fr",
+      "isAccessibleForFree": true,
+      "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
+      "maximumEnrollment": 12
+    },
+    {
+      "@type": "Course",
+      "@id": "https://cadp.pro/formations/bts-mos#course",
+      "name": "BTS Management Opérationnel de la Sécurité (MOS)",
+      "description": "Formation en alternance au management de la sécurité privée, encadrement d'agents et gestion de la sûreté. Diplôme d'État niveau Bac+2. Idéal pour les sites industriels du Tricastin.",
+      "url": "https://cadp.pro/formations/bts-mos",
+      "provider": { "@id": "https://cadp.pro/#organization" },
+      "timeRequired": "P2Y",
+      "educationalLevel": "Bac+2",
+      "educationalCredentialAwarded": "BTS Management Opérationnel de la Sécurité",
+      "occupationalCredentialAwarded": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Diplôme d'État",
+        "competencyRequired": "RNCP38365"
+      },
+      "courseMode": "blended",
+      "inLanguage": "fr",
+      "isAccessibleForFree": true,
+      "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
+      "maximumEnrollment": 12
+    },
+    {
+      "@type": "Course",
+      "@id": "https://cadp.pro/formations/tp-advf#course",
+      "name": "Titre Professionnel Assistant(e) de Vie aux Familles (ADVF)",
+      "description": "Formation en alternance aux métiers de l'aide à domicile : accompagnement des personnes fragiles, garde d'enfants, entretien du logement. Titre professionnel niveau CAP.",
+      "url": "https://cadp.pro/formations/tp-advf",
+      "provider": { "@id": "https://cadp.pro/#organization" },
+      "timeRequired": "P1Y",
+      "educationalLevel": "CAP",
+      "educationalCredentialAwarded": "Titre Professionnel Assistant de Vie aux Familles",
+      "occupationalCredentialAwarded": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Titre Professionnel",
+        "competencyRequired": "RNCP37715"
+      },
+      "courseMode": "blended",
+      "inLanguage": "fr",
+      "isAccessibleForFree": true,
+      "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
+      "maximumEnrollment": 12
+    }
+  ]
+}
