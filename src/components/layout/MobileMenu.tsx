@@ -83,6 +83,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         >
           Je candidate
         </Link>
+        <Link
+          href="/entreprises"
+          onClick={onClose}
+          className="mt-2 inline-flex items-center px-8 py-3 border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-navy-deep transition-colors"
+        >
+          Je recrute
+        </Link>
         <a
           href="https://app.cadp.pro/connexion"
           target="_blank"

@@ -117,6 +117,12 @@ export default function Header() {
             >
               Je candidate
             </Link>
+            <Link
+              href="/entreprises"
+              className="inline-flex items-center px-5 py-2.5 border-2 border-white text-white rounded-lg font-semibold text-sm hover:bg-white hover:text-navy-deep transition-colors"
+            >
+              Je recrute
+            </Link>
           </div>
 
           {/* Mobile hamburger */}
