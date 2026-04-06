@@ -314,11 +314,11 @@ export default function OrientationQuiz() {
           {/* ==================== STEP 1 ==================== */}
           {phase === "quiz" && step === 1 && (
             <div className="animate-fade-in">
-              <h2 className="font-serif text-xl text-navy-deep mb-1">Vous et votre profil</h2>
-              <p className="text-gray-mid text-sm mb-6">Avant toute chose, apprenons à vous connaître.</p>
+              <h2 className="font-serif text-xl text-navy-deep mb-1">Ton profil</h2>
+              <p className="text-gray-mid text-sm mb-6">Avant toute chose, apprenons à te connaître.</p>
 
               <div className="mb-5">
-                <p className="text-sm font-semibold text-gray-dark mb-2.5">Quel est votre dernier diplôme obtenu (ou en cours) ?</p>
+                <p className="text-sm font-semibold text-gray-dark mb-2.5">Quel est ton dernier diplôme obtenu (ou en cours) ?</p>
                 <div className="flex flex-col gap-2">
                   {[
                     { v: "aucun", l: "Aucun diplôme / Brevet" },
@@ -344,7 +344,7 @@ export default function OrientationQuiz() {
               </div>
 
               <div className="mb-5">
-                <p className="text-sm font-semibold text-gray-dark mb-2.5">Quelle est votre situation actuelle ?</p>
+                <p className="text-sm font-semibold text-gray-dark mb-2.5">Quelle est ta situation actuelle ?</p>
                 <div className="flex flex-col gap-2">
                   {[
                     { v: "lyceen", l: "Lycéen(ne) / Étudiant(e)" },
@@ -368,7 +368,7 @@ export default function OrientationQuiz() {
                   {situation === "autre" && (
                     <input
                       type="text"
-                      placeholder="Précisez votre situation"
+                      placeholder="Précise ta situation"
                       value={autreSituation}
                       onChange={(e) => setAutreSituation(e.target.value)}
                       className="mt-2 w-full px-4 py-2.5 border-2 border-gray-200 rounded-lg text-sm focus:outline-none focus:border-navy-deep"
@@ -388,9 +388,9 @@ export default function OrientationQuiz() {
           {/* ==================== STEP 2 — RIASEC ==================== */}
           {phase === "quiz" && step === 2 && (
             <div className="animate-fade-in">
-              <h2 className="font-serif text-xl text-navy-deep mb-1">Vos centres d&apos;intérêt</h2>
+              <h2 className="font-serif text-xl text-navy-deep mb-1">Tes centres d&apos;intérêt</h2>
               <p className="text-gray-mid text-sm mb-6">
-                Pour chaque affirmation, indiquez dans quelle mesure elle vous correspond. Répondez spontanément, il n&apos;y a pas de bonne ou mauvaise réponse.
+                Pour chaque affirmation, indique dans quelle mesure elle te correspond. Réponds spontanément, il n&apos;y a pas de bonne ou mauvaise réponse.
               </p>
 
               <div className="space-y-3">
@@ -431,10 +431,10 @@ export default function OrientationQuiz() {
           {/* ==================== STEP 3 — PRÉFÉRENCES ==================== */}
           {phase === "quiz" && step === 3 && (
             <div className="animate-fade-in">
-              <h2 className="font-serif text-xl text-navy-deep mb-1">Vos préférences</h2>
-              <p className="text-gray-mid text-sm mb-6">Dans quel univers aimeriez-vous travailler ?</p>
+              <h2 className="font-serif text-xl text-navy-deep mb-1">Tes préférences</h2>
+              <p className="text-gray-mid text-sm mb-6">Dans quel univers aimerais-tu travailler ?</p>
 
-              <p className="text-sm font-semibold text-gray-dark mb-3">Secteurs d&apos;activité qui vous attirent (plusieurs choix possibles)</p>
+              <p className="text-sm font-semibold text-gray-dark mb-3">Secteurs d&apos;activité qui t&apos;attirent (plusieurs choix possibles)</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
                 {secteurs.map((s) => (
                   <button
@@ -453,7 +453,7 @@ export default function OrientationQuiz() {
                 ))}
               </div>
 
-              <p className="text-sm font-semibold text-gray-dark mb-3">Auto-évaluation de vos compétences</p>
+              <p className="text-sm font-semibold text-gray-dark mb-3">Auto-évaluation de tes compétences</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 {[
                   { label: "Aisance à l'oral", value: compOral, set: setCompOral, opts: ["Plutôt timide", "Correct", "À l'aise", "Très à l'aise"] },
@@ -490,8 +490,8 @@ export default function OrientationQuiz() {
           {/* ==================== STEP 4 — PROJET ==================== */}
           {phase === "quiz" && step === 4 && (
             <div className="animate-fade-in">
-              <h2 className="font-serif text-xl text-navy-deep mb-1">Votre projet</h2>
-              <p className="text-gray-mid text-sm mb-6">Dernière étape avant vos résultats personnalisés.</p>
+              <h2 className="font-serif text-xl text-navy-deep mb-1">Ton projet</h2>
+              <p className="text-gray-mid text-sm mb-6">Dernière étape avant tes résultats personnalisés.</p>
 
               <div className="mb-5">
                 <p className="text-sm font-semibold text-gray-dark mb-2.5">Durée de formation souhaitée</p>
@@ -509,7 +509,7 @@ export default function OrientationQuiz() {
               </div>
 
               <div className="mb-5">
-                <p className="text-sm font-semibold text-gray-dark mb-2.5">Votre priorité</p>
+                <p className="text-sm font-semibold text-gray-dark mb-2.5">Ta priorité</p>
                 <div className="flex flex-col gap-2">
                   {[
                     { v: "emploi", l: "Trouver un emploi rapidement" },
@@ -555,13 +555,13 @@ export default function OrientationQuiz() {
           {phase === "results" && (
             <div className="animate-fade-in">
               <div className="text-center mb-6">
-                <h2 className="font-serif text-xl text-navy-deep mb-1">Vos résultats personnalisés</h2>
-                <p className="text-gray-mid text-sm">Voici les formations qui correspondent le mieux à votre profil.</p>
+                <h2 className="font-serif text-xl text-navy-deep mb-1">Tes résultats personnalisés</h2>
+                <p className="text-gray-mid text-sm">Voici les formations qui correspondent le mieux à ton profil.</p>
               </div>
 
               {/* Radar */}
               <div className="text-center mb-7 p-6 bg-gray-50 rounded-2xl">
-                <h3 className="font-serif text-navy-deep text-lg mb-4">Votre profil RIASEC</h3>
+                <h3 className="font-serif text-navy-deep text-lg mb-4">Ton profil RIASEC</h3>
                 <canvas ref={canvasRef} width={300} height={300} className="mx-auto" />
                 <div className="flex flex-wrap justify-center gap-2 mt-4">
                   {Object.entries(riasecScores)
@@ -587,7 +587,7 @@ export default function OrientationQuiz() {
                     const sec = sorted[1][0];
                     return (
                       <>
-                        <strong>Votre profil dominant : {top}{sec}</strong>
+                        <strong>Ton profil dominant : {top}{sec}</strong>
                         <br />{riasecDesc[top]}
                         <br />{riasecDesc[sec]}
                       </>
@@ -733,7 +733,7 @@ export default function OrientationQuiz() {
               {/* Contact section */}
               {showContact && !contactSent && (
                 <div className="border-t-2 border-gold pt-6 animate-fade-in">
-                  <h3 className="font-serif text-lg text-navy-deep mb-4">Vos coordonnées</h3>
+                  <h3 className="font-serif text-lg text-navy-deep mb-4">Tes coordonnées</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                     {[
                       { id: "prenom", label: "Prénom", required: true },
@@ -782,7 +782,7 @@ export default function OrientationQuiz() {
                   </div>
                   <h3 className="font-serif text-navy-deep text-lg mb-2">Demande bien reçue !</h3>
                   <p className="text-gray-mid text-sm">
-                    Merci <strong>{contactForm.prenom}</strong>, un conseiller CADP vous recontactera pour discuter de votre orientation.
+                    Merci <strong>{contactForm.prenom}</strong>, un conseiller CADP te recontactera pour discuter de ton orientation.
                   </p>
                   <p className="text-xs text-gray-mid mt-2">
                     Campus Alternance Drôme Provence — 04 75 00 34 56 — contact@cadp.pro

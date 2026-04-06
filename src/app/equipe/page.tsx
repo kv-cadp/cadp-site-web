@@ -40,7 +40,7 @@ const direction = [
     role: "Directrice Générale & Relations Institutionnelles",
     initials: "VE",
     email: "veronique.eyguesier@cadp.pro",
-    bio: "Maire de Malataverne et engagée dans le développement du territoire, Véronique porte la voix du CADP auprès des institutions, des collectivités et des acteurs de l'emploi. Elle apporte au campus son réseau, sa connaissance du tissu économique régional et sa vision stratégique.",
+    bio: "Élue locale et engagée dans le développement du territoire, Véronique porte la voix du CADP auprès des institutions, des collectivités et des acteurs de l'emploi. Elle apporte au campus son réseau, sa connaissance du tissu économique régional et sa vision stratégique.",
   },
 ];
 
