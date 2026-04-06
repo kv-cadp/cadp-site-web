@@ -3,7 +3,7 @@ export interface BlogArticle {
   title: string;
   metaTitle: string;
   metaDescription: string;
-  category: "orientation" | "entreprise" | "alternance";
+  category: "orientation" | "entreprise" | "alternance" | "inscription";
   date: string;
   dateISO: string;
   excerpt: string;
@@ -15,9 +15,122 @@ export const categoryLabels: Record<string, { label: string; color: string }> = 
   orientation: { label: "Orientation & formations", color: "bg-gold/10 text-gold" },
   entreprise: { label: "Entreprise & recrutement", color: "bg-navy-deep/10 text-navy-deep" },
   alternance: { label: "Alternance pratique", color: "bg-success/10 text-success" },
+  inscription: { label: "Inscription & rentrée", color: "bg-gold/20 text-navy-deep" },
 };
 
 export const articles: BlogArticle[] = [
+  {
+    slug: "inscription-cadp-rentree-2026",
+    title: "S'inscrire au CADP pour la rentrée 2026 — Le guide complet",
+    metaTitle: "S'inscrire au CADP pour la rentrée 2026 — Alternance à Pierrelatte",
+    metaDescription: "Comment s'inscrire au Campus Alternance Drôme Provence pour septembre 2026 ? Étapes, calendrier, formations disponibles et accompagnement. Guide complet.",
+    category: "inscription",
+    date: "Avril 2026",
+    dateISO: "2026-04-06",
+    excerpt: "Les inscriptions pour septembre 2026 sont ouvertes. Comment candidater, quel est le calendrier, quelles formations sont disponibles ? Tout ce qu'il faut savoir en un article.",
+    cta: "candidat",
+    content: `
+<p>S'inscrire au Campus Alternance Drôme Provence (CADP) pour la rentrée de septembre 2026, c'est possible dès maintenant. Que tu sois lycéen, étudiant en réorientation ou en reconversion professionnelle, l'inscription se fait en trois étapes simples — et on t'accompagne sur chacune d'entre elles.</p>
+
+<h2>Quelles formations sont ouvertes pour septembre 2026 ?</h2>
+
+<p>Six formations en alternance sont ouvertes pour la rentrée 2026, toutes en promos de 10-12 étudiants maximum :</p>
+
+<ul>
+<li><strong><a href="/formations/bts-mco">BTS MCO</a></strong> — Management Commercial Opérationnel — Bac+2, 2 ans</li>
+<li><strong><a href="/formations/bts-ndrc">BTS NDRC</a></strong> — Négociation et Digitalisation de la Relation Client — Bac+2, 2 ans</li>
+<li><strong><a href="/formations/bts-gpme">BTS GPME</a></strong> — Gestion de la PME — Bac+2, 2 ans</li>
+<li><strong><a href="/formations/bts-cg">BTS CG</a></strong> — Comptabilité et Gestion — Bac+2, 2 ans</li>
+<li><strong><a href="/formations/bts-mos">BTS MOS</a></strong> — Management Opérationnel de la Sécurité — Bac+2, 2 ans</li>
+<li><strong><a href="/formations/tp-advf">TP ADVF</a></strong> — Assistant De Vie aux Familles — Niveau 3 (CAP/BEP), 9 à 12 mois</li>
+</ul>
+
+<p>Le <strong><a href="/formations/bts-gtla">BTS GTLA</a></strong> (Gestion des Transports et Logistique Associée) ouvrira à la rentrée 2027 — les pré-inscriptions sont déjà ouvertes.</p>
+
+<p>Toutes les formations sont en alternance, 100% financées par l'OPCO de l'entreprise. Zéro frais pour toi.</p>
+
+<h2>Comment s'inscrire ? Les 3 étapes</h2>
+
+<p><strong>Étape 1 — Tu candidates en ligne.</strong><br/>
+Tu remplis le formulaire sur <a href="/candidater">cadp.pro/candidater</a>. Tu choisis ta ou tes formations, tu renseignes tes coordonnées. C'est rapide, gratuit, sans engagement. Si tu ne sais pas quelle formation choisir, le formulaire te propose de faire le <a href="/orientation">test d'orientation RIASEC</a> — il te recommande les formations qui te correspondent en quelques minutes.</p>
+
+<p><strong>Étape 2 — On se rencontre.</strong><br/>
+Dans les jours qui suivent ta candidature, on te recontacte pour un entretien de motivation. Ce n'est pas un concours : on veut comprendre ton projet, tes envies, ta situation. On est honnêtes — si ta voie n'est pas chez nous, on te le dit et on t'oriente.</p>
+
+<p><strong>Étape 3 — On t'aide à trouver ton entreprise.</strong><br/>
+Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à notre réseau de 50+ entreprises partenaires en Drôme, Ardèche, Vaucluse et Gard. On organise des Alternance Dating (rencontres directes avec des recruteurs), des ateliers CV et du coaching entretien.</p>
+
+<h2>Le calendrier de la rentrée 2026</h2>
+
+<ul>
+<li><strong>Maintenant → juillet 2026 :</strong> Dépôt des candidatures (les places se remplissent au fur et à mesure — 12 max par promo)</li>
+<li><strong>29 avril 2026 :</strong> Alternance Dating au CADP — viens rencontrer nos entreprises partenaires (14h-16h)</li>
+<li><strong>14 mai 2026 :</strong> Atelier CV & Coaching entretien — ouvert à tous les candidats (10h-12h)</li>
+<li><strong>Mai-juin 2026 :</strong> Entretiens de motivation et validation des candidatures</li>
+<li><strong>Juin-août 2026 :</strong> Signature des contrats d'apprentissage avec les entreprises</li>
+<li><strong>Septembre 2026 :</strong> Rentrée au campus — début des cours et de l'alternance</li>
+</ul>
+
+<p>Les inscriptions sont ouvertes toute l'année, mais les promotions sont limitées à 12 étudiants. Chaque place pourvue est une place en moins. Notre conseil : ne repousse pas.</p>
+
+<h2>Qui peut s'inscrire au CADP ?</h2>
+
+<p><strong>Pour les 5 BTS (MCO, NDRC, GPME, CG, MOS) :</strong></p>
+<ul>
+<li>Titulaire d'un baccalauréat (général, technologique STMG, professionnel)</li>
+<li>Étudiant en réorientation post-bac</li>
+<li>Adulte en reconversion professionnelle</li>
+<li>Avoir entre 16 et 29 ans révolus (sauf exceptions : travailleur handicapé, création d'entreprise, sportif de haut niveau)</li>
+</ul>
+
+<p><strong>Pour le TP ADVF :</strong></p>
+<ul>
+<li>Aucun diplôme requis</li>
+<li>Accessible dès 16 ans</li>
+<li>Ouvert aux personnes en reconversion</li>
+</ul>
+
+<p><strong>Pas besoin de passer par Parcoursup.</strong> L'inscription se fait directement avec nous.</p>
+
+<h2>Combien ça coûte ?</h2>
+
+<p>Zéro euro. La formation est financée à 100% par l'OPCO de l'entreprise d'accueil dans le cadre du contrat d'apprentissage. Pas de frais d'inscription, pas de frais de scolarité, pas de frais cachés.</p>
+
+<p>En plus, tu es salarié et tu perçois une rémunération mensuelle : 783,90€ brut/mois pour un 18-20 ans en 1ère année de BTS (43% du SMIC 2026).</p>
+
+<p><a href="/blog/combien-coute-un-alternant-entreprise">Voir le détail du coût pour l'entreprise →</a></p>
+
+<h2>Pourquoi choisir le CADP plutôt qu'un autre centre ?</h2>
+
+<p><strong>Promos de 10-12 étudiants.</strong> Pas de cours magistral devant 40 personnes. Les formateurs connaissent chaque étudiant par son prénom.</p>
+
+<p><strong>Accompagnement emploi intégré.</strong> Alternance Dating, ateliers CV, coaching entretien, transmission directe aux entreprises partenaires. On ne te lâche pas.</p>
+
+<p><strong>Ancrage local.</strong> Campus à Pierrelatte, entreprises partenaires sur 4 départements (Drôme, Ardèche, Vaucluse, Gard). Formé ici, recruté ici.</p>
+
+<p><strong>Adossé au CFA IFIR, certifié Qualiopi.</strong> Diplômes reconnus par l'État, qualité de formation garantie.</p>
+
+<h2>Questions fréquentes sur l'inscription</h2>
+
+<p><strong>Faut-il avoir trouvé une entreprise pour s'inscrire ?</strong><br/>
+Non. Tu peux t'inscrire au CADP avant d'avoir signé ton contrat d'alternance. C'est même recommandé : les entreprises préfèrent recruter des candidats déjà acceptés en formation. On t'accompagne dans ta recherche d'entreprise dès que ta candidature est validée.</p>
+
+<p><strong>Peut-on s'inscrire sans passer par Parcoursup ?</strong><br/>
+Oui. L'inscription au CADP se fait directement via notre site, sans passer par Parcoursup. Le CADP est une UFA du CFA IFIR — le processus d'admission est indépendant de la plateforme Parcoursup.</p>
+
+<p><strong>Y a-t-il un concours ou un examen d'entrée ?</strong><br/>
+Non. L'admission se fait sur entretien de motivation. On évalue ton projet, ta motivation et ta capacité à suivre la formation. Ce n'est pas un concours — c'est une discussion.</p>
+
+<p><strong>J'hésite entre plusieurs formations, comment choisir ?</strong><br/>
+Fais le <a href="/orientation">test d'orientation</a> sur cadp.pro/orientation. En quelques minutes, il analyse ton profil et te recommande les formations qui te correspondent. Tu peux aussi candidater à plusieurs formations en même temps — on t'aide à affiner pendant l'entretien.</p>
+
+<p><strong>Est-ce que les inscriptions sont encore ouvertes ?</strong><br/>
+Oui, les inscriptions pour la rentrée de septembre 2026 sont ouvertes. Mais les places sont limitées à 12 par promo et par formation — quand c'est complet, c'est complet. Notre conseil : candidate maintenant.</p>
+
+<p><strong>J'ai plus de 29 ans, je peux m'inscrire ?</strong><br/>
+Pour les BTS en apprentissage, la limite d'âge est de 29 ans révolus. Cependant, il existe des exceptions (travailleur handicapé, création d'entreprise, etc.). Pour le TP ADVF, des dispositifs spécifiques peuvent être envisagés. Contacte-nous au 04 75 00 34 56 pour qu'on étudie ta situation.</p>
+`,
+  },
   {
     slug: "bts-mco-ou-bts-ndrc-comment-choisir",
     title: "BTS MCO ou BTS NDRC : comment choisir ?",

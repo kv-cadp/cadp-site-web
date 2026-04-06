@@ -83,6 +83,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/blog/inscription-cadp-rentree-2026`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/bts-mco-ou-bts-ndrc-comment-choisir`,
       lastModified: new Date(),
       changeFrequency: "monthly",
