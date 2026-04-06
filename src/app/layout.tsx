@@ -67,7 +67,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col font-sans text-gray-dark bg-white">
         <TopBanner />
         <Header />
-        <main className="flex-1 pt-20 md:pt-24">{children}</main>
+        <main className="flex-1 pt-30 md:pt-34">{children}</main>
         <Footer />
       </body>
     </html>

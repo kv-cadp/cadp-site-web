@@ -9,7 +9,7 @@ export default function TopBanner() {
   if (!visible) return null;
 
   return (
-    <div className="bg-gold text-navy-deep text-sm font-medium h-10 flex items-center justify-center relative px-12">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-gold text-navy-deep text-sm font-medium h-10 flex items-center justify-center px-12">
       {/* Desktop */}
       <span className="hidden sm:inline">
         Rentrée 2026 — 12 places par formation, pas une de plus.{" "}
