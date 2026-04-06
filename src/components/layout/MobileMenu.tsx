@@ -77,7 +77,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </NavLink>
 
         <Link
-          href="/contact"
+          href="/candidater"
           onClick={onClose}
           className="mt-4 inline-flex items-center px-8 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-lg hover:bg-gold-light transition-colors"
         >

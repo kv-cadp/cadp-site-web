@@ -112,7 +112,7 @@ export default function Header() {
               Mon espace
             </a>
             <Link
-              href="/contact"
+              href="/candidater"
               className="inline-flex items-center px-5 py-2.5 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-colors"
             >
               Je candidate

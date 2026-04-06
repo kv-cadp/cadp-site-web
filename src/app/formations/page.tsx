@@ -303,7 +303,7 @@ export default function FormationsHubPage() {
             Prêt à te lancer ?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <Button href="/contact" variant="navy">
+            <Button href="/candidater" variant="navy">
               Je candidate
             </Button>
             <Button href="/orientation" variant="outline">

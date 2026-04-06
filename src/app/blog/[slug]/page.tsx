@@ -77,7 +77,7 @@ export default async function BlogArticlePage({
               <h3 className="font-serif text-xl text-navy-deep mb-3">Prêt à te lancer ?</h3>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button href="/orientation" variant="gold">Fais le test d&apos;orientation</Button>
-                <Button href="/contact" variant="outline">Je candidate</Button>
+                <Button href="/candidater" variant="outline">Je candidate</Button>
               </div>
             </div>
           )}
