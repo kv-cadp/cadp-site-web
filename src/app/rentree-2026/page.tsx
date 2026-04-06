@@ -75,15 +75,13 @@ export default function Rentree2026Page() {
       />
 
       {/* HERO */}
-      <section className="bg-navy-deep py-20 md:py-28">
+      <section className="bg-navy-deep py-14 md:py-18">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gold font-semibold text-sm uppercase tracking-widest mb-4">
             Rentrée septembre 2026
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight">
-            Septembre 2026.
-            <br />
-            <span className="text-gold">Ta promo se remplit.</span>
+            Septembre 2026. Ta promo se remplit.
           </h1>
           <p className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
             6 formations en alternance. Promos de 10-12. Zéro frais. C&apos;est maintenant que ça se joue.
@@ -93,7 +91,7 @@ export default function Rentree2026Page() {
               Je candidate
             </Button>
             <Button href="/orientation" variant="white-outline" className="text-lg px-8 py-4">
-              Je ne sais pas encore → Test
+              Test d&apos;orientation →
             </Button>
           </div>
         </div>
@@ -283,7 +281,7 @@ export default function Rentree2026Page() {
               Je candidate
             </Button>
             <Button href="/orientation" variant="white-outline" className="text-lg px-8 py-4">
-              Je ne sais pas encore → Test
+              Test d&apos;orientation →
             </Button>
           </div>
           <p className="text-cream/40 text-sm">

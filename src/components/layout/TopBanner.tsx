@@ -9,11 +9,11 @@ export default function TopBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-gold text-navy-deep text-sm font-medium h-10 flex items-center justify-center px-12">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-navy-deep text-gold text-sm font-medium h-10 flex items-center justify-center px-12 border-b border-white/10">
       {/* Desktop */}
       <span className="hidden sm:inline">
         Rentrée 2026 — 12 places par formation, pas une de plus.{" "}
-        <Link href="/rentree-2026" className="underline font-semibold hover:text-navy-light transition-colors">
+        <Link href="/rentree-2026" className="underline font-semibold hover:text-gold-light transition-colors">
           En savoir plus →
         </Link>
       </span>
@@ -28,7 +28,7 @@ export default function TopBanner() {
       <button
         type="button"
         onClick={() => setVisible(false)}
-        className="absolute right-3 top-1/2 -translate-y-1/2 text-navy-deep/60 hover:text-navy-deep transition-colors"
+        className="absolute right-3 top-1/2 -translate-y-1/2 text-gold/60 hover:text-gold transition-colors"
         aria-label="Fermer la bannière"
       >
         <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
