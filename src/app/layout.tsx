@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
+import TopBanner from "@/components/layout/TopBanner";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
@@ -64,6 +65,7 @@ export default function RootLayout({
       className={`${dmSans.variable} ${dmSerifDisplay.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col font-sans text-gray-dark bg-white">
+        <TopBanner />
         <Header />
         <main className="flex-1 pt-20 md:pt-24">{children}</main>
         <Footer />

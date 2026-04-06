@@ -53,6 +53,9 @@ export default function Header() {
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
             <NavLink href="/">Accueil</NavLink>
+            <Link href="/rentree-2026" className="text-sm font-semibold text-gold hover:text-gold-light transition-colors">
+              Rentrée 2026
+            </Link>
 
             {/* Dropdown formations */}
             <div

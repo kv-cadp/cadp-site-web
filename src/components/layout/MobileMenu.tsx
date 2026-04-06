@@ -51,6 +51,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           Accueil
         </NavLink>
 
+        <NavLink href="/rentree-2026" onClick={onClose} className="text-2xl text-gold">
+          Rentrée 2026
+        </NavLink>
+
         <div className="flex flex-col items-center gap-4">
           <span className="text-gold font-serif text-2xl">Formations</span>
           {formations.map((f) => (
