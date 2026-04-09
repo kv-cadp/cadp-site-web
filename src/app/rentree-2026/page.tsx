@@ -23,8 +23,8 @@ const formations = [
 
 const timeline = [
   { date: "Maintenant → Juillet 2026", title: "Candidatures ouvertes", desc: "Les inscriptions sont ouvertes pour toutes les formations. Chaque promo est limitée à 12 étudiants — quand c'est complet, c'est complet." },
-  { date: "27 mai 2026", title: "Alternance Dating", desc: "Rencontre directe avec nos entreprises partenaires au campus. Viens avec ton CV, repars avec des propositions. 14h-16h, CADP Pierrelatte." },
   { date: "14 mai 2026", title: "Atelier CV & Coaching entretien", desc: "On t'aide à construire un CV percutant et à préparer tes entretiens. Ouvert à tous les candidats. 10h-12h." },
+  { date: "27 mai 2026", title: "Alternance Dating", desc: "Rencontre directe avec nos entreprises partenaires au campus. Viens avec ton CV, repars avec des propositions. 14h-16h, CADP Pierrelatte." },
   { date: "Mai — Juin 2026", title: "Entretiens de motivation", desc: "On se rencontre pour discuter de ton projet. Ce n'est pas un concours — c'est une conversation." },
   { date: "Juin — Août 2026", title: "Signature des contrats", desc: "Avec l'appui de notre réseau de 50+ entreprises partenaires, tu signes ton contrat d'apprentissage." },
   { date: "Septembre 2026", title: "Rentrée au campus", desc: "Début des cours et de l'alternance. C'est parti." },
