@@ -8,7 +8,7 @@ import Card from "@/components/ui/Card";
 export const metadata = createPageMetadata({
   title: "Rentrée 2026 — Inscriptions ouvertes",
   description:
-    "Les inscriptions pour la rentrée de septembre 2026 au Campus Alternance Drôme Provence sont ouvertes. 6 formations en alternance, promos de 10-12 étudiants, 100% financé. Candidatez maintenant.",
+    "Les inscriptions pour la rentrée de septembre 2026 au Campus Alternance Drôme Provence sont ouvertes. 6 formations en alternance, promos de 12 étudiants, 100% financé. Candidatez maintenant.",
   path: "/rentree-2026",
 });
 
@@ -23,7 +23,7 @@ const formations = [
 
 const timeline = [
   { date: "Maintenant → Juillet 2026", title: "Candidatures ouvertes", desc: "Les inscriptions sont ouvertes pour toutes les formations. Chaque promo est limitée à 12 étudiants — quand c'est complet, c'est complet." },
-  { date: "29 avril 2026", title: "Alternance Dating", desc: "Rencontre directe avec nos entreprises partenaires au campus. Viens avec ton CV, repars avec des propositions. 14h-16h, CADP Pierrelatte." },
+  { date: "27 mai 2026", title: "Alternance Dating", desc: "Rencontre directe avec nos entreprises partenaires au campus. Viens avec ton CV, repars avec des propositions. 14h-16h, CADP Pierrelatte." },
   { date: "14 mai 2026", title: "Atelier CV & Coaching entretien", desc: "On t'aide à construire un CV percutant et à préparer tes entretiens. Ouvert à tous les candidats. 10h-12h." },
   { date: "Mai — Juin 2026", title: "Entretiens de motivation", desc: "On se rencontre pour discuter de ton projet. Ce n'est pas un concours — c'est une conversation." },
   { date: "Juin — Août 2026", title: "Signature des contrats", desc: "Avec l'appui de notre réseau de 50+ entreprises partenaires, tu signes ton contrat d'apprentissage." },
@@ -49,8 +49,8 @@ export default function Rentree2026Page() {
             "@context": "https://schema.org",
             "@type": "Event",
             name: "Alternance Dating — CADP Pierrelatte",
-            startDate: "2026-04-29T14:00:00+02:00",
-            endDate: "2026-04-29T16:00:00+02:00",
+            startDate: "2026-05-27T14:00:00+02:00",
+            endDate: "2026-05-27T16:00:00+02:00",
             eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
             location: { "@type": "Place", name: "CADP", address: { "@type": "PostalAddress", streetAddress: "2 Boulevard Frédéric Mistral", addressLocality: "Pierrelatte", postalCode: "26700", addressCountry: "FR" } },
@@ -84,7 +84,7 @@ export default function Rentree2026Page() {
             Septembre 2026. Ta promo se remplit.
           </h1>
           <p className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-            6 formations en alternance. Promos de 10-12. Zéro frais. C&apos;est maintenant que ça se joue.
+            6 formations en alternance. Promos de 12. Zéro frais. C&apos;est maintenant que ça se joue.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/candidater" variant="gold" className="text-lg px-8 py-4">

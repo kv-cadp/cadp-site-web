@@ -4,8 +4,8 @@ import Card from "@/components/ui/Card";
 
 const events = [
   {
-    day: "29",
-    month: "AVR",
+    day: "27",
+    month: "MAI",
     title: "Alternance Dating",
     location: "CADP Pierrelatte — 14h à 16h",
     description:

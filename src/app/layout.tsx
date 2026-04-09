@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | CADP",
   },
   description:
-    "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME en promos de 10-12 étudiants. Accompagnement individualisé, Alternance Dating et certification Qualiopi via CFA IFIR.",
+    "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME en promos de 12 étudiants. Accompagnement individualisé, Alternance Dating et certification Qualiopi via CFA IFIR.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "CADP - Campus Alternance Drôme Provence",
     title: "CADP — Formations en alternance à Pierrelatte",
     description:
-      "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME en promos de 10-12 étudiants.",
+      "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME en promos de 12 étudiants.",
   },
   robots: {
     index: true,

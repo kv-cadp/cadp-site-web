@@ -3,7 +3,7 @@ export const SITE = {
   shortName: "CADP",
   url: "https://cadp.pro",
   description:
-    "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME, CG, MOS et TP ADVF en promos de 10-12 étudiants. Accompagnement individualisé et Alternance Dating.",
+    "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME, CG, MOS et TP ADVF en promos de 12 étudiants. Accompagnement individualisé et Alternance Dating.",
   address: {
     street: "2 Boulevard Frédéric Mistral",
     postalCode: "26700",
@@ -25,7 +25,7 @@ export const SITE = {
   stats: [
     { value: 6, label: "formations", prefix: "", suffix: "" },
     { value: 50, label: "entreprises partenaires", prefix: "", suffix: "+" },
-    { value: 12, label: "étudiants max par promo", prefix: "10-", suffix: "" },
+    { value: 12, label: "étudiants max par promo", prefix: "", suffix: "" },
     { value: 4, label: "départements couverts", prefix: "", suffix: "" },
   ],
   hours: "Du lundi au vendredi, 8h30 - 17h00",

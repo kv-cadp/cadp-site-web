@@ -11,7 +11,7 @@ import ResultatsBlock from "@/components/formations/ResultatsBlock";
 export const metadata = createPageMetadata({
   title: "BTS GTLA en alternance à Pierrelatte — Transport et Logistique",
   description:
-    "BTS Gestion des Transports et Logistique Associée en alternance au CADP à Pierrelatte. Ouverture rentrée 2027. Promos de 10-12 étudiants, vallée du Rhône, Tricastin.",
+    "BTS Gestion des Transports et Logistique Associée en alternance au CADP à Pierrelatte. Ouverture rentrée 2027. Promos de 12 étudiants, vallée du Rhône, Tricastin.",
   path: "/formations/bts-gtla",
 });
 
@@ -79,7 +79,7 @@ const infos = [
   ["Coût pour l'alternant", "Gratuit — formation financée par l'OPCO"],
   ["Prérequis", "Bac (général, technologique STMG, ou bac pro transport/logistique)"],
   ["Ouverture", "Rentrée septembre 2027"],
-  ["Places", "10-12 étudiants maximum"],
+  ["Places", "12 étudiants maximum"],
 ];
 
 export default function BTSGTLAPage() {
@@ -143,7 +143,7 @@ export default function BTSGTLAPage() {
           </div>
 
           <p className="text-cream/60 text-sm max-w-3xl mx-auto leading-relaxed">
-            Le BTS Gestion des Transports et Logistique Associée en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation Bac+2 sur 2 ans, en promos de 10-12 étudiants maximum. Le CADP est adossé au CFA IFIR, certifié Qualiopi.
+            Le BTS Gestion des Transports et Logistique Associée en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation Bac+2 sur 2 ans, en promos de 12 étudiants maximum. Le CADP est adossé au CFA IFIR, certifié Qualiopi.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">

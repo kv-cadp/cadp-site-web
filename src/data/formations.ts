@@ -144,7 +144,7 @@ export const formations: Formation[] = [
       {
         question: "Le BTS MCO est-il difficile ?",
         answer:
-          "Le BTS MCO demande de la régularité et de l'organisation, surtout en alternance. Au CADP, les promos de 10-12 étudiants permettent un accompagnement personnalisé. Tu n'es jamais seul face à tes difficultés, et l'alternance rend la formation concrète et motivante.",
+          "Le BTS MCO demande de la régularité et de l'organisation, surtout en alternance. Au CADP, les promos de 12 étudiants permettent un accompagnement personnalisé. Tu n'es jamais seul face à tes difficultés, et l'alternance rend la formation concrète et motivante.",
       },
       {
         question: "Comment trouver une entreprise pour l'alternance en BTS MCO ?",
@@ -169,7 +169,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le taux de réussite du BTS MCO au CADP ?",
         answer:
-          "Le CADP a été créé en 2024 et les premières promotions passent l'examen à l'été 2026. Les résultats ne sont pas encore disponibles. Cependant, l'accompagnement individualisé en petites promos de 10-12 étudiants est conçu pour maximiser tes chances de réussite.",
+          "Le CADP a été créé en 2024 et les premières promotions passent l'examen à l'été 2026. Les résultats ne sont pas encore disponibles. Cependant, l'accompagnement individualisé en petites promos de 12 étudiants est conçu pour maximiser tes chances de réussite.",
       },
       {
         question: "Comment s'inscrire au BTS MCO au CADP ?",
@@ -196,7 +196,7 @@ export const formations: Formation[] = [
     },
     metaTitle: "BTS MCO en alternance à Pierrelatte",
     metaDescription:
-      "Prépare ton BTS MCO en alternance au CADP à Pierrelatte. Promos de 10-12 étudiants, accompagnement individualisé, 50+ entreprises partenaires. Inscris-toi !",
+      "Prépare ton BTS MCO en alternance au CADP à Pierrelatte. Promos de 12 étudiants, accompagnement individualisé, 50+ entreprises partenaires. Inscris-toi !",
   },
 
   // ============================================================
@@ -374,7 +374,7 @@ export const formations: Formation[] = [
     },
     metaTitle: "BTS NDRC en alternance à Pierrelatte",
     metaDescription:
-      "Prépare ton BTS NDRC en alternance au CADP à Pierrelatte. Négociation, vente, digital. Promos de 10-12 étudiants, 50+ entreprises partenaires.",
+      "Prépare ton BTS NDRC en alternance au CADP à Pierrelatte. Négociation, vente, digital. Promos de 12 étudiants, 50+ entreprises partenaires.",
   },
 
   // ============================================================
@@ -522,7 +522,7 @@ export const formations: Formation[] = [
       {
         question: "Le BTS GPME est-il difficile ?",
         answer:
-          "Le BTS GPME est accessible si tu es organisé et polyvalent. Au CADP, les promos de 10-12 étudiants permettent un suivi personnalisé. Les formateurs s'assurent que chaque apprenant progresse à son rythme, avec un accompagnement concret.",
+          "Le BTS GPME est accessible si tu es organisé et polyvalent. Au CADP, les promos de 12 étudiants permettent un suivi personnalisé. Les formateurs s'assurent que chaque apprenant progresse à son rythme, avec un accompagnement concret.",
       },
       {
         question: "Comment trouver une entreprise pour l'alternance en BTS GPME ?",
@@ -564,7 +564,7 @@ export const formations: Formation[] = [
     },
     metaTitle: "BTS GPME en alternance à Pierrelatte",
     metaDescription:
-      "Prépare ton BTS GPME en alternance au CADP à Pierrelatte. Gestion, RH, administratif. Promos de 10-12 étudiants, 50+ entreprises partenaires.",
+      "Prépare ton BTS GPME en alternance au CADP à Pierrelatte. Gestion, RH, administratif. Promos de 12 étudiants, 50+ entreprises partenaires.",
   },
 
   // ============================================================
@@ -705,7 +705,7 @@ export const formations: Formation[] = [
       {
         question: "Le BTS CG est-il difficile ?",
         answer:
-          "Le BTS CG demande de la rigueur et un goût pour les chiffres. Au CADP, les promos de 10-12 étudiants permettent un accompagnement personnalisé. Si tu es sérieux et organisé, les formateurs s'adaptent à ton rythme pour t'amener à la réussite.",
+          "Le BTS CG demande de la rigueur et un goût pour les chiffres. Au CADP, les promos de 12 étudiants permettent un accompagnement personnalisé. Si tu es sérieux et organisé, les formateurs s'adaptent à ton rythme pour t'amener à la réussite.",
       },
       {
         question: "Comment trouver une entreprise pour l'alternance en BTS CG ?",
@@ -742,7 +742,7 @@ export const formations: Formation[] = [
     },
     metaTitle: "BTS CG en alternance à Pierrelatte",
     metaDescription:
-      "Prépare ton BTS Comptabilité et Gestion en alternance au CADP à Pierrelatte. Promos de 10-12 étudiants, 50+ entreprises partenaires. Inscris-toi !",
+      "Prépare ton BTS Comptabilité et Gestion en alternance au CADP à Pierrelatte. Promos de 12 étudiants, 50+ entreprises partenaires. Inscris-toi !",
   },
 
   // ============================================================
@@ -927,7 +927,7 @@ export const formations: Formation[] = [
     },
     metaTitle: "BTS MOS en alternance à Pierrelatte",
     metaDescription:
-      "Prépare ton BTS Management Opérationnel de la Sécurité en alternance au CADP à Pierrelatte. Promos de 10-12 étudiants, secteur qui recrute massivement.",
+      "Prépare ton BTS Management Opérationnel de la Sécurité en alternance au CADP à Pierrelatte. Promos de 12 étudiants, secteur qui recrute massivement.",
   },
 
   // ============================================================

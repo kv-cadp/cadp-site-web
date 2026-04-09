@@ -32,7 +32,7 @@ export default function FormationHero({ formation }: FormationHeroProps) {
 
         {/* Définition AEO — paragraphe structuré pour les moteurs de recherche et IA */}
         <p className="text-cream/60 text-sm max-w-3xl mx-auto leading-relaxed">
-          Le {formation.fullName} en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation {formation.level.toLowerCase()} sur {formation.duration}, en promos de 10-12 étudiants maximum, avec accompagnement individualisé (Alternance Dating, ateliers CV, coaching). Le CADP est adossé au CFA IFIR, certifié Qualiopi.
+          Le {formation.fullName} en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation {formation.level.toLowerCase()} sur {formation.duration}, en promos de 12 étudiants maximum, avec accompagnement individualisé (Alternance Dating, ateliers CV, coaching). Le CADP est adossé au CFA IFIR, certifié Qualiopi.
         </p>
       </div>
     </section>

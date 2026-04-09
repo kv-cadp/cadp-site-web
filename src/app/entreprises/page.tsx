@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button";
 export const metadata = createPageMetadata({
   title: "Recrutez un alternant au CADP | Entreprises",
   description:
-    "Recrutez un alternant en BTS ou TP ADVF au CADP à Pierrelatte. Aide jusqu'à 5 000€, formation financée par l'OPCO, promos de 10-12 étudiants. PME de Drôme, Ardèche, Vaucluse, Gard.",
+    "Recrutez un alternant en BTS ou TP ADVF au CADP à Pierrelatte. Aide jusqu'à 5 000€, formation financée par l'OPCO, promos de 12 étudiants. PME de Drôme, Ardèche, Vaucluse, Gard.",
   path: "/entreprises",
 });
 
@@ -57,7 +57,7 @@ const profils = [
 const avantages = [
   {
     title: "Vous connaissez chaque alternant qu'on vous envoie",
-    text: "On ne transmet pas des CV au hasard. Nos promos font 10 à 12 étudiants — on connaît leurs forces, leurs faiblesses, leur projet. Quand on vous recommande quelqu'un, c'est parce qu'on pense que ça peut marcher.",
+    text: "On ne transmet pas des CV au hasard. Nos promos font 12 étudiants — on connaît leurs forces, leurs faiblesses, leur projet. Quand on vous recommande quelqu'un, c'est parce qu'on pense que ça peut marcher.",
   },
   {
     title: "Un interlocuteur, pas un standard",

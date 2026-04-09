@@ -8,7 +8,7 @@ import Button from "@/components/ui/Button";
 export const metadata = createPageMetadata({
   title: "Nos formations en alternance à Pierrelatte",
   description:
-    "5 BTS et 1 Titre Professionnel en alternance à Pierrelatte. Promos de 10-12 étudiants, formation 100% financée. Comparez nos formations et trouvez celle qui vous correspond.",
+    "5 BTS et 1 Titre Professionnel en alternance à Pierrelatte. Promos de 12 étudiants, formation 100% financée. Comparez nos formations et trouvez celle qui vous correspond.",
   path: "/formations",
 });
 
@@ -111,7 +111,7 @@ export default function FormationsHubPage() {
             Six formations. Un même engagement.
           </h1>
           <p className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Toutes nos formations sont en alternance, en promos de 10-12 étudiants, et 100% financées par l&apos;OPCO de ton entreprise. Zéro frais pour toi.
+            Toutes nos formations sont en alternance, en promos de 12 étudiants, et 100% financées par l&apos;OPCO de ton entreprise. Zéro frais pour toi.
           </p>
         </div>
       </section>
@@ -279,7 +279,7 @@ export default function FormationsHubPage() {
                 text: "Aucun frais d'inscription ni de scolarité. La formation est prise en charge par l'OPCO de ton entreprise.",
               },
               {
-                title: "10-12 par promo",
+                title: "12 par promo",
                 text: "Pas de cours magistral devant 40 personnes. Ici, tes formateurs te connaissent et s'adaptent à toi.",
               },
               {

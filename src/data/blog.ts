@@ -34,7 +34,7 @@ export const articles: BlogArticle[] = [
 
 <h2>Quelles formations sont ouvertes pour septembre 2026 ?</h2>
 
-<p>Six formations en alternance sont ouvertes pour la rentrée 2026, toutes en promos de 10-12 étudiants maximum :</p>
+<p>Six formations en alternance sont ouvertes pour la rentrée 2026, toutes en promos de 12 étudiants maximum :</p>
 
 <ul>
 <li><strong><a href="/formations/bts-mco">BTS MCO</a></strong> — Management Commercial Opérationnel — Bac+2, 2 ans</li>
@@ -64,7 +64,7 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 
 <ul>
 <li><strong>Maintenant → juillet 2026 :</strong> Dépôt des candidatures (les places se remplissent au fur et à mesure — 12 max par promo)</li>
-<li><strong>29 avril 2026 :</strong> Alternance Dating au CADP — viens rencontrer nos entreprises partenaires (14h-16h)</li>
+<li><strong>27 mai 2026 :</strong> Alternance Dating au CADP — viens rencontrer nos entreprises partenaires (14h-16h)</li>
 <li><strong>14 mai 2026 :</strong> Atelier CV & Coaching entretien — ouvert à tous les candidats (10h-12h)</li>
 <li><strong>Mai-juin 2026 :</strong> Entretiens de motivation et validation des candidatures</li>
 <li><strong>Juin-août 2026 :</strong> Signature des contrats d'apprentissage avec les entreprises</li>
@@ -102,7 +102,7 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 
 <h2>Pourquoi choisir le CADP plutôt qu'un autre centre ?</h2>
 
-<p><strong>Promos de 10-12 étudiants.</strong> Pas de cours magistral devant 40 personnes. Les formateurs connaissent chaque étudiant par son prénom.</p>
+<p><strong>Promos de 12 étudiants.</strong> Pas de cours magistral devant 40 personnes. Les formateurs connaissent chaque étudiant par son prénom.</p>
 
 <p><strong>Accompagnement emploi intégré.</strong> Alternance Dating, ateliers CV, coaching entretien, transmission directe aux entreprises partenaires. On ne te lâche pas.</p>
 
@@ -176,7 +176,7 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 
 <h2>Au CADP, qu'est-ce qui change ?</h2>
 
-<p>Chez nous, les deux formations sont en promos de 10-12 étudiants maximum. Le rythme est le même : 2 jours au campus, 3 jours en entreprise (avec un mercredi sur deux en plus au campus pour les matières transversales). La vraie différence, c'est le contenu pédagogique et le type d'entreprise qui t'accueillera en alternance.</p>
+<p>Chez nous, les deux formations sont en promos de 12 étudiants maximum. Le rythme est le même : 2 jours au campus, 3 jours en entreprise (avec un mercredi sur deux en plus au campus pour les matières transversales). La vraie différence, c'est le contenu pédagogique et le type d'entreprise qui t'accueillera en alternance.</p>
 
 <p>Et si tu hésites encore après avoir lu tout ça, fais notre test d'orientation — il te donnera une recommandation personnalisée en quelques minutes.</p>
 `,
@@ -307,7 +307,7 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 
 <p><strong>Transmission directe de ton profil</strong> — On transmet ta candidature à notre réseau de 50+ entreprises partenaires.</p>
 
-<p><strong>Suivi individualisé</strong> — En promo de 10-12, on connaît ta situation et on adapte l'accompagnement.</p>
+<p><strong>Suivi individualisé</strong> — En promo de 12, on connaît ta situation et on adapte l'accompagnement.</p>
 `,
   },
   {
@@ -371,7 +371,7 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 
 <h2>Le BTS GPME au CADP — ce qui fait la différence</h2>
 
-<p><strong>Des promos de 10-12 étudiants.</strong> En GPME, tu as besoin de poser des questions, de comprendre ta situation d'entreprise, de travailler sur tes cas concrets. C'est impossible dans un amphi de 35.</p>
+<p><strong>Des promos de 12 étudiants.</strong> En GPME, tu as besoin de poser des questions, de comprendre ta situation d'entreprise, de travailler sur tes cas concrets. C'est impossible dans un amphi de 35.</p>
 
 <p><strong>Des formateurs professionnels.</strong> Nos intervenants en GPME ont eux-mêmes géré des PME, travaillé en cabinet comptable, dirigé des équipes. Ils ne récitent pas un cours — ils partagent leur expérience.</p>
 
@@ -457,7 +457,7 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 
 <h2>Le BTS CG au CADP — ce qui fait la différence</h2>
 
-<p><strong>Des promos de 10-12 étudiants.</strong> La comptabilité demande de la rigueur et de la compréhension — pas du par cœur. En petit groupe, le formateur peut reprendre chaque point de blocage, vérifier que chaque étudiant maîtrise les mécanismes avant de passer au suivant.</p>
+<p><strong>Des promos de 12 étudiants.</strong> La comptabilité demande de la rigueur et de la compréhension — pas du par cœur. En petit groupe, le formateur peut reprendre chaque point de blocage, vérifier que chaque étudiant maîtrise les mécanismes avant de passer au suivant.</p>
 
 <p><strong>Des formateurs issus du terrain.</strong> Nos intervenants en CG ont une expérience réelle en cabinet et en entreprise. Ils enseignent la comptabilité telle qu'elle se pratique, pas telle qu'elle s'écrit dans un manuel.</p>
 
@@ -618,7 +618,7 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 
 <h2>Pourquoi au CADP ?</h2>
 
-<p><strong>Des promos de 10-12 étudiants.</strong> Le transport-logistique, ça s'apprend en résolvant des cas concrets. En petit groupe, chaque étudiant bénéficie d'un accompagnement individualisé.</p>
+<p><strong>Des promos de 12 étudiants.</strong> Le transport-logistique, ça s'apprend en résolvant des cas concrets. En petit groupe, chaque étudiant bénéficie d'un accompagnement individualisé.</p>
 
 <p><strong>Un réseau d'entreprises locales.</strong> Laurent Aubret, co-directeur du CADP, développe le réseau d'entreprises partenaires sur les 4 départements couverts (Drôme, Ardèche, Vaucluse, Gard). On te met en relation directe avec les transporteurs et plateformes logistiques qui recrutent.</p>
 

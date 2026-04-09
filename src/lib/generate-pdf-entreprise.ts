@@ -385,7 +385,7 @@ export function generateEntreprisePDF(params: PDFParams) {
   doc.setTextColor(...GRAY);
 
   const whyCadp = [
-    ["Promos de 10-12 etudiants maximum", "Un suivi reel, pas un numero dans une liste."],
+    ["Promos de 12 etudiants maximum", "Un suivi reel, pas un numero dans une liste."],
     ["Formateurs en activite professionnelle", "Vos alternants apprennent les realites du terrain."],
     ["Accompagnement de A a Z", "Alternance Dating, matching candidat-entreprise, suivi en poste."],
     ["20+ ans d'experience des fondateurs", "Une expertise en formation et en insertion professionnelle."],

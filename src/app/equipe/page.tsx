@@ -93,7 +93,7 @@ const equipe = [
 const valeurs = [
   {
     title: "Taille humaine",
-    text: "10 à 12 étudiants par promo. On te connaît par ton prénom, pas par ton numéro d'inscription.",
+    text: "12 étudiants par promo. On te connaît par ton prénom, pas par ton numéro d'inscription.",
   },
   {
     title: "Droit à l'erreur",
