@@ -132,6 +132,7 @@ export function generateBlogPostingJsonLd(article: {
   title: string;
   metaDescription: string;
   dateISO: string;
+  updatedDateISO?: string;
   slug: string;
 }) {
   return {
@@ -140,7 +141,7 @@ export function generateBlogPostingJsonLd(article: {
     headline: article.title,
     description: article.metaDescription,
     datePublished: article.dateISO,
-    dateModified: article.dateISO,
+    dateModified: article.updatedDateISO || article.dateISO,
     author: {
       "@type": "Person",
       name: "Kévin Vidard",

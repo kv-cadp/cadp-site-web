@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { articles, getArticleBySlug, categoryLabels } from "@/data/blog";
-import { JsonLd, generateBlogPostingJsonLd } from "@/lib/structured-data";
+import { JsonLd, generateBlogPostingJsonLd, generateFAQJsonLd } from "@/lib/structured-data";
 import Button from "@/components/ui/Button";
 
 export function generateStaticParams() {
@@ -47,6 +47,9 @@ export default async function BlogArticlePage({
   return (
     <>
       <JsonLd data={generateBlogPostingJsonLd(article)} />
+      {article.faqQuestions && (
+        <JsonLd data={generateFAQJsonLd(article.faqQuestions)} />
+      )}
 
       {/* Hero */}
       <section className="bg-navy-deep py-16 md:py-20">
@@ -55,7 +58,11 @@ export default async function BlogArticlePage({
             <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${cat.color}`}>
               {cat.label}
             </span>
-            <span className="text-cream/50 text-xs">{article.date}</span>
+            <span className="text-cream/50 text-xs">
+              {article.updatedDateISO
+                ? `${article.date} — Mis à jour le ${new Date(article.updatedDateISO).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}`
+                : article.date}
+            </span>
           </div>
           <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl text-white leading-tight">
             {article.title}
@@ -86,6 +93,7 @@ export default async function BlogArticlePage({
               <h3 className="font-serif text-xl text-navy-deep mb-3">Prêt à recruter votre alternant ?</h3>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button href="/entreprise-besoin" variant="gold">Trouver le bon profil</Button>
+                <Button href="/entreprises#dating-27-mai" variant="navy">S&apos;inscrire au Dating du 27 mai</Button>
                 <Button href="/contact" variant="outline">Nous contacter</Button>
               </div>
             </div>

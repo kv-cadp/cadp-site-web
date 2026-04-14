@@ -6,9 +6,11 @@ export interface BlogArticle {
   category: "orientation" | "entreprise" | "alternance" | "inscription";
   date: string;
   dateISO: string;
+  updatedDateISO?: string;
   excerpt: string;
   content: string; // HTML content
   cta: "candidat" | "entreprise" | "orientation";
+  faqQuestions?: Array<{ question: string; answer: string }>;
 }
 
 export const categoryLabels: Record<string, { label: string; color: string }> = {
@@ -189,24 +191,85 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
     category: "entreprise",
     date: "Avril 2026",
     dateISO: "2026-04-04",
+    updatedDateISO: "2026-04-14",
     excerpt: "La réponse surprend presque toujours : un alternant en BTS coûte beaucoup moins cher qu'un recrutement classique, et les aides de l'État réduisent encore la facture.",
     cta: "entreprise",
+    faqQuestions: [
+      {
+        question: "Faut-il payer quelque chose au CFA ou au CADP ?",
+        answer: "Non. La formation est intégralement financée par votre OPCO via la taxe d'apprentissage que vous versez déjà. Vous n'avez aucun frais à régler au CADP ni au CFA IFIR.",
+      },
+      {
+        question: "Mon alternant compte-t-il dans l'effectif de l'entreprise ?",
+        answer: "Non. Les apprentis sont exclus du calcul de l'effectif de l'entreprise pour la majorité des seuils sociaux et fiscaux, pendant toute la durée de leur contrat.",
+      },
+      {
+        question: "Que se passe-t-il si je dois rompre le contrat avant la fin ?",
+        answer: "Pendant les 45 premiers jours en entreprise, la rupture est libre des deux côtés. Au-delà, elle nécessite un accord commun ou doit passer par le Conseil de Prud'hommes. L'aide à l'embauche cesse d'être versée le mois suivant la rupture.",
+      },
+      {
+        question: "Mon alternant peut-il faire des heures supplémentaires ?",
+        answer: "Oui pour les apprentis majeurs, dans la limite légale. Les apprentis mineurs ne peuvent pas dépasser 35h/semaine ni 8h/jour, et ne peuvent pas travailler de nuit, le dimanche ou les jours fériés.",
+      },
+      {
+        question: "Comment recevoir les 4 500 € d'aide pour un BTS ?",
+        answer: "Vous transmettez le contrat signé à votre OPCO dans les 6 mois suivant sa conclusion. L'OPCO transmet les informations à l'ASP, qui verse l'aide mensuellement sur 12 mois, sous réserve de la déclaration sociale nominative (DSN) à jour.",
+      },
+      {
+        question: "Le contrat d'apprentissage est-il possible pour un salarié de plus de 30 ans ?",
+        answer: "Oui, par dérogation, dans certains cas : reconversion en vue de créer une entreprise dans certains secteurs (petite enfance, santé, social, sport, commerce), ou pour un travailleur reconnu handicapé (sans limite d'âge).",
+      },
+    ],
     content: `
 <p>C'est souvent la première question que nous posent les dirigeants de PME quand on les contacte. Et la réponse surprend presque toujours : un alternant en BTS coûte beaucoup moins cher qu'un recrutement classique, et les aides de l'État réduisent encore la facture.</p>
 
-<p>Voici le calcul réel, chiffres 2026, sans arrondir en votre faveur.</p>
+<p>Voici le calcul réel, chiffres 2026, sans arrondir en votre faveur. Sources : décret n°2026-168 du 6 mars 2026, fiches Centre Inffo (mars 2026), tableau de coûts validé par le cabinet comptable ORCOM pour le CFA IFIR.</p>
 
 <h2>Le salaire de l'alternant</h2>
 
-<p>La rémunération d'un apprenti est fixée en pourcentage du SMIC (1 823,03€ brut mensuel au 1er janvier 2026) et dépend de l'âge et de l'année de contrat :</p>
+<p>La rémunération d'un apprenti est fixée en pourcentage du SMIC (1 823,03 € brut mensuel au 1er janvier 2026) et dépend de l'âge et de l'année de contrat :</p>
 
 <ul>
-<li><strong>18-20 ans :</strong> 1ère année 43% (783,90€ brut) / 2ème année 51% (929,75€ brut)</li>
-<li><strong>21-25 ans :</strong> 1ère année 53% (966,21€ brut) / 2ème année 61% (1 112,05€ brut)</li>
-<li><strong>26 ans et + :</strong> 100% du SMIC (1 823,03€ brut)</li>
+<li><strong>18-20 ans :</strong> 1ère année 43% (783,90 €) / 2ème année 51% (929,75 €) / 3ème année 67% (1 221,43 €)</li>
+<li><strong>21-25 ans :</strong> 1ère année 53% (966,21 €) / 2ème année 61% (1 112,05 €) / 3ème année 78% (1 421,96 €)</li>
+<li><strong>26 ans et + :</strong> 100% du SMIC dans tous les cas (1 823,03 €)</li>
 </ul>
 
-<p>Les charges patronales sur un contrat d'apprentissage sont réduites. Pour un alternant de moins de 26 ans, le coût chargé reste d'environ 110 à 115% du brut.</p>
+<p>Les charges patronales sur un contrat d'apprentissage sont fortement réduites, en particulier dans les structures de moins de 11 salariés.</p>
+
+<h2>Le coût employeur réel, mois par mois</h2>
+
+<p>Le tableau ci-dessous présente le coût mensuel total chargé pour l'employeur, selon l'âge de l'apprenti, l'année de contrat et la taille de l'entreprise. Chiffres validés par le cabinet ORCOM pour le CFA IFIR.</p>
+
+<h3>Structures de plus de 11 salariés</h3>
+
+<table>
+<thead>
+<tr><th>Âge</th><th>1ère année</th><th>2ème année</th><th>3ème année</th></tr>
+</thead>
+<tbody>
+<tr><td>&lt; 18 ans</td><td>530,20 €</td><td>765,85 €</td><td>1 083,92 €</td></tr>
+<tr><td>18-20 ans</td><td>844,42 €</td><td>1 002,29 €</td><td>1 328,87 €</td></tr>
+<tr><td>21-25 ans</td><td>1 043,08 €</td><td>1 206,41 €</td><td>1 553,38 €</td></tr>
+<tr><td>26 ans et +</td><td>2 010,41 €</td><td>2 010,41 €</td><td>2 010,41 €</td></tr>
+</tbody>
+</table>
+
+<h3>Structures de moins de 11 salariés</h3>
+
+<table>
+<thead>
+<tr><th>Âge</th><th>1ère année</th><th>2ème année</th><th>3ème année</th></tr>
+</thead>
+<tbody>
+<tr><td>&lt; 18 ans</td><td>499,92 €</td><td>722,08 €</td><td>1 018,32 €</td></tr>
+<tr><td>18-20 ans</td><td>796,15 €</td><td>944,28 €</td><td>1 240,51 €</td></tr>
+<tr><td>21-25 ans</td><td>981,30 €</td><td>1 129,42 €</td><td>1 444,17 €</td></tr>
+<tr><td>26 ans et +</td><td>1 851,50 €</td><td>1 851,50 €</td><td>1 851,50 €</td></tr>
+</tbody>
+</table>
+
+<p>Coût total = salaire brut + charges patronales + taxe sur salaires. Hors abonnement transport (50% à charge de l'employeur si l'apprenti utilise les transports en commun) et hors mutuelle (50% à charge de l'employeur).</p>
 
 <h2>Les aides employeur en 2026</h2>
 
@@ -214,30 +277,86 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 
 <p><strong>Entreprises de moins de 250 salariés :</strong></p>
 <ul>
-<li>Niveau 3-4 (CAP, Bac) dont TP ADVF : aide unique de <strong>5 000€</strong></li>
-<li>Niveau 5 (Bac+2) tous les BTS : aide exceptionnelle de <strong>4 500€</strong></li>
-<li>Niveau 6-7 (Bac+3 à Bac+5) : aide exceptionnelle de <strong>2 000€</strong></li>
+<li>Niveau 3-4 (CAP, Bac) dont TP ADVF : aide unique de <strong>5 000 €</strong></li>
+<li>Niveau 5 (Bac+2) tous les BTS : aide exceptionnelle de <strong>4 500 €</strong></li>
+<li>Niveau 6-7 (Bac+3 à Bac+5) : aide exceptionnelle de <strong>2 000 €</strong></li>
 </ul>
 
-<p>Dans tous les cas, le montant est porté à <strong>6 000€</strong> si l'apprenti est reconnu travailleur handicapé.</p>
+<p><strong>Entreprises de 250 salariés et plus</strong> (sous condition de respect du seuil de contrats favorisant l'insertion professionnelle) :</p>
+<ul>
+<li>Niveau 3-4 : 2 000 €</li>
+<li>Niveau 5 : 1 500 €</li>
+<li>Niveau 6-7 : 750 €</li>
+</ul>
+
+<p>Dans tous les cas, le montant est porté à <strong>6 000 €</strong> si l'apprenti est reconnu travailleur handicapé.</p>
+
+<p>L'aide est versée mensuellement par l'ASP (Agence de Services et de Paiement) sur la première année du contrat seulement, sous réserve de transmission du contrat à l'OPCO dans les 6 mois suivant sa conclusion.</p>
 
 <h2>Le coût net : simulation pour une PME</h2>
 
 <p>Prenons le cas le plus fréquent : un alternant de 20 ans en BTS, dans une PME de moins de 50 salariés.</p>
 
-<p><strong>Année 1 :</strong> Salaire brut 9 407€ + charges 1 129€ - aide 4 500€ = <strong>coût net environ 6 036€</strong>, soit 503€ par mois pour un collaborateur présent 3 jours par semaine.</p>
+<p><strong>Année 1 :</strong> Coût employeur 844,42 €/mois × 12 = 10 133 € — aide 4 500 € = <strong>coût net annuel 5 633 €, soit environ 469 €/mois</strong> pour un collaborateur présent 3 jours par semaine.</p>
 
-<p><strong>Année 2 :</strong> Salaire brut 11 157€ + charges 1 339€ = <strong>coût net environ 12 496€</strong> (pas d'aide), soit 1 041€ par mois.</p>
+<p><strong>Année 2 :</strong> Coût employeur 1 002,29 €/mois × 12 = <strong>12 027 € sur l'année</strong> (pas d'aide), soit 1 002 €/mois.</p>
+
+<p><strong>Sur la durée du BTS (2 ans), le coût total est d'environ 17 660 €</strong> pour un collaborateur formé à vos méthodes, opérationnel à la sortie, qu'aucun cabinet de recrutement ne peut vous proposer à ce prix.</p>
 
 <h2>Ce qui est inclus dans le « gratuit »</h2>
 
-<p>La formation elle-même est financée par l'OPCO de l'entreprise, via la taxe d'apprentissage. L'entreprise n'a rien à payer directement au CADP ni au CFA IFIR.</p>
+<p>La formation elle-même est financée par l'OPCO de l'entreprise, via la taxe d'apprentissage (NPEC, niveau de prise en charge entre 5 000 € et 7 000 € selon le diplôme et l'OPCO). L'entreprise n'a rien à payer directement au CADP ni au CFA IFIR.</p>
+
+<h2>Apprentissage ou contrat de professionnalisation ?</h2>
+
+<p>Les deux contrats permettent de former un alternant, mais avec des règles différentes :</p>
+
+<table>
+<thead>
+<tr><th></th><th>Apprentissage</th><th>Professionnalisation</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Public</strong></td><td>16 à 29 ans</td><td>16-25 ans + demandeurs d'emploi 26 ans et +</td></tr>
+<tr><td><strong>Objectif</strong></td><td>Diplôme ou titre RNCP</td><td>Qualification professionnelle</td></tr>
+<tr><td><strong>Salaire min.</strong></td><td>27% à 100% du SMIC</td><td>55% à 100% du SMIC</td></tr>
+<tr><td><strong>Aide à l'embauche</strong></td><td>5 000 € (≤Bac), 4 500 € (Bac+2), 2 000 € (Bac+3 à 5) en &lt;250 sal.</td><td>Pas d'aide généralisée</td></tr>
+<tr><td><strong>Cas particuliers</strong></td><td>6 000 € si apprenti RQTH</td><td>Aides ciblées seniors / RQTH</td></tr>
+</tbody>
+</table>
+
+<p>Pour la majorité des employeurs de moins de 250 salariés, <strong>le contrat d'apprentissage est plus avantageux financièrement</strong> : aide à l'embauche systématique, salaire minimum plus bas, et formation prise en charge par l'OPCO à un meilleur niveau (NPEC moyen entre 5 000 € et 7 000 € pour l'apprentissage, contre 3 843 € pour la professionnalisation, financés à l'heure).</p>
+
+<p>Au CADP, toutes nos formations BTS et le Titre Pro ADVF sont éligibles à l'apprentissage.</p>
 
 <h2>Le vrai calcul : coût vs valeur</h2>
 
 <p>Un alternant en BTS est présent 3 jours par semaine en entreprise. Sur 2 ans, il acquiert une connaissance fine de votre activité, de vos clients, de vos outils. À l'issue du contrat, vous avez un collaborateur opérationnel, formé à vos méthodes, prêt à être embauché — sans frais de recrutement, sans période d'intégration.</p>
 
-<p>Pour une PME de la Drôme ou de l'Ardèche, c'est souvent le meilleur rapport qualité-prix pour un poste de commercial, d'assistant de gestion ou de comptable junior.</p>
+<p>Pour une PME de la Drôme, de l'Ardèche, du Vaucluse ou du Gard, c'est souvent le meilleur rapport qualité-prix pour un poste de commercial, d'assistant de gestion ou de comptable junior.</p>
+
+<h2>Rencontrer nos alternants disponibles : le Dating du 27 mai</h2>
+
+<p>Si vous cherchez à recruter un alternant pour la rentrée de septembre 2026, le CADP organise son Forum recrutement alternance le <strong>mardi 27 mai 2026 de 14h à 16h</strong> à Pierrelatte. Format direct : nos candidats vous présentent leur projet, vous répondez en 10 minutes. Plus de 50 entreprises de la Drôme, de l'Ardèche, du Vaucluse et du Gard y participent chaque édition.</p>
+
+<h2>Questions fréquentes des employeurs</h2>
+
+<h3>Faut-il payer quelque chose au CFA ou au CADP ?</h3>
+<p>Non. La formation est intégralement financée par votre OPCO via la taxe d'apprentissage que vous versez déjà. Vous n'avez aucun frais à régler au CADP ni au CFA IFIR.</p>
+
+<h3>Mon alternant compte-t-il dans l'effectif de l'entreprise ?</h3>
+<p>Non. Les apprentis sont exclus du calcul de l'effectif de l'entreprise pour la majorité des seuils sociaux et fiscaux, pendant toute la durée de leur contrat.</p>
+
+<h3>Que se passe-t-il si je dois rompre le contrat avant la fin ?</h3>
+<p>Pendant les 45 premiers jours en entreprise, la rupture est libre des deux côtés. Au-delà, elle nécessite un accord commun ou doit passer par le Conseil de Prud'hommes. L'aide à l'embauche cesse d'être versée le mois suivant la rupture.</p>
+
+<h3>Mon alternant peut-il faire des heures supplémentaires ?</h3>
+<p>Oui pour les apprentis majeurs, dans la limite légale. Les apprentis mineurs ne peuvent pas dépasser 35h/semaine ni 8h/jour, et ne peuvent pas travailler de nuit, le dimanche ou les jours fériés.</p>
+
+<h3>Comment recevoir les 4 500 € d'aide pour un BTS ?</h3>
+<p>Vous transmettez le contrat signé à votre OPCO dans les 6 mois suivant sa conclusion. L'OPCO transmet les informations à l'ASP, qui verse l'aide mensuellement sur 12 mois, sous réserve de la déclaration sociale nominative (DSN) à jour.</p>
+
+<h3>Le contrat d'apprentissage est-il possible pour un salarié de plus de 30 ans ?</h3>
+<p>Oui, par dérogation, dans certains cas : reconversion en vue de créer une entreprise dans certains secteurs (petite enfance, santé, social, sport, commerce), ou pour un travailleur reconnu handicapé (sans limite d'âge).</p>
 `,
   },
   {
