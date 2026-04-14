@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://cadp.pro";
+  const baseUrl = "https://www.cadp.pro";
 
   return [
     {

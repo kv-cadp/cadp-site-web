@@ -20,7 +20,7 @@ const dmSerifDisplay = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cadp.pro"),
+  metadataBase: new URL("https://www.cadp.pro"),
   title: {
     default: "CADP — Formations en alternance à Pierrelatte | Campus Alternance Drôme Provence",
     template: "%s | CADP",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://cadp.pro",
+    url: "https://www.cadp.pro",
     siteName: "CADP - Campus Alternance Drôme Provence",
     title: "CADP — Formations en alternance à Pierrelatte",
     description:
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: {
-    canonical: "https://cadp.pro",
+    canonical: "/",
   },
 };
 
