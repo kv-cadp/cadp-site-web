@@ -127,6 +127,11 @@ export function generateWebApplicationJsonLd(
   };
 }
 
+// Helper : date ISO courte → ISO 8601 avec fuseau Europe/Paris (9h = ouverture campus)
+function toIso8601WithTz(dateISO: string): string {
+  return `${dateISO}T09:00:00+02:00`;
+}
+
 // BlogPosting
 export function generateBlogPostingJsonLd(article: {
   title: string;
@@ -140,12 +145,19 @@ export function generateBlogPostingJsonLd(article: {
     "@type": "BlogPosting",
     headline: article.title,
     description: article.metaDescription,
-    datePublished: article.dateISO,
-    dateModified: article.updatedDateISO || article.dateISO,
+    datePublished: toIso8601WithTz(article.dateISO),
+    dateModified: toIso8601WithTz(article.updatedDateISO || article.dateISO),
+    image: {
+      "@type": "ImageObject",
+      url: "https://www.cadp.pro/logo-cadp.jpg",
+      width: 2000,
+      height: 744,
+    },
     author: {
       "@type": "Person",
       name: "Kévin Vidard",
       jobTitle: "Responsable Pédagogique",
+      url: "https://www.cadp.pro/equipe",
       worksFor: { "@id": "https://www.cadp.pro/#organization" },
     },
     publisher: { "@id": "https://www.cadp.pro/#organization" },
