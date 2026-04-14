@@ -89,12 +89,12 @@ export default function BTSGTLAPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "Course",
-          "@id": "https://cadp.pro/formations/bts-gtla#course",
+          "@id": "https://www.cadp.pro/formations/bts-gtla#course",
           name: "BTS Gestion des Transports et Logistique Associée (GTLA)",
           description:
             "Formation en alternance à la gestion des flux de transport et de logistique. Organisation, optimisation et management des opérations de transport national et international. Diplôme d'État niveau Bac+2. Ouverture prévue rentrée 2027.",
-          url: "https://cadp.pro/formations/bts-gtla",
-          provider: { "@id": "https://cadp.pro/#organization" },
+          url: "https://www.cadp.pro/formations/bts-gtla",
+          provider: { "@id": "https://www.cadp.pro/#organization" },
           timeRequired: "P2Y",
           educationalLevel: "Bac+2",
           courseMode: "blended",

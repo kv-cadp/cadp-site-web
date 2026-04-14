@@ -11,7 +11,7 @@ export function createPageMetadata({
   description,
   path = "",
 }: PageMetadataOptions): Metadata {
-  const url = `https://cadp.pro${path}`;
+  const url = `https://www.cadp.pro${path}`;
 
   return {
     title,

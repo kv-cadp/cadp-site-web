@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Campus Alternance Drôme Provence",
   shortName: "CADP",
-  url: "https://cadp.pro",
+  url: "https://www.cadp.pro",
   description:
     "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME, CG, MOS et TP ADVF en promos de 12 étudiants. Accompagnement individualisé et Alternance Dating.",
   address: {

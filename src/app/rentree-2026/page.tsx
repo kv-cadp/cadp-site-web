@@ -40,7 +40,7 @@ export default function Rentree2026Page() {
           name: "Rentrée 2026 — Inscriptions ouvertes | CADP Pierrelatte",
           description: "Les inscriptions pour la rentrée de septembre 2026 au Campus Alternance Drôme Provence sont ouvertes.",
           url: "https://www.cadp.pro/rentree-2026",
-          provider: { "@id": "https://cadp.pro/#organization" },
+          provider: { "@id": "https://www.cadp.pro/#organization" },
         }}
       />
       <JsonLd
