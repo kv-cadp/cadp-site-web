@@ -1,7 +1,15 @@
 import type { MetadataRoute } from "next";
+import { articles } from "@/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.cadp.pro";
+
+  const blogArticleEntries: MetadataRoute.Sitemap = articles.map((article) => ({
+    url: `${baseUrl}/blog/${article.slug}`,
+    lastModified: new Date(article.updatedDateISO ?? article.dateISO),
+    changeFrequency: "monthly",
+    priority: article.slug === "inscription-cadp-rentree-2026" ? 0.8 : 0.7,
+  }));
 
   return [
     {
@@ -88,54 +96,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/blog/inscription-cadp-rentree-2026`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog/bts-mco-ou-bts-ndrc-comment-choisir`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/combien-coute-un-alternant-entreprise`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/trouver-alternance-drome-ardeche-guide`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/bts-gpme-alternance-guide`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/bts-cg-alternance-guide`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/bts-mos-alternance-securite-pierrelatte`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/bts-gtla-transport-logistique-alternance`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
+    ...blogArticleEntries,
     {
       url: `${baseUrl}/equipe`,
       lastModified: new Date(),
