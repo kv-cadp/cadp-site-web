@@ -12,6 +12,7 @@ interface PageMetadataOptions {
   description: string;
   path?: string;
   ogImage?: string;
+  type?: "website" | "article";
 }
 
 function resolveTitleString(
@@ -32,8 +33,9 @@ export function createPageMetadata({
   description,
   path = "",
   ogImage,
+  type = "website",
 }: PageMetadataOptions): Metadata {
-  const url = `https://www.cadp.pro${path}`;
+  const url = path || "/";
   const image = ogImage
     ? { ...DEFAULT_OG_IMAGE, url: ogImage }
     : DEFAULT_OG_IMAGE;
@@ -49,7 +51,7 @@ export function createPageMetadata({
       title,
       description,
       url,
-      type: "website",
+      type,
       locale: "fr_FR",
       siteName: "CADP - Campus Alternance Drôme Provence",
       images: [image],

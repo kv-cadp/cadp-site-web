@@ -20,14 +20,17 @@ const dmSerifDisplay = DM_Serif_Display({
   display: "swap",
 });
 
+const SEO_TITLE = "CADP Pierrelatte — Formations BTS en alternance Drôme";
+const SEO_DESCRIPTION =
+  "Centre de formation en alternance à Pierrelatte (26). BTS MCO, NDRC, GPME en promos de 12. Accompagnement individualisé, certification Qualiopi IFIR.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.cadp.pro"),
   title: {
-    default: "CADP — Formations en alternance à Pierrelatte | Campus Alternance Drôme Provence",
+    default: SEO_TITLE,
     template: "%s | CADP",
   },
-  description:
-    "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME en promos de 12 étudiants. Accompagnement individualisé, Alternance Dating et certification Qualiopi via CFA IFIR.",
+  description: SEO_DESCRIPTION,
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "32x32" },
@@ -39,19 +42,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://www.cadp.pro",
     siteName: "CADP - Campus Alternance Drôme Provence",
-    title: "CADP — Formations en alternance à Pierrelatte",
-    description:
-      "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME en promos de 12 étudiants.",
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
     images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
-    title: "CADP — Formations en alternance à Pierrelatte",
-    description:
-      "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME en promos de 12 étudiants.",
-    images: ["/og-default.png"],
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    images: [DEFAULT_OG_IMAGE.url],
   },
   robots: {
     index: true,

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { articles, getArticleBySlug, categoryLabels } from "@/data/blog";
+import { createPageMetadata } from "@/lib/metadata";
 import { JsonLd, generateBlogPostingJsonLd, generateFAQJsonLd } from "@/lib/structured-data";
 import Button from "@/components/ui/Button";
 
@@ -18,33 +19,12 @@ export async function generateMetadata({
   const article = getArticleBySlug(slug);
   if (!article) return {};
 
-  return {
+  return createPageMetadata({
     title: article.metaTitle,
     description: article.metaDescription,
-    alternates: { canonical: `https://www.cadp.pro/blog/${slug}` },
-    openGraph: {
-      title: article.metaTitle,
-      description: article.metaDescription,
-      url: `https://www.cadp.pro/blog/${slug}`,
-      type: "article",
-      locale: "fr_FR",
-      siteName: "CADP - Campus Alternance Drôme Provence",
-      images: [
-        {
-          url: "/og-default.png",
-          width: 1200,
-          height: 630,
-          alt: article.metaTitle ?? "Campus Alternance Drôme Provence",
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: article.metaTitle,
-      description: article.metaDescription,
-      images: ["/og-default.png"],
-    },
-  };
+    path: `/blog/${slug}`,
+    type: "article",
+  });
 }
 
 export default async function BlogArticlePage({
