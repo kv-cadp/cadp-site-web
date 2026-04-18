@@ -22,7 +22,7 @@ const dmSerifDisplay = DM_Serif_Display({
 
 const SEO_TITLE = "CADP Pierrelatte — Formations BTS en alternance Drôme";
 const SEO_DESCRIPTION =
-  "Centre de formation en alternance à Pierrelatte (26). BTS MCO, NDRC, GPME en promos de 10-12. Accompagnement individualisé, certification Qualiopi IFIR.";
+  "Centre de formation en alternance à Pierrelatte (26). BTS MCO, NDRC, GPME en promos de 12. Accompagnement individualisé, certification Qualiopi IFIR.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.cadp.pro"),
