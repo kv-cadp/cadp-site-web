@@ -3,6 +3,7 @@ import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import TopBanner from "@/components/layout/TopBanner";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { DEFAULT_OG_IMAGE } from "@/lib/metadata";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -43,14 +44,14 @@ export const metadata: Metadata = {
     title: "CADP — Formations en alternance à Pierrelatte",
     description:
       "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME en promos de 12 étudiants.",
-    images: [
-      {
-        url: "/logo-cadp.png",
-        width: 1080,
-        height: 1350,
-        alt: "Campus Alternance Drôme Provence",
-      },
-    ],
+    images: [DEFAULT_OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CADP — Formations en alternance à Pierrelatte",
+    description:
+      "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME en promos de 12 étudiants.",
+    images: ["/og-default.png"],
   },
   robots: {
     index: true,

@@ -29,6 +29,20 @@ export async function generateMetadata({
       type: "article",
       locale: "fr_FR",
       siteName: "CADP - Campus Alternance Drôme Provence",
+      images: [
+        {
+          url: "/og-default.png",
+          width: 1200,
+          height: 630,
+          alt: article.metaTitle ?? "Campus Alternance Drôme Provence",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.metaTitle,
+      description: article.metaDescription,
+      images: ["/og-default.png"],
     },
   };
 }
