@@ -6,15 +6,6 @@ export function generateFullGraphJsonLd() {
   return schemaGraph;
 }
 
-// Organization seule (pour le layout ou pages secondaires)
-export function generateOrganizationJsonLd() {
-  const org = (schemaGraph as { "@graph": Record<string, unknown>[] })["@graph"][0];
-  return {
-    "@context": "https://schema.org",
-    ...org,
-  };
-}
-
 // Course individuel pour une page formation
 export function generateCourseJsonLd(formation: Formation) {
   const graph = (schemaGraph as { "@graph": Record<string, unknown>[] })["@graph"];
@@ -149,9 +140,9 @@ export function generateBlogPostingJsonLd(article: {
     dateModified: toIso8601WithTz(article.updatedDateISO || article.dateISO),
     image: {
       "@type": "ImageObject",
-      url: "https://www.cadp.pro/logo-cadp.jpg",
-      width: 2000,
-      height: 744,
+      url: "https://www.cadp.pro/og-default.png",
+      width: 1200,
+      height: 630,
     },
     author: {
       "@type": "Person",
