@@ -9,10 +9,10 @@ import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
   title: {
-    absolute: "Campus Alternance Drôme Provence — BTS en alternance Pierrelatte",
+    absolute: "CADP Pierrelatte — BTS en alternance Drôme Provence",
   },
   description:
-    "CFA à Pierrelatte : 5 BTS (MCO, NDRC, GPME, CG, MOS) et Titre Pro ADVF en alternance. Promos de 10-12 alternants, pédagogie humaine, rentrée 2026 ouverte.",
+    "CFA à Pierrelatte : 5 BTS (MCO, NDRC, GPME, CG, MOS) et TP ADVF en alternance. Promos de 10-12, pédagogie humaine, rentrée 2026 ouverte.",
   path: "/",
 });
 
