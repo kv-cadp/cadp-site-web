@@ -43,6 +43,14 @@ export const metadata: Metadata = {
     title: "CADP — Formations en alternance à Pierrelatte",
     description:
       "Centre de formation en alternance à Pierrelatte. BTS MCO, NDRC, GPME en promos de 12 étudiants.",
+    images: [
+      {
+        url: "/logo-cadp.png",
+        width: 1080,
+        height: 1350,
+        alt: "Campus Alternance Drôme Provence",
+      },
+    ],
   },
   robots: {
     index: true,
