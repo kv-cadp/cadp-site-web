@@ -185,7 +185,7 @@
       "occupationalCredentialAwarded": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Diplôme d'État",
-        "competencyRequired": "RNCP38365"
+        "competencyRequired": "RNCP41000"
       },
       "courseMode": "blended",
       "inLanguage": "fr",

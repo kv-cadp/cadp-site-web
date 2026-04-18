@@ -760,7 +760,7 @@ export const formations: Formation[] = [
       "Manage des équipes de sécurité, gère les risques, pilote les opérations. Le BTS MOS te prépare à devenir responsable dans un secteur qui recrute massivement.",
     duration: "2 ans",
     level: "Bac+2 — Niveau 5",
-    rncp: "RNCP38365",
+    rncp: "RNCP41000",
     rhythm: {
       schoolDays: 2,
       companyDays: 3,

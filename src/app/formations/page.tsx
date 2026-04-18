@@ -55,7 +55,7 @@ const formations = [
   },
   {
     slug: "bts-mos", code: "MOS", name: "BTS MOS", full: "Management Opérationnel de la Sécurité",
-    niveau: "Bac+2 — Niveau 5", duree: "2 ans", rncp: "RNCP38365",
+    niveau: "Bac+2 — Niveau 5", duree: "2 ans", rncp: "RNCP41000",
     enUnMot: "Tu diriges des équipes de sécurité et tu gères les risques.",
     profil: "Sens des responsabilités, sang-froid, leadership, rigueur.",
     metiers: "Chef de site sécurité, responsable sûreté, coordinateur QHSE",
