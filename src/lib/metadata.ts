@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 interface PageMetadataOptions {
-  title: string;
+  title: NonNullable<Metadata["title"]>;
   description: string;
   path?: string;
 }
