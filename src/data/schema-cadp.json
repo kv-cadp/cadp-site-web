@@ -62,6 +62,7 @@
           { "@type": "Course", "@id": "https://www.cadp.pro/formations/bts-gpme#course" },
           { "@type": "Course", "@id": "https://www.cadp.pro/formations/bts-cg#course" },
           { "@type": "Course", "@id": "https://www.cadp.pro/formations/bts-mos#course" },
+          { "@type": "Course", "@id": "https://www.cadp.pro/formations/bts-gtla#course" },
           { "@type": "Course", "@id": "https://www.cadp.pro/formations/tp-advf#course" }
         ]
       }
@@ -186,6 +187,27 @@
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Diplôme d'État",
         "competencyRequired": "RNCP41000"
+      },
+      "courseMode": "blended",
+      "inLanguage": "fr",
+      "isAccessibleForFree": true,
+      "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
+      "maximumEnrollment": 12
+    },
+    {
+      "@type": "Course",
+      "@id": "https://www.cadp.pro/formations/bts-gtla#course",
+      "name": "BTS Gestion des Transports et Logistique Associée (GTLA)",
+      "description": "Formation en alternance à l'organisation et la gestion des opérations de transport et de logistique. Diplôme d'État niveau Bac+2. Ouverture prévue rentrée 2027.",
+      "url": "https://www.cadp.pro/formations/bts-gtla",
+      "provider": { "@id": "https://www.cadp.pro/#organization" },
+      "timeRequired": "P2Y",
+      "educationalLevel": "Bac+2",
+      "educationalCredentialAwarded": "BTS Gestion des Transports et Logistique Associée",
+      "occupationalCredentialAwarded": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Diplôme d'État",
+        "competencyRequired": "RNCP38365"
       },
       "courseMode": "blended",
       "inLanguage": "fr",

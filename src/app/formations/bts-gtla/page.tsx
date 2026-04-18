@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { createPageMetadata } from "@/lib/metadata";
-import { JsonLd } from "@/lib/structured-data";
+import {
+  JsonLd,
+  generateCourseJsonLd,
+  generateFAQJsonLd,
+} from "@/lib/structured-data";
+import type { Formation } from "@/types/formation";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import SectionTitle from "@/components/ui/SectionTitle";
@@ -82,38 +87,13 @@ const infos = [
   ["Places", "12 étudiants maximum"],
 ];
 
+const formationStub = { slug: "bts-gtla" } as Formation;
+
 export default function BTSGTLAPage() {
   return (
     <article>
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "Course",
-          "@id": "https://www.cadp.pro/formations/bts-gtla#course",
-          name: "BTS Gestion des Transports et Logistique Associée (GTLA)",
-          description:
-            "Formation en alternance à la gestion des flux de transport et de logistique. Organisation, optimisation et management des opérations de transport national et international. Diplôme d'État niveau Bac+2. Ouverture prévue rentrée 2027.",
-          url: "https://www.cadp.pro/formations/bts-gtla",
-          provider: { "@id": "https://www.cadp.pro/#organization" },
-          timeRequired: "P2Y",
-          educationalLevel: "Bac+2",
-          courseMode: "blended",
-          inLanguage: "fr",
-          isAccessibleForFree: true,
-          maximumEnrollment: 12,
-        }}
-      />
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faq.map((f) => ({
-            "@type": "Question",
-            name: f.question,
-            acceptedAnswer: { "@type": "Answer", text: f.answer },
-          })),
-        }}
-      />
+      <JsonLd data={generateCourseJsonLd(formationStub)} />
+      <JsonLd data={generateFAQJsonLd(faq)} />
 
       {/* HERO */}
       <section className="bg-navy-deep py-20 md:py-28">
