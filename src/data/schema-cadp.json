@@ -80,7 +80,8 @@
       "occupationalCredentialAwarded": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Diplôme d'État",
-        "competencyRequired": "RNCP38362"
+        "competencyRequired": "RNCP38362",
+        "validUntil": "2028-12-31"
       },
       "courseMode": "blended",
       "inLanguage": "fr",
@@ -123,7 +124,8 @@
       "occupationalCredentialAwarded": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Diplôme d'État",
-        "competencyRequired": "RNCP38368"
+        "competencyRequired": "RNCP38368",
+        "validUntil": "2028-12-31"
       },
       "courseMode": "blended",
       "inLanguage": "fr",
@@ -144,7 +146,8 @@
       "occupationalCredentialAwarded": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Diplôme d'État",
-        "competencyRequired": "RNCP38363"
+        "competencyRequired": "RNCP38363",
+        "validUntil": "2027-12-31"
       },
       "courseMode": "blended",
       "inLanguage": "fr",
@@ -165,7 +168,8 @@
       "occupationalCredentialAwarded": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Diplôme d'État",
-        "competencyRequired": "RNCP39159"
+        "competencyRequired": "RNCP39159",
+        "validUntil": "2029-08-31"
       },
       "courseMode": "blended",
       "inLanguage": "fr",
@@ -186,7 +190,8 @@
       "occupationalCredentialAwarded": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Diplôme d'État",
-        "competencyRequired": "RNCP41000"
+        "competencyRequired": "RNCP41000",
+        "validUntil": "2030-08-31"
       },
       "courseMode": "blended",
       "inLanguage": "fr",
@@ -207,7 +212,8 @@
       "occupationalCredentialAwarded": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Diplôme d'État",
-        "competencyRequired": "RNCP38365"
+        "competencyRequired": "RNCP38365",
+        "validUntil": "2028-12-31"
       },
       "courseMode": "blended",
       "inLanguage": "fr",
@@ -228,7 +234,8 @@
       "occupationalCredentialAwarded": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Titre Professionnel",
-        "competencyRequired": "RNCP37715"
+        "competencyRequired": "RNCP37715",
+        "validUntil": "2028-07-05"
       },
       "courseMode": "blended",
       "inLanguage": "fr",
