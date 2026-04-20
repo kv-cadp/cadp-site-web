@@ -39,8 +39,8 @@ export default function Rentree2026Page() {
           "@type": "WebPage",
           name: "Rentrée 2026 — Inscriptions ouvertes | CADP Pierrelatte",
           description: "Les inscriptions pour la rentrée de septembre 2026 au Campus Alternance Drôme Provence sont ouvertes.",
-          url: "https://www.cadp.pro/rentree-2026",
-          provider: { "@id": "https://www.cadp.pro/#organization" },
+          url: "https://cadp.pro/rentree-2026",
+          provider: { "@id": "https://cadp.pro/#organization" },
         }}
       />
       <JsonLd
@@ -54,7 +54,7 @@ export default function Rentree2026Page() {
             eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
             location: { "@type": "Place", name: "CADP", address: { "@type": "PostalAddress", streetAddress: "2 Boulevard Frédéric Mistral", addressLocality: "Pierrelatte", postalCode: "26700", addressCountry: "FR" } },
-            organizer: { "@type": "EducationalOrganization", name: "CADP", url: "https://www.cadp.pro" },
+            organizer: { "@type": "EducationalOrganization", name: "CADP", url: "https://cadp.pro" },
             description: "Rencontrez directement les entreprises partenaires du CADP.",
             isAccessibleForFree: true,
           },
@@ -67,7 +67,7 @@ export default function Rentree2026Page() {
             eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
             location: { "@type": "Place", name: "CADP", address: { "@type": "PostalAddress", streetAddress: "2 Boulevard Frédéric Mistral", addressLocality: "Pierrelatte", postalCode: "26700", addressCountry: "FR" } },
-            organizer: { "@type": "EducationalOrganization", name: "CADP", url: "https://www.cadp.pro" },
+            organizer: { "@type": "EducationalOrganization", name: "CADP", url: "https://cadp.pro" },
             description: "Atelier pour construire un CV percutant et préparer les entretiens.",
             isAccessibleForFree: true,
           },

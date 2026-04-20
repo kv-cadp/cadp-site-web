@@ -118,7 +118,7 @@ export default function EquipePage() {
           "@type": "AboutPage",
           name: "L'équipe du CADP",
           description: "Direction, formateurs et valeurs du Campus Alternance Drôme Provence.",
-          url: "https://www.cadp.pro/equipe",
+          url: "https://cadp.pro/equipe",
         }}
       />
 

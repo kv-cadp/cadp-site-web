@@ -95,7 +95,7 @@ export default function FormationsHubPage() {
           itemListElement: formations.map((f, i) => ({
             "@type": "ListItem",
             position: i + 1,
-            url: `https://www.cadp.pro/formations/${f.slug}`,
+            url: `https://cadp.pro/formations/${f.slug}`,
             name: f.name,
           })),
         }}

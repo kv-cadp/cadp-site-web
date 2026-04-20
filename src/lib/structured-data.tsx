@@ -10,14 +10,14 @@ export function generateFullGraphJsonLd() {
 export function generateCourseJsonLd(formation: Formation) {
   const graph = (schemaGraph as { "@graph": Record<string, unknown>[] })["@graph"];
   const course = graph.find(
-    (item) => (item as { url?: string }).url === `https://www.cadp.pro/formations/${formation.slug}`
+    (item) => (item as { url?: string }).url === `https://cadp.pro/formations/${formation.slug}`
   );
 
   if (course) {
     return {
       "@context": "https://schema.org",
       ...course,
-      provider: { "@id": "https://www.cadp.pro/#organization" },
+      provider: { "@id": "https://cadp.pro/#organization" },
     };
   }
 
@@ -25,11 +25,11 @@ export function generateCourseJsonLd(formation: Formation) {
   return {
     "@context": "https://schema.org",
     "@type": "Course",
-    "@id": `https://www.cadp.pro/formations/${formation.slug}#course`,
+    "@id": `https://cadp.pro/formations/${formation.slug}#course`,
     name: `${formation.fullName} (${formation.code})`,
     description: formation.metaDescription,
-    url: `https://www.cadp.pro/formations/${formation.slug}`,
-    provider: { "@id": "https://www.cadp.pro/#organization" },
+    url: `https://cadp.pro/formations/${formation.slug}`,
+    provider: { "@id": "https://cadp.pro/#organization" },
     timeRequired: formation.slug === "tp-advf" ? "P1Y" : "P2Y",
     educationalLevel: formation.slug === "tp-advf" ? "CAP" : "Bac+2",
     courseMode: "blended",
@@ -60,10 +60,10 @@ export function generateContactJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://www.cadp.pro/#organization",
+    "@id": "https://cadp.pro/#organization",
     name: "Campus Alternance Drôme Provence",
     alternateName: "CADP",
-    url: "https://www.cadp.pro",
+    url: "https://cadp.pro",
     telephone: "+33475003456",
     email: "contact@cadp.pro",
     address: {
@@ -106,7 +106,7 @@ export function generateWebApplicationJsonLd(
     "@type": "WebApplication",
     name,
     description,
-    url: `https://www.cadp.pro${url}`,
+    url: `https://cadp.pro${url}`,
     applicationCategory: "EducationalApplication",
     operatingSystem: "All",
     offers: {
@@ -114,7 +114,7 @@ export function generateWebApplicationJsonLd(
       price: "0",
       priceCurrency: "EUR",
     },
-    provider: { "@id": "https://www.cadp.pro/#organization" },
+    provider: { "@id": "https://cadp.pro/#organization" },
   };
 }
 
@@ -140,7 +140,7 @@ export function generateBlogPostingJsonLd(article: {
     dateModified: toIso8601WithTz(article.updatedDateISO || article.dateISO),
     image: {
       "@type": "ImageObject",
-      url: "https://www.cadp.pro/og-default.png",
+      url: "https://cadp.pro/og-default.png",
       width: 1200,
       height: 630,
     },
@@ -148,12 +148,12 @@ export function generateBlogPostingJsonLd(article: {
       "@type": "Person",
       name: "Kévin Vidard",
       jobTitle: "Responsable Pédagogique",
-      url: "https://www.cadp.pro/equipe",
-      worksFor: { "@id": "https://www.cadp.pro/#organization" },
+      url: "https://cadp.pro/equipe",
+      worksFor: { "@id": "https://cadp.pro/#organization" },
     },
-    publisher: { "@id": "https://www.cadp.pro/#organization" },
-    mainEntityOfPage: `https://www.cadp.pro/blog/${article.slug}`,
-    url: `https://www.cadp.pro/blog/${article.slug}`,
+    publisher: { "@id": "https://cadp.pro/#organization" },
+    mainEntityOfPage: `https://cadp.pro/blog/${article.slug}`,
+    url: `https://cadp.pro/blog/${article.slug}`,
   };
 }
 
