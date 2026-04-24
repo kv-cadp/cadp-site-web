@@ -10,6 +10,10 @@ export const metadata = createPageMetadata({
 });
 
 export default function BlogPage() {
+  const sortedArticles = [...articles].sort((a, b) =>
+    b.dateISO.localeCompare(a.dateISO)
+  );
+
   return (
     <>
       {/* Hero */}
@@ -29,7 +33,7 @@ export default function BlogPage() {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="space-y-8">
-            {articles.map((article) => {
+            {sortedArticles.map((article) => {
               const cat = categoryLabels[article.category];
               return (
                 <Link key={article.slug} href={`/blog/${article.slug}`}>
