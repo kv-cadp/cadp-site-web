@@ -144,6 +144,15 @@ export default function Footer() {
                 <span className="text-cream/40 text-xs font-semibold uppercase tracking-wider">Accès rapide</span>
               </li>
               <li>
+                <Link
+                  href="/entreprises/alternance-dating"
+                  className="flex items-center gap-2 hover:text-gold transition-colors"
+                >
+                  <span className="inline-block size-1.5 rounded-full bg-gold shrink-0" aria-hidden="true" />
+                  Alternance Dating — 27 mai
+                </Link>
+              </li>
+              <li>
                 <a href="https://app.cadp.pro/connexion" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
                   Espace candidat
                 </a>

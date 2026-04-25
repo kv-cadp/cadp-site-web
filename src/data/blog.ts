@@ -9,7 +9,7 @@ export interface BlogArticle {
   updatedDateISO?: string;
   excerpt: string;
   content: string; // HTML content
-  cta: "candidat" | "entreprise" | "orientation";
+  cta: "candidat" | "entreprise" | "orientation" | "entreprise-dating";
   faqQuestions?: Array<{ question: string; answer: string }>;
 }
 
@@ -193,7 +193,7 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
     dateISO: "2026-04-04",
     updatedDateISO: "2026-04-14",
     excerpt: "La réponse surprend presque toujours : un alternant en BTS coûte beaucoup moins cher qu'un recrutement classique, et les aides de l'État réduisent encore la facture.",
-    cta: "entreprise",
+    cta: "entreprise-dating",
     faqQuestions: [
       {
         question: "Faut-il payer quelque chose au CFA ou au CADP ?",
@@ -370,7 +370,7 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
     dateISO: "2026-04-24",
     excerpt:
       "On parle toujours du jeune qu'on forme. Rarement du tuteur qui grandit. C'est pourtant l'un des meilleurs leviers RH que l'alternance offre aux PME.",
-    cta: "entreprise",
+    cta: "entreprise-dating",
     content: `
 <p>Quand on parle d'alternance aux entreprises, on parle toujours du jeune. Le jeune qu'on forme, qu'on intègre, qu'on fait monter en compétence. C'est logique, c'est ce qu'on voit en premier. Mais à force de concentrer le discours sur l'alternant, on finit par passer à côté de ce qui se joue en parallèle, souvent avec autant d'effet : ce qui arrive au salarié qui le forme.</p>
 
