@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { createPageMetadata } from "@/lib/metadata";
 import Button from "@/components/ui/Button";
+import CTADating from "@/components/dating/CTADating";
 
 export const metadata = createPageMetadata({
   title: "Recrutez un alternant au CADP | Entreprises",
@@ -103,6 +104,9 @@ export default function EntreprisesPage() {
           </div>
         </div>
       </section>
+
+      {/* BANDEAU ALTERNANCE DATING */}
+      <CTADating variant="banniere" />
 
       {/* QUEL PROFIL */}
       <section className="py-20 bg-white">
