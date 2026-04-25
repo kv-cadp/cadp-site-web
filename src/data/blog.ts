@@ -29,6 +29,7 @@ export const articles: BlogArticle[] = [
     category: "inscription",
     date: "Avril 2026",
     dateISO: "2026-04-06",
+    updatedDateISO: "2026-04-25",
     excerpt: "Les inscriptions pour septembre 2026 sont ouvertes. Comment candidater, quel est le calendrier, quelles formations sont disponibles ? Tout ce qu'il faut savoir en un article.",
     cta: "candidat",
     content: `
@@ -66,8 +67,8 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 
 <ul>
 <li><strong>Maintenant → juillet 2026 :</strong> Dépôt des candidatures (les places se remplissent au fur et à mesure — 12 max par promo)</li>
-<li><strong>27 mai 2026 :</strong> Alternance Dating au CADP — viens rencontrer nos entreprises partenaires (14h-16h)</li>
-<li><strong>14 mai 2026 :</strong> Atelier CV & Coaching entretien — ouvert à tous les candidats (10h-12h)</li>
+<li><strong>27 mai 2026 (matin) :</strong> Atelier CV & Coaching entretien — ouvert à tous les candidats (9h-12h)</li>
+<li><strong>27 mai 2026 (après-midi) :</strong> Alternance Dating au CADP — viens rencontrer nos entreprises partenaires (14h-16h)</li>
 <li><strong>Mai-juin 2026 :</strong> Entretiens de motivation et validation des candidatures</li>
 <li><strong>Juin-août 2026 :</strong> Signature des contrats d'apprentissage avec les entreprises</li>
 <li><strong>Septembre 2026 :</strong> Rentrée au campus — début des cours et de l'alternance</li>

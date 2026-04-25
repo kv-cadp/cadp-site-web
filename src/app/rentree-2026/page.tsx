@@ -23,8 +23,8 @@ const formations = [
 
 const timeline = [
   { date: "Maintenant → Juillet 2026", title: "Candidatures ouvertes", desc: "Les inscriptions sont ouvertes pour toutes les formations. Chaque promo est limitée à 12 étudiants — quand c'est complet, c'est complet." },
-  { date: "14 mai 2026", title: "Atelier CV & Coaching entretien", desc: "On t'aide à construire un CV percutant et à préparer tes entretiens. Ouvert à tous les candidats. 10h-12h." },
-  { date: "27 mai 2026", title: "Alternance Dating", desc: "Rencontre directe avec nos entreprises partenaires au campus. Viens avec ton CV, repars avec des propositions. 14h-16h, CADP Pierrelatte." },
+  { date: "27 mai 2026 — Matin", title: "Atelier CV & Coaching entretien", desc: "On t'aide à construire un CV percutant et à préparer tes entretiens. Ouvert à tous les candidats. 9h-12h, CADP Pierrelatte." },
+  { date: "27 mai 2026 — Après-midi", title: "Alternance Dating", desc: "Rencontre directe avec nos entreprises partenaires au campus. Viens avec ton CV, repars avec des propositions. 14h-16h, CADP Pierrelatte." },
   { date: "Mai — Juin 2026", title: "Entretiens de motivation", desc: "On se rencontre pour discuter de ton projet. Ce n'est pas un concours — c'est une conversation." },
   { date: "Juin — Août 2026", title: "Signature des contrats", desc: "Avec l'appui de notre réseau de 50+ entreprises partenaires, tu signes ton contrat d'apprentissage." },
   { date: "Septembre 2026", title: "Rentrée au campus", desc: "Début des cours et de l'alternance. C'est parti." },
@@ -62,8 +62,8 @@ export default function Rentree2026Page() {
             "@context": "https://schema.org",
             "@type": "Event",
             name: "Atelier CV & Coaching entretien — CADP Pierrelatte",
-            startDate: "2026-05-14T10:00:00+02:00",
-            endDate: "2026-05-14T12:00:00+02:00",
+            startDate: "2026-05-27T09:00:00+02:00",
+            endDate: "2026-05-27T12:00:00+02:00",
             eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
             location: { "@type": "Place", name: "CADP", address: { "@type": "PostalAddress", streetAddress: "2 Boulevard Frédéric Mistral", addressLocality: "Pierrelatte", postalCode: "26700", addressCountry: "FR" } },
