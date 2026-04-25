@@ -2,10 +2,8 @@
 
 import { useActionState, useId } from "react";
 import Button from "@/components/ui/Button";
-import {
-  submitDatingInscription,
-  type DatingActionState,
-} from "./actions";
+import { submitDatingInscription } from "./actions";
+import type { DatingActionState } from "./schema";
 
 const FORMATIONS = [
   { value: "BTS MCO", label: "BTS MCO — Management Commercial Opérationnel" },
