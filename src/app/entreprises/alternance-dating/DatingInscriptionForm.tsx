@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useId } from "react";
+import { useActionState, useEffect, useId, useRef } from "react";
 import Button from "@/components/ui/Button";
 import { submitDatingInscription } from "./actions";
 import type { DatingActionState } from "./schema";
@@ -45,6 +45,20 @@ export default function DatingInscriptionForm() {
     initialState,
   );
   const honeypotId = useId();
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (state.ok) {
+      // Prefer scrolling to the section header so the title and success
+      // block both land at the top of the viewport.
+      const section =
+        typeof document !== "undefined"
+          ? document.getElementById("inscription")
+          : null;
+      const target = section ?? wrapperRef.current;
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [state.ok]);
 
   const err = state.errors ?? {};
   const values = state.fieldValues ?? {};
@@ -66,7 +80,10 @@ export default function DatingInscriptionForm() {
 
   if (state.ok) {
     return (
-      <div className="bg-[#E8F5E9] border border-[#2E7D4F]/20 rounded-xl p-8 text-center">
+      <div
+        ref={wrapperRef}
+        className="bg-[#E8F5E9] border border-[#2E7D4F]/20 rounded-xl p-8 text-center"
+      >
         <div className="size-14 rounded-full bg-[#2E7D4F]/10 inline-flex items-center justify-center mb-4">
           <svg
             className="size-7 text-[#2E7D4F]"
