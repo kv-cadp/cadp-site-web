@@ -5,6 +5,7 @@ import { articles, getArticleBySlug, categoryLabels } from "@/data/blog";
 import { createPageMetadata } from "@/lib/metadata";
 import { JsonLd, generateBlogPostingJsonLd, generateFAQJsonLd } from "@/lib/structured-data";
 import Button from "@/components/ui/Button";
+import CTADating from "@/components/dating/CTADating";
 
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
@@ -87,10 +88,13 @@ export default async function BlogArticlePage({
               <h3 className="font-serif text-xl text-navy-deep mb-3">Prêt à recruter votre alternant ?</h3>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button href="/entreprise-besoin" variant="gold">Trouver le bon profil</Button>
-                <Button href="/entreprises#dating-27-mai" variant="navy">S&apos;inscrire au Dating du 27 mai</Button>
+                <Button href="/entreprises/alternance-dating" variant="navy">S&apos;inscrire au Dating du 27 mai</Button>
                 <Button href="/contact" variant="outline">Nous contacter</Button>
               </div>
             </div>
+          )}
+          {article.cta === "entreprise-dating" && (
+            <CTADating variant="carte" />
           )}
           {article.cta === "orientation" && (
             <div className="bg-cream rounded-xl p-8 text-center">
