@@ -21,7 +21,7 @@ const formations = [
     metiers: "Manager de rayon, responsable de magasin, chef de secteur",
     dominante: "Commerce & Management",
     tuAimes: "Manager, animer, vendre",
-    rythme: "Lun-Mar (+Mer 1s/2)",
+    rythme: "Lun-Mar",
   },
   {
     slug: "bts-ndrc", code: "NDRC", name: "BTS NDRC", full: "Négociation et Digitalisation de la Relation Client",
@@ -31,7 +31,7 @@ const formations = [
     metiers: "Business developer, commercial terrain, chargé d'affaires",
     dominante: "Vente & Digital",
     tuAimes: "Convaincre, négocier, prospecter",
-    rythme: "Jeu-Ven (+Mer 1s/2)",
+    rythme: "Jeu-Ven",
   },
   {
     slug: "bts-gpme", code: "GPME", name: "BTS GPME", full: "Gestion de la PME",
@@ -41,7 +41,7 @@ const formations = [
     metiers: "Assistant de gestion, assistant RH, office manager",
     dominante: "Administration & Gestion",
     tuAimes: "Organiser, gérer, administrer",
-    rythme: "Lun-Mar (+Mer 1s/2)",
+    rythme: "Lun-Mar",
   },
   {
     slug: "bts-cg", code: "CG", name: "BTS CG", full: "Comptabilité et Gestion",
@@ -51,7 +51,7 @@ const formations = [
     metiers: "Comptable, gestionnaire de paie, collaborateur en cabinet",
     dominante: "Comptabilité & Finance",
     tuAimes: "Calculer, analyser, contrôler",
-    rythme: "Jeu-Ven (+Mer 1s/2)",
+    rythme: "Jeu-Ven",
   },
   {
     slug: "bts-mos", code: "MOS", name: "BTS MOS", full: "Management Opérationnel de la Sécurité",
@@ -61,7 +61,7 @@ const formations = [
     metiers: "Chef de site sécurité, responsable sûreté, coordinateur QHSE",
     dominante: "Sécurité & Risques",
     tuAimes: "Protéger, diriger, anticiper",
-    rythme: "Lun-Mar (+Mer 1s/2)",
+    rythme: "Lun-Mar",
   },
   {
     slug: "tp-advf", code: "ADVF", name: "TP ADVF", full: "Assistant De Vie aux Familles",

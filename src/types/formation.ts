@@ -29,10 +29,9 @@ export interface Testimonial {
 export interface AlternanceRhythm {
   schoolDays: number;
   companyDays: number;
-  /** Indices des jours campus semaine longue — 3j campus (0=Lun, 1=Mar, 2=Mer, 3=Jeu, 4=Ven) */
-  weekLong: number[];
-  /** Indices des jours campus semaine courte — 2j campus */
-  weekShort: number[];
+  /** Indices des jours campus (0=Lun, 1=Mar, 2=Mer, 3=Jeu, 4=Ven) */
+  campusDays: number[];
+  horaires: string;
   description: string;
 }
 

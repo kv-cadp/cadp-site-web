@@ -20,10 +20,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      weekLong: [0, 1, 2], // lun-mar-mer (semaine A)
-      weekShort: [0, 1], // lun-mar (semaine B)
+      campusDays: [0, 1], // lun-mar
+      horaires: "8h-12h / 13h-17h",
       description:
-        "Le rythme alterne entre semaines longues et courtes au campus : une semaine sur deux, tu es au campus le lundi, mardi et mercredi (3 jours) ; l'autre semaine, uniquement le lundi et mardi (2 jours). Le reste du temps, tu es en entreprise.",
+        "Deux jours au campus, trois en entreprise. Toutes les semaines. Le mercredi en entreprise.\n\nCours : 8h-12h / 13h-17h.\n\nPas de semaine A, pas de semaine B. Tu t'installes dans l'équipe.",
     },
     competenceBlocks: [
       {
@@ -159,7 +159,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le rythme de l'alternance en BTS MCO au CADP ?",
         answer:
-          "Au CADP, le rythme est de 2 jours en formation (lundi-mardi) et 3 jours en entreprise (mercredi à vendredi). Ce format te permet de travailler majoritairement en entreprise tout en suivant un programme structuré au campus.",
+          "Au CADP, le rythme est de 2 jours au campus (lundi-mardi) et 3 jours en entreprise (mercredi, jeudi, vendredi), toutes les semaines, sans alternance entre semaines A et B. Cours de 8h à 12h et de 13h à 17h. Ce format te permet de t'installer dans l'équipe tout en suivant un programme structuré au campus.",
       },
       {
         question: "Quelles entreprises recrutent des alternants en BTS MCO ?",
@@ -218,10 +218,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      weekLong: [2, 3, 4], // mer-jeu-ven (semaine A)
-      weekShort: [3, 4], // jeu-ven (semaine B)
+      campusDays: [3, 4], // jeu-ven
+      horaires: "8h-12h / 13h-17h",
       description:
-        "Le rythme alterne entre semaines longues et courtes au campus : une semaine sur deux, tu es au campus le mercredi, jeudi et vendredi (3 jours) ; l'autre semaine, uniquement le jeudi et vendredi (2 jours). Le reste du temps, tu es en entreprise pour prospecter, négocier et développer ton portefeuille client.",
+        "Deux jours au campus, trois en entreprise. Toutes les semaines. Le mercredi en entreprise.\n\nCours : 8h-12h / 13h-17h.\n\nPas de semaine A, pas de semaine B. Tu t'installes dans l'équipe.",
     },
     competenceBlocks: [
       {
@@ -352,7 +352,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le rythme de l'alternance au CADP ?",
         answer:
-          "Le rythme est de 2 jours au campus (lundi-mardi) et 3 jours en entreprise (mercredi à vendredi). Ce format te permet de négocier et vendre en conditions réelles tout en consolidant tes acquis en formation.",
+          "Le rythme est de 2 jours au campus (jeudi-vendredi) et 3 jours en entreprise (lundi, mardi, mercredi), toutes les semaines, sans alternance entre semaines A et B. Cours de 8h à 12h et de 13h à 17h. Ce format te permet de négocier et vendre en conditions réelles tout en consolidant tes acquis en formation.",
       },
       {
         question: "Le BTS NDRC est-il reconnu par l'État ?",
@@ -396,10 +396,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      weekLong: [0, 1, 2], // lun-mar-mer (semaine A)
-      weekShort: [0, 1], // lun-mar (semaine B)
+      campusDays: [0, 1], // lun-mar
+      horaires: "8h-12h / 13h-17h",
       description:
-        "Le rythme alterne entre semaines longues et courtes au campus : une semaine sur deux, tu es au campus le lundi, mardi et mercredi (3 jours) ; l'autre semaine, uniquement le lundi et mardi (2 jours). Le reste du temps, tu es en entreprise pour mettre en pratique la gestion, la comptabilité et l'administration au quotidien d'une PME et tu apprends à gérer la diversité des missions.",
+        "Deux jours au campus, trois en entreprise. Toutes les semaines. Le mercredi en entreprise.\n\nCours : 8h-12h / 13h-17h.\n\nPas de semaine A, pas de semaine B. Tu t'installes dans l'équipe.",
     },
     competenceBlocks: [
       {
@@ -542,7 +542,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le rythme de l'alternance au CADP en BTS GPME ?",
         answer:
-          "Le rythme est de 2 jours au campus (lundi-mardi) et 3 jours en entreprise (mercredi à vendredi). En PME, tu es rapidement impliqué dans toutes les missions de l'entreprise, ce qui accélère ta montée en compétences.",
+          "Le rythme est de 2 jours au campus (lundi-mardi) et 3 jours en entreprise (mercredi, jeudi, vendredi), toutes les semaines, sans alternance entre semaines A et B. Cours de 8h à 12h et de 13h à 17h. En PME, tu es rapidement impliqué dans toutes les missions de l'entreprise, ce qui accélère ta montée en compétences.",
       },
       {
         question: "Peut-on poursuivre ses études après un BTS GPME ?",
@@ -586,10 +586,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      weekLong: [2, 3, 4], // mer-jeu-ven (semaine A)
-      weekShort: [3, 4], // jeu-ven (semaine B)
+      campusDays: [3, 4], // jeu-ven
+      horaires: "8h-12h / 13h-17h",
       description:
-        "Le rythme alterne entre semaines longues et courtes au campus : une semaine sur deux, tu es au campus le mercredi, jeudi et vendredi (3 jours) ; l'autre semaine, uniquement le jeudi et vendredi (2 jours). En entreprise, tu pratiques la comptabilité, la paie et la fiscalité directement en cabinet ou en entreprise.",
+        "Deux jours au campus, trois en entreprise. Toutes les semaines. Le mercredi en entreprise.\n\nCours : 8h-12h / 13h-17h.\n\nPas de semaine A, pas de semaine B. Tu t'installes dans l'équipe.",
     },
     competenceBlocks: [
       {
@@ -725,7 +725,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le rythme de l'alternance en BTS CG au CADP ?",
         answer:
-          "Le rythme est de 2 jours au campus (lundi-mardi) et 3 jours en entreprise ou en cabinet (mercredi à vendredi). Tu vis les échéances comptables en conditions réelles : déclarations de TVA, clôtures, bilans.",
+          "Le rythme est de 2 jours au campus (jeudi-vendredi) et 3 jours en entreprise ou en cabinet (lundi, mardi, mercredi), toutes les semaines, sans alternance entre semaines A et B. Cours de 8h à 12h et de 13h à 17h. Tu vis les échéances comptables en conditions réelles : déclarations de TVA, clôtures, bilans.",
       },
       {
         question: "Comment s'inscrire au BTS CG au CADP ?",
@@ -764,10 +764,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      weekLong: [0, 1, 2], // lun-mar-mer (semaine A)
-      weekShort: [0, 1], // lun-mar (semaine B)
+      campusDays: [0, 1], // lun-mar
+      horaires: "8h-12h / 13h-17h",
       description:
-        "Le rythme alterne entre semaines longues et courtes au campus : une semaine sur deux, tu es au campus le lundi, mardi et mercredi (3 jours) ; l'autre semaine, uniquement le lundi et mardi (2 jours). Le reste du temps, tu es sur le terrain en entreprise de sécurité. Tu vis le terrain : rondes, gestion d'équipe, incidents, plannings.",
+        "Deux jours au campus, trois en entreprise. Toutes les semaines. Le mercredi en entreprise.\n\nCours : 8h-12h / 13h-17h.\n\nPas de semaine A, pas de semaine B. Tu t'installes dans l'équipe.",
     },
     competenceBlocks: [
       {
@@ -910,7 +910,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le rythme de l'alternance en BTS MOS au CADP ?",
         answer:
-          "Le rythme est de 2 jours au campus (lundi-mardi) et 3 jours en entreprise (mercredi à vendredi). Tu vis le quotidien opérationnel : gestion d'équipe, plannings, incidents, relation client.",
+          "Le rythme est de 2 jours au campus (lundi-mardi) et 3 jours en entreprise (mercredi, jeudi, vendredi), toutes les semaines, sans alternance entre semaines A et B. Cours de 8h à 12h et de 13h à 17h. Tu vis le quotidien opérationnel : gestion d'équipe, plannings, incidents, relation client.",
       },
       {
         question: "Comment s'inscrire au BTS MOS au CADP ?",
@@ -949,10 +949,10 @@ export const formations: Formation[] = [
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      weekLong: [2, 3], // mer-jeu (fixe, pas d'alternance)
-      weekShort: [2, 3], // mer-jeu (identique)
+      campusDays: [2, 3], // mer-jeu
+      horaires: "8h-12h / 13h-17h",
       description:
-        "Tu es au campus le mercredi et le jeudi chaque semaine, et en entreprise le reste de la semaine (lundi, mardi et vendredi). Ce rythme stable te permet d'accompagner les familles et les personnes fragiles avec régularité.",
+        "Mercredi et jeudi au campus. Lundi, mardi, vendredi en entreprise. Toutes les semaines.\n\nCours : 8h-12h / 13h-17h.\n\nLa régularité fait partie du métier.",
     },
     competenceBlocks: [
       {
@@ -1074,7 +1074,7 @@ export const formations: Formation[] = [
       {
         question: "Combien de temps dure la formation TP ADVF ?",
         answer:
-          "La formation dure entre 9 et 12 mois, incluant les périodes de stage en entreprise. Au CADP, le rythme alterne entre jours au campus et jours en structure d'accueil ou à domicile.",
+          "La formation dure entre 9 et 12 mois, incluant les périodes de stage en entreprise. Au CADP, tu es au campus le mercredi et le jeudi (cours de 8h à 12h et de 13h à 17h) et en entreprise le lundi, le mardi et le vendredi, toutes les semaines.",
       },
       {
         question: "Peut-on poursuivre après un TP ADVF ?",

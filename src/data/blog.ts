@@ -179,7 +179,7 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 
 <h2>Au CADP, qu'est-ce qui change ?</h2>
 
-<p>Chez nous, les deux formations sont en promos de 12 étudiants maximum. Le rythme est le même : 2 jours au campus, 3 jours en entreprise (avec un mercredi sur deux en plus au campus pour les matières transversales). La vraie différence, c'est le contenu pédagogique et le type d'entreprise qui t'accueillera en alternance.</p>
+<p>Chez nous, les deux formations sont en promos de 12 étudiants maximum. Le rythme est le même : 2 jours au campus, 3 jours en entreprise, toutes les semaines, sans variation. La vraie différence, c'est le contenu pédagogique et le type d'entreprise qui t'accueillera en alternance.</p>
 
 <p>Et si tu hésites encore après avoir lu tout ça, fais notre test d'orientation — il te donnera une recommandation personnalisée en quelques minutes.</p>
 `,
