@@ -427,6 +427,76 @@ Campus Alternance Drôme Provence</em></p>
 `,
   },
   {
+    slug: "alternance-pre-recrutement-periode-essai",
+    title: "L'alternance, ou le seul recrutement avec deux ans d'essai",
+    metaTitle: "L'alternance, ou le seul recrutement avec deux ans d'essai | CADP",
+    metaDescription:
+      "Période probatoire de 45 jours, deux ans d'observation, sortie sereine ou CDI naturel : pourquoi l'alternance est le seul cadre légal de pré-recrutement long.",
+    category: "entreprise",
+    date: "Mai 2026",
+    dateISO: "2026-05-02",
+    excerpt:
+      "Période probatoire de 45 jours, deux ans d'observation, sortie sereine ou CDI naturel : pourquoi l'alternance est le seul cadre légal de pré-recrutement long.",
+    cta: "entreprise-dating",
+    content: `
+<p>Embaucher en CDI dans une PME, c'est rarement anodin. La période d'essai légale est courte — deux mois renouvelable une fois pour un employé non-cadre — et passé ce délai, le contrat s'installe. Si le profil ne convient pas, la séparation devient lourde, longue, parfois coûteuse. Dans les entreprises du bassin Drôme-Provence où chaque embauche compte, c'est une décision qu'on prend souvent avec une vraie inquiétude.</p>
+
+<p>L'alternance fonctionne autrement. Elle permet d'observer un futur collaborateur sur un, deux, parfois trois ans, avec une fenêtre de sortie sans contrainte au démarrage, puis un CDI naturel à l'arrivée si la décision tient. C'est un cadre que la plupart des employeurs ne connaissent que de loin, et qui mérite qu'on s'y attarde, exemple à l'appui.</p>
+
+<h2>Les 45 jours qui changent tout</h2>
+
+<p>Tout contrat d'apprentissage débute par une période probatoire de 45 jours en entreprise, prévue à l'article L6222-18 du Code du travail. Pendant cette fenêtre, l'employeur ou l'apprenti peuvent rompre le contrat sans motif, sans préavis, sans indemnité. Un simple écrit transmis au CFA et à l'OPCO suffit.</p>
+
+<p>Ces 45 jours ne sont pas calendaires. Seuls comptent les jours de présence effective dans l'entreprise. Quand l'apprenti est au CFA, le compteur s'arrête. Sur un rythme de deux jours d'école par semaine, ça représente environ trois mois calendaires d'observation réelle. C'est suffisant pour évaluer un comportement, une motivation, une capacité à s'intégrer dans une équipe.</p>
+
+<p>Aucun équivalent dans le CDI classique. Pour un employé non-cadre, la rupture de période d'essai impose un délai de prévenance, et même dans les clous, une rupture jugée abusive peut donner lieu à des dommages et intérêts. La fin du contrat d'apprentissage dans les 45 jours n'est soumise à aucune de ces contraintes. C'est une particularité du droit français qui ne se trouve nulle part ailleurs dans le code du travail.</p>
+
+<h2>Les deux ans qui suivent : un test grandeur nature</h2>
+
+<p>Une fois ces 45 jours passés, l'apprenti reste un, deux, parfois trois ans dans l'entreprise selon le diplôme. Les BTS qu'on prépare au CADP durent deux ans. Le TP ADVF dure un an. Le mécanisme est le même, la fenêtre est plus ou moins longue.</p>
+
+<p>Pendant ce temps, il se passe quelque chose qu'aucun autre dispositif RH ne permet : observer une personne se former à vos méthodes, dans votre contexte, avec vos clients, sur la durée. Un recrutement classique fait l'inverse. On embauche quelqu'un qui maîtrise déjà un métier ailleurs, et on espère qu'il s'adapte à la maison. L'alternant, lui, arrive sans réflexe figé. Il se construit chez vous. À la fin de son contrat, il est imprégné de la culture de l'entreprise, des process, du langage interne, du portefeuille clients. Cette imprégnation a une valeur économique réelle : elle économise les six mois d'onboarding qu'on consacre habituellement à un nouveau salarié.</p>
+
+<p>L'employeur voit beaucoup pendant cette période. La capacité à apprendre, le comportement en réunion, la réaction face à un client compliqué ou à une période chargée. Aucun entretien d'embauche, aucune mise en situation ne donne ce niveau de visibilité.</p>
+
+<h2>La sortie naturelle, si besoin</h2>
+
+<p>Si à l'issue du contrat l'embauche en CDI ne se justifie pas, le contrat se termine à sa date prévue. Pas de rupture conventionnelle, pas d'indemnités, pas de risque prudhommal. L'apprenti retourne à son CFA pour finaliser sa formation et chercher une autre entreprise. Il dispose de six mois pour cela, pendant lesquels la formation reste financée par l'OPCO.</p>
+
+<p>C'est probablement la sortie la plus sereine d'une relation de travail dans le droit français. Personne ne perd la face, personne ne se sent lésé. La séparation est inscrite dès le départ dans le calendrier. Pour un employeur, c'est une option de sortie gratuite qui n'existe avec aucun autre dispositif d'embauche.</p>
+
+<h2>Le CDI naturel, le scénario le plus fréquent</h2>
+
+<p>C'est l'autre face de la pièce, et celle qu'on observe largement plus souvent. Selon les chiffres publiés par le ministère de l'Éducation nationale, près de la moitié des ex-apprentis en emploi travaillent dans l'entreprise où ils ont effectué leur apprentissage.</p>
+
+<p>Ce taux s'explique simplement. À la fin de deux ans d'alternance, l'apprenti et l'entreprise se connaissent vraiment. Pas le vernis d'un entretien, pas la version arrangée d'un CV. La vraie personne, dans le vrai poste. Quand l'embauche en CDI se fait, c'est sur des bases solides des deux côtés.</p>
+
+<h2>Un exemple récent du bassin</h2>
+
+<p>Une entreprise de service à la personne du bassin valentinois nous a confié il y a deux ans une alternante en BTS GPME, sur un poste d'assistante RH. Pendant ces deux années, elle a structuré une grande partie des process internes : recrutement des intervenants, suivi terrain, paie. La direction a observé sa progression, sa fiabilité, sa capacité à travailler en autonomie. Au moment où l'entreprise a décidé d'ouvrir une seconde agence un peu plus au sud du département, c'est elle qui a été identifiée comme le bon profil pour piloter le lancement. Un CDI lui est proposé, avec un périmètre nettement élargi par rapport à son poste d'apprentissage.</p>
+
+<p>Ce n'est pas une promotion artificielle. C'est la conséquence logique de deux ans d'observation et de confiance construite progressivement. Sans le cadre de l'alternance, l'entreprise aurait probablement recruté un cadre RH expérimenté en externe pour ouvrir cette agence, avec un coût d'embauche plus élevé et une période d'intégration de plusieurs mois. À la place, elle promeut quelqu'un qui connaît déjà la maison et qui a fait ses preuves.</p>
+
+<h2>La condition pour que ça fonctionne</h2>
+
+<p>Il y a un point qu'on doit dire franchement parce qu'il conditionne tout le reste. Ce dispositif ne fonctionne que si l'entreprise joue le jeu. Confier un alternant à un tuteur qui n'a ni le temps ni l'envie, ne pas faire les points réguliers, ne pas confier de missions à valeur réelle, et le mécanisme s'effondre. L'apprenti reste deux ans sans progresser, l'employeur ne voit pas la personne se révéler, et la décision finale d'embauche se prend sur des bases aussi minces qu'avec un recrutement classique.</p>
+
+<p>L'effort à fournir n'est pas démesuré, mais il est réel. Un tuteur identifié et engagé, des points de suivi réguliers, des missions qui font monter en compétence plutôt que des tâches d'exécution répétitives. C'est ce qui transforme deux années de présence en deux années d'observation utile, et c'est ce qui fait que la période probatoire et les chiffres d'embauche en CDI prennent vraiment leur sens.</p>
+
+<h2>Pour conclure</h2>
+
+<p>L'alternance reste mal connue des PME comme outil de pré-recrutement. C'est pourtant le seul cadre légal qui permet une période probatoire de 45 jours sans contrainte au début, une observation longue sur les compétences réelles du candidat, et un CDI fondé sur deux ans de connaissance mutuelle si la décision tient. Pour les entreprises du bassin qui n'ont ni le temps ni les moyens de gérer un mauvais recrutement, ça vaut le détour.</p>
+
+<p>Cet article fait partie d'une série consacrée aux raisons de recruter en alternance, <a href="/blog/combien-coute-un-alternant-entreprise">au-delà des seuls arguments financiers</a> que nous avons traités précédemment, et après <a href="/blog/alternance-valorisation-tuteur">l'effet sur le tuteur</a>. Un dernier angle suivra, sur la formation aux méthodes maison et la transmission du savoir spécifique de l'entreprise.</p>
+
+<p>En attendant : si vous voulez rencontrer des candidats pré-qualifiés sur les filières BTS et TP ADVF sans engagement, l'<strong>Alternance Dating du 27 mai 2026</strong> est le bon point de départ. Deux heures, à Pierrelatte, pour échanger directement avec une vingtaine de candidats sélectionnés. <a href="/contact">Contactez-nous</a> pour vous inscrire.</p>
+
+<p><em>Kévin Vidard<br/>
+Directeur et Responsable pédagogique<br/>
+Campus Alternance Drôme Provence</em></p>
+`,
+  },
+  {
     slug: "trouver-alternance-drome-ardeche-guide",
     title: "Trouver une alternance en Drôme-Ardèche : le guide complet 2026",
     metaTitle: "Trouver une alternance en Drôme-Ardèche : le guide complet 2026 | CADP",
