@@ -34,8 +34,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-navy-deep/95 backdrop-blur-sm">
-      <div className="flex flex-col items-center justify-center h-full gap-8">
+    <div className="fixed inset-0 z-50 bg-navy-deep/95 backdrop-blur-sm overflow-y-auto overscroll-contain">
+      <div className="flex flex-col items-center min-h-full gap-8 py-16 pb-24">
         <button
           type="button"
           onClick={onClose}
