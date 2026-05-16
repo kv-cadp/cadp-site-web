@@ -44,7 +44,15 @@ const direction = [
   },
 ];
 
-const equipe = [
+type MembreEquipe = {
+  name: string;
+  role: string;
+  initials: string;
+  accroche: string;
+  source?: string;
+};
+
+const equipe: MembreEquipe[] = [
   {
     name: "Maëvane Laval",
     role: "Responsable du pôle Sanitaire & Social",
