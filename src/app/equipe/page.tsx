@@ -46,25 +46,6 @@ const direction = [
 
 const equipe = [
   {
-    name: "Karen Rohan",
-    role: "Formatrice Anglais",
-    initials: "KR",
-    accroche: "Si j'avais eu Karen depuis le collège, je serais déjà bilingue.",
-    source: "Ce que nos étudiants disent d'elle",
-  },
-  {
-    name: "Marc Gérard",
-    role: "Formateur BTS GPME",
-    initials: "MG",
-    accroche: "Le plus expérimenté d'entre nous. Une référence pédagogique, toujours de bon conseil pour les étudiants comme pour l'équipe.",
-  },
-  {
-    name: "Sébastien Stéphanne",
-    role: "Formateur BTS MOS",
-    initials: "SS",
-    accroche: "Des années d'expérience sur le terrain. Pompier volontaire, auditeur sécurité, formateur SST — Sébastien apporte à ses étudiants ce qu'aucun manuel ne peut enseigner.",
-  },
-  {
     name: "Maëvane Laval",
     role: "Responsable du pôle Sanitaire & Social",
     initials: "ML",
