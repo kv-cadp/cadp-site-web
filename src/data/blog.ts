@@ -22,6 +22,141 @@ export const categoryLabels: Record<string, { label: string; color: string }> = 
 
 export const articles: BlogArticle[] = [
   {
+    slug: "mutualiser-apprenti-deux-entreprises",
+    title:
+      "Pas assez d'activité pour un apprenti à temps plein ? Trois solutions méconnues",
+    metaTitle:
+      "Mutualiser un apprenti entre deux entreprises : ce qui est possible | CADP",
+    metaDescription:
+      "Pas 35h à offrir à un apprenti ? Trois solutions légales pour partager un contrat d'apprentissage entre entreprises. Notre analyse, sources et cas concret.",
+    category: "entreprise",
+    date: "Mai 2026",
+    dateISO: "2026-05-19",
+    excerpt:
+      "« Je n'ai pas 35h à donner à un apprenti. » C'est la phrase qu'on entend le plus souvent côté employeurs. Et le Code du travail prévoit pourtant trois solutions pour partager un contrat d'apprentissage entre plusieurs entreprises.",
+    cta: "entreprise-dating",
+    content: `
+<p>C'est une phrase qu'on entend très souvent côté employeurs : « J'aimerais bien former un alternant, mais je n'ai pas 35h par semaine à lui donner. » Le réflexe, derrière, c'est de renoncer. À tort.</p>
+
+<p>Le Code du travail prévoit plusieurs leviers pour partager un contrat d'apprentissage entre plusieurs entreprises. Tous ne sont pas équivalents : certains se mettent en place en quelques semaines, d'autres prennent des mois et restent largement théoriques pour la majorité des PME. Voici ce qu'on en pense, après les avoir vus à l'œuvre sur le terrain.</p>
+
+<p>Sources : Code du travail, article R6223-10 modifié par le décret n°2023-1275 du 27 décembre 2023 ; articles L1253-1 à L1253-23 (groupements d'employeurs) ; articles L6223-5 à L6223-8-1 (maître d'apprentissage). Ministère du Travail (travail-emploi.gouv.fr). Fédération Française des GEIQ.</p>
+
+<p><em>Précision avant d'entrer dans le vif : cet article traite spécifiquement du contrat d'apprentissage. Le contrat de professionnalisation, qui est l'autre forme d'alternance, obéit à des règles différentes et n'autorise pas tous les montages présentés ici. Pour alléger, nous parlerons d'« alternant » ou d'« apprenti » au sens du contrat d'apprentissage.</em></p>
+
+<h2>Le malentendu de l'apprentissage à temps partiel</h2>
+
+<p>Premier point à clarifier, parce qu'il revient à chaque conversation : non, le contrat d'apprentissage à temps partiel n'existe pas pour la majorité des employeurs. Il existe, mais dans deux situations seulement : pour les apprentis bénéficiaires d'une Reconnaissance de la qualité de travailleur handicapé (RQTH), et pour les sportifs de haut niveau. En dehors de ces deux cas, le contrat d'apprentissage s'exécute à temps plein, sur la base de la durée légale du travail applicable à l'entreprise.</p>
+
+<p>Conclusion pour tout le monde : ce qu'on ne peut pas fractionner, c'est le temps de travail de l'apprenti. Ce qu'on peut partager, en revanche, c'est l'apprenti lui-même entre plusieurs structures. C'est une nuance qui change tout, et c'est la base de tous les montages qui suivent.</p>
+
+<h2>Première voie, et de loin la plus accessible — la mise à disposition</h2>
+
+<p>C'est le levier qu'on active le plus souvent dans nos accompagnements, et c'est celui qu'on recommande en premier réflexe à un dirigeant qui se reconnaît dans le « j'ai besoin mais pas à plein temps ». Le cadre est posé par l'article R6223-10 du Code du travail, dans sa version modifiée par le décret du 27 décembre 2023.</p>
+
+<p>Le principe est simple. Le contrat d'apprentissage reste signé avec un seul employeur. C'est cet employeur qui rémunère l'apprenti et qui assume la responsabilité juridique du contrat. Mais une partie de la formation pratique peut être dispensée dans une autre entreprise, dite « entreprise d'accueil ». La règle clé : cette part ne peut pas dépasser 50 % du temps de formation en entreprise prévu au contrat. Et le nombre d'entreprises d'accueil est limité à deux sur la durée du contrat — trois seulement si l'employeur principal est un groupement d'employeurs.</p>
+
+<p>La mécanique passe par une convention tripartite, signée entre l'employeur, l'entreprise d'accueil et l'apprenti. Ce n'est pas un formulaire à remplir en cinq minutes. Elle précise la nature des tâches confiées dans chaque entreprise, les périodes d'accueil, le maître d'apprentissage désigné dans chaque structure, et les obligations en matière de santé et de sécurité au travail. Mais une fois cadrée, elle tient — et nous pouvons aider à la rédiger.</p>
+
+<p>Pour qui ça marche bien : les activités saisonnières complémentaires (un commerce d'été et un autre d'hiver), les métiers qui supposent l'accès à un équipement particulier qu'une seule entreprise ne peut pas fournir, ou plus généralement les situations où un dirigeant a un vrai besoin partiel mais récurrent. C'est la solution la plus rapide à mettre en place, la moins risquée, et la plus souvent activée en pratique.</p>
+
+<h2>Deuxième voie, plus rare — le groupement d'employeurs</h2>
+
+<p>Le levier change de nature. Ce n'est plus une entreprise qui prête son apprenti à une autre. C'est une structure tierce — le groupement d'employeurs — qui devient l'employeur juridique de l'apprenti, et qui le met à disposition de ses entreprises adhérentes au gré des besoins.</p>
+
+<p>Le cadre est posé par les articles L1253-1 à L1253-23 du Code du travail. Deux familles principales coexistent. Les groupements d'employeurs classiques (GE), qui mutualisent l'embauche entre entreprises adhérentes pour faire face à la saisonnalité, à la fluctuation d'activité ou à des besoins partagés. Et les groupements d'employeurs pour l'insertion et la qualification (GEIQ), qui ont une mission ciblée d'insertion de personnes éloignées de l'emploi et qui privilégient le contrat de professionnalisation.</p>
+
+<p>L'intérêt pour un dirigeant est réel : plus de gestion administrative du salarié (le groupement s'occupe du contrat, de la paie, des congés, des absences, des accidents), une flexibilité d'utilisation au plus près des besoins, et la possibilité de tourner sur trois entreprises adhérentes pour un même apprenti.</p>
+
+<p>Mais soyons honnêtes : créer un groupement d'employeurs depuis zéro n'est pas un projet de quelques semaines. C'est une démarche structurée qui suppose un noyau d'entreprises engagées, un projet partagé, une gouvernance et une gestion à monter. En pratique, ce levier est intéressant pour vous si un groupement existe déjà sur votre territoire et qu'il accepte de nouveaux adhérents. Plusieurs groupements sont actifs en Auvergne-Rhône-Alpes ; nous pouvons orienter ceux qui souhaitent explorer cette piste, mais nous ne la présentons jamais comme la solution de premier réflexe.</p>
+
+<h2>Troisième voie — le rôle du CFA dans le montage</h2>
+
+<p>C'est l'angle dont on parle peu, et c'est sans doute le plus différenciant pour un CFA de taille humaine comme le nôtre.</p>
+
+<p>Nous connaissons les entreprises de notre réseau, leurs saisonnalités, leurs métiers, leurs équipes. Quand un dirigeant nous contacte en disant qu'il aurait besoin d'un coup de main mais pas à temps plein, notre premier réflexe n'est pas de répondre « impossible », ni d'envoyer un mode d'emploi juridique. C'est de regarder qui, dans notre carnet, pourrait être un partenaire crédible pour un montage de mise à disposition.</p>
+
+<p>Cela prend plusieurs formes en pratique. La mise en relation directe entre deux entreprises qu'on identifie comme compatibles sur les besoins, le calendrier et la géographie. La co-construction du montage juridique, avec un appui à la rédaction de la convention tripartite et à la désignation des maîtres d'apprentissage. Et un suivi pédagogique unique côté CFA : un seul interlocuteur pour les deux entreprises et pour l'apprenti, ce qui simplifie largement la coordination sur deux ans.</p>
+
+<p>C'est un service que nous proposons aux entreprises qui hésitent à se lancer. Aucune facturation supplémentaire : en pratique, un alternant mutualisé qui rejoint notre promo vaut mieux qu'un projet qui ne se fait pas, pour le dirigeant comme pour le territoire.</p>
+
+<h2>Un cas concret pour la rentrée 2026 — un traiteur et un fleuriste de notre réseau</h2>
+
+<p>À l'automne 2025, un traiteur indépendant du bassin Drôme-Provence nous a contactés. Sa demande tenait en deux phrases : il voulait professionnaliser sa boutique en ligne et sa présence sur les réseaux sociaux, mieux gérer ses stocks périssables, et soulager son équipe sur la relation clientèle pendant les pics — mariages, événements, fêtes de fin d'année. Le profil cible, après quelques échanges, s'est imposé : un BTS Management Commercial Opérationnel, formation que nous ouvrons à la rentrée de septembre 2026.</p>
+
+<p>Premier obstacle identifié ensemble : sur l'année, le besoin réel tournait autour de quatre jours par semaine en haute saison, un à deux jours sur les périodes creuses. Bien en dessous des 35 heures hebdomadaires d'un contrat d'apprentissage classique. La question d'arrêter là s'est posée — c'est ce que le dirigeant envisageait en arrivant chez nous.</p>
+
+<p>La démarche s'est enclenchée à partir de là. Identifier dans notre réseau un second commerçant aux besoins compatibles, aux pics d'activité décalés, et géographiquement proche. Trois critères se vérifient en amont : compatibilité métier (le BTS MCO doit avoir du sens dans les deux structures, donc deux activités avec un vrai pilotage commercial), compatibilité géographique (l'apprenti ne va pas faire 50 km matin et soir entre deux points), et capacité de tutorat équivalente côté maître d'apprentissage. C'est ce travail de mise en correspondance qui a conduit à un fleuriste du même secteur, dont les pics d'activité — Saint-Valentin, fête des mères, Toussaint, fêtes de fin d'année — alternent avec ceux du traiteur sur l'année et créent une complémentarité naturelle.</p>
+
+<p>La suite, à construire pour la rentrée : une convention tripartite calée sur les périodes d'accueil de chacun, un maître d'apprentissage désigné dans chaque structure, le respect strict de la limite des 50 % de temps en entreprise prévue par le Code du travail. L'apprenti reste juridiquement employé par le traiteur, qui a initié la démarche.</p>
+
+<p>Bénéfice pour chaque commerçant : environ la moitié du coût d'un alternant à plein temps. Bénéfice pour l'alternant : deux contextes professionnels complémentaires sur des métiers de commerce de proximité, deux maîtres d'apprentissage, une employabilité renforcée à la sortie. Bénéfice pour le territoire : deux commerces indépendants qui se professionnalisent sans renoncer à l'investissement humain qui va avec.</p>
+
+<h2>Ce qu'on en pense après les avoir vus à l'œuvre</h2>
+
+<p>Pour être direct : la solution qui marche le mieux en pratique, et de loin, c'est la première — la mise à disposition entre deux entreprises. Le groupement d'employeurs est intéressant en théorie, mais il suppose qu'un GE existe déjà sur votre territoire et soit ouvert à de nouveaux adhérents. C'est rare. Et la mise en relation que nous opérons côté CFA n'a de sens que si la mise à disposition est juridiquement possible : c'est un levier qui amplifie la première solution, ce n'est pas une solution autonome.</p>
+
+<p>Notre recommandation, si vous êtes dirigeant et que vous vous reconnaissez dans le « j'ai besoin mais pas à plein temps » : commencez par nous appeler. En une demi-heure de discussion, on saura vous dire si votre besoin est compatible avec un montage mutualisé, sous quelle forme, et avec quel calendrier. Si oui, on enclenche. Si non, on cherche une autre piste avec vous.</p>
+
+<h2>Questions fréquentes</h2>
+
+<h3>Le contrat est signé avec qui, et qui paie le salaire ?</h3>
+<p>Avec un seul employeur — l'employeur principal. C'est lui qui rémunère l'apprenti et qui paie les charges, et c'est lui qui touche l'aide à l'embauche. L'entreprise d'accueil n'a pas de lien contractuel avec l'apprenti. Selon les cas, une refacturation peut être prévue entre les deux entreprises au titre du temps de mise à disposition, mais elle est libre et se négocie entre les deux dirigeants.</p>
+
+<h3>Qui touche l'aide à l'embauche ?</h3>
+<p>L'employeur principal, c'est-à-dire celui qui a signé le contrat. L'entreprise d'accueil ne perçoit pas d'aide à ce titre. C'est un point qui doit être pris en compte dans la négociation de la refacturation entre les deux entreprises.</p>
+
+<h3>Peut-on avoir trois entreprises d'accueil pour un même apprenti ?</h3>
+<p>Pas dans le cas général : la limite est de deux entreprises d'accueil sur la durée du contrat. La règle passe à trois uniquement si l'employeur principal est un groupement d'employeurs.</p>
+
+<h3>Et si le maître d'apprentissage de l'entreprise d'accueil n'est plus disponible en cours de contrat ?</h3>
+<p>Un nouveau maître d'apprentissage peut être désigné par avenant à la convention tripartite. C'est une situation classique sur des contrats de deux ans, notamment en cas de départ ou de mobilité interne. Il faut juste s'assurer que le remplaçant remplit les conditions de compétence professionnelle prévues à l'article L6223-8-1.</p>
+
+<h3>Que se passe-t-il si l'une des deux entreprises veut sortir du montage ?</h3>
+<p>La convention tripartite peut être résiliée selon les modalités qu'elle prévoit elle-même — c'est l'un des points clés à anticiper dès sa rédaction. Le contrat d'apprentissage, lui, continue avec l'employeur principal, qui doit alors soit absorber le temps d'entreprise correspondant, soit identifier une nouvelle entreprise d'accueil dans la limite des deux entreprises maximum.</p>
+
+<hr/>
+
+<p>Cet article fait partie d'une série consacrée à l'alternance pour les employeurs, après <a href="https://cadp.pro/blog/combien-coute-un-alternant-entreprise">Combien coûte un alternant à une entreprise en 2026 ?</a> et <a href="https://cadp.pro/blog/alternance-valorisation-tuteur">Recruter un alternant, c'est faire grandir votre tuteur</a>. D'autres angles suivront.</p>
+
+<p><strong>Vous vous reconnaissez dans ce besoin partiel ?</strong></p>
+
+<p>Échangez 30 minutes avec Laurent Aubret, Directeur Général des Relations Entreprises au CADP. À l'issue, vous savez si un montage mutualisé est viable pour votre activité, sous quelle forme, et avec quel calendrier. Visioconférence, téléphone ou rencontre à Pierrelatte, au choix. <a href="https://cadp.pro/contact">Prendre rendez-vous</a>.</p>
+
+<p><em>Kévin Vidard<br/>Directeur et Responsable pédagogique<br/>Campus Alternance Drôme Provence</em></p>
+`,
+    faqQuestions: [
+      {
+        question: "Le contrat est signé avec qui, et qui paie le salaire ?",
+        answer:
+          "Avec un seul employeur — l'employeur principal. C'est lui qui rémunère l'apprenti et qui paie les charges, et c'est lui qui touche l'aide à l'embauche. L'entreprise d'accueil n'a pas de lien contractuel avec l'apprenti. Selon les cas, une refacturation peut être prévue entre les deux entreprises au titre du temps de mise à disposition, mais elle est libre et se négocie entre les deux dirigeants.",
+      },
+      {
+        question: "Qui touche l'aide à l'embauche ?",
+        answer:
+          "L'employeur principal, c'est-à-dire celui qui a signé le contrat. L'entreprise d'accueil ne perçoit pas d'aide à ce titre. C'est un point qui doit être pris en compte dans la négociation de la refacturation entre les deux entreprises.",
+      },
+      {
+        question:
+          "Peut-on avoir trois entreprises d'accueil pour un même apprenti ?",
+        answer:
+          "Pas dans le cas général : la limite est de deux entreprises d'accueil sur la durée du contrat. La règle passe à trois uniquement si l'employeur principal est un groupement d'employeurs.",
+      },
+      {
+        question:
+          "Et si le maître d'apprentissage de l'entreprise d'accueil n'est plus disponible en cours de contrat ?",
+        answer:
+          "Un nouveau maître d'apprentissage peut être désigné par avenant à la convention tripartite. C'est une situation classique sur des contrats de deux ans, notamment en cas de départ ou de mobilité interne. Il faut juste s'assurer que le remplaçant remplit les conditions de compétence professionnelle prévues à l'article L6223-8-1.",
+      },
+      {
+        question:
+          "Que se passe-t-il si l'une des deux entreprises veut sortir du montage ?",
+        answer:
+          "La convention tripartite peut être résiliée selon les modalités qu'elle prévoit elle-même — c'est l'un des points clés à anticiper dès sa rédaction. Le contrat d'apprentissage, lui, continue avec l'employeur principal, qui doit alors soit absorber le temps d'entreprise correspondant, soit identifier une nouvelle entreprise d'accueil dans la limite des deux entreprises maximum.",
+      },
+    ],
+  },
+  {
     slug: "inscription-cadp-rentree-2026",
     title: "S'inscrire au CADP pour la rentrée 2026 — Le guide complet",
     metaTitle: "S'inscrire au CADP pour la rentrée 2026 — Alternance à Pierrelatte",
