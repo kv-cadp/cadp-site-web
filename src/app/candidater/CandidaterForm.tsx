@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState, useRef, useEffect, type FormEvent } from "react";
 import Link from "next/link";
 
 type Intention = "candidater" | "info" | "orientation" | null;
@@ -33,6 +33,13 @@ export default function CandidaterForm() {
   const [situation, setSituation] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const successRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (status === "success") {
+      successRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [status]);
 
   function chooseIntention(i: Intention) {
     if (i === "orientation") {
@@ -139,7 +146,7 @@ export default function CandidaterForm() {
 
           {/* ==================== SUCCESS ==================== */}
           {status === "success" && (
-            <div className="bg-[#E8F5E9] border border-[#2E7D4F]/20 rounded-xl p-8 text-center animate-fade-in">
+            <div ref={successRef} className="scroll-mt-48 bg-[#E8F5E9] border border-[#2E7D4F]/20 rounded-xl p-8 text-center animate-fade-in">
               <div className="size-14 rounded-full bg-[#2E7D4F]/10 inline-flex items-center justify-center mb-4">
                 <svg className="size-7 text-[#2E7D4F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
