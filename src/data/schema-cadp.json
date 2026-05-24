@@ -104,7 +104,7 @@
         "courseSchedule": {
           "@type": "Schedule",
           "repeatFrequency": "P1W",
-          "byDay": ["Thursday", "Friday"],
+          "byDay": ["Monday", "Tuesday"],
           "scheduleTimezone": "Europe/Paris"
         },
         "location": {
