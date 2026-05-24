@@ -2,6 +2,15 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://cadp.pro/#website",
+      "url": "https://cadp.pro",
+      "name": "CADP Pierrelatte",
+      "alternateName": "Campus Alternance Drôme Provence",
+      "inLanguage": "fr-FR",
+      "publisher": { "@id": "https://cadp.pro/#organization" }
+    },
+    {
       "@type": "EducationalOrganization",
       "@id": "https://cadp.pro/#organization",
       "name": "Campus Alternance Drôme Provence",
