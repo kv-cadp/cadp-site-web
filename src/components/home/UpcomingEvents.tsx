@@ -1,37 +1,12 @@
 import Link from "next/link";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
-
-const events = [
-  {
-    day: "27",
-    month: "MAI",
-    title: "Alternance Dating",
-    location: "CADP Pierrelatte — 14h à 16h",
-    description:
-      "Rencontre directe avec nos entreprises partenaires. Viens avec ton CV, repars avec des propositions d'alternance.",
-    href: "/entreprises/alternance-dating",
-  },
-  {
-    day: "",
-    month: "",
-    title: "Visite du campus sur rendez-vous",
-    location: "CADP Pierrelatte",
-    description:
-      "Tu veux découvrir le campus, rencontrer les formateurs et poser tes questions ? Appelle-nous au 04 75 00 34 56 pour fixer un créneau. On t'accueille individuellement.",
-    isOpenRdv: true,
-  },
-  {
-    day: "14",
-    month: "MAI",
-    title: "Atelier CV & Coaching entretien",
-    location: "CADP Pierrelatte — 10h à 12h",
-    description:
-      "On t'aide à construire un CV percutant et à préparer tes entretiens. Ouvert à tous les candidats, même si tu n'es pas encore inscrit.",
-  },
-];
+import { getUpcomingEvents } from "@/data/events";
+import { formatEventDay, buildEventLocationLine } from "@/lib/format-event";
 
 export default function UpcomingEvents() {
+  const events = getUpcomingEvents();
+
   return (
     <section className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -54,19 +29,21 @@ export default function UpcomingEvents() {
         </SectionTitle>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {events.map((event, i) => {
+          {events.map((event) => {
+            const dayMonth = event.date ? formatEventDay(event.date) : null;
+            const locationLine = buildEventLocationLine(event.location, event.startTime, event.endTime);
             const inner = (
               <Card
                 className={`flex gap-4 h-full ${event.href ? "border border-transparent hover:border-gold transition-colors" : ""}`}
               >
                 <div className="shrink-0 bg-navy-deep text-center rounded-lg px-3 py-2 min-w-[60px] flex items-center justify-center">
-                  {event.day ? (
+                  {dayMonth ? (
                     <div>
                       <span className="block text-gold font-serif text-2xl leading-none">
-                        {event.day}
+                        {dayMonth.day}
                       </span>
                       <span className="block text-cream/70 text-xs font-semibold uppercase mt-1">
-                        {event.month}
+                        {dayMonth.month}
                       </span>
                     </div>
                   ) : (
@@ -77,20 +54,20 @@ export default function UpcomingEvents() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-navy-deep mb-1">{event.title}</h3>
-                  <p className="text-gold text-xs font-medium mb-2">{event.location}</p>
-                  <p className="text-gray-mid text-sm leading-relaxed">{event.description}</p>
+                  <p className="text-gold text-xs font-medium mb-2">{locationLine}</p>
+                  <p className="text-gray-mid text-sm leading-relaxed">{event.shortDescription}</p>
                 </div>
               </Card>
             );
 
             if (event.href) {
               return (
-                <Link key={i} href={event.href} className="block">
+                <Link key={event.slug} href={event.href} className="block">
                   {inner}
                 </Link>
               );
             }
-            return <div key={i}>{inner}</div>;
+            return <div key={event.slug}>{inner}</div>;
           })}
         </div>
       </div>
