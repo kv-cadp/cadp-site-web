@@ -4,6 +4,13 @@ import { useActionState, useEffect, useId, useRef } from "react";
 import Button from "@/components/ui/Button";
 import { submitDatingInscription } from "./actions";
 import type { DatingActionState } from "./schema";
+import { getEventBySlug } from "@/data/events";
+import { formatEventDateLong } from "@/lib/format-event";
+
+const DATING_EVENT = getEventBySlug("alternance-dating-mai-2026");
+const DATING_DATE_LONG = DATING_EVENT?.date
+  ? formatEventDateLong(DATING_EVENT.date)
+  : "27 mai 2026";
 
 const FORMATIONS = [
   { value: "BTS MCO", label: "BTS MCO — Management Commercial Opérationnel" },
@@ -481,8 +488,8 @@ export default function DatingInscriptionForm() {
           />
           <span className="text-sm text-gray-dark leading-relaxed">
             J&apos;accepte que le CADP utilise les informations transmises pour
-            me recontacter dans le cadre de l&apos;Alternance Dating du 27 mai
-            2026 et de l&apos;organisation des rencontres avec les candidats.
+            me recontacter dans le cadre de l&apos;{DATING_EVENT?.title ?? "Alternance Dating"} du {DATING_DATE_LONG} et
+            de l&apos;organisation des rencontres avec les candidats.
             Conformément à la{" "}
             <a
               href="/politique-de-confidentialite"
