@@ -1,17 +1,30 @@
 import Button from "@/components/ui/Button";
+import { getEventBySlug } from "@/data/events";
+import { formatEventDateLong, formatEventTime } from "@/lib/format-event";
 
 interface CTADatingProps {
   variant: "banniere" | "carte";
 }
 
-const TITLE = "Alternance Dating — 27 mai 2026";
 const TAGLINE = "Événement entreprises";
-const SUBTITLE =
-  "Rencontrez des candidats BTS et TP ADVF pré-qualifiés • 14h – 16h • Pierrelatte";
-const HREF = "/entreprises/alternance-dating";
 const CTA_LABEL = "S'inscrire";
 
 export default function CTADating({ variant }: CTADatingProps) {
+  const event = getEventBySlug("alternance-dating-mai-2026");
+  if (!event || !event.date) {
+    // Garde-fou : si l'événement disparaît de events.ts ou perd sa date,
+    // le composant ne rend rien (fail-safe, jamais d'affichage cassé).
+    return null;
+  }
+
+  const title = `${event.title} — ${formatEventDateLong(event.date)}`;
+  const timeRange =
+    event.startTime && event.endTime
+      ? `${formatEventTime(event.startTime)} – ${formatEventTime(event.endTime)}`
+      : "";
+  const subtitle = `Rencontrez des candidats BTS et TP ADVF pré-qualifiés • ${timeRange} • Pierrelatte`;
+  const href = event.href ?? "/entreprises/alternance-dating";
+
   if (variant === "banniere") {
     return (
       <section className="bg-navy-deep">
@@ -21,12 +34,12 @@ export default function CTADating({ variant }: CTADatingProps) {
               {TAGLINE}
             </p>
             <h2 className="font-serif text-xl md:text-2xl text-white mb-2 leading-tight">
-              {TITLE}
+              {title}
             </h2>
-            <p className="text-cream/70 text-sm md:text-base">{SUBTITLE}</p>
+            <p className="text-cream/70 text-sm md:text-base">{subtitle}</p>
           </div>
           <div className="shrink-0">
-            <Button href={HREF} variant="gold" className="px-6 py-3">
+            <Button href={href} variant="gold" className="px-6 py-3">
               {CTA_LABEL}
             </Button>
           </div>
@@ -41,9 +54,9 @@ export default function CTADating({ variant }: CTADatingProps) {
       <p className="text-gold font-semibold text-xs uppercase tracking-widest mb-3">
         {TAGLINE}
       </p>
-      <h3 className="font-serif text-xl text-navy-deep mb-2">{TITLE}</h3>
-      <p className="text-gray-mid text-sm mb-5 max-w-md mx-auto">{SUBTITLE}</p>
-      <Button href={HREF} variant="gold">
+      <h3 className="font-serif text-xl text-navy-deep mb-2">{title}</h3>
+      <p className="text-gray-mid text-sm mb-5 max-w-md mx-auto">{subtitle}</p>
+      <Button href={href} variant="gold">
         {CTA_LABEL}
       </Button>
     </div>
