@@ -144,7 +144,7 @@ export const formations: Formation[] = [
       {
         question: "Le BTS MCO est-il difficile ?",
         answer:
-          "Le BTS MCO demande de la régularité et de l'organisation, surtout en alternance. Au CADP, les promos de 12 étudiants permettent un accompagnement personnalisé. Tu n'es jamais seul face à tes difficultés, et l'alternance rend la formation concrète et motivante.",
+          "Le BTS MCO demande de la régularité et de l'organisation, surtout en alternance. Au CADP, les promos sont limitées à 12 étudiants pour garantir un accompagnement personnalisé. Tu n'es jamais seul face à tes difficultés, et l'alternance rend la formation concrète et motivante.",
       },
       {
         question: "Comment trouver une entreprise pour l'alternance en BTS MCO ?",
@@ -169,7 +169,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le taux de réussite du BTS MCO au CADP ?",
         answer:
-          "Le CADP a été créé en 2024 et les premières promotions passent l'examen à l'été 2026. Les résultats ne sont pas encore disponibles. Cependant, l'accompagnement individualisé en petites promos de 12 étudiants est conçu pour maximiser tes chances de réussite.",
+          "Le BTS MCO ouvre au CADP en septembre 2026. La première promotion passera l'examen à l'été 2028. Les résultats ne sont donc pas encore disponibles. Cependant, l'accompagnement individualisé en petites promos de 12 étudiants est conçu pour maximiser tes chances de réussite.",
       },
       {
         question: "Comment s'inscrire au BTS MCO au CADP ?",
@@ -188,11 +188,11 @@ export const formations: Formation[] = [
       },
     ],
     testimonial: {
-      name: "Lucas M.",
-      formation: "BTS MCO",
+      name: "F. D.",
+      formation: "Alternant·e CADP",
       year: "Promo 2024-2026",
       quote:
-        "Ce qui change tout ici, c'est la taille des promos. Les formateurs te connaissent, ils s'adaptent. En entreprise, j'ai pu être autonome très vite grâce à ce qu'on voit en cours.",
+        "Clairement, quitter mon ancien organisme de formation pour rejoindre ce campus a été l'une des meilleures décisions ! Merci à tous les formateurs pour votre énergie, votre patience et votre bienveillance.",
     },
     metaTitle: "BTS MCO en alternance à Pierrelatte",
     metaDescription:
@@ -366,11 +366,11 @@ export const formations: Formation[] = [
       },
     ],
     testimonial: {
-      name: "Inès R.",
+      name: "Léo B.",
       formation: "BTS NDRC",
       year: "Promo 2024-2026",
       quote:
-        "J'avais peur de la prospection au début. Mais avec l'alternance, j'ai pris confiance semaine après semaine. Aujourd'hui je négocie des contrats en autonomie, et j'ai 20 ans.",
+        "Je recommande fortement le campus. La vie y est parfaite, les cours sont intéressants et diversifiés, et les intervenants sont à l'écoute et nous aident énormément.",
     },
     metaTitle: "BTS NDRC en alternance à Pierrelatte",
     metaDescription:
@@ -556,11 +556,10 @@ export const formations: Formation[] = [
       },
     ],
     testimonial: {
-      name: "Chloé D.",
+      name: "Dyane R.",
       formation: "BTS GPME",
       year: "Promo 2024-2026",
-      quote:
-        "En PME, chaque journée est différente. Un jour je fais de la compta, le lendemain je gère un recrutement. Le GPME m'a donné cette polyvalence, et au CADP on est vraiment accompagné.",
+      quote: "Campus à taille humaine, familial et plein d'entrain !",
     },
     metaTitle: "BTS GPME en alternance à Pierrelatte",
     metaDescription:
@@ -705,7 +704,7 @@ export const formations: Formation[] = [
       {
         question: "Le BTS CG est-il difficile ?",
         answer:
-          "Le BTS CG demande de la rigueur et un goût pour les chiffres. Au CADP, les promos de 12 étudiants permettent un accompagnement personnalisé. Si tu es sérieux et organisé, les formateurs s'adaptent à ton rythme pour t'amener à la réussite.",
+          "Le BTS CG demande de la rigueur et un goût pour les chiffres. Au CADP, les promos sont limitées à 12 étudiants pour garantir un accompagnement personnalisé. Si tu es sérieux et organisé, les formateurs s'adaptent à ton rythme pour t'amener à la réussite.",
       },
       {
         question: "Comment trouver une entreprise pour l'alternance en BTS CG ?",
@@ -728,17 +727,22 @@ export const formations: Formation[] = [
           "Le rythme est de 2 jours au campus (jeudi-vendredi) et 3 jours en entreprise ou en cabinet (lundi, mardi, mercredi), toutes les semaines, sans alternance entre semaines A et B. Cours de 8h à 12h et de 13h à 17h. Tu vis les échéances comptables en conditions réelles : déclarations de TVA, clôtures, bilans.",
       },
       {
+        question: "Quel est le taux de réussite du BTS CG au CADP ?",
+        answer:
+          "Le BTS CG ouvre au CADP en septembre 2026. La première promotion passera l'examen à l'été 2028. Les résultats ne sont donc pas encore disponibles. Cependant, l'accompagnement individualisé en petites promos de 12 étudiants est conçu pour maximiser tes chances de réussite.",
+      },
+      {
         question: "Comment s'inscrire au BTS CG au CADP ?",
         answer:
           "Candidature en ligne, entretien de motivation, puis accompagnement dans ta recherche d'entreprise. Les inscriptions sont ouvertes toute l'année, places limitées à 12 par promo.",
       },
     ],
     testimonial: {
-      name: "Théo B.",
-      formation: "BTS CG",
-      year: "Promo 2025-2027",
+      name: "L. L.",
+      formation: "Alternant·e CADP",
+      year: "Promo 2024-2026",
       quote:
-        "Je pensais que la compta c'était ennuyeux. En cabinet, je gère un vrai portefeuille clients. Chaque dossier est différent, et au CADP les formateurs nous préparent vraiment aux situations réelles.",
+        "Merci à l'ensemble de la direction pour votre gentillesse et vos compétences. Sans vous, je n'aurais jamais pu faire ce que je voulais faire à cause des établissements pas sérieux de la région.",
     },
     metaTitle: "BTS CG en alternance à Pierrelatte",
     metaDescription:
@@ -919,11 +923,11 @@ export const formations: Formation[] = [
       },
     ],
     testimonial: {
-      name: "Ryan K.",
+      name: "Lucas L.",
       formation: "BTS MOS",
-      year: "Promo 2025-2027",
+      year: "Promo 2024-2026",
       quote:
-        "La sécurité, c'est pas juste surveiller. C'est manager, anticiper, gérer des crises. Le BTS MOS m'a donné les outils pour diriger une équipe. Et en alternance, j'apprends deux fois plus vite.",
+        "Campus agréable et convivial, tout en restant professionnel, avec des intervenants de qualité. Je recommande.",
     },
     metaTitle: "BTS MOS en alternance à Pierrelatte",
     metaDescription:
@@ -1112,13 +1116,6 @@ export const formations: Formation[] = [
           "Oui. Le TP ADVF est un titre professionnel du Ministère du Travail (code TP-00391), inscrit au RNCP (niveau 3). Au CADP, tu le prépares dans le cadre du CFA IFIR, certifié Qualiopi.",
       },
     ],
-    testimonial: {
-      name: "Amina S.",
-      formation: "TP ADVF",
-      year: "Promo 2025-2026",
-      quote:
-        "Je voulais un métier qui a du sens. Accompagner les personnes âgées, les aider à garder leur autonomie, c'est concret. Au CADP, la formation est humaine, comme le métier qu'on prépare.",
-    },
     metaTitle: "TP ADVF en alternance à Pierrelatte",
     metaDescription:
       "Prépare ton Titre Professionnel ADVF au CADP à Pierrelatte. Aide à domicile, accompagnement des personnes fragiles. Formation en 9-12 mois, secteur qui recrute massivement.",
