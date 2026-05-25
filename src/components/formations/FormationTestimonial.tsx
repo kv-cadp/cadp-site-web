@@ -1,10 +1,12 @@
 import type { Testimonial } from "@/types/formation";
 
 interface FormationTestimonialProps {
-  testimonial: Testimonial;
+  testimonial?: Testimonial;
 }
 
 export default function FormationTestimonial({ testimonial }: FormationTestimonialProps) {
+  if (!testimonial) return null;
+
   return (
     <section className="py-16 bg-white">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

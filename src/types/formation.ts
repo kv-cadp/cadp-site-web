@@ -58,7 +58,7 @@ export interface Formation {
   furtherStudies: string[];
   prerequisites: string[];
   faq: FAQItem[];
-  testimonial: Testimonial;
+  testimonial?: Testimonial;
   metaTitle: string;
   metaDescription: string;
 }

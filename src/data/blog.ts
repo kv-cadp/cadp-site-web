@@ -848,11 +848,11 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 
 <h2>Le BTS CG au CADP — ce qui fait la différence</h2>
 
-<p><strong>Des promos de 12 étudiants.</strong> La comptabilité demande de la rigueur et de la compréhension — pas du par cœur. En petit groupe, le formateur peut reprendre chaque point de blocage, vérifier que chaque étudiant maîtrise les mécanismes avant de passer au suivant.</p>
+<p><strong>Des promos de 12 étudiants.</strong> La comptabilité demande de la rigueur et de la compréhension — pas du par cœur. En petit groupe, le formateur pourra reprendre chaque point de blocage, vérifier que chaque étudiant maîtrise les mécanismes avant de passer au suivant.</p>
 
-<p><strong>Des formateurs issus du terrain.</strong> Nos intervenants en CG ont une expérience réelle en cabinet et en entreprise. Ils enseignent la comptabilité telle qu'elle se pratique, pas telle qu'elle s'écrit dans un manuel.</p>
+<p><strong>Des formateurs issus du terrain.</strong> Les intervenants prévus pour le BTS CG auront une expérience réelle en cabinet et en entreprise. Ils enseigneront la comptabilité telle qu'elle se pratique, pas telle qu'elle s'écrit dans un manuel.</p>
 
-<p><strong>Un accompagnement concret vers l'emploi.</strong> Notre réseau de cabinets comptables partenaires sur la Drôme et l'Ardèche recrute activement nos alternants. On te met en relation directe.</p>
+<p><strong>Un accompagnement concret vers l'emploi.</strong> Notre réseau de cabinets comptables partenaires sur la Drôme et l'Ardèche préparera l'accueil de nos futurs alternants CG. On te mettra en relation directe.</p>
 
 <h2>Et après le BTS CG ?</h2>
 
