@@ -62,6 +62,22 @@ export function formatEventDateLong(dateIso: string): string {
 }
 
 /**
+ * Format date français long avec jour de la semaine.
+ * Ex : "2026-05-27" → "mercredi 27 mai 2026"
+ * Utilisé notamment dans les emails transactionnels pour information
+ * complémentaire utile au destinataire.
+ */
+export function formatEventDateLongWithWeekday(dateIso: string): string {
+  const date = new Date(`${dateIso}T00:00:00`);
+  return date.toLocaleDateString("fr-FR", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
+/**
  * Formate une date ISO en format court français (sans année).
  * Ex: "2026-05-27" → "27 mai"
  */
