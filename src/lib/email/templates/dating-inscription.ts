@@ -1,5 +1,12 @@
 import "server-only";
 
+import type { CadpEvent } from "@/types/event";
+import {
+  formatEventDateLongWithWeekday,
+  formatEventTime,
+} from "@/lib/format-event";
+import { CADP_VENUE_LINE } from "@/data/org";
+
 export interface DatingInscriptionData {
   civilite: "M." | "Mme";
   prenom: string;
@@ -25,16 +32,27 @@ function escapeHtml(input: string): string {
     .replace(/'/g, "&#39;");
 }
 
-const EVENT_DATE = "mercredi 27 mai 2026";
-const EVENT_TIME = "14h – 16h";
-const EVENT_VENUE = "CADP Pierrelatte — 2 Boulevard Frédéric Mistral, 26700 Pierrelatte";
-
-export function buildAdminEmail(data: DatingInscriptionData): {
+export function buildAdminEmail(
+  data: DatingInscriptionData,
+  event: CadpEvent,
+): {
   subject: string;
   html: string;
   text: string;
 } {
-  const subject = `[Dating 27/05] Nouvelle inscription — ${data.entreprise}`;
+  const eventDateLong = event.date
+    ? formatEventDateLongWithWeekday(event.date)
+    : "";
+  const eventDateShort = event.date
+    ? `${event.date.slice(8, 10)}/${event.date.slice(5, 7)}`
+    : "";
+  const eventTimeRange =
+    event.startTime && event.endTime
+      ? `${formatEventTime(event.startTime)} – ${formatEventTime(event.endTime)}`
+      : "";
+  const eventVenue = CADP_VENUE_LINE;
+
+  const subject = `[Dating ${eventDateShort}] Nouvelle inscription — ${data.entreprise}`;
 
   const rows: Array<[string, string]> = [
     ["Civilité", data.civilite],
@@ -64,7 +82,7 @@ export function buildAdminEmail(data: DatingInscriptionData): {
 <body style="margin:0;padding:24px;background:#F5F0E6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#2C2C2C">
   <div style="max-width:640px;margin:0 auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08)">
     <div style="background:#0B1929;padding:24px 28px">
-      <p style="margin:0;color:#C9A84C;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:600">Alternance Dating — 27 mai 2026</p>
+      <p style="margin:0;color:#C9A84C;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:600">${escapeHtml(event.title)} — ${escapeHtml(eventDateLong)}</p>
       <h1 style="margin:8px 0 0;color:#fff;font-size:22px;font-weight:600">Nouvelle inscription entreprise</h1>
     </div>
     <div style="padding:24px 28px">
@@ -76,7 +94,7 @@ export function buildAdminEmail(data: DatingInscriptionData): {
 </body></html>`;
 
   const text = [
-    `Nouvelle inscription — Alternance Dating 27 mai 2026`,
+    `Nouvelle inscription — ${event.title} ${eventDateLong}`,
     `--------------------------------------------------`,
     ...rows.map(([k, v]) => `${k}: ${v}`),
   ].join("\n");
@@ -84,12 +102,24 @@ export function buildAdminEmail(data: DatingInscriptionData): {
   return { subject, html, text };
 }
 
-export function buildAccuseEmail(data: DatingInscriptionData): {
+export function buildAccuseEmail(
+  data: DatingInscriptionData,
+  event: CadpEvent,
+): {
   subject: string;
   html: string;
   text: string;
 } {
-  const subject = `Inscription Alternance Dating 27 mai 2026 — confirmation`;
+  const eventDateLong = event.date
+    ? formatEventDateLongWithWeekday(event.date)
+    : "";
+  const eventTimeRange =
+    event.startTime && event.endTime
+      ? `${formatEventTime(event.startTime)} – ${formatEventTime(event.endTime)}`
+      : "";
+  const eventVenue = CADP_VENUE_LINE;
+
+  const subject = `Inscription ${event.title} ${eventDateLong} — confirmation`;
 
   const greeting = data.civilite === "M." ? "Monsieur" : "Madame";
 
@@ -99,15 +129,15 @@ export function buildAccuseEmail(data: DatingInscriptionData): {
   <div style="max-width:640px;margin:0 auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08)">
     <div style="background:#0B1929;padding:28px">
       <p style="margin:0;color:#C9A84C;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:600">Confirmation d'inscription</p>
-      <h1 style="margin:10px 0 0;color:#fff;font-size:24px;font-weight:600">Alternance Dating — 27 mai 2026</h1>
+      <h1 style="margin:10px 0 0;color:#fff;font-size:24px;font-weight:600">${escapeHtml(event.title)} — ${escapeHtml(eventDateLong)}</h1>
     </div>
     <div style="padding:28px;font-size:15px;line-height:1.6">
       <p style="margin:0 0 16px">${greeting} ${escapeHtml(data.nom)},</p>
-      <p style="margin:0 0 16px">Nous avons bien reçu l'inscription de <strong>${escapeHtml(data.entreprise)}</strong> à l'Alternance Dating du 27 mai 2026. Merci de votre intérêt.</p>
+      <p style="margin:0 0 16px">Nous avons bien reçu l'inscription de <strong>${escapeHtml(data.entreprise)}</strong> à l'${escapeHtml(event.title)} du ${escapeHtml(eventDateLong)}. Merci de votre intérêt.</p>
       <div style="background:#F5F0E6;border-left:3px solid #C9A84C;padding:16px 20px;border-radius:6px;margin:20px 0">
-        <p style="margin:0 0 4px;font-weight:600;color:#0B1929">📅 ${EVENT_DATE}</p>
-        <p style="margin:0 0 4px;color:#2C2C2C">🕑 ${EVENT_TIME}</p>
-        <p style="margin:0;color:#2C2C2C">📍 ${EVENT_VENUE}</p>
+        <p style="margin:0 0 4px;font-weight:600;color:#0B1929">📅 ${escapeHtml(eventDateLong)}</p>
+        <p style="margin:0 0 4px;color:#2C2C2C">🕑 ${escapeHtml(eventTimeRange)}</p>
+        <p style="margin:0;color:#2C2C2C">📍 ${escapeHtml(eventVenue)}</p>
       </div>
       <p style="margin:0 0 16px"><strong>Nous reprendrons contact avec vous sous 48h</strong> pour qualifier vos besoins et pré-sélectionner les profils à vous présenter le jour J. L'objectif : que vous ne rencontriez que des candidats pertinents pour vos postes.</p>
       <p style="margin:0 0 16px">En attendant, si vous avez une question urgente, n'hésitez pas à nous appeler au <a href="tel:+33475003456" style="color:#C9A84C;font-weight:600;text-decoration:none">04 75 00 34 56</a>.</p>
@@ -124,11 +154,11 @@ export function buildAccuseEmail(data: DatingInscriptionData): {
   const text = [
     `${greeting} ${data.nom},`,
     ``,
-    `Nous avons bien reçu l'inscription de ${data.entreprise} à l'Alternance Dating du 27 mai 2026. Merci de votre intérêt.`,
+    `Nous avons bien reçu l'inscription de ${data.entreprise} à l'${event.title} du ${eventDateLong}. Merci de votre intérêt.`,
     ``,
-    `📅 ${EVENT_DATE}`,
-    `🕑 ${EVENT_TIME}`,
-    `📍 ${EVENT_VENUE}`,
+    `📅 ${eventDateLong}`,
+    `🕑 ${eventTimeRange}`,
+    `📍 ${eventVenue}`,
     ``,
     `Nous reprendrons contact avec vous sous 48h pour qualifier vos besoins et pré-sélectionner les profils à vous présenter le jour J. L'objectif : que vous ne rencontriez que des candidats pertinents pour vos postes.`,
     ``,

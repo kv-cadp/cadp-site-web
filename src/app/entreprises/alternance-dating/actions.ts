@@ -16,6 +16,9 @@ import {
   DatingInscriptionSchema,
   type DatingActionState,
 } from "./schema";
+import { getEventBySlug } from "@/data/events";
+
+const SLUG_DATING = "alternance-dating-mai-2026";
 
 const RATE_LIMIT_WINDOW_MS = 60_000;
 const rateLimitStore = new Map<string, number>();
@@ -125,8 +128,24 @@ export async function submitDatingInscription(
     commentaire: parsed.data.commentaire,
   };
 
-  const admin = buildAdminEmail(data);
-  const accuse = buildAccuseEmail(data);
+  const event = getEventBySlug(SLUG_DATING);
+  if (!event) {
+    console.error(
+      `[dating actions] Event with slug "${SLUG_DATING}" not found in events.ts`,
+    );
+    throw new Error("Configuration error: dating event not found.");
+  }
+  if (!event.date || !event.startTime || !event.endTime) {
+    console.error(
+      `[dating actions] Event "${SLUG_DATING}" is missing required fields (date/startTime/endTime).`,
+    );
+    throw new Error(
+      "Configuration error: dating event missing date or times.",
+    );
+  }
+
+  const admin = buildAdminEmail(data, event);
+  const accuse = buildAccuseEmail(data, event);
 
   try {
     const results = await Promise.allSettled([
