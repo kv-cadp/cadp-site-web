@@ -4,6 +4,8 @@ import { JsonLd } from "@/lib/structured-data";
 import Badge from "@/components/ui/Badge";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
+import { formations as formationsData } from "@/data/formations";
+import { formatCampusDaysShort } from "@/lib/format-rhythm";
 
 export const metadata = createPageMetadata({
   title: "Nos formations en alternance à Pierrelatte",
@@ -12,6 +14,19 @@ export const metadata = createPageMetadata({
   path: "/formations",
 });
 
+// Source unique des rythmes : src/data/formations.ts (rhythm.campusDays).
+// Cette dérivation évite la divergence avec le format string court inline.
+const rhythmBySlug: Record<string, string> = Object.fromEntries(
+  formationsData.map((f) => [
+    f.slug,
+    formatCampusDaysShort(f.rhythm.campusDays),
+  ]),
+);
+
+// NOTE EDITORIAL (F-PHASEC-FORMATION-HUB-EDITORIAL) : les champs
+// enUnMot/profil/metiers/dominante/tuAimes ci-dessous sont éditoriaux
+// propriétaires à cette page hub, non centralisés dans formations.ts.
+// Refacto éditoriale à scoper en chantier dédié.
 const formations = [
   {
     slug: "bts-mco", code: "MCO", name: "BTS MCO", full: "Management Commercial Opérationnel",
@@ -21,7 +36,7 @@ const formations = [
     metiers: "Manager de rayon, responsable de magasin, chef de secteur",
     dominante: "Commerce & Management",
     tuAimes: "Manager, animer, vendre",
-    rythme: "Lun-Mar",
+    rythme: rhythmBySlug["bts-mco"] ?? "Lun-Mar",
   },
   {
     slug: "bts-ndrc", code: "NDRC", name: "BTS NDRC", full: "Négociation et Digitalisation de la Relation Client",
@@ -31,7 +46,7 @@ const formations = [
     metiers: "Business developer, commercial terrain, chargé d'affaires",
     dominante: "Vente & Digital",
     tuAimes: "Convaincre, négocier, prospecter",
-    rythme: "Jeu-Ven",
+    rythme: rhythmBySlug["bts-ndrc"] ?? "Jeu-Ven",
   },
   {
     slug: "bts-gpme", code: "GPME", name: "BTS GPME", full: "Gestion de la PME",
@@ -41,7 +56,7 @@ const formations = [
     metiers: "Assistant de gestion, assistant RH, office manager",
     dominante: "Administration & Gestion",
     tuAimes: "Organiser, gérer, administrer",
-    rythme: "Lun-Mar",
+    rythme: rhythmBySlug["bts-gpme"] ?? "Lun-Mar",
   },
   {
     slug: "bts-cg", code: "CG", name: "BTS CG", full: "Comptabilité et Gestion",
@@ -51,7 +66,7 @@ const formations = [
     metiers: "Comptable, gestionnaire de paie, collaborateur en cabinet",
     dominante: "Comptabilité & Finance",
     tuAimes: "Calculer, analyser, contrôler",
-    rythme: "Jeu-Ven",
+    rythme: rhythmBySlug["bts-cg"] ?? "Jeu-Ven",
   },
   {
     slug: "bts-mos", code: "MOS", name: "BTS MOS", full: "Management Opérationnel de la Sécurité",
@@ -61,7 +76,7 @@ const formations = [
     metiers: "Chef de site sécurité, responsable sûreté, coordinateur QHSE",
     dominante: "Sécurité & Risques",
     tuAimes: "Protéger, diriger, anticiper",
-    rythme: "Lun-Mar",
+    rythme: rhythmBySlug["bts-mos"] ?? "Lun-Mar",
   },
   {
     slug: "tp-advf", code: "ADVF", name: "TP ADVF", full: "Assistant De Vie aux Familles",
@@ -71,7 +86,7 @@ const formations = [
     metiers: "Aide à domicile, auxiliaire de vie, garde d'enfants",
     dominante: "Aide à la personne",
     tuAimes: "Accompagner, aider, prendre soin",
-    rythme: "Mer-Jeu",
+    rythme: rhythmBySlug["tp-advf"] ?? "Mer-Jeu",
   },
 ];
 
@@ -210,6 +225,10 @@ export default function FormationsHubPage() {
               </tbody>
             </table>
           </div>
+
+          <p className="text-center text-gray-mid text-sm mt-8">
+            Le <Link href="/formations/bts-gtla" className="text-gold font-semibold hover:text-gold-light">BTS GTLA (Transport et Logistique)</Link> ouvre en 2027. Pré-inscriptions ouvertes.
+          </p>
         </div>
       </section>
 
