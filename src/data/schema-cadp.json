@@ -96,6 +96,13 @@
       "inLanguage": "fr",
       "isAccessibleForFree": true,
       "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "category": "Free",
+        "availability": "https://schema.org/InStock"
+      },
       "availableLanguage": "fr",
       "maximumEnrollment": 12,
       "hasCourseInstance": {
@@ -140,7 +147,36 @@
       "inLanguage": "fr",
       "isAccessibleForFree": true,
       "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
-      "maximumEnrollment": 12
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "category": "Free",
+        "availability": "https://schema.org/InStock"
+      },
+      "availableLanguage": "fr",
+      "maximumEnrollment": 12,
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "blended",
+        "courseSchedule": {
+          "@type": "Schedule",
+          "repeatFrequency": "P1W",
+          "byDay": ["Thursday", "Friday"],
+          "scheduleTimezone": "Europe/Paris"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "Campus Alternance Drôme Provence",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2 Boulevard Frédéric Mistral",
+            "addressLocality": "Pierrelatte",
+            "postalCode": "26700",
+            "addressCountry": "FR"
+          }
+        }
+      }
     },
     {
       "@type": "Course",
@@ -162,7 +198,36 @@
       "inLanguage": "fr",
       "isAccessibleForFree": true,
       "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
-      "maximumEnrollment": 12
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "category": "Free",
+        "availability": "https://schema.org/InStock"
+      },
+      "availableLanguage": "fr",
+      "maximumEnrollment": 12,
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "blended",
+        "courseSchedule": {
+          "@type": "Schedule",
+          "repeatFrequency": "P1W",
+          "byDay": ["Monday", "Tuesday"],
+          "scheduleTimezone": "Europe/Paris"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "Campus Alternance Drôme Provence",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2 Boulevard Frédéric Mistral",
+            "addressLocality": "Pierrelatte",
+            "postalCode": "26700",
+            "addressCountry": "FR"
+          }
+        }
+      }
     },
     {
       "@type": "Course",
@@ -184,7 +249,36 @@
       "inLanguage": "fr",
       "isAccessibleForFree": true,
       "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
-      "maximumEnrollment": 12
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "category": "Free",
+        "availability": "https://schema.org/InStock"
+      },
+      "availableLanguage": "fr",
+      "maximumEnrollment": 12,
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "blended",
+        "courseSchedule": {
+          "@type": "Schedule",
+          "repeatFrequency": "P1W",
+          "byDay": ["Thursday", "Friday"],
+          "scheduleTimezone": "Europe/Paris"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "Campus Alternance Drôme Provence",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2 Boulevard Frédéric Mistral",
+            "addressLocality": "Pierrelatte",
+            "postalCode": "26700",
+            "addressCountry": "FR"
+          }
+        }
+      }
     },
     {
       "@type": "Course",
@@ -206,7 +300,36 @@
       "inLanguage": "fr",
       "isAccessibleForFree": true,
       "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
-      "maximumEnrollment": 12
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "category": "Free",
+        "availability": "https://schema.org/InStock"
+      },
+      "availableLanguage": "fr",
+      "maximumEnrollment": 12,
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "blended",
+        "courseSchedule": {
+          "@type": "Schedule",
+          "repeatFrequency": "P1W",
+          "byDay": ["Monday", "Tuesday"],
+          "scheduleTimezone": "Europe/Paris"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "Campus Alternance Drôme Provence",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2 Boulevard Frédéric Mistral",
+            "addressLocality": "Pierrelatte",
+            "postalCode": "26700",
+            "addressCountry": "FR"
+          }
+        }
+      }
     },
     {
       "@type": "Course",
@@ -228,6 +351,14 @@
       "inLanguage": "fr",
       "isAccessibleForFree": true,
       "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "category": "Free",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "availableLanguage": "fr",
       "maximumEnrollment": 12
     },
     {
@@ -250,7 +381,36 @@
       "inLanguage": "fr",
       "isAccessibleForFree": true,
       "financialAidEligible": "Formation financée par l'OPCO de l'entreprise — aucun frais pour l'alternant",
-      "maximumEnrollment": 12
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "category": "Free",
+        "availability": "https://schema.org/InStock"
+      },
+      "availableLanguage": "fr",
+      "maximumEnrollment": 12,
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "blended",
+        "courseSchedule": {
+          "@type": "Schedule",
+          "repeatFrequency": "P1W",
+          "byDay": ["Wednesday", "Thursday"],
+          "scheduleTimezone": "Europe/Paris"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "Campus Alternance Drôme Provence",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2 Boulevard Frédéric Mistral",
+            "addressLocality": "Pierrelatte",
+            "postalCode": "26700",
+            "addressCountry": "FR"
+          }
+        }
+      }
     }
   ]
 }
