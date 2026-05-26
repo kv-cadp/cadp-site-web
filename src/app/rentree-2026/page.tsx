@@ -4,6 +4,64 @@ import { JsonLd } from "@/lib/structured-data";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import Card from "@/components/ui/Card";
+import { getEventBySlug } from "@/data/events";
+import { formatEventDateLong, formatEventTime } from "@/lib/format-event";
+import {
+  CADP_ORG_SHORT,
+  CADP_CITY,
+  CADP_STREET,
+  CADP_POSTAL_CODE,
+} from "@/data/org";
+
+const SLUG_DATING = "alternance-dating-mai-2026";
+const SLUG_ATELIER_CV = "atelier-cv-mai-2026";
+
+const eventDatingLookup = getEventBySlug(SLUG_DATING);
+const eventAtelierLookup = getEventBySlug(SLUG_ATELIER_CV);
+
+if (
+  !eventDatingLookup ||
+  !eventDatingLookup.date ||
+  !eventDatingLookup.startTime ||
+  !eventDatingLookup.endTime
+) {
+  throw new Error(
+    `Configuration error: event "${SLUG_DATING}" not found or missing required fields.`,
+  );
+}
+if (
+  !eventAtelierLookup ||
+  !eventAtelierLookup.date ||
+  !eventAtelierLookup.startTime ||
+  !eventAtelierLookup.endTime
+) {
+  throw new Error(
+    `Configuration error: event "${SLUG_ATELIER_CV}" not found or missing required fields.`,
+  );
+}
+
+const eventDating = eventDatingLookup;
+const eventAtelier = eventAtelierLookup;
+
+// Typed bindings to propagate narrowing across module-scope -> JSX
+const eventDatingDate: string = eventDatingLookup.date;
+const eventDatingStartTime: string = eventDatingLookup.startTime;
+const eventDatingEndTime: string = eventDatingLookup.endTime;
+const eventAtelierDate: string = eventAtelierLookup.date;
+const eventAtelierStartTime: string = eventAtelierLookup.startTime;
+const eventAtelierEndTime: string = eventAtelierLookup.endTime;
+
+const datingDateLong = formatEventDateLong(eventDatingDate);
+const datingTimeRange = `${formatEventTime(eventDatingStartTime)} – ${formatEventTime(eventDatingEndTime)}`;
+const datingStartISO = `${eventDatingDate}T${eventDatingStartTime}:00+02:00`;
+const datingEndISO = `${eventDatingDate}T${eventDatingEndTime}:00+02:00`;
+
+const atelierDateLong = formatEventDateLong(eventAtelierDate);
+const atelierTimeRange = `${formatEventTime(eventAtelierStartTime)} – ${formatEventTime(eventAtelierEndTime)}`;
+const atelierStartISO = `${eventAtelierDate}T${eventAtelierStartTime}:00+02:00`;
+const atelierEndISO = `${eventAtelierDate}T${eventAtelierEndTime}:00+02:00`;
+
+const venueShort = `${CADP_ORG_SHORT} ${CADP_CITY}`;
 
 export const metadata = createPageMetadata({
   title: "Rentrée 2026 — Inscriptions ouvertes",
@@ -23,8 +81,8 @@ const formations = [
 
 const timeline = [
   { date: "Maintenant → Juillet 2026", title: "Candidatures ouvertes", desc: "Les inscriptions sont ouvertes pour toutes les formations. Chaque promo est limitée à 12 étudiants — quand c'est complet, c'est complet." },
-  { date: "27 mai 2026 — Matin", title: "Atelier CV & Coaching entretien", desc: "On t'aide à construire un CV percutant et à préparer tes entretiens. Ouvert à tous les candidats. 9h-12h, CADP Pierrelatte." },
-  { date: "27 mai 2026 — Après-midi", title: "Alternance Dating", desc: "Rencontre directe avec nos entreprises partenaires au campus. Viens avec ton CV, repars avec des propositions. 14h-16h, CADP Pierrelatte." },
+  { date: `${atelierDateLong} — Matin`, title: eventAtelier.title, desc: `On t'aide à construire un CV percutant et à préparer tes entretiens. Ouvert à tous les candidats. ${atelierTimeRange}, ${venueShort}.` },
+  { date: `${datingDateLong} — Après-midi`, title: eventDating.title, desc: `Rencontre directe avec nos entreprises partenaires au campus. Viens avec ton CV, repars avec des propositions. ${datingTimeRange}, ${venueShort}.` },
   { date: "Mai — Juin 2026", title: "Entretiens de motivation", desc: "On se rencontre pour discuter de ton projet. Ce n'est pas un concours — c'est une conversation." },
   { date: "Juin — Août 2026", title: "Signature des contrats", desc: "Avec l'appui de notre réseau de 50+ entreprises partenaires, tu signes ton contrat d'apprentissage." },
   { date: "Septembre 2026", title: "Rentrée au campus", desc: "Début des cours et de l'alternance. C'est parti." },
@@ -48,26 +106,26 @@ export default function Rentree2026Page() {
           {
             "@context": "https://schema.org",
             "@type": "Event",
-            name: "Alternance Dating — CADP Pierrelatte",
-            startDate: "2026-05-27T14:00:00+02:00",
-            endDate: "2026-05-27T16:00:00+02:00",
+            name: `${eventDating.title} — ${venueShort}`,
+            startDate: datingStartISO,
+            endDate: datingEndISO,
             eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
-            location: { "@type": "Place", name: "CADP", address: { "@type": "PostalAddress", streetAddress: "2 Boulevard Frédéric Mistral", addressLocality: "Pierrelatte", postalCode: "26700", addressCountry: "FR" } },
-            organizer: { "@type": "EducationalOrganization", name: "CADP", url: "https://cadp.pro" },
+            location: { "@type": "Place", name: CADP_ORG_SHORT, address: { "@type": "PostalAddress", streetAddress: CADP_STREET, addressLocality: CADP_CITY, postalCode: CADP_POSTAL_CODE, addressCountry: "FR" } },
+            organizer: { "@type": "EducationalOrganization", name: CADP_ORG_SHORT, url: "https://cadp.pro" },
             description: "Rencontrez directement les entreprises partenaires du CADP.",
             isAccessibleForFree: true,
           },
           {
             "@context": "https://schema.org",
             "@type": "Event",
-            name: "Atelier CV & Coaching entretien — CADP Pierrelatte",
-            startDate: "2026-05-27T09:00:00+02:00",
-            endDate: "2026-05-27T12:00:00+02:00",
+            name: `${eventAtelier.title} — ${venueShort}`,
+            startDate: atelierStartISO,
+            endDate: atelierEndISO,
             eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
-            location: { "@type": "Place", name: "CADP", address: { "@type": "PostalAddress", streetAddress: "2 Boulevard Frédéric Mistral", addressLocality: "Pierrelatte", postalCode: "26700", addressCountry: "FR" } },
-            organizer: { "@type": "EducationalOrganization", name: "CADP", url: "https://cadp.pro" },
+            location: { "@type": "Place", name: CADP_ORG_SHORT, address: { "@type": "PostalAddress", streetAddress: CADP_STREET, addressLocality: CADP_CITY, postalCode: CADP_POSTAL_CODE, addressCountry: "FR" } },
+            organizer: { "@type": "EducationalOrganization", name: CADP_ORG_SHORT, url: "https://cadp.pro" },
             description: "Atelier pour construire un CV percutant et préparer les entretiens.",
             isAccessibleForFree: true,
           },
