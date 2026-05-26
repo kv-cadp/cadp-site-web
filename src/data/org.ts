@@ -10,6 +10,7 @@ export const CADP_ORG_SHORT = "CADP";
 export const CADP_CITY = "Pierrelatte";
 export const CADP_POSTAL_CODE = "26700";
 export const CADP_STREET = "2 Boulevard Frédéric Mistral";
+export const CADP_REGION = "Drôme";
 
 /**
  * Ligne d'adresse complète pour affichage inline (emails, signatures, etc.).

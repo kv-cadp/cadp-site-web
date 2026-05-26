@@ -1,41 +1,80 @@
 import { createPageMetadata } from "@/lib/metadata";
 import { JsonLd } from "@/lib/structured-data";
 import DatingInscriptionForm from "./DatingInscriptionForm";
+import { getEventBySlug } from "@/data/events";
+import {
+  formatEventDateLong,
+  formatEventDateShort,
+  formatEventTime,
+} from "@/lib/format-event";
+import {
+  CADP_ORG_NAME,
+  CADP_CITY,
+  CADP_STREET,
+  CADP_POSTAL_CODE,
+  CADP_REGION,
+} from "@/data/org";
+
+const SLUG_DATING = "alternance-dating-mai-2026";
+
+const eventLookup = getEventBySlug(SLUG_DATING);
+if (
+  !eventLookup ||
+  !eventLookup.date ||
+  !eventLookup.startTime ||
+  !eventLookup.endTime
+) {
+  throw new Error(
+    `Configuration error: dating event "${SLUG_DATING}" not found or missing required fields (date, startTime, endTime).`,
+  );
+}
+// Re-bind after guard so the declared type excludes undefined and the
+// narrowing survives across the React component function boundary.
+const event = eventLookup;
+const eventDate: string = eventLookup.date;
+const eventStartTime: string = eventLookup.startTime;
+const eventEndTime: string = eventLookup.endTime;
+
+const eventDateLong = formatEventDateLong(eventDate);
+const eventDateShort = formatEventDateShort(eventDate);
+const eventTimeRange = `${formatEventTime(eventStartTime)} – ${formatEventTime(eventEndTime)}`;
+const startDateISO = `${eventDate}T${eventStartTime}:00+02:00`;
+const endDateISO = `${eventDate}T${eventEndTime}:00+02:00`;
+const venueShort = `CADP ${CADP_CITY}`;
 
 export const metadata = createPageMetadata({
-  title: "Alternance Dating — 27 mai 2026 | Pierrelatte",
-  description:
-    "Rencontrez en un après-midi des candidats BTS et TP ADVF pré-qualifiés. 27 mai 2026, 14h-16h, CADP Pierrelatte. Inscription entreprises.",
+  title: `${event.title} — ${eventDateLong} | ${CADP_CITY}`,
+  description: `Rencontrez en un après-midi des candidats BTS et TP ADVF pré-qualifiés. ${eventDateLong}, ${eventTimeRange}, ${venueShort}. Inscription entreprises.`,
   path: "/entreprises/alternance-dating",
 });
 
 const eventJsonLd = {
   "@context": "https://schema.org",
   "@type": "BusinessEvent",
-  name: "Alternance Dating — CADP Pierrelatte",
+  name: `${event.title} — ${venueShort}`,
   description:
     "Rencontre directe entre entreprises de Drôme-Ardèche-Vaucluse-Gard et candidats en BTS / TP ADVF pré-qualifiés par le CADP. Format speed-meeting, 2h, profils ciblés selon les besoins exprimés à l'inscription.",
-  startDate: "2026-05-27T14:00:00+02:00",
-  endDate: "2026-05-27T16:00:00+02:00",
+  startDate: startDateISO,
+  endDate: endDateISO,
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   eventStatus: "https://schema.org/EventScheduled",
   url: "https://cadp.pro/entreprises/alternance-dating",
   image: "https://cadp.pro/og-default.png",
   location: {
     "@type": "Place",
-    name: "Campus Alternance Drôme Provence",
+    name: CADP_ORG_NAME,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "2 Boulevard Frédéric Mistral",
-      addressLocality: "Pierrelatte",
-      postalCode: "26700",
-      addressRegion: "Drôme",
+      streetAddress: CADP_STREET,
+      addressLocality: CADP_CITY,
+      postalCode: CADP_POSTAL_CODE,
+      addressRegion: CADP_REGION,
       addressCountry: "FR",
     },
   },
   organizer: {
     "@type": "Organization",
-    name: "Campus Alternance Drôme Provence",
+    name: CADP_ORG_NAME,
     url: "https://cadp.pro",
   },
   offers: {
@@ -77,8 +116,8 @@ const etapes = [
   },
   {
     n: "3",
-    title: "Le 27 mai, vous rencontrez des profils ciblés",
-    text: "Accueil 14h, rencontres enchaînées jusqu'à 16h. Nous vous présentons uniquement des candidats qui collent à votre besoin.",
+    title: `Le ${eventDateShort}, vous rencontrez des profils ciblés`,
+    text: `Accueil ${formatEventTime(eventStartTime)}, rencontres enchaînées jusqu'à ${formatEventTime(eventEndTime)}. Nous vous présentons uniquement des candidats qui collent à votre besoin.`,
   },
 ];
 
@@ -94,10 +133,10 @@ export default function AlternanceDatingPage() {
             Événement entreprises
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight">
-            Alternance Dating
+            {event.title}
           </h1>
           <p className="text-gold font-semibold text-lg md:text-xl mb-6">
-            27 mai 2026 &bull; 14h&nbsp;–&nbsp;16h &bull; CADP Pierrelatte
+            {eventDateLong} &bull; {eventTimeRange} &bull; {venueShort}
           </p>
           <p className="text-cream/80 text-lg max-w-2xl mx-auto leading-relaxed">
             Un après-midi, une salle, vos futurs alternants. Le CADP vous
