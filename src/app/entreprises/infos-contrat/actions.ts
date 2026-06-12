@@ -22,15 +22,17 @@ function getClientIp(forwardedFor: string | null): string {
   return first || "unknown";
 }
 
-function isSubmitRateLimited(ip: string): boolean {
+function checkSubmitRateLimited(ip: string): boolean {
   const now = Date.now();
   for (const [key, ts] of submitRateLimitStore) {
     if (now - ts > RATE_LIMIT_WINDOW_MS) submitRateLimitStore.delete(key);
   }
   const last = submitRateLimitStore.get(ip);
-  if (last && now - last < RATE_LIMIT_WINDOW_MS) return true;
-  submitRateLimitStore.set(ip, now);
-  return false;
+  return Boolean(last && now - last < RATE_LIMIT_WINDOW_MS);
+}
+
+function markSubmitRateLimited(ip: string): void {
+  submitRateLimitStore.set(ip, Date.now());
 }
 
 export async function submitInfosContrat(
@@ -52,7 +54,7 @@ export async function submitInfosContrat(
 
   const h = await headers();
   const ip = getClientIp(h.get("x-forwarded-for"));
-  if (isSubmitRateLimited(ip)) {
+  if (checkSubmitRateLimited(ip)) {
     return {
       ok: false,
       error:
@@ -69,6 +71,8 @@ export async function submitInfosContrat(
       fieldErrors: flat.fieldErrors as Record<string, string[]>,
     };
   }
+
+  markSubmitRateLimited(ip);
 
   const cfaEmail = process.env.CONTRAT_CFA_EMAIL;
   if (!cfaEmail) {
