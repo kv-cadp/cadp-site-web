@@ -51,6 +51,7 @@ function buildSections(data: InfosContratData): Section[] {
         ["Nom", data.apprenti_nom],
         ["Formation", data.formation],
         ["Début souhaité", formatDateFr(data.date_debut)],
+        ["Date de fin souhaitée", formatDateFr(data.date_fin)],
       ],
     },
     {

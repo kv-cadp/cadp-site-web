@@ -20,6 +20,7 @@ type FormValues = {
   apprenti_nom: string;
   formation: string;
   date_debut: string;
+  date_fin: string;
   siret: string;
   raison_sociale: string;
   adresse_etablissement: string;
@@ -47,6 +48,7 @@ const initialValues: FormValues = {
   apprenti_nom: "",
   formation: "",
   date_debut: "",
+  date_fin: "",
   siret: "",
   raison_sociale: "",
   adresse_etablissement: "",
@@ -83,6 +85,7 @@ const FIELD_ORDER = [
   "apprenti_nom",
   "formation",
   "date_debut",
+  "date_fin",
   "siret",
   "raison_sociale",
   "adresse_etablissement",
@@ -171,6 +174,7 @@ export default function InfosContratForm() {
   const [serverError, setServerError] = useState<string | null>(null);
   const [success, setSuccess] = useState<{
     prenom: string;
+    nom: string;
     email: string;
   } | null>(null);
   const [siretLookup, setSiretLookup] = useState<SiretLookupState>({
@@ -188,7 +192,19 @@ export default function InfosContratForm() {
     }
   }, [success]);
 
+  // Retire l'erreur d'un champ dès que l'utilisateur le modifie,
+  // sans toucher aux erreurs des autres champs.
+  function clearError(key: string) {
+    setErrors((prev) => {
+      if (!(key in prev)) return prev;
+      const next = { ...prev };
+      delete next[key];
+      return next;
+    });
+  }
+
   function setField(key: keyof FormValues, value: string) {
+    clearError(key);
     setValues((v) => {
       const next = { ...v, [key]: value };
       const maKey = INTERLOCUTEUR_TO_MA[key];
@@ -200,6 +216,10 @@ export default function InfosContratForm() {
   }
 
   function handleMaToggle(checked: boolean) {
+    clearError("ma_nom");
+    clearError("ma_prenom");
+    clearError("ma_email");
+    clearError("ma_tel");
     setValues((v) =>
       checked
         ? {
@@ -215,6 +235,7 @@ export default function InfosContratForm() {
   }
 
   function handleIdccInconnuToggle(checked: boolean) {
+    clearError("idcc");
     setValues((v) => ({
       ...v,
       idcc_inconnu: checked,
@@ -223,6 +244,10 @@ export default function InfosContratForm() {
   }
 
   function handleDiplomeNiveauChange(niveau: string) {
+    clearError("ma_diplome_niveau");
+    if (niveau === "Aucun diplôme") {
+      clearError("ma_diplome_intitule");
+    }
     setValues((v) => ({
       ...v,
       ma_diplome_niveau: niveau,
@@ -266,6 +291,19 @@ export default function InfosContratForm() {
     if (!values.formation) add("formation", "Sélectionnez une formation");
     if (!values.date_debut)
       add("date_debut", "La date de début souhaitée est requise");
+    if (!values.date_fin)
+      add("date_fin", "La date de fin souhaitée est requise");
+    // Chaînes ISO AAAA-MM-JJ : la comparaison lexicographique suit l'ordre
+    // chronologique.
+    if (
+      values.date_debut &&
+      values.date_fin &&
+      values.date_fin <= values.date_debut
+    )
+      add(
+        "date_fin",
+        "La date de fin doit être postérieure à la date de début",
+      );
 
     if (!siretIsComplete)
       add("siret", "Le SIRET doit contenir 14 chiffres");
@@ -329,6 +367,7 @@ export default function InfosContratForm() {
       apprenti_nom: values.apprenti_nom,
       formation: values.formation,
       date_debut: values.date_debut,
+      date_fin: values.date_fin,
       siret: values.siret,
       raison_sociale: values.raison_sociale,
       adresse_etablissement: values.adresse_etablissement,
@@ -369,6 +408,7 @@ export default function InfosContratForm() {
       if (result.ok) {
         setSuccess({
           prenom: values.apprenti_prenom,
+          nom: values.apprenti_nom,
           email: values.interlocuteur_email,
         });
       } else {
@@ -426,7 +466,7 @@ export default function InfosContratForm() {
           C&apos;est transmis !
         </h3>
         <p className="text-[#2E7D4F] font-medium mb-2">
-          {`Les informations ont été envoyées à notre CFA pour l'établissement du contrat de ${success.prenom}.`}
+          {`Les informations ont été envoyées à notre CFA pour l'établissement du contrat de ${success.prenom} ${success.nom}.`}
         </p>
         <p className="text-gray-mid text-sm mb-1">
           {`Vous allez recevoir un email récapitulatif à ${success.email}.`}
@@ -554,28 +594,52 @@ export default function InfosContratForm() {
           <FieldError id="err-formation" errors={err.formation} />
         </div>
 
-        <div>
-          <label
-            htmlFor="date_debut"
-            className="block text-sm font-medium text-gray-dark mb-1.5"
-          >
-            Date de début souhaitée <span className="text-gold">*</span>
-          </label>
-          <input
-            id="date_debut"
-            type="date"
-            value={values.date_debut}
-            onChange={(e) => setField("date_debut", e.target.value)}
-            aria-required="true"
-            aria-invalid={!!err.date_debut}
-            aria-describedby={describedBy("date_debut", "help-date_debut")}
-            className={inputClass(!!err.date_debut)}
-          />
-          <HelpText id="help-date_debut">
-            Le contrat peut démarrer jusqu&apos;à 3 mois avant le début des
-            cours.
-          </HelpText>
-          <FieldError id="err-date_debut" errors={err.date_debut} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label
+              htmlFor="date_debut"
+              className="block text-sm font-medium text-gray-dark mb-1.5"
+            >
+              Date de début souhaitée <span className="text-gold">*</span>
+            </label>
+            <input
+              id="date_debut"
+              type="date"
+              value={values.date_debut}
+              onChange={(e) => setField("date_debut", e.target.value)}
+              aria-required="true"
+              aria-invalid={!!err.date_debut}
+              aria-describedby={describedBy("date_debut", "help-date_debut")}
+              className={inputClass(!!err.date_debut)}
+            />
+            <HelpText id="help-date_debut">
+              Au plus tôt 3 mois avant l&apos;entrée en formation.
+            </HelpText>
+            <FieldError id="err-date_debut" errors={err.date_debut} />
+          </div>
+          <div>
+            <label
+              htmlFor="date_fin"
+              className="block text-sm font-medium text-gray-dark mb-1.5"
+            >
+              Date de fin souhaitée <span className="text-gold">*</span>
+            </label>
+            <input
+              id="date_fin"
+              type="date"
+              value={values.date_fin}
+              onChange={(e) => setField("date_fin", e.target.value)}
+              aria-required="true"
+              aria-invalid={!!err.date_fin}
+              aria-describedby={describedBy("date_fin", "help-date_fin")}
+              className={inputClass(!!err.date_fin)}
+            />
+            <HelpText id="help-date_fin">
+              Au plus tard 2 mois après la fin des épreuves. En cas de doute,
+              indiquez la fin de la formation : notre CFA ajustera avec vous.
+            </HelpText>
+            <FieldError id="err-date_fin" errors={err.date_fin} />
+          </div>
         </div>
       </fieldset>
 

@@ -59,6 +59,9 @@ export const infosContratSchema = z
     date_debut: z
       .string()
       .regex(DATE_ISO_REGEX, "Date de début invalide (format AAAA-MM-JJ)"),
+    date_fin: z
+      .string()
+      .regex(DATE_ISO_REGEX, "Date de fin invalide (format AAAA-MM-JJ)"),
     siret: z
       .string()
       .trim()
@@ -152,6 +155,15 @@ export const infosContratSchema = z
     botcheck: z.string().optional(),
   })
   .superRefine((data, ctx) => {
+    // Comparaison de chaînes ISO AAAA-MM-JJ : l'ordre lexicographique
+    // correspond à l'ordre chronologique.
+    if (data.date_fin <= data.date_debut) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["date_fin"],
+        message: "La date de fin doit être postérieure à la date de début",
+      });
+    }
     if (!data.idcc_inconnu && !data.idcc) {
       ctx.addIssue({
         code: "custom",
