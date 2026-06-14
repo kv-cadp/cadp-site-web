@@ -23,6 +23,7 @@
   /* Fonts */
   --font-serif: var(--font-dm-serif-display), Georgia, serif;
   --font-sans: var(--font-dm-sans), system-ui, Arial, sans-serif;
+  --font-mono: var(--font-dm-mono), ui-monospace, monospace;
 
   /* Animations */
   --animate-fade-in: fade-in 0.5s ease-out;

@@ -1,23 +1,41 @@
 import type { Metadata } from "next";
-import { DM_Sans, DM_Serif_Display } from "next/font/google";
+import localFont from "next/font/local";
 import TopBanner from "@/components/layout/TopBanner";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { DEFAULT_OG_IMAGE } from "@/lib/metadata";
 import "./globals.css";
 
-const dmSans = DM_Sans({
+const dmSans = localFont({
+  src: [
+    { path: "./fonts/dm-sans-400-latin.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/dm-sans-500-latin.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/dm-sans-600-latin.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/dm-sans-700-latin.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-dm-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   display: "swap",
+  fallback: ["system-ui", "arial"],
 });
 
-const dmSerifDisplay = DM_Serif_Display({
+const dmSerifDisplay = localFont({
+  src: [
+    { path: "./fonts/dm-serif-display-400-latin.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/dm-serif-display-400-italic-latin.woff2", weight: "400", style: "italic" },
+  ],
   variable: "--font-dm-serif-display",
-  subsets: ["latin"],
-  weight: "400",
   display: "swap",
+  fallback: ["Georgia", "serif"],
+});
+
+const dmMono = localFont({
+  src: [
+    { path: "./fonts/dm-mono-400-latin.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/dm-mono-500-latin.woff2", weight: "500", style: "normal" },
+  ],
+  variable: "--font-dm-mono",
+  display: "swap",
+  fallback: ["ui-monospace", "monospace"],
 });
 
 const SEO_TITLE = "CADP Pierrelatte — Formations BTS en alternance Drôme";
@@ -72,7 +90,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${dmSans.variable} ${dmSerifDisplay.variable} antialiased`}
+      className={`${dmSans.variable} ${dmSerifDisplay.variable} ${dmMono.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col font-sans text-gray-dark bg-white">
         <TopBanner />
