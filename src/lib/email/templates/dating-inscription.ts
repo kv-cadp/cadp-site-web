@@ -79,9 +79,9 @@ export function buildAdminEmail(
 
   const html = `<!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8"><title>${escapeHtml(subject)}</title></head>
-<body style="margin:0;padding:24px;background:#F5F0E6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#2C2C2C">
+<body style="margin:0;padding:24px;background:#FAF7EE;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#2C2C2C">
   <div style="max-width:640px;margin:0 auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08)">
-    <div style="background:#0B1929;padding:24px 28px">
+    <div style="background:#141E3C;padding:24px 28px">
       <p style="margin:0;color:#C9A84C;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:600">${escapeHtml(event.title)} — ${escapeHtml(eventDateLong)}</p>
       <h1 style="margin:8px 0 0;color:#fff;font-size:22px;font-weight:600">Nouvelle inscription entreprise</h1>
     </div>
@@ -125,27 +125,27 @@ export function buildAccuseEmail(
 
   const html = `<!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8"><title>${escapeHtml(subject)}</title></head>
-<body style="margin:0;padding:24px;background:#F5F0E6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#2C2C2C">
+<body style="margin:0;padding:24px;background:#FAF7EE;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#2C2C2C">
   <div style="max-width:640px;margin:0 auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08)">
-    <div style="background:#0B1929;padding:28px">
+    <div style="background:#141E3C;padding:28px">
       <p style="margin:0;color:#C9A84C;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:600">Confirmation d'inscription</p>
       <h1 style="margin:10px 0 0;color:#fff;font-size:24px;font-weight:600">${escapeHtml(event.title)} — ${escapeHtml(eventDateLong)}</h1>
     </div>
     <div style="padding:28px;font-size:15px;line-height:1.6">
       <p style="margin:0 0 16px">${greeting} ${escapeHtml(data.nom)},</p>
       <p style="margin:0 0 16px">Nous avons bien reçu l'inscription de <strong>${escapeHtml(data.entreprise)}</strong> à l'${escapeHtml(event.title)} du ${escapeHtml(eventDateLong)}. Merci de votre intérêt.</p>
-      <div style="background:#F5F0E6;border-left:3px solid #C9A84C;padding:16px 20px;border-radius:6px;margin:20px 0">
-        <p style="margin:0 0 4px;font-weight:600;color:#0B1929">📅 ${escapeHtml(eventDateLong)}</p>
+      <div style="background:#FAF7EE;border-left:3px solid #C9A84C;padding:16px 20px;border-radius:6px;margin:20px 0">
+        <p style="margin:0 0 4px;font-weight:600;color:#141E3C">📅 ${escapeHtml(eventDateLong)}</p>
         <p style="margin:0 0 4px;color:#2C2C2C">🕑 ${escapeHtml(eventTimeRange)}</p>
         <p style="margin:0;color:#2C2C2C">📍 ${escapeHtml(eventVenue)}</p>
       </div>
       <p style="margin:0 0 16px"><strong>Nous reprendrons contact avec vous sous 48h</strong> pour qualifier vos besoins et pré-sélectionner les profils à vous présenter le jour J. L'objectif : que vous ne rencontriez que des candidats pertinents pour vos postes.</p>
       <p style="margin:0 0 16px">En attendant, si vous avez une question urgente, n'hésitez pas à nous appeler au <a href="tel:+33475003456" style="color:#C9A84C;font-weight:600;text-decoration:none">04 75 00 34 56</a>.</p>
       <p style="margin:24px 0 4px">Bien cordialement,</p>
-      <p style="margin:0;font-weight:600;color:#0B1929">Kévin Vidard</p>
+      <p style="margin:0;font-weight:600;color:#141E3C">Kévin Vidard</p>
       <p style="margin:0;color:#666;font-size:13px">Directeur — CADP Pierrelatte</p>
     </div>
-    <div style="padding:18px 28px;background:#F5F0E6;border-top:1px solid #e5e5e5;color:#666;font-size:12px;text-align:center">
+    <div style="padding:18px 28px;background:#FAF7EE;border-top:1px solid #e5e5e5;color:#666;font-size:12px;text-align:center">
       Campus Alternance Drôme Provence — <a href="https://cadp.pro" style="color:#C9A84C;text-decoration:none">cadp.pro</a> — 04 75 00 34 56
     </div>
   </div>
