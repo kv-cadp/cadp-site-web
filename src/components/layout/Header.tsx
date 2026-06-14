@@ -39,16 +39,15 @@ export default function Header() {
           aria-label="Navigation principale"
         >
           {/* Logo */}
-          <Link href="/" className="shrink-0">
+          <Link href="/" aria-label="CADP - Accueil" className="shrink-0">
             <CadpWordmark className="text-navy-deep h-10 md:h-11 w-auto" />
           </Link>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
-            <NavLink href="/" tone="dark">Accueil</NavLink>
             <Link
               href="/rentree-2026"
-              className="inline-flex items-center rounded-full bg-gold/15 px-3 py-1 text-sm font-semibold text-navy-deep hover:bg-gold/25 transition-colors"
+              className="inline-flex items-center whitespace-nowrap shrink-0 rounded-full bg-gold/15 px-3 py-1 text-sm font-semibold text-navy-deep hover:bg-gold/25 transition-colors"
             >
               Rentrée 2026
             </Link>
@@ -106,19 +105,19 @@ export default function Header() {
               href="https://app.cadp.pro/connexion"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 border-2 border-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold transition-colors"
+              className="inline-flex items-center whitespace-nowrap shrink-0 px-4 py-2 border-2 border-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold transition-colors"
             >
               Mon espace
             </a>
             <Link
               href="/candidater"
-              className="inline-flex items-center px-5 py-2.5 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-colors"
+              className="inline-flex items-center whitespace-nowrap shrink-0 px-5 py-2.5 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-colors"
             >
               Je candidate
             </Link>
             <Link
               href="/entreprises"
-              className="inline-flex items-center px-5 py-2.5 border-2 border-navy-deep text-navy-deep rounded-lg font-semibold text-sm hover:bg-navy-deep hover:text-white transition-colors"
+              className="inline-flex items-center whitespace-nowrap shrink-0 px-5 py-2.5 border-2 border-navy-deep text-navy-deep rounded-lg font-semibold text-sm hover:bg-navy-deep hover:text-white transition-colors"
             >
               Je recrute
             </Link>
