@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import CadpWordmark from "@/components/brand/CadpWordmark";
 import { SITE } from "@/data/site";
 import { getEventBySlug } from "@/data/events";
 import { formatEventDateShort } from "@/lib/format-event";
@@ -23,13 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo + tagline */}
           <div>
-            <Image
-              src="/logo-cadp.jpg"
-              alt="CADP"
-              width={140}
-              height={52}
-              className="h-10 w-auto mb-4"
-            />
+            <CadpWordmark className="h-10 w-auto text-cream mb-4" />
             <p className="text-cream/80 text-sm leading-relaxed">
               {SITE.name}. Formations en alternance à Pierrelatte.
               Promos à taille humaine, accompagnement individualisé.

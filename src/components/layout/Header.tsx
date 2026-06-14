@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import NavLink from "./NavLink";
 import MobileMenu from "./MobileMenu";
+import CadpWordmark from "@/components/brand/CadpWordmark";
 
 const formations = [
   { href: "/formations/bts-mco", label: "BTS MCO", full: "Management Commercial Opérationnel" },
@@ -30,8 +30,8 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-10 left-0 right-0 z-40 transition-all duration-300 ${
-          scrolled ? "bg-navy-deep shadow-lg" : "bg-navy-deep/90 backdrop-blur-sm"
+        className={`fixed top-10 left-0 right-0 z-40 transition-all duration-300 border-b-2 border-gold ${
+          scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
         }`}
       >
         <nav
@@ -40,20 +40,16 @@ export default function Header() {
         >
           {/* Logo */}
           <Link href="/" className="shrink-0">
-            <Image
-              src="/logo-cadp.jpg"
-              alt="CADP - Campus Alternance Drôme Provence"
-              width={200}
-              height={80}
-              priority
-              className="h-14 md:h-16 w-auto"
-            />
+            <CadpWordmark className="text-navy-deep h-10 md:h-11 w-auto" />
           </Link>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
-            <NavLink href="/">Accueil</NavLink>
-            <Link href="/rentree-2026" className="text-sm font-semibold text-gold hover:text-gold-light transition-colors">
+            <NavLink href="/" tone="dark">Accueil</NavLink>
+            <Link
+              href="/rentree-2026"
+              className="inline-flex items-center rounded-full bg-gold/15 px-3 py-1 text-sm font-semibold text-navy-deep hover:bg-gold/25 transition-colors"
+            >
               Rentrée 2026
             </Link>
 
@@ -65,7 +61,7 @@ export default function Header() {
             >
               <Link
                 href="/formations"
-                className="flex items-center gap-1 text-sm font-semibold text-white hover:text-gold-light transition-colors"
+                className="flex items-center gap-1 text-sm font-semibold text-navy-deep/80 hover:text-navy-deep transition-colors"
                 aria-expanded={dropdownOpen}
               >
                 Formations
@@ -81,8 +77,8 @@ export default function Header() {
               </Link>
 
               {dropdownOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
-                  <div className="bg-white rounded-xl shadow-xl py-2 min-w-[280px]">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
+                  <div className="bg-white rounded-xl shadow-2xl border border-navy-deep/10 py-2 min-w-[280px]">
                     {formations.map((f) => (
                       <Link
                         key={f.href}
@@ -98,19 +94,19 @@ export default function Header() {
               )}
             </div>
 
-            <NavLink href="/entreprises">Entreprises</NavLink>
-            <NavLink href="/equipe">L&apos;équipe</NavLink>
-            <NavLink href="/blog">Blog</NavLink>
-            <NavLink href="/contact">Contact</NavLink>
+            <NavLink href="/entreprises" tone="dark">Entreprises</NavLink>
+            <NavLink href="/equipe" tone="dark">L&apos;équipe</NavLink>
+            <NavLink href="/blog" tone="dark">Blog</NavLink>
+            <NavLink href="/contact" tone="dark">Contact</NavLink>
           </div>
 
           {/* CTA desktop */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-5 ml-8">
             <a
               href="https://app.cadp.pro/connexion"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 border-2 border-gold text-gold rounded-lg font-semibold text-sm hover:bg-gold hover:text-navy-deep transition-colors"
+              className="inline-flex items-center px-4 py-2 border-2 border-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold transition-colors"
             >
               Mon espace
             </a>
@@ -122,7 +118,7 @@ export default function Header() {
             </Link>
             <Link
               href="/entreprises"
-              className="inline-flex items-center px-5 py-2.5 border-2 border-white text-white rounded-lg font-semibold text-sm hover:bg-white hover:text-navy-deep transition-colors"
+              className="inline-flex items-center px-5 py-2.5 border-2 border-navy-deep text-navy-deep rounded-lg font-semibold text-sm hover:bg-navy-deep hover:text-white transition-colors"
             >
               Je recrute
             </Link>
@@ -131,7 +127,7 @@ export default function Header() {
           {/* Mobile hamburger */}
           <button
             type="button"
-            className="md:hidden text-white p-2"
+            className="md:hidden inline-flex items-center justify-center bg-navy-deep text-white rounded-md p-2.5"
             onClick={() => setMobileOpen(true)}
             aria-label="Ouvrir le menu"
           >

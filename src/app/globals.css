@@ -2,13 +2,13 @@
 
 @theme inline {
   /* Couleurs principales */
-  --color-navy-deep: #0B1929;
-  --color-navy-medium: #0F2240;
-  --color-navy-light: #1A3355;
+  --color-navy-deep: #141E3C;
+  --color-navy-medium: #1E2C50;
+  --color-navy-light: #2B3D66;
   --color-gold: #C9A84C;
   --color-gold-light: #DBBF6A;
   --color-gold-pale: #E8D5A0;
-  --color-cream: #F5F0E6;
+  --color-cream: #FAF7EE;
 
   /* Texte */
   --color-gray-dark: #2C2C2C;
@@ -22,7 +22,8 @@
 
   /* Fonts */
   --font-serif: var(--font-dm-serif-display), Georgia, serif;
-  --font-sans: var(--font-dm-sans), Calibri, sans-serif;
+  --font-sans: var(--font-dm-sans), system-ui, Arial, sans-serif;
+  --font-mono: var(--font-dm-mono), ui-monospace, monospace;
 
   /* Animations */
   --animate-fade-in: fade-in 0.5s ease-out;
