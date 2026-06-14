@@ -46,7 +46,12 @@ export default function Header() {
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
             <NavLink href="/" tone="dark">Accueil</NavLink>
-            <NavLink href="/rentree-2026" tone="dark">Rentrée 2026</NavLink>
+            <Link
+              href="/rentree-2026"
+              className="inline-flex items-center rounded-full bg-gold/15 px-3 py-1 text-sm font-semibold text-navy-deep hover:bg-gold/25 transition-colors"
+            >
+              Rentrée 2026
+            </Link>
 
             {/* Dropdown formations */}
             <div
@@ -72,8 +77,8 @@ export default function Header() {
               </Link>
 
               {dropdownOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
-                  <div className="bg-white rounded-xl shadow-xl py-2 min-w-[280px]">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
+                  <div className="bg-white rounded-xl shadow-2xl border border-navy-deep/10 py-2 min-w-[280px]">
                     {formations.map((f) => (
                       <Link
                         key={f.href}
@@ -96,12 +101,12 @@ export default function Header() {
           </div>
 
           {/* CTA desktop */}
-          <div className="hidden md:flex items-center gap-5">
+          <div className="hidden md:flex items-center gap-5 ml-8">
             <a
               href="https://app.cadp.pro/connexion"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-semibold text-navy-deep/80 hover:text-navy-deep transition-colors"
+              className="inline-flex items-center px-4 py-2 border-2 border-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold transition-colors"
             >
               Mon espace
             </a>
@@ -110,6 +115,12 @@ export default function Header() {
               className="inline-flex items-center px-5 py-2.5 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-colors"
             >
               Je candidate
+            </Link>
+            <Link
+              href="/entreprises"
+              className="inline-flex items-center px-5 py-2.5 border-2 border-navy-deep text-navy-deep rounded-lg font-semibold text-sm hover:bg-navy-deep hover:text-white transition-colors"
+            >
+              Je recrute
             </Link>
           </div>
 
