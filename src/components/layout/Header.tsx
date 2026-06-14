@@ -40,7 +40,7 @@ export default function Header() {
         >
           {/* Logo */}
           <Link href="/" className="shrink-0">
-            <CadpWordmark className="h-12 md:h-14 w-auto" />
+            <CadpWordmark className="h-10 md:h-11 w-auto" />
           </Link>
 
           {/* Desktop nav */}
