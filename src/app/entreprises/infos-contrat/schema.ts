@@ -62,6 +62,7 @@ export const infosContratSchema = z
     date_fin: z
       .string()
       .regex(DATE_ISO_REGEX, "Date de fin invalide (format AAAA-MM-JJ)"),
+    apprenti_rqth: z.boolean().default(false),
     siret: z
       .string()
       .trim()

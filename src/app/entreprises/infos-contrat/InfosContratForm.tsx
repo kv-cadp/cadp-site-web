@@ -13,7 +13,7 @@ const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const IDCC_REGEX = /^\d{1,4}$/;
 
 const RGPD_NOTICE =
-  "Les informations recueillies via ce formulaire sont transmises par e-mail au Campus Alternance Drôme Provence (CADP) et à son CFA partenaire IFIR, aux seules fins d'établissement et de gestion du contrat d'apprentissage de l'alternant(e) concerné(e) (article 6.1.b du RGPD — mesures précontractuelles et exécution du contrat). Elles ne sont pas conservées sur ce site. Elles sont conservées par le CADP et le CFA IFIR pendant la durée du contrat et les durées légales applicables. Vous disposez de droits d'accès, de rectification, d'effacement et de limitation, à exercer auprès de dpo@cadp.pro.";
+  "Les informations recueillies via ce formulaire sont transmises par e-mail au Campus Alternance Drôme Provence (CADP) et à son CFA partenaire IFIR, aux seules fins d'établissement et de gestion du contrat d'apprentissage de l'alternant(e) concerné(e) (article 6.1.b du RGPD — mesures précontractuelles et exécution du contrat). Le cas échéant, ce formulaire recueille l'information selon laquelle l'alternant(e) bénéficie d'une reconnaissance de la qualité de travailleur handicapé (RQTH), aux seules fins d'établissement du contrat et de mise en place d'éventuels aménagements (article 9.2.b du RGPD — obligations en matière de droit du travail et de la sécurité sociale). Elles ne sont pas conservées sur ce site. Elles sont conservées par le CADP et le CFA IFIR pendant la durée du contrat et les durées légales applicables. Vous disposez de droits d'accès, de rectification, d'effacement et de limitation, à exercer auprès de dpo@cadp.pro.";
 
 type FormValues = {
   apprenti_prenom: string;
@@ -21,6 +21,7 @@ type FormValues = {
   formation: string;
   date_debut: string;
   date_fin: string;
+  apprenti_rqth: boolean;
   siret: string;
   raison_sociale: string;
   adresse_etablissement: string;
@@ -49,6 +50,7 @@ const initialValues: FormValues = {
   formation: "",
   date_debut: "",
   date_fin: "",
+  apprenti_rqth: false,
   siret: "",
   raison_sociale: "",
   adresse_etablissement: "",
@@ -368,6 +370,7 @@ export default function InfosContratForm() {
       formation: values.formation,
       date_debut: values.date_debut,
       date_fin: values.date_fin,
+      apprenti_rqth: values.apprenti_rqth,
       siret: values.siret,
       raison_sociale: values.raison_sociale,
       adresse_etablissement: values.adresse_etablissement,
@@ -640,6 +643,28 @@ export default function InfosContratForm() {
             </HelpText>
             <FieldError id="err-date_fin" errors={err.date_fin} />
           </div>
+        </div>
+
+        <div>
+          <label className="flex items-start gap-2 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={values.apprenti_rqth}
+              onChange={(e) =>
+                setValues((v) => ({ ...v, apprenti_rqth: e.target.checked }))
+              }
+              className="mt-0.5 accent-gold size-4"
+            />
+            <span className="text-sm text-gray-dark">
+              L&apos;alternant(e) bénéficie d&apos;une Reconnaissance de la
+              Qualité de Travailleur Handicapé (RQTH)
+            </span>
+          </label>
+          <HelpText id="help-apprenti_rqth">
+            Cochez si c&apos;est le cas. Cette information figure sur le contrat
+            (Cerfa) ; en cas de doute, laissez décoché, nous le confirmerons
+            avec l&apos;alternant(e).
+          </HelpText>
         </div>
       </fieldset>
 
