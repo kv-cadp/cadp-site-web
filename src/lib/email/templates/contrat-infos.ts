@@ -52,6 +52,7 @@ function buildSections(data: InfosContratData): Section[] {
         ["Formation", data.formation],
         ["Début souhaité", formatDateFr(data.date_debut)],
         ["Date de fin souhaitée", formatDateFr(data.date_fin)],
+        ["Travailleur handicapé (RQTH)", data.apprenti_rqth ? "Oui" : "Non"],
       ],
     },
     {
