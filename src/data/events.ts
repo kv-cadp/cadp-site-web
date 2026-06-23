@@ -12,27 +12,52 @@ import type { CadpEvent } from "@/types/event";
  */
 export const events: CadpEvent[] = [
   {
-    slug: "atelier-cv-mai-2026",
+    slug: "atelier-cv-sept-2026",
     category: "atelier",
     title: "Atelier CV & Coaching entretien",
-    date: "2026-05-27",
+    date: "2026-09-23",
     startTime: "09:00",
     endTime: "12:00",
     location: "CADP Pierrelatte",
     shortDescription:
       "On t'aide à construire un CV percutant et à préparer tes entretiens. Ouvert à tous les candidats, même si tu n'es pas encore inscrit.",
-    publishedOnHome: true,
+    publishedOnHome: false,
   },
   {
     slug: "alternance-dating-mai-2026",
     category: "dating",
     title: "Alternance Dating",
-    date: "2026-05-27",
+    date: "2026-09-23",
     startTime: "14:00",
     endTime: "16:00",
     location: "CADP Pierrelatte",
     shortDescription:
-      "Rencontre directe avec nos entreprises partenaires. Viens avec ton CV, repars avec des propositions d'alternance.",
+      "Pas encore signé pour la rentrée ? Rencontre nos entreprises partenaires, toutes filières. Viens avec ton CV, repars avec des pistes concrètes.",
+    href: "/entreprises/alternance-dating",
+    publishedOnHome: true,
+  },
+  {
+    slug: "atelier-cv-nov-2026",
+    category: "atelier",
+    title: "Atelier CV & Coaching entretien",
+    date: "2026-11-18",
+    startTime: "09:00",
+    endTime: "12:00",
+    location: "CADP Pierrelatte",
+    shortDescription:
+      "On t'aide à construire un CV percutant et à préparer tes entretiens. Ouvert à tous les candidats, même si tu n'es pas encore inscrit.",
+    publishedOnHome: false,
+  },
+  {
+    slug: "alternance-dating-nov-2026",
+    category: "dating",
+    title: "Alternance Dating",
+    date: "2026-11-18",
+    startTime: "14:00",
+    endTime: "16:00",
+    location: "CADP Pierrelatte",
+    shortDescription:
+      "Spéciale TP ADVF : rencontre les structures d'aide à la personne et médico-sociales qui recrutent. Viens avec ton CV, repars avec des contacts.",
     href: "/entreprises/alternance-dating",
     publishedOnHome: true,
   },

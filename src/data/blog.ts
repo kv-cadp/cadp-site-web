@@ -202,8 +202,8 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 
 <ul>
 <li><strong>Maintenant → juillet 2026 :</strong> Dépôt des candidatures (les places se remplissent au fur et à mesure — 12 max par promo)</li>
-<li><strong>27 mai 2026 (matin) :</strong> Atelier CV & Coaching entretien — ouvert à tous les candidats (9h-12h)</li>
-<li><strong>27 mai 2026 (après-midi) :</strong> Alternance Dating au CADP — viens rencontrer nos entreprises partenaires (14h-16h)</li>
+<li><strong>23 septembre 2026 (matin) :</strong> Atelier CV & Coaching entretien — ouvert à tous les candidats (9h-12h)</li>
+<li><strong>23 septembre 2026 (après-midi) :</strong> Alternance Dating au CADP — viens rencontrer nos entreprises partenaires (14h-16h)</li>
 <li><strong>Mai-juin 2026 :</strong> Entretiens de motivation et validation des candidatures</li>
 <li><strong>Juin-août 2026 :</strong> Signature des contrats d'apprentissage avec les entreprises</li>
 <li><strong>Septembre 2026 :</strong> Rentrée au campus — début des cours et de l'alternance</li>
@@ -470,9 +470,9 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 
 <p>Pour une PME de la Drôme, de l'Ardèche, du Vaucluse ou du Gard, c'est souvent le meilleur rapport qualité-prix pour un poste de commercial, d'assistant de gestion ou de comptable junior.</p>
 
-<h2>Rencontrer nos alternants disponibles : le Dating du 27 mai</h2>
+<h2>Rencontrer nos alternants disponibles : nos sessions Alternance Dating</h2>
 
-<p>Si vous cherchez à recruter un alternant pour la rentrée de septembre 2026, le CADP organise son Forum recrutement alternance le <strong>mardi 27 mai 2026 de 14h à 16h</strong> à Pierrelatte. Format direct : nos candidats vous présentent leur projet, vous répondez en 10 minutes. Plus de 50 entreprises de la Drôme, de l'Ardèche, du Vaucluse et du Gard y participent chaque édition.</p>
+<p>Si vous cherchez à recruter un alternant pour la rentrée 2026, le CADP organise ses sessions Alternance Dating à Pierrelatte : le <strong>23 septembre 2026</strong> (toutes filières) et le <strong>18 novembre 2026</strong> (spéciale services à la personne, TP ADVF), de 14h à 16h. Format direct : nos candidats vous présentent leur projet, vous répondez en 10 minutes.</p>
 
 <h2>Questions fréquentes des employeurs</h2>
 
@@ -624,7 +624,7 @@ Campus Alternance Drôme Provence</em></p>
 
 <p>Cet article fait partie d'une série consacrée aux raisons de recruter en alternance, <a href="/blog/combien-coute-un-alternant-entreprise">au-delà des seuls arguments financiers</a> que nous avons traités précédemment, et après <a href="/blog/alternance-valorisation-tuteur">l'effet sur le tuteur</a>. Un dernier angle suivra, sur la formation aux méthodes maison et la transmission du savoir spécifique de l'entreprise.</p>
 
-<p>En attendant : si vous voulez rencontrer des candidats pré-qualifiés sur les filières BTS et TP ADVF sans engagement, l'<strong>Alternance Dating du 27 mai 2026</strong> est le bon point de départ. Deux heures, à Pierrelatte, pour échanger directement avec une vingtaine de candidats sélectionnés. <a href="/contact">Contactez-nous</a> pour vous inscrire.</p>
+<p>En attendant : si vous voulez rencontrer des candidats pré-qualifiés sur les filières BTS et TP ADVF sans engagement, nos prochaines sessions Alternance Dating à Pierrelatte (<strong>23 septembre et 18 novembre 2026</strong>, 14h-16h) sont le bon point de départ. Deux heures pour échanger directement avec des candidats sélectionnés. <a href="/contact">Contactez-nous</a> pour vous inscrire.</p>
 
 <p><em>Kévin Vidard<br/>
 Directeur et Responsable pédagogique<br/>
