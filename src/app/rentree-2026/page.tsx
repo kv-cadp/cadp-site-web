@@ -14,7 +14,7 @@ import {
 } from "@/data/org";
 
 const SLUG_DATING = "alternance-dating-mai-2026";
-const SLUG_ATELIER_CV = "atelier-cv-mai-2026";
+const SLUG_ATELIER_CV = "atelier-cv-sept-2026";
 
 const eventDatingLookup = getEventBySlug(SLUG_DATING);
 const eventAtelierLookup = getEventBySlug(SLUG_ATELIER_CV);

@@ -10,7 +10,7 @@ import { formatEventDateLong } from "@/lib/format-event";
 const DATING_EVENT = getEventBySlug("alternance-dating-mai-2026");
 const DATING_DATE_LONG = DATING_EVENT?.date
   ? formatEventDateLong(DATING_EVENT.date)
-  : "27 mai 2026";
+  : "23 septembre 2026";
 
 const FORMATIONS = [
   { value: "BTS MCO", label: "BTS MCO — Management Commercial Opérationnel" },
