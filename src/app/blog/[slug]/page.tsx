@@ -88,7 +88,7 @@ export default async function BlogArticlePage({
               <h3 className="font-serif text-xl text-navy-deep mb-3">Prêt à recruter votre alternant ?</h3>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button href="/entreprise-besoin" variant="gold">Trouver le bon profil</Button>
-                <Button href="/entreprises/alternance-dating" variant="navy">S&apos;inscrire au Dating du 27 mai</Button>
+                <Button href="/entreprises/alternance-dating" variant="navy">S&apos;inscrire à l&apos;Alternance Dating</Button>
                 <Button href="/contact" variant="outline">Nous contacter</Button>
               </div>
             </div>
