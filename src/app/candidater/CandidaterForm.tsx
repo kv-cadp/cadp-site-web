@@ -14,6 +14,7 @@ const formationsList = [
   { code: "gpme", label: "BTS GPME — Gestion de la PME" },
   { code: "cg", label: "BTS CG — Comptabilité et Gestion" },
   { code: "mos", label: "BTS MOS — Management Opérationnel de la Sécurité" },
+  { code: "rqse", label: "Bachelor RQSE — Responsable Qualité Sécurité Environnement" },
   { code: "advf", label: "TP ADVF — Assistant De Vie aux Familles" },
   { code: "gtla", label: "BTS GTLA — Transport et Logistique (rentrée 2027)" },
 ];
