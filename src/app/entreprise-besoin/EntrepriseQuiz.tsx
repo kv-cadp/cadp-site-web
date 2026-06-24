@@ -355,7 +355,7 @@ export default function EntrepriseQuiz() {
                 </h3>
                 <p className="text-xs text-gray-mid mb-5">
                   Montants calculés sur la durée totale du contrat ({sim.duree} mois), à temps de présence en entreprise identique ({Math.round(sim.hEnt)}h).
-                  Base de calcul : SMIC brut mensuel en vigueur = 1 823,03 €.
+                  Base de calcul : SMIC brut mensuel en vigueur = 1 867,02 €.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">

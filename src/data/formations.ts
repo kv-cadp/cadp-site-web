@@ -129,7 +129,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS MCO ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
       },
       {
         question: "Quels métiers après un BTS MCO ?",
@@ -317,7 +317,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS NDRC ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales. Certains contrats prévoient des commissions sur les ventes, ce qui peut augmenter ta rémunération.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales. Certains contrats prévoient des commissions sur les ventes, ce qui peut augmenter ta rémunération.",
       },
       {
         question: "Quels métiers après un BTS NDRC ?",
@@ -507,7 +507,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS GPME ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
       },
       {
         question: "Quels métiers après un BTS GPME ?",
@@ -684,7 +684,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS CG ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
       },
       {
         question: "Quels métiers après un BTS CG ?",
@@ -874,7 +874,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS MOS ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales. Certaines entreprises de sécurité ajoutent des primes de nuit ou de week-end.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales. Certaines entreprises de sécurité ajoutent des primes de nuit ou de week-end.",
       },
       {
         question: "Quels métiers après un BTS MOS ?",
@@ -1063,7 +1063,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire d'un assistant de vie aux familles ?",
         answer:
-          "En début de carrière, un ADVF touche environ le SMIC, soit environ 1 400 € net par mois. Avec l'expérience et des certifications complémentaires (comme le DEAES), la rémunération peut évoluer. Le secteur offre aussi la stabilité de l'emploi.",
+          "En début de carrière, un ADVF touche environ le SMIC, soit environ 1 478 € net par mois. Avec l'expérience et des certifications complémentaires (comme le DEAES), la rémunération peut évoluer. Le secteur offre aussi la stabilité de l'emploi.",
       },
       {
         question: "Faut-il un diplôme pour entrer en formation TP ADVF ?",

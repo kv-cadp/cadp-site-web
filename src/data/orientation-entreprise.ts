@@ -181,7 +181,7 @@ export function getAide(nc: number, effectif: string, rqth: boolean): number {
 
 // Simulateur de coût
 export function simulateCost(age: number, formationType: string, effectif: string, rqth: boolean) {
-  const SMIC_M = 1823.03;
+  const SMIC_M = 1867.02;
   const H_AN = 1820;
 
   let taux: number, tranche: string;
@@ -202,7 +202,7 @@ export function simulateCost(age: number, formationType: string, effectif: strin
   const hFormAn = type === "bts" ? 675 : type === "bachelor" ? 600 : 450;
   const hEnt = (H_AN - hFormAn) * (duree / 12);
 
-  const brutCDI = 12.02 * hEnt;
+  const brutCDI = 12.31 * hEnt;
   const chargesCDI = brutCDI * 0.25;
   const coutCDI = brutCDI + chargesCDI;
 
