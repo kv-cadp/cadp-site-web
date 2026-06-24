@@ -67,7 +67,7 @@ const faq = [
   },
   {
     question: "Quel est le salaire en alternance en BTS GTLA ?",
-    answer: "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 783,90€ brut par mois en première année (43% du SMIC) et 929,75€ brut en deuxième année (51% du SMIC).",
+    answer: "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC).",
   },
   {
     question: "Comment s'inscrire au BTS GTLA au CADP ?",

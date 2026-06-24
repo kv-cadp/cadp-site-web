@@ -313,7 +313,7 @@ export function generateEntreprisePDF(params: PDFParams) {
 
   doc.setFontSize(8);
   doc.setTextColor(...GRAY_MID);
-  doc.text(`Estimation sur ${sim.duree} mois | Tranche d'age : ${sim.tranche} (${Math.round(sim.taux * 100)}% du SMIC) | SMIC brut mensuel : 1 823 EUR`, m, y);
+  doc.text(`Estimation sur ${sim.duree} mois | Tranche d'age : ${sim.tranche} (${Math.round(sim.taux * 100)}% du SMIC) | SMIC brut mensuel : 1 867 EUR`, m, y);
   y += 7;
 
   // Tableau comparatif

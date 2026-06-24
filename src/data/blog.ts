@@ -234,7 +234,7 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 
 <p>Zéro euro. La formation est financée à 100% par l'OPCO de l'entreprise d'accueil dans le cadre du contrat d'apprentissage. Pas de frais d'inscription, pas de frais de scolarité, pas de frais cachés.</p>
 
-<p>En plus, tu es salarié et tu perçois une rémunération mensuelle : 783,90€ brut/mois pour un 18-20 ans en 1ère année de BTS (43% du SMIC 2026).</p>
+<p>En plus, tu es salarié et tu perçois une rémunération mensuelle : 802,82€ brut/mois pour un 18-20 ans en 1ère année de BTS (43% du SMIC 2026).</p>
 
 <p><a href="/blog/combien-coute-un-alternant-entreprise">Voir le détail du coût pour l'entreprise →</a></p>
 
@@ -327,7 +327,7 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
     category: "entreprise",
     date: "Avril 2026",
     dateISO: "2026-04-04",
-    updatedDateISO: "2026-04-14",
+    updatedDateISO: "2026-06-24",
     excerpt: "La réponse surprend presque toujours : un alternant en BTS coûte beaucoup moins cher qu'un recrutement classique, et les aides de l'État réduisent encore la facture.",
     cta: "entreprise-dating",
     faqQuestions: [
@@ -359,23 +359,23 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
     content: `
 <p>C'est souvent la première question que nous posent les dirigeants de PME quand on les contacte. Et la réponse surprend presque toujours : un alternant en BTS coûte beaucoup moins cher qu'un recrutement classique, et les aides de l'État réduisent encore la facture.</p>
 
-<p>Voici le calcul réel, chiffres 2026, sans arrondir en votre faveur. Sources : décret n°2026-168 du 6 mars 2026, fiches Centre Inffo (mars 2026), tableau de coûts validé par le cabinet comptable ORCOM pour le CFA IFIR.</p>
+<p>Voici le calcul réel, chiffres 2026, sans arrondir en votre faveur. Sources : décret n°2026-168 du 6 mars 2026, fiches Centre Inffo (mars 2026), méthode de calcul du cabinet comptable ORCOM pour le CFA IFIR, montants actualisés au 1er juin 2026 par le CADP.</p>
 
 <h2>Le salaire de l'alternant</h2>
 
-<p>La rémunération d'un apprenti est fixée en pourcentage du SMIC (1 823,03 € brut mensuel au 1er janvier 2026) et dépend de l'âge et de l'année de contrat :</p>
+<p>La rémunération d'un apprenti est fixée en pourcentage du SMIC (1 867,02 € brut mensuel au 1er juin 2026) et dépend de l'âge et de l'année de contrat :</p>
 
 <ul>
-<li><strong>18-20 ans :</strong> 1ère année 43% (783,90 €) / 2ème année 51% (929,75 €) / 3ème année 67% (1 221,43 €)</li>
-<li><strong>21-25 ans :</strong> 1ère année 53% (966,21 €) / 2ème année 61% (1 112,05 €) / 3ème année 78% (1 421,96 €)</li>
-<li><strong>26 ans et + :</strong> 100% du SMIC dans tous les cas (1 823,03 €)</li>
+<li><strong>18-20 ans :</strong> 1ère année 43% (802,82 €) / 2ème année 51% (952,18 €) / 3ème année 67% (1 250,90 €)</li>
+<li><strong>21-25 ans :</strong> 1ère année 53% (989,52 €) / 2ème année 61% (1 138,88 €) / 3ème année 78% (1 456,27 €)</li>
+<li><strong>26 ans et + :</strong> 100% du SMIC dans tous les cas (1 867,02 €)</li>
 </ul>
 
 <p>Les charges patronales sur un contrat d'apprentissage sont fortement réduites, en particulier dans les structures de moins de 11 salariés.</p>
 
 <h2>Le coût employeur réel, mois par mois</h2>
 
-<p>Le tableau ci-dessous présente le coût mensuel total chargé pour l'employeur, selon l'âge de l'apprenti, l'année de contrat et la taille de l'entreprise. Chiffres validés par le cabinet ORCOM pour le CFA IFIR.</p>
+<p>Le tableau ci-dessous présente le coût mensuel total chargé pour l'employeur, selon l'âge de l'apprenti, l'année de contrat et la taille de l'entreprise. Chiffres calculés selon la méthode du cabinet ORCOM pour le CFA IFIR, actualisés au 1er juin 2026 (revalorisation du SMIC).</p>
 
 <h3>Structures de plus de 11 salariés</h3>
 
@@ -384,10 +384,10 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 <tr><th>Âge</th><th>1ère année</th><th>2ème année</th><th>3ème année</th></tr>
 </thead>
 <tbody>
-<tr><td>&lt; 18 ans</td><td>530,20 €</td><td>765,85 €</td><td>1 083,92 €</td></tr>
-<tr><td>18-20 ans</td><td>844,42 €</td><td>1 002,29 €</td><td>1 328,87 €</td></tr>
-<tr><td>21-25 ans</td><td>1 043,08 €</td><td>1 206,41 €</td><td>1 553,38 €</td></tr>
-<tr><td>26 ans et +</td><td>2 010,41 €</td><td>2 010,41 €</td><td>2 010,41 €</td></tr>
+<tr><td>&lt; 18 ans</td><td>542,99 €</td><td>784,33 €</td><td>1 110,08 €</td></tr>
+<tr><td>18-20 ans</td><td>864,80 €</td><td>1 026,48 €</td><td>1 360,94 €</td></tr>
+<tr><td>21-25 ans</td><td>1 068,25 €</td><td>1 235,52 €</td><td>1 590,86 €</td></tr>
+<tr><td>26 ans et +</td><td>2 058,92 €</td><td>2 058,92 €</td><td>2 058,92 €</td></tr>
 </tbody>
 </table>
 
@@ -398,10 +398,10 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 <tr><th>Âge</th><th>1ère année</th><th>2ème année</th><th>3ème année</th></tr>
 </thead>
 <tbody>
-<tr><td>&lt; 18 ans</td><td>499,92 €</td><td>722,08 €</td><td>1 018,32 €</td></tr>
-<tr><td>18-20 ans</td><td>796,15 €</td><td>944,28 €</td><td>1 240,51 €</td></tr>
-<tr><td>21-25 ans</td><td>981,30 €</td><td>1 129,42 €</td><td>1 444,17 €</td></tr>
-<tr><td>26 ans et +</td><td>1 851,50 €</td><td>1 851,50 €</td><td>1 851,50 €</td></tr>
+<tr><td>&lt; 18 ans</td><td>511,98 €</td><td>739,50 €</td><td>1 042,89 €</td></tr>
+<tr><td>18-20 ans</td><td>815,36 €</td><td>967,07 €</td><td>1 270,44 €</td></tr>
+<tr><td>21-25 ans</td><td>1 004,98 €</td><td>1 156,67 €</td><td>1 479,02 €</td></tr>
+<tr><td>26 ans et +</td><td>1 896,18 €</td><td>1 896,18 €</td><td>1 896,18 €</td></tr>
 </tbody>
 </table>
 
@@ -433,11 +433,11 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 
 <p>Prenons le cas le plus fréquent : un alternant de 20 ans en BTS, dans une PME de moins de 50 salariés.</p>
 
-<p><strong>Année 1 :</strong> Coût employeur 844,42 €/mois × 12 = 10 133 € — aide 4 500 € = <strong>coût net annuel 5 633 €, soit environ 469 €/mois</strong> pour un collaborateur présent 3 jours par semaine.</p>
+<p><strong>Année 1 :</strong> Coût employeur 864,80 €/mois × 12 = 10 378 € — aide 4 500 € = <strong>coût net annuel 5 878 €, soit environ 490 €/mois</strong> pour un collaborateur présent 3 jours par semaine.</p>
 
-<p><strong>Année 2 :</strong> Coût employeur 1 002,29 €/mois × 12 = <strong>12 027 € sur l'année</strong> (pas d'aide), soit 1 002 €/mois.</p>
+<p><strong>Année 2 :</strong> Coût employeur 1 026,48 €/mois × 12 = <strong>12 318 € sur l'année</strong> (pas d'aide), soit 1 026 €/mois.</p>
 
-<p><strong>Sur la durée du BTS (2 ans), le coût total est d'environ 17 660 €</strong> pour un collaborateur formé à vos méthodes, opérationnel à la sortie, qu'aucun cabinet de recrutement ne peut vous proposer à ce prix.</p>
+<p><strong>Sur la durée du BTS (2 ans), le coût total est d'environ 18 196 €</strong> pour un collaborateur formé à vos méthodes, opérationnel à la sortie, qu'aucun cabinet de recrutement ne peut vous proposer à ce prix.</p>
 
 <h2>Ce qui est inclus dans le « gratuit »</h2>
 
