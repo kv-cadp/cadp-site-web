@@ -52,6 +52,12 @@ export const entrepriseFormations: Record<string, EntrepriseFormation> = {
     desc: "Profil aide à domicile. Accompagnement personnes fragiles, garde d'enfants, entretien du cadre de vie.",
     missions: ["Accompagner les personnes dans les actes du quotidien", "Aider au maintien à domicile", "Assurer la garde et l'éveil des enfants", "Entretenir le domicile", "Préparer les repas"],
   },
+  rqse: {
+    key: "rqse", name: "Bachelor RQSE", full: "Responsable Qualité Sécurité Environnement", niveau: "Bac+3", nc: 6,
+    duree: "12 mois", dm: 12,
+    desc: "Profil pilote QSE. Conformité réglementaire, audits ISO, prévention des risques, performance d'une organisation.",
+    missions: ["Conduire la veille réglementaire et normative", "Préparer et mener les audits internes et externes", "Déployer et faire vivre le système de management QSE", "Cartographier et piloter les risques (DUERP)", "Construire les indicateurs et tableaux de bord"],
+  },
 };
 
 export const entrepriseSecteurs = [
@@ -111,8 +117,8 @@ export function calculateEntrepriseScores(
   else if (secteur === "banque") { points.ndrc += 10; }
   else if (secteur === "services") { points.advf += 50; points.mos += 15; }
   else if (secteur === "pme") { points.gpme += 45; points.cg += 25; }
-  else if (secteur === "industrie") { points.mos += 30; points.gpme += 15; }
-  else if (secteur === "btp") { points.gpme += 30; points.mos += 20; }
+  else if (secteur === "industrie") { points.rqse += 20; points.mos += 30; points.gpme += 15; }
+  else if (secteur === "btp") { points.rqse += 10; points.gpme += 30; points.mos += 20; }
   else if (secteur === "hotellerie") { points.mco += 40; points.ndrc += 20; }
   else if (secteur === "transport") { points.gpme += 25; points.mos += 25; }
   else if (secteur === "agri") { points.gpme += 35; points.cg += 20; }
@@ -138,7 +144,7 @@ export function calculateEntrepriseScores(
   // 4. Missions spécifiques
   missionsSpec.forEach((v) => {
     if (v === "aide_personne") points.advf += 55;
-    else if (v === "qhse") { points.mos += 10; }
+    else if (v === "qhse") { points.rqse += 55; points.mos += 10; }
     else if (v === "rh_dev") { points.gpme += 5; }
   });
 
@@ -150,6 +156,7 @@ export function calculateEntrepriseScores(
         if (entrepriseFormations[k].nc === 5) points[k] += 12;
       });
     }
+    else if (v === "bachelor") { points.rqse += 15; }
     else if (v === "indifferent") {
       Object.keys(entrepriseFormations).forEach((k) => { points[k] += 5; });
     }
@@ -184,18 +191,25 @@ export function simulateCost(age: number, formationType: string, effectif: strin
   const SMIC_M = 1867.02;
   const H_AN = 1820;
 
-  let taux: number, tranche: string;
-  if (age < 18) { taux = 0.27; tranche = "16-17 ans"; }
-  else if (age < 21) { taux = 0.43; tranche = "18-20 ans"; }
-  else if (age < 26) { taux = 0.53; tranche = "21-25 ans"; }
-  else { taux = 1.00; tranche = "26 ans et +"; }
-
   const [type, dureeStr] = formationType.split("-");
   const duree = parseInt(dureeStr);
   let nc: number;
   if (type === "tp") nc = 4;
   else if (type === "bts") nc = 5;
   else nc = 6;
+
+  let taux: number, tranche: string;
+  if (type === "bachelor") {
+    // Bachelor : remuneration sur la base de la 3e annee d'execution du contrat
+    if (age < 21) { taux = 0.67; tranche = "18-20 ans"; }
+    else if (age < 26) { taux = 0.78; tranche = "21-25 ans"; }
+    else { taux = 1.00; tranche = "26 ans et +"; }
+  } else {
+    if (age < 18) { taux = 0.27; tranche = "16-17 ans"; }
+    else if (age < 21) { taux = 0.43; tranche = "18-20 ans"; }
+    else if (age < 26) { taux = 0.53; tranche = "21-25 ans"; }
+    else { taux = 1.00; tranche = "26 ans et +"; }
+  }
 
   const aide = getAide(nc, effectif, rqth);
   const chTaux = (effectif === "250+" || effectif === "50-249") ? 0.077 : 0.016;
@@ -216,7 +230,7 @@ export function simulateCost(age: number, formationType: string, effectif: strin
   const ecoPct = coutCDI > 0 ? (eco / coutCDI * 100) : 0;
 
   return {
-    tranche, taux, brutMens, aide, hEnt, hFormAn, duree,
+    type, tranche, taux, brutMens, aide, hEnt, hFormAn, duree,
     brutCDI, chargesCDI, coutCDI,
     brutApp, chargesApp, coutBrut, coutNet,
     eco, ecoPct,

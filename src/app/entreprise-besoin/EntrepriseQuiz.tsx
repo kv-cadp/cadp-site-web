@@ -17,6 +17,11 @@ type Phase = "quiz" | "results";
 
 const fmt = (n: number) => Math.round(n).toLocaleString("fr-FR") + " €";
 
+const SLUG_BY_KEY: Record<string, string> = {
+  mco: "bts-mco", ndrc: "bts-ndrc", gpme: "bts-gpme", cg: "bts-cg", mos: "bts-mos",
+  advf: "tp-advf", rqse: "bachelor-rqse",
+};
+
 export default function EntrepriseQuiz() {
   const [phase, setPhase] = useState<Phase>("quiz");
   const [step, setStep] = useState(1);
@@ -255,6 +260,7 @@ export default function EntrepriseQuiz() {
                   {[
                     { v: "tp", l: "Niveau CAP / Bac (Titre professionnel)", d: "12 mois, missions d'exécution/assistance" },
                     { v: "bts", l: "Niveau Bac+2 (BTS)", d: "24 mois, technicien supérieur polyvalent" },
+                    { v: "bachelor", l: "Niveau Bac+3 (Bachelor)", d: "12 mois, cycle court après un Bac+2" },
                     { v: "indifferent", l: "Indifférent — conseillez-moi", d: "Le profil compte plus que le diplôme" },
                   ].map((opt) => (
                     <button key={opt.v} type="button" onClick={() => toggle(niveaux, opt.v, setNiveaux)}
@@ -335,7 +341,7 @@ export default function EntrepriseQuiz() {
                         </ul>
                       </div>
                       <div className="mt-3 flex flex-wrap gap-2">
-                        <Link href={`/formations/bts-${f.key === "advf" ? "" : ""}${f.key === "advf" ? "tp-advf" : f.key}`}
+                        <Link href={`/formations/${SLUG_BY_KEY[f.key] ?? f.key}`}
                           className="px-4 py-2 bg-gold text-navy-deep rounded-lg font-semibold text-xs hover:bg-gold-light transition-colors">
                           Voir la fiche formation
                         </Link>
@@ -375,6 +381,7 @@ export default function EntrepriseQuiz() {
                       className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg text-sm bg-white focus:outline-none focus:border-navy-deep">
                       <option value="tp-12">Titre pro (12 mois)</option>
                       <option value="bts-24">BTS (24 mois)</option>
+                      <option value="bachelor-12">Bachelor (12 mois)</option>
                     </select>
                   </div>
                   <div>
@@ -409,6 +416,13 @@ export default function EntrepriseQuiz() {
                   </div>
                 </div>
 
+                {sim.type === "bachelor" && (
+                  <div className="bg-cream border-l-4 border-gold rounded-lg p-3 mb-4 text-center">
+                    <p className="text-sm text-gray-dark">
+                      Participation employeur à la formation : <strong>750 €</strong> (contrats Bac+3, facturée par le CFA après 45 jours de présence). À ajouter au coût ci-dessus.
+                    </p>
+                  </div>
+                )}
                 {/* Encadré avertissement */}
                 <div className="bg-cream border-l-4 border-gold rounded-lg p-4 mb-5">
                   <p className="text-gray-dark text-sm italic leading-relaxed">
