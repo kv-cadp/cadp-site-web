@@ -99,15 +99,14 @@ const poursuiteText =
   "Le Bachelor vise d'abord l'insertion directe sur un poste qualifié. Il ouvre aussi la voie vers un Bac+5 (niveau 7) en QHSE ou en management des risques, en alternance ou en formation continue.";
 
 const eligibilite = [
-  "BTS Maintenance des systèmes",
-  "BTS Conception et réalisation, BTS PCEPC",
-  "DUT ou BUT HSE, Génie industriel",
-  "L2 scientifique ou équivalent",
-  "Tout diplôme de niveau 5 (Bac+2) validé à dominante technique ou scientifique",
+  "Tout BTS ou Bac+2 tertiaire, notamment GPME et MOS, dont les compétences en gestion des risques mènent naturellement au QSE",
+  "BTS et Bac+2 techniques ou industriels (Maintenance, CRSA, PCEPC, DUT ou BUT HSE, Génie industriel)",
+  "Licence 2 ou équivalent, toutes orientations compatibles",
+  "Salariés en reconversion vers les métiers de la qualité, de la sécurité et de l'environnement",
 ];
 
 const derogationText =
-  "À titre dérogatoire, l'accès est ouvert aux titulaires d'un Bac (niveau 4) justifiant d'au moins 3 ans d'expérience professionnelle hors période d'alternance. Un entretien de positionnement valide ton projet dans tous les cas.";
+  "À titre dérogatoire, l'accès est ouvert aux titulaires d'un Bac justifiant d'au moins 3 ans d'expérience professionnelle hors période d'alternance, une voie particulièrement adaptée aux parcours de reconversion. Un entretien de positionnement valide ton projet dans tous les cas.";
 
 const etapes = [
   {
@@ -146,7 +145,7 @@ const faq = [
   {
     question: "Quels sont les prérequis pour intégrer le Bachelor RQSE ?",
     answer:
-      "Il faut être titulaire d'un diplôme de niveau 5 (Bac+2) validé : BTS Maintenance, BTS Conception et réalisation, DUT ou BUT HSE ou Génie industriel, BTS PCEPC, L2 scientifique ou équivalent. À titre dérogatoire, l'accès est ouvert aux titulaires d'un Bac justifiant d'au moins 3 ans d'expérience professionnelle hors période d'alternance.",
+      "Il faut être titulaire d'un diplôme de niveau 5 (Bac+2) validé. La formation est ouverte aux profils tertiaires comme techniques : un BTS GPME ou MOS, dont les compétences en gestion des risques mènent au QSE, autant qu'un BTS Maintenance, CRSA, PCEPC, un DUT ou BUT HSE ou Génie industriel, ou une L2. À titre dérogatoire, l'accès est aussi ouvert aux titulaires d'un Bac justifiant d'au moins 3 ans d'expérience professionnelle, une voie adaptée aux reconversions vers les métiers de la qualité, de la sécurité et de l'environnement.",
   },
   {
     question: "Combien de temps dure la formation ?",
