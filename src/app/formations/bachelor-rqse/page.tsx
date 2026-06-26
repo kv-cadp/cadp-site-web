@@ -20,7 +20,7 @@ const heroSubtitle =
   "Le Bachelor RQSE te forme en un an à piloter la démarche qualité, sécurité et environnement d'une entreprise : conformité réglementaire, audits ISO, prévention des risques, performance. Un Bac+3 en alternance, sur un marché qui manque de cadres.";
 
 const heroAeo =
-  "Le Bachelor Responsable Qualité Sécurité Environnement en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation de niveau 6 (Bac+3) sur 12 mois, en promos de 12 étudiants maximum, avec accompagnement individualisé. Le CADP est adossé au CFA IFIR, certifié Qualiopi. Le titre est délivré par la CCI Portes de Normandie (RNCP 40563).";
+  "Le Bachelor Responsable Qualité Sécurité Environnement en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation de niveau 6 (Bac+3) sur 12 mois, en promos de 12 étudiants maximum, avec accompagnement individualisé. Le CADP est adossé au CFA IFIR, certifié Qualiopi. Le titre est délivré par la CCI Portes de Normandie et la CCI Île de la Réunion (RNCP 40563).";
 
 const metierText =
   "Le Responsable QSE met en œuvre la politique de l'entreprise autour de trois objectifs : garantir la qualité des produits ou services, préserver la santé et la sécurité des salariés, et maîtriser l'impact environnemental de l'activité. Tu représentes la direction et tu fais le lien entre tous les services, dans un cadre réglementaire de plus en plus exigeant.";
@@ -175,7 +175,7 @@ const faq = [
   {
     question: "Le Bachelor RQSE est-il reconnu par l'État ?",
     answer:
-      "Oui. Le titre de Responsable Qualité Sécurité Environnement est enregistré au RNCP sous le numéro 40563 (niveau 6, Bac+3), délivré par la CCI Portes de Normandie. Au CADP, tu le prépares dans le cadre du CFA IFIR, certifié Qualiopi.",
+      "Oui. Le titre de Responsable Qualité Sécurité Environnement est enregistré au RNCP sous le numéro 40563 (niveau 6, Bac+3), délivré par la CCI Portes de Normandie et la CCI Île de la Réunion. Au CADP, tu le prépares dans le cadre du CFA IFIR, certifié Qualiopi.",
   },
 ];
 
