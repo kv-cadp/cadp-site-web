@@ -12,6 +12,7 @@ const formations = [
   { href: "/formations/bts-gpme", label: "BTS GPME", full: "Gestion de la PME" },
   { href: "/formations/bts-cg", label: "BTS CG", full: "Comptabilité et Gestion" },
   { href: "/formations/bts-mos", label: "BTS MOS", full: "Management Opérationnel de la Sécurité" },
+  { href: "/formations/bachelor-rqse", label: "Bachelor RQSE", full: "Responsable Qualité Sécurité Environnement" },
   { href: "/formations/tp-advf", label: "TP ADVF", full: "Assistant De Vie aux Familles" },
   { href: "/formations/bts-gtla", label: "BTS GTLA", full: "Transports et Logistique — Rentrée 2027" },
 ];

@@ -13,6 +13,7 @@ const formationLinks = [
   { href: "/formations/bts-gpme", label: "BTS GPME" },
   { href: "/formations/bts-cg", label: "BTS CG" },
   { href: "/formations/bts-mos", label: "BTS MOS" },
+  { href: "/formations/bachelor-rqse", label: "Bachelor RQSE" },
   { href: "/formations/tp-advf", label: "TP ADVF" },
   { href: "/formations/bts-gtla", label: "BTS GTLA (2027)" },
 ];

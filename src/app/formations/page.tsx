@@ -79,6 +79,16 @@ const formations = [
     rythme: rhythmBySlug["bts-mos"] ?? "Lun-Mar",
   },
   {
+    slug: "bachelor-rqse", code: "RQSE", name: "Bachelor RQSE", full: "Responsable Qualité Sécurité Environnement",
+    niveau: "Bac+3 — Niveau 6", duree: "12 mois", rncp: "RNCP40563",
+    enUnMot: "Tu pilotes la qualité, la sécurité et l'environnement.",
+    profil: "Rigoureux, méthodique, à l'aise avec les normes et le dialogue transversal.",
+    metiers: "Responsable QSE, coordinateur QSE, préventeur des risques",
+    dominante: "Qualité & Sécurité",
+    tuAimes: "Analyser, auditer, améliorer",
+    rythme: "Regroupements",
+  },
+  {
     slug: "tp-advf", code: "ADVF", name: "TP ADVF", full: "Assistant De Vie aux Familles",
     niveau: "Niveau 3 (CAP/BEP)", duree: "9 à 12 mois", rncp: "RNCP37715",
     enUnMot: "Tu accompagnes les personnes fragiles au quotidien.",
@@ -106,7 +116,7 @@ export default function FormationsHubPage() {
           "@context": "https://schema.org",
           "@type": "ItemList",
           name: "Formations en alternance au CADP",
-          numberOfItems: 6,
+          numberOfItems: 7,
           itemListElement: formations.map((f, i) => ({
             "@type": "ListItem",
             position: i + 1,
@@ -123,7 +133,7 @@ export default function FormationsHubPage() {
             Nos formations
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight">
-            Six formations. Un même engagement.
+            Sept formations. Un même engagement.
           </h1>
           <p className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Toutes nos formations sont en alternance, en promos de 12 étudiants, et 100% financées par l&apos;OPCO de ton entreprise. Zéro frais pour toi.
