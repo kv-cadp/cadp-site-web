@@ -131,7 +131,7 @@ const infos: [string, string][] = [
   ["Rythme", "Regroupements : 12-13 semaines au campus, 39-40 en entreprise"],
   ["Coût pour l'alternant", "Gratuit, formation financée par l'OPCO"],
   ["Prérequis", "Bac+2 validé (dérogation : Bac + 3 ans d'expérience)"],
-  ["Certificateur", "CCI Portes de Normandie (RNCP enregistré jusqu'au 30 avril 2028)"],
+  ["Certificateur", "CCI Portes de Normandie et CCI Île de la Réunion (RNCP enregistré jusqu'au 30 avril 2028)"],
   ["Ouverture", "Rentrée septembre 2026"],
   ["Places", "12 étudiants maximum"],
 ];
@@ -190,6 +190,15 @@ const courseJsonLd = {
   provider: { "@id": "https://cadp.pro/#organization" },
   timeRequired: "P1Y",
   educationalLevel: "Bac+3",
+  educationalCredentialAwarded: {
+    "@type": "EducationalOccupationalCredential",
+    name: "Responsable Qualité Sécurité Environnement (RNCP 40563)",
+    credentialCategory: "Certification professionnelle de niveau 6 (Bac+3)",
+    recognizedBy: [
+      { "@type": "Organization", name: "CCI Portes de Normandie" },
+      { "@type": "Organization", name: "CCI Île de la Réunion" },
+    ],
+  },
   courseMode: "blended",
   inLanguage: "fr",
   isAccessibleForFree: true,
