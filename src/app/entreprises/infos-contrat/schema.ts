@@ -11,6 +11,7 @@ export const FORMATIONS_CONTRAT = [
   "BTS GPME",
   "BTS CG",
   "BTS MOS",
+  "Bachelor RQSE",
   "TP ADVF",
   "Autre",
 ] as const;
