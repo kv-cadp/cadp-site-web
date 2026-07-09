@@ -47,6 +47,13 @@ const profils = [
     slug: "bts-mos",
   },
   {
+    besoin: "un responsable QSE",
+    formation: "Bachelor RQSE",
+    desc: "Il sécurise vos sites, tient vos certifications ISO et pilote la prévention des risques.",
+    secteurs: "Industrie, énergie, BTP, agroalimentaire, sites du Tricastin.",
+    slug: "bachelor-rqse",
+  },
+  {
     besoin: "une aide à domicile",
     formation: "TP ADVF",
     desc: "Elle accompagne les personnes fragiles, garde les enfants, intervient à domicile.",
@@ -163,6 +170,10 @@ export default function EntreprisesPage() {
                   <td className="px-5 py-4 text-gray-dark">BTS MCO, NDRC, GPME, CG, MOS (niveau 5)</td>
                   <td className="px-5 py-4 text-right font-bold text-gold text-lg">4 500 €</td>
                 </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="px-5 py-4 text-gray-dark">Bachelor RQSE (niveau 6)</td>
+                  <td className="px-5 py-4 text-right font-bold text-gold text-lg">2 000 €</td>
+                </tr>
                 <tr>
                   <td className="px-5 py-4 text-gray-dark">Apprenti reconnu travailleur handicapé</td>
                   <td className="px-5 py-4 text-right font-bold text-gold text-lg">6 000 €</td>
@@ -173,6 +184,10 @@ export default function EntreprisesPage() {
 
           <p className="text-xs text-gray-mid text-center italic mb-6">
             Décret n°2026-168 du 6 mars 2026. Aide versée mensuellement par l&apos;ASP pour la 1ère année du contrat.
+          </p>
+
+          <p className="text-xs text-gray-mid text-center italic mb-6">
+            À noter : pour un contrat de niveau 6 ou 7, l&apos;employeur verse une participation forfaitaire de 750 € (depuis le 1er juillet 2025).
           </p>
 
           <div className="text-center mb-8">
