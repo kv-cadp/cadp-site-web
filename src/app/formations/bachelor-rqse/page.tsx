@@ -20,7 +20,7 @@ const heroSubtitle =
   "Le Bachelor RQSE te forme en un an à piloter la démarche qualité, sécurité et environnement d'une entreprise : conformité réglementaire, audits ISO, prévention des risques, performance. Un Bac+3 en alternance, sur un marché qui manque de cadres.";
 
 const heroAeo =
-  "Le Bachelor Responsable Qualité Sécurité Environnement en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation de niveau 6 (Bac+3) sur 12 mois, en promos de 12 étudiants maximum, avec accompagnement individualisé. Le CADP est adossé au CFA IFIR, certifié Qualiopi. Le titre est délivré par la CCI Portes de Normandie et la CCI Île de la Réunion (RNCP 40563).";
+  "Le Bachelor Responsable Qualité Sécurité Environnement en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation de niveau 6 (Bac+3) sur 12 mois, en promos de 12 étudiants maximum, avec accompagnement individualisé. Le CADP est adossé au CFA IFIR, certifié Qualiopi. Le titre est délivré par la CCI Portes de Normandie (RNCP 40563).";
 
 const metierText =
   "Le Responsable QSE met en œuvre la politique de l'entreprise autour de trois objectifs : garantir la qualité des produits ou services, préserver la santé et la sécurité des salariés, et maîtriser l'impact environnemental de l'activité. Tu représentes la direction et tu fais le lien entre tous les services, dans un cadre réglementaire de plus en plus exigeant.";
@@ -67,7 +67,7 @@ const evaluationText =
 const rythmePoints = [
   {
     title: "Une vraie expérience professionnelle",
-    text: "Sur 12 mois, tu passes environ 9 mois en entreprise, sur un poste à responsabilités. Tu sors avec un diplôme et une expérience concrète qui fait la différence sur le marché de l'emploi.",
+    text: "Sur 12 mois, tu passes environ 9 mois en entreprise, sur un poste à responsabilités. Tu sors avec un titre RNCP de niveau 6 et une expérience concrète qui fait la différence sur le marché de l'emploi.",
   },
   {
     title: "Des périodes de formation regroupées",
@@ -93,7 +93,7 @@ const secteursText =
   "Industrie (métallurgie, agroalimentaire, pharmaceutique, chimie, plasturgie), énergie et environnement, construction et BTP, transport et logistique, santé, services. Le profil QSE est particulièrement recherché dans les organisations engagées dans des démarches de certification ISO ou soumises à de fortes contraintes réglementaires, comme sur le bassin du Tricastin.";
 
 const marcheText =
-  "Selon France Travail (T1 2025), près de 80 % des offres de Responsable QSE proposent une rémunération comprise entre 1 820 € et 3 333 € brut par mois, sur un marché marqué par une forte difficulté de recrutement. Autrement dit : un diplôme qui mène à l'emploi.";
+  "Selon France Travail (T1 2025), près de 80 % des offres de Responsable QSE proposent une rémunération comprise entre 1 820 € et 3 333 € brut par mois, sur un marché marqué par une forte difficulté de recrutement. Autrement dit : un titre qui mène à l'emploi.";
 
 const poursuiteText =
   "Le Bachelor vise d'abord l'insertion directe sur un poste qualifié. Il ouvre aussi la voie vers un Bac+5 (niveau 7) en QHSE ou en management des risques, en alternance ou en formation continue.";
@@ -124,14 +124,14 @@ const etapes = [
 ];
 
 const infos: [string, string][] = [
-  ["Diplôme", "Bachelor Responsable Qualité Sécurité Environnement"],
+  ["Certification visée", "Responsable qualité sécurité environnement"],
   ["Code RNCP", "RNCP 40563"],
   ["Niveau", "Bac+3 (niveau 6)"],
   ["Durée", "12 mois en alternance"],
   ["Rythme", "Regroupements : 12-13 semaines au campus, 39-40 en entreprise"],
   ["Coût pour l'alternant", "Gratuit, formation financée par l'OPCO"],
   ["Prérequis", "Bac+2 validé (dérogation : Bac + 3 ans d'expérience)"],
-  ["Certificateur", "CCI Portes de Normandie et CCI Île de la Réunion (RNCP enregistré jusqu'au 30 avril 2028)"],
+  ["Certificateur", "CCI Portes de Normandie"],
   ["Ouverture", "Rentrée septembre 2026"],
   ["Places", "12 étudiants maximum"],
 ];
@@ -145,7 +145,7 @@ const faq = [
   {
     question: "Quels sont les prérequis pour intégrer le Bachelor RQSE ?",
     answer:
-      "Il faut être titulaire d'un diplôme de niveau 5 (Bac+2) validé. La formation est ouverte aux profils tertiaires comme techniques : un BTS GPME ou MOS, dont les compétences en gestion des risques mènent au QSE, autant qu'un BTS Maintenance, CRSA, PCEPC, un DUT ou BUT HSE ou Génie industriel, ou une L2. À titre dérogatoire, l'accès est aussi ouvert aux titulaires d'un Bac justifiant d'au moins 3 ans d'expérience professionnelle, une voie adaptée aux reconversions vers les métiers de la qualité, de la sécurité et de l'environnement.",
+      "Il faut être titulaire d'une certification de niveau 5 (Bac+2) validée. La formation est ouverte aux profils tertiaires comme techniques : un BTS GPME ou MOS, dont les compétences en gestion des risques mènent au QSE, autant qu'un BTS Maintenance, CRSA, PCEPC, un DUT ou BUT HSE ou Génie industriel, ou une L2. À titre dérogatoire, l'accès est aussi ouvert aux titulaires d'un Bac justifiant d'au moins 3 ans d'expérience professionnelle, une voie adaptée aux reconversions vers les métiers de la qualité, de la sécurité et de l'environnement.",
   },
   {
     question: "Combien de temps dure la formation ?",
@@ -175,7 +175,7 @@ const faq = [
   {
     question: "Le Bachelor RQSE est-il reconnu par l'État ?",
     answer:
-      "Oui. Le titre de Responsable Qualité Sécurité Environnement est enregistré au RNCP sous le numéro 40563 (niveau 6, Bac+3), délivré par la CCI Portes de Normandie et la CCI Île de la Réunion. Au CADP, tu le prépares dans le cadre du CFA IFIR, certifié Qualiopi.",
+      "Oui. Le titre de Responsable Qualité Sécurité Environnement est enregistré au RNCP sous le numéro 40563 (niveau 6, Bac+3), délivré par la CCI Portes de Normandie. Au CADP, tu le prépares dans le cadre du CFA IFIR, certifié Qualiopi.",
   },
 ];
 
@@ -196,7 +196,6 @@ const courseJsonLd = {
     credentialCategory: "Certification professionnelle de niveau 6 (Bac+3)",
     recognizedBy: [
       { "@type": "Organization", name: "CCI Portes de Normandie" },
-      { "@type": "Organization", name: "CCI Île de la Réunion" },
     ],
   },
   courseMode: "blended",
@@ -422,6 +421,9 @@ export default function BachelorRQSEPage() {
               </div>
             ))}
           </div>
+          <p className="mt-6 text-xs leading-relaxed text-gray-mid">
+            Responsable qualité sécurité environnement, RNCP 40563, titre de niveau 6 délivré par la CCI Portes de Normandie, enregistré au RNCP le 30/04/2025 pour une durée de trois ans.
+          </p>
         </div>
       </section>
 
