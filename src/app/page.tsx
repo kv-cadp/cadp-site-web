@@ -1,6 +1,7 @@
 import HeroSection from "@/components/home/HeroSection";
 import OrientationSection from "@/components/home/OrientationSection";
 import KeyFigures from "@/components/home/KeyFigures";
+import ResultatsPromo from "@/components/home/ResultatsPromo";
 import FormationsOverview from "@/components/home/FormationsOverview";
 import Testimonials from "@/components/home/Testimonials";
 import UpcomingEvents from "@/components/home/UpcomingEvents";
@@ -23,6 +24,7 @@ export default function HomePage() {
       <HeroSection />
       <OrientationSection />
       <KeyFigures />
+      <ResultatsPromo />
       <FormationsOverview />
       <Testimonials />
       <UpcomingEvents />
