@@ -360,6 +360,11 @@ export const formations: Formation[] = [
           "Oui, le BTS NDRC est un diplôme national inscrit au RNCP (niveau 5, Bac+2). Au CADP, tu le prépares via le CFA IFIR, certifié Qualiopi, ce qui atteste de la qualité de la formation.",
       },
       {
+        question: "Quel est le taux de réussite du BTS NDRC au CADP ?",
+        answer:
+          "La première promotion (2024-2026) a obtenu 86% de réussite à l'examen : 6 admis sur 7 présentés. Un résultat porté par l'accompagnement individualisé en promo de 12 étudiants. Le BTS NDRC est un diplôme national préparé au CADP via le CFA IFIR, certifié Qualiopi.",
+      },
+      {
         question: "Comment s'inscrire au BTS NDRC au CADP ?",
         answer:
           "Candidature en ligne sur notre site, entretien de motivation, puis accompagnement dans ta recherche d'entreprise. Les inscriptions sont ouvertes toute l'année, mais les places sont limitées à 12 par promo pour garantir un suivi individualisé.",
@@ -548,6 +553,11 @@ export const formations: Formation[] = [
         question: "Peut-on poursuivre ses études après un BTS GPME ?",
         answer:
           "Oui. Tu peux intégrer une licence professionnelle en management, RH, comptabilité ou administration. Des Bachelors en école de commerce sont aussi accessibles. Le BTS GPME offre une base solide pour un Bac+3.",
+      },
+      {
+        question: "Quel est le taux de réussite du BTS GPME au CADP ?",
+        answer:
+          "La première promotion (2024-2026) a obtenu 100% de réussite à l'examen : 12 admis sur 12 présentés. Un résultat porté par l'accompagnement individualisé en promo de 12 étudiants. Le BTS GPME est un diplôme national préparé au CADP via le CFA IFIR, certifié Qualiopi.",
       },
       {
         question: "Comment s'inscrire au BTS GPME au CADP ?",
@@ -915,6 +925,11 @@ export const formations: Formation[] = [
         question: "Quel est le rythme de l'alternance en BTS MOS au CADP ?",
         answer:
           "Le rythme est de 2 jours au campus (lundi-mardi) et 3 jours en entreprise (mercredi, jeudi, vendredi), toutes les semaines, sans alternance entre semaines A et B. Cours de 8h à 12h et de 13h à 17h. Tu vis le quotidien opérationnel : gestion d'équipe, plannings, incidents, relation client.",
+      },
+      {
+        question: "Quel est le taux de réussite du BTS MOS au CADP ?",
+        answer:
+          "La première promotion (2024-2026) a obtenu 100% de réussite à l'examen : 6 admis sur 6 présentés. Un résultat porté par l'accompagnement individualisé en petite promo. Le BTS MOS est un diplôme national préparé au CADP via le CFA IFIR, certifié Qualiopi.",
       },
       {
         question: "Comment s'inscrire au BTS MOS au CADP ?",
