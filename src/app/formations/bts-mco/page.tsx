@@ -40,7 +40,7 @@ export default function BTSMCOPage() {
       <FormationTestimonial testimonial={formation.testimonial} />
       <FormationFAQ faq={formation.faq} formationName={formation.shortName} />
       <FormationCTA formationName={formation.shortName} formationCode={formation.code.toLowerCase()} />
-      <ResultatsBlock />
+      <ResultatsBlock formation={formation} />
     </article>
   );
 }
