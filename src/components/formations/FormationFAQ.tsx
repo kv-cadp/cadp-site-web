@@ -5,14 +5,15 @@ import type { FAQItem } from "@/types/formation";
 interface FormationFAQProps {
   faq: FAQItem[];
   formationName: string;
+  subtitle?: string;
 }
 
-export default function FormationFAQ({ faq, formationName }: FormationFAQProps) {
+export default function FormationFAQ({ faq, formationName, subtitle }: FormationFAQProps) {
   return (
     <section className="py-20 bg-cream">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <SectionTitle
-          subtitle={`Toutes les réponses à tes questions sur le ${formationName}.`}
+          subtitle={subtitle ?? `Toutes les réponses à tes questions sur le ${formationName}.`}
         >
           Questions fréquentes
         </SectionTitle>

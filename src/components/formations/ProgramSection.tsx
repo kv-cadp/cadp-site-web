@@ -7,15 +7,19 @@ import { cn } from "@/lib/utils";
 
 interface ProgramSectionProps {
   program: ProgramYear[];
+  subtitle?: string;
 }
 
-export default function ProgramSection({ program }: ProgramSectionProps) {
+export default function ProgramSection({
+  program,
+  subtitle = "Ce que tu vas apprendre, année par année.",
+}: ProgramSectionProps) {
   const [activeYear, setActiveYear] = useState(0);
 
   return (
     <section className="py-20 bg-white">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <SectionTitle subtitle="Ce que tu vas apprendre, année par année.">
+        <SectionTitle subtitle={subtitle}>
           Programme de la formation
         </SectionTitle>
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Button from "@/components/ui/Button";
+import { getFormationBySlug } from "@/data/formations";
 import { getDatingFormationContent } from "@/lib/dating/content";
 import {
   DATING_PATH_CITY,
@@ -9,6 +10,7 @@ import {
   type DatingPath,
 } from "@/lib/dating/events";
 import { buildDatingEventJsonLd } from "@/lib/dating/json-ld";
+import { formatSiteRhythmSentence } from "@/lib/format-rhythm";
 import { JsonLd } from "@/lib/structured-data";
 import DatingEventFacts from "./DatingEventFacts";
 import NoUpcomingDating from "./NoUpcomingDating";
@@ -31,6 +33,11 @@ export default function DatingLanding({ path }: { path: DatingPath }) {
   if (!event) return <NoUpcomingDating city={DATING_PATH_CITY[path]} />;
 
   const content = getDatingFormationContent(event.formationSlug);
+  const formation = event.formationSlug ? getFormationBySlug(event.formationSlug) : undefined;
+  // Jours de cours du lieu de ce dating (la formation peut avoir d'autres jours ailleurs).
+  const siteRhythm = formation
+    ? formatSiteRhythmSentence(formation.rhythm, event.venue.city)
+    : undefined;
 
   return (
     <>
@@ -92,6 +99,9 @@ export default function DatingLanding({ path }: { path: DatingPath }) {
                   </li>
                 ))}
               </ul>
+              {siteRhythm && (
+                <p className="mt-6 text-gray-dark leading-relaxed">{siteRhythm}</p>
+              )}
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
                 <div className="border border-gray-200 rounded-xl p-6">
@@ -127,6 +137,14 @@ export default function DatingLanding({ path }: { path: DatingPath }) {
                 </h3>
                 <p className="text-gray-dark leading-relaxed">{content.goodToKnow}</p>
               </div>
+
+              {formation && (
+                <p className="mt-8">
+                  <Link href={`/formations/${formation.slug}`} className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4">
+                    Tout savoir sur le {formation.shortName} : programme, rythme, débouchés
+                  </Link>
+                </p>
+              )}
             </div>
           </section>
 

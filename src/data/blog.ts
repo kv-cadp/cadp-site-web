@@ -180,7 +180,7 @@ export const articles: BlogArticle[] = [
 <li><strong><a href="/formations/bts-gpme">BTS GPME</a></strong> — Gestion de la PME — Bac+2, 2 ans</li>
 <li><strong><a href="/formations/bts-cg">BTS CG</a></strong> — Comptabilité et Gestion — Bac+2, 2 ans</li>
 <li><strong><a href="/formations/bts-mos">BTS MOS</a></strong> — Management Opérationnel de la Sécurité — Bac+2, 2 ans</li>
-<li><strong><a href="/formations/tp-advf">TP ADVF</a></strong> — Assistant De Vie aux Familles — Niveau 3 (CAP/BEP), 9 à 12 mois</li>
+<li><strong><a href="/formations/tp-advf">TP ADVF</a></strong> — Assistant De Vie aux Familles — Niveau 3 (CAP/BEP), 12 mois</li>
 </ul>
 
 <p>Le <strong><a href="/formations/bts-gtla">BTS GTLA</a></strong> (Gestion des Transports et Logistique Associée) ouvrira à la rentrée 2027 — les pré-inscriptions sont déjà ouvertes.</p>
@@ -224,7 +224,7 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 <p><strong>Pour le TP ADVF :</strong></p>
 <ul>
 <li>Aucun diplôme requis</li>
-<li>Accessible dès 16 ans</li>
+<li>En contrat d'apprentissage, de 16 à 29 ans (au-delà, dérogations possibles, notamment avec une RQTH)</li>
 <li>Ouvert aux personnes en reconversion</li>
 </ul>
 
@@ -266,7 +266,7 @@ Fais le <a href="/orientation">test d'orientation</a> sur cadp.pro/orientation. 
 Oui, les inscriptions pour la rentrée de septembre 2026 sont ouvertes. Mais les places sont limitées à 12 par promo et par formation — quand c'est complet, c'est complet. Notre conseil : candidate maintenant.</p>
 
 <p><strong>J'ai plus de 29 ans, je peux m'inscrire ?</strong><br/>
-Pour les BTS en apprentissage, la limite d'âge est de 29 ans révolus. Cependant, il existe des exceptions (travailleur handicapé, création d'entreprise, etc.). Pour le TP ADVF, des dispositifs spécifiques peuvent être envisagés. Contacte-nous au 04 75 00 34 56 pour qu'on étudie ta situation.</p>
+En apprentissage, pour les BTS comme pour le TP ADVF, la limite d'âge est de 29 ans révolus. Cependant, il existe des exceptions (travailleur handicapé, création d'entreprise, etc.). Contacte-nous au 04 75 00 34 56 pour qu'on étudie ta situation.</p>
 `,
   },
   {

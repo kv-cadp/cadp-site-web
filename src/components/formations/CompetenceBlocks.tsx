@@ -3,13 +3,17 @@ import type { CompetenceBlock } from "@/types/formation";
 
 interface CompetenceBlocksProps {
   blocks: CompetenceBlock[];
+  subtitle?: string;
 }
 
-export default function CompetenceBlocks({ blocks }: CompetenceBlocksProps) {
+export default function CompetenceBlocks({
+  blocks,
+  subtitle = "Les compétences que tu vas acquérir, bloc par bloc.",
+}: CompetenceBlocksProps) {
   return (
     <section className="py-20 bg-cream">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <SectionTitle subtitle="Les compétences que tu vas acquérir, bloc par bloc.">
+        <SectionTitle subtitle={subtitle}>
           Blocs de compétences
         </SectionTitle>
 

@@ -20,7 +20,7 @@ const formations = [
   { code: "GPME", name: "Gestion de la PME", niveau: "Bac+2 — Niveau 5", duree: "2 ans", slug: "bts-gpme" },
   { code: "CG", name: "Comptabilité et Gestion", niveau: "Bac+2 — Niveau 5", duree: "2 ans", slug: "bts-cg" },
   { code: "MOS", name: "Management Opérationnel de la Sécurité", niveau: "Bac+2 — Niveau 5", duree: "2 ans", slug: "bts-mos" },
-  { code: "ADVF", name: "Assistant De Vie aux Familles", niveau: "Niveau 3 (CAP/BEP)", duree: "9 à 12 mois", slug: "tp-advf" },
+  { code: "ADVF", name: "Assistant De Vie aux Familles", niveau: "Niveau 3 (CAP/BEP)", duree: "12 mois", slug: "tp-advf" },
 ];
 
 const timeline = [

@@ -45,7 +45,7 @@ const TP_ADVF: DatingFormationContent = {
   conditions: [
     "Aucun diplôme, aucun niveau scolaire exigé",
     "Parler français et savoir lire quelques lignes en français",
-    "Jeunes et adultes en reconversion · le type de contrat s'adapte à votre âge et à votre situation, nous en parlons avec vous le jour J",
+    "Jeunes et adultes en reconversion · en contrat d'apprentissage, de 16 à 29 ans, au-delà sur dérogation (sans limite d'âge avec une RQTH) · nous en parlons avec vous le jour J",
   ],
   goodToKnow:
     "Les employeurs du secteur demandent le permis B et un véhicule : les interventions se font au domicile des personnes, sur plusieurs communes dans la même journée.",

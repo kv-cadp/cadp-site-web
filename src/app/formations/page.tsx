@@ -5,7 +5,7 @@ import Badge from "@/components/ui/Badge";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { formations as formationsData } from "@/data/formations";
-import { formatCampusDaysShort } from "@/lib/format-rhythm";
+import { formatRhythmShort } from "@/lib/format-rhythm";
 
 export const metadata = createPageMetadata({
   title: "Nos formations en alternance à Pierrelatte",
@@ -14,12 +14,12 @@ export const metadata = createPageMetadata({
   path: "/formations",
 });
 
-// Source unique des rythmes : src/data/formations.ts (rhythm.campusDays).
+// Source unique des rythmes : src/data/formations.ts (rhythm.campusDays, ou rhythm.sites par lieu).
 // Cette dérivation évite la divergence avec le format string court inline.
 const rhythmBySlug: Record<string, string> = Object.fromEntries(
   formationsData.map((f) => [
     f.slug,
-    formatCampusDaysShort(f.rhythm.campusDays),
+    formatRhythmShort(f.rhythm),
   ]),
 );
 
@@ -90,13 +90,13 @@ const formations = [
   },
   {
     slug: "tp-advf", code: "ADVF", name: "TP ADVF", full: "Assistant De Vie aux Familles",
-    niveau: "Niveau 3 (CAP/BEP)", duree: "9 à 12 mois", rncp: "RNCP37715",
+    niveau: "Niveau 3 (CAP/BEP)", duree: "12 mois", rncp: "RNCP37715",
     enUnMot: "Tu accompagnes les personnes fragiles au quotidien.",
     profil: "Empathique, patient, sens du service, envie d'aider.",
     metiers: "Aide à domicile, auxiliaire de vie, garde d'enfants",
     dominante: "Aide à la personne",
     tuAimes: "Accompagner, aider, prendre soin",
-    rythme: rhythmBySlug["tp-advf"] ?? "Mer-Jeu",
+    rythme: rhythmBySlug["tp-advf"] ?? "Lun-Mar ou Jeu-Ven",
   },
 ];
 
@@ -271,7 +271,7 @@ export default function FormationsHubPage() {
               <h3 className="font-serif text-lg text-navy-deep mb-3">BTS ou TP ADVF ?</h3>
               <p className="text-gray-mid text-sm leading-relaxed">
                 Les 5 BTS mènent à un Bac+2 en 2 ans et visent des métiers tertiaires (commerce, gestion, sécurité). Le{" "}
-                <strong className="text-navy-deep">TP ADVF</strong> est un titre de niveau 3 (CAP/BEP) sur 9 à 12 mois, orienté vers les métiers de l&apos;aide à la personne. Ce sont deux univers différents — le bon choix dépend de ton projet, pas de ton niveau.
+                <strong className="text-navy-deep">TP ADVF</strong> est un titre de niveau 3 (CAP/BEP) sur 12 mois, orienté vers les métiers de l&apos;aide à la personne. Ce sont deux univers différents — le bon choix dépend de ton projet, pas de ton niveau.
               </p>
             </div>
 

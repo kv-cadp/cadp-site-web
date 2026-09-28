@@ -1,4 +1,5 @@
 import Badge from "@/components/ui/Badge";
+import { parisTodayIso } from "@/lib/paris-time";
 import type { Formation } from "@/types/formation";
 
 interface FormationHeroProps {
@@ -6,6 +7,13 @@ interface FormationHeroProps {
 }
 
 export default function FormationHero({ formation }: FormationHeroProps) {
+  const sites = formation.rhythm.sites ?? [];
+  // Annonce retirée d'elle-même à la date prévue (pages régénérées toutes les heures).
+  const intake =
+    formation.nextIntake && parisTodayIso() < formation.nextIntake.until
+      ? formation.nextIntake
+      : undefined;
+
   return (
     <section className="bg-navy-deep py-20 md:py-28">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
@@ -28,11 +36,25 @@ export default function FormationHero({ formation }: FormationHeroProps) {
           <span className="px-4 py-2 bg-navy-light rounded-lg text-cream text-sm font-medium">
             {formation.rncp}
           </span>
+          {sites.length > 0 && (
+            <span className="px-4 py-2 bg-navy-light rounded-lg text-cream text-sm font-medium">
+              {sites.map((site) => site.city).join(" · ")}
+            </span>
+          )}
+          {intake && (
+            <span className="px-4 py-2 bg-navy-light rounded-lg text-cream text-sm font-medium">
+              Entrée en formation : {intake.label}
+            </span>
+          )}
         </div>
 
         {/* Définition AEO — paragraphe structuré pour les moteurs de recherche et IA */}
         <p className="text-cream/60 text-sm max-w-3xl mx-auto leading-relaxed">
-          Le {formation.fullName} en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation {formation.level.toLowerCase()} sur {formation.duration}, en promos de 12 étudiants maximum, avec accompagnement individualisé (Alternance Dating, ateliers CV, coaching). Le CADP est adossé au CFA IFIR, certifié Qualiopi.
+          {formation.definition ?? (
+            <>
+              Le {formation.fullName} en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation {formation.level.toLowerCase()} sur {formation.duration}, en promos de 12 étudiants maximum, avec accompagnement individualisé (Alternance Dating, ateliers CV, coaching). Le CADP est adossé au CFA IFIR, certifié Qualiopi.
+            </>
+          )}
         </p>
       </div>
     </section>

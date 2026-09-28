@@ -45,7 +45,9 @@ export default function Accordion({ items, className }: AccordionProps) {
           <div
             className={cn(
               "overflow-hidden transition-all duration-300",
-              openIndex === index ? "max-h-96 pb-5" : "max-h-0"
+              // Plafond large : à 320 px de large, une réponse de 400 à 500 signes
+              // dépasse 24rem (max-h-96) et serait coupée.
+              openIndex === index ? "max-h-[64rem] pb-5" : "max-h-0"
             )}
           >
             <p className="text-gray-mid leading-relaxed">{item.answer}</p>

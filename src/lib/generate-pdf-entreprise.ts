@@ -101,7 +101,7 @@ const rythmes: Record<string, string> = {
   gpme: "Lundi-Mardi au campus / Mercredi à Vendredi en entreprise",
   cg: "Jeudi-Vendredi au campus / Lundi à Mercredi en entreprise",
   mos: "Lundi-Mardi au campus / Mercredi à Vendredi en entreprise",
-  advf: "Mercredi-Jeudi au campus / Lundi-Mardi et Vendredi en structure",
+  advf: "Lundi-Mardi à Guilherand-Granges ou Jeudi-Vendredi à Pierrelatte / le reste en structure",
 };
 
 const debouches: Record<string, string[]> = {
@@ -265,11 +265,18 @@ export function generateEntreprisePDF(params: PDFParams) {
     doc.text(`${f.name} - ${f.full}`, m, y);
     y += 5;
 
-    // Niveau + durée
+    // Niveau + durée, puis le rythme à la ligne s'il ne tient pas (ADVF : deux lieux)
     doc.setFontSize(8);
     doc.setTextColor(...GOLD);
-    doc.text(`${f.niveau} | ${f.duree} en alternance | Rythme : ${rythmes[key] || "2j campus / 3j entreprise"}`, m, y);
-    y += 7;
+    const niveauDuree = `${f.niveau} | ${f.duree} en alternance`;
+    const rythme = `Rythme : ${rythmes[key] || "2j campus / 3j entreprise"}`;
+    const infoLine = `${niveauDuree} | ${rythme}`;
+    const infoLines: string[] =
+      doc.getTextWidth(infoLine) <= contentW
+        ? [infoLine]
+        : [niveauDuree, ...doc.splitTextToSize(rythme, contentW)];
+    doc.text(infoLines, m, y);
+    y += 7 + (infoLines.length - 1) * 3.5;
 
     // Description bénéfices
     doc.setFont("helvetica", "normal");
