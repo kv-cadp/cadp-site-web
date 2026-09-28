@@ -959,19 +959,23 @@ export const formations: Formation[] = [
     shortName: "TP ADVF",
     heroTitle: "Prendre soin des autres. Le plus beau des métiers.",
     heroSubtitle:
-      "Le TP ADVF te forme à l'accompagnement des personnes âgées, des personnes en situation de handicap et des familles au quotidien. Un métier humain, concret et essentiel.",
+      "Le TP ADVF vous forme à l'accompagnement des personnes âgées, des personnes en situation de handicap et des familles au quotidien. Un métier humain, concret et essentiel.",
     shortDescription:
       "Accompagne les personnes fragiles au quotidien : aide à domicile, garde d'enfants, soutien aux personnes âgées et en situation de handicap. Le TP ADVF te forme à un métier essentiel et porteur.",
-    duration: "9 à 12 mois",
+    duration: "12 mois",
     level: "Niveau 3 (CAP/BEP)",
     rncp: "RNCP37715",
     rhythm: {
       schoolDays: 2,
       companyDays: 3,
-      campusDays: [2, 3], // mer-jeu
-      horaires: "8h-12h / 13h-17h",
+      campusDays: [], // jours propres à chaque lieu : voir sites
+      sites: [
+        { city: "Pierrelatte", department: "Drôme", campusDays: [3, 4] }, // jeu-ven
+        { city: "Guilherand-Granges", department: "Ardèche", campusDays: [0, 1] }, // lun-mar
+      ],
+      horaires: "8h-12h / 13h-16h",
       description:
-        "Mercredi et jeudi au campus. Lundi, mardi, vendredi en entreprise. Toutes les semaines.\n\nCours : 8h-12h / 13h-17h.\n\nLa régularité fait partie du métier.",
+        "En moyenne 2 jours par semaine au campus, hors vacances scolaires, avec des semaines sans cours : 450 heures de formation sur l'année. Le reste du temps, vous êtes en entreprise, et à temps plein pendant les vacances scolaires.\n\nLe calendrier détaillé vous est remis avant la signature du contrat.",
     },
     competenceBlocks: [
       {
@@ -1035,45 +1039,46 @@ export const formations: Formation[] = [
       },
     ],
     careers: [
+      // Planchers au SMIC à temps plein (1 867,02 € brut par mois au 01/06/2026, soit 22 404 € par an).
       {
         title: "Assistant(e) de vie aux familles",
-        description: "Tu accompagnes les personnes fragiles dans les gestes du quotidien : repas, toilette, courses, lien social.",
-        salary: "21 000 - 24 000 € brut/an",
+        description: "Vous accompagnez les personnes fragiles dans les gestes du quotidien : repas, toilette, courses, lien social.",
+        salary: "22 400 - 24 000 € brut/an",
       },
       {
         title: "Aide à domicile",
-        description: "Tu interviens chez les personnes âgées ou en situation de handicap pour l'entretien du logement et l'accompagnement.",
-        salary: "21 000 - 24 000 € brut/an",
+        description: "Vous intervenez chez les personnes âgées ou en situation de handicap pour l'entretien du logement et l'accompagnement.",
+        salary: "22 400 - 24 000 € brut/an",
       },
       {
         title: "Garde d'enfants à domicile",
-        description: "Tu prends en charge les enfants au domicile des parents : repas, devoirs, activités, sécurité.",
-        salary: "21 000 - 23 000 € brut/an",
+        description: "Vous prenez en charge les enfants au domicile des parents : repas, devoirs, activités, sécurité.",
+        salary: "22 400 - 23 000 € brut/an",
       },
       {
         title: "Auxiliaire de vie sociale",
-        description: "Tu accompagnes les personnes dépendantes dans le maintien de leur autonomie et de leur vie sociale.",
-        salary: "21 000 - 25 000 € brut/an",
+        description: "Vous accompagnez les personnes dépendantes dans le maintien de leur autonomie et de leur vie sociale.",
+        salary: "22 400 - 25 000 € brut/an",
       },
     ],
     furtherStudies: [
       "DEAES (Diplôme d'État d'Accompagnant Éducatif et Social)",
-      "DEAS (Diplôme d'État d'Aide-Soignant) — passerelle avec dispenses",
+      "DEAS (Diplôme d'État d'Aide-Soignant), avec allègements de formation",
       "Titre professionnel ASMS (Agent de Service Médico-Social)",
       "CAP AEPE (Accompagnant Éducatif Petite Enfance)",
       "Bac pro ASSP (Accompagnement, Soins et Services à la Personne)",
     ],
     prerequisites: [
-      "Aucun diplôme requis (niveau 3ème recommandé)",
-      "Demandeurs d'emploi",
-      "Salariés en reconversion",
-      "Jeunes de 16 ans et plus",
+      "Aucun diplôme, aucun niveau scolaire exigé",
+      "Parler français et savoir lire quelques lignes en français",
+      "Jeunes et adultes en reconversion, en contrat d'apprentissage : de 16 à 29 ans, au-delà sur dérogation (sans limite d'âge avec une RQTH)",
+      "Permis B et véhicule demandés par la plupart des employeurs",
     ],
     faq: [
       {
         question: "Quel diplôme obtient-on avec le TP ADVF ?",
         answer:
-          "Tu obtiens un Titre Professionnel de niveau 3 (équivalent CAP/BEP) délivré par le Ministère du Travail, inscrit au RNCP. Ce titre est reconnu par les employeurs du secteur de l'aide à domicile et des services à la personne.",
+          "Vous obtenez un Titre Professionnel de niveau 3 (équivalent CAP/BEP) délivré par le Ministère du Travail, inscrit au RNCP. Ce titre est reconnu par les employeurs du secteur de l'aide à domicile et des services à la personne.",
       },
       {
         question: "Quel est le salaire d'un assistant de vie aux familles ?",
@@ -1083,7 +1088,7 @@ export const formations: Formation[] = [
       {
         question: "Faut-il un diplôme pour entrer en formation TP ADVF ?",
         answer:
-          "Non, aucun diplôme n'est requis pour intégrer la formation TP ADVF. Il faut avoir au moins 16 ans, être motivé par l'aide aux personnes et avoir un bon relationnel. Un entretien de motivation est organisé pour valider ton projet.",
+          "Non. Aucun diplôme ni niveau scolaire n'est exigé. Il faut parler français et savoir lire quelques lignes en français, avoir au moins 16 ans, être motivé(e) par l'aide aux personnes et avoir un bon relationnel. Un entretien permet de vérifier votre projet.",
       },
       {
         question: "Le secteur de l'aide à domicile recrute-t-il ?",
@@ -1093,17 +1098,22 @@ export const formations: Formation[] = [
       {
         question: "Combien de temps dure la formation TP ADVF ?",
         answer:
-          "La formation dure entre 9 et 12 mois, incluant les périodes de stage en entreprise. Au CADP, tu es au campus le mercredi et le jeudi (cours de 8h à 12h et de 13h à 17h) et en entreprise le lundi, le mardi et le vendredi, toutes les semaines.",
+          "12 mois en alternance, avec 450 heures de formation sur l'année : en moyenne 2 jours par semaine au campus, hors vacances scolaires, avec des semaines sans cours. Les cours ont lieu de 8h à 12h et de 13h à 16h, le jeudi et le vendredi à Pierrelatte, le lundi et le mardi à Guilherand-Granges. Le reste du temps, vous êtes en entreprise, et à temps plein pendant les vacances scolaires.",
+      },
+      {
+        question: "Où se déroule la formation TP ADVF ?",
+        answer:
+          "Sur deux lieux : à Pierrelatte (Drôme), au campus du CADP, 2 boulevard Frédéric Mistral, le jeudi et le vendredi ; à Guilherand-Granges (Ardèche), au C2A, antenne du CADP, le lundi et le mardi. Le programme et le titre préparé sont les mêmes.",
       },
       {
         question: "Peut-on poursuivre après un TP ADVF ?",
         answer:
-          "Oui. Tu peux préparer le DEAES (Diplôme d'État d'Accompagnant Éducatif et Social), passer le concours d'aide-soignant avec des dispenses, préparer un CAP AEPE pour la petite enfance, ou un bac pro ASSP. Le TP ADVF est un vrai tremplin.",
+          "Oui. Vous pouvez préparer le DEAES (Diplôme d'État d'Accompagnant Éducatif et Social), entrer en formation d'aide-soignant (DEAS) avec des allègements de formation, préparer un CAP AEPE pour la petite enfance, ou un bac pro ASSP. Le TP ADVF est un vrai tremplin.",
       },
       {
         question: "Le TP ADVF se fait-il en alternance ?",
         answer:
-          "Au CADP, la formation inclut des périodes en entreprise (stages ou contrats de professionnalisation selon les cas). Tu alternes entre cours au campus et pratique sur le terrain auprès de familles et de structures d'aide à domicile.",
+          "Oui, uniquement en contrat d'apprentissage. Vous êtes salarié(e) d'une structure d'aide à domicile, d'une association ou d'un EHPAD, payé(e) chaque mois, et la formation est gratuite pour vous. Le contrat d'apprentissage est ouvert de 16 à 29 ans. Au-delà, des dérogations existent, notamment pour les personnes reconnues travailleurs handicapés (RQTH), pour qui il n'y a pas de limite d'âge : nous étudions votre situation avec vous.",
       },
       {
         question: "Quelles qualités faut-il pour être ADVF ?",
@@ -1113,27 +1123,30 @@ export const formations: Formation[] = [
       {
         question: "Faut-il un certificat SST pour passer l'examen ADVF ?",
         answer:
-          "Oui, c'est obligatoire. Pour se présenter à l'examen du TP ADVF, tu dois détenir un certificat SST (Sauveteur Secouriste du Travail) ou APS-ASD (Acteur Prévention Secours) en cours de validité. La formation SST est intégrée au parcours au CADP.",
+          "Oui, c'est obligatoire. Pour vous présenter à l'examen du TP ADVF, vous devez détenir un certificat SST (Sauveteur Secouriste du Travail) ou APS-ASD (Acteur Prévention Secours) en cours de validité. La formation SST est intégrée au parcours au CADP.",
       },
       {
         question: "Comment se déroule l'examen du TP ADVF ?",
         answer:
-          "L'examen dure 2h20 et comprend une mise en situation professionnelle (1h15) avec un comédien jouant la personne aidée, un entretien technique (50 min) sur le handicap et l'enfant, et un entretien final (15 min) sur ton dossier professionnel.",
+          "L'examen dure 2h20 et comprend une mise en situation professionnelle (1h15) avec un comédien jouant la personne aidée, un entretien technique (50 min) sur le handicap et l'enfant, et un entretien final (15 min) sur votre dossier professionnel.",
       },
       {
         question: "Comment s'inscrire au TP ADVF au CADP ?",
         answer:
-          "Candidature en ligne sur notre site, entretien de motivation pour vérifier ton projet professionnel, puis accompagnement dans ta recherche de stage ou d'entreprise. Pas de prérequis de diplôme.",
+          "Candidature en ligne sur notre site, entretien pour vérifier votre projet professionnel, puis accompagnement dans votre recherche d'employeur, notamment lors de nos Alternance Dating. Aucun diplôme n'est demandé.",
       },
       {
         question: "Le TP ADVF est-il reconnu par l'État ?",
         answer:
-          "Oui. Le TP ADVF est un titre professionnel du Ministère du Travail (code TP-00391), inscrit au RNCP (niveau 3). Au CADP, tu le prépares dans le cadre du CFA IFIR, certifié Qualiopi.",
+          "Oui. Le TP ADVF est un titre professionnel du Ministère du Travail (code TP-00391), inscrit au RNCP (niveau 3). Au CADP, vous le préparez dans le cadre du CFA IFIR, certifié Qualiopi.",
       },
     ],
-    metaTitle: "TP ADVF en alternance à Pierrelatte",
+    metaTitle: "TP ADVF en alternance à Pierrelatte et Guilherand-Granges",
     metaDescription:
-      "Prépare ton Titre Professionnel ADVF au CADP à Pierrelatte. Aide à domicile, accompagnement des personnes fragiles. Formation en 9-12 mois, secteur qui recrute massivement.",
+      "Titre Professionnel ADVF en 12 mois, en apprentissage, à Pierrelatte (Drôme) et Guilherand-Granges (Ardèche). Aucun diplôme exigé, formation gratuite.",
+    definition:
+      "Le Titre Professionnel Assistant De Vie aux Familles (TP ADVF) se prépare en 12 mois, en contrat d'apprentissage, au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) et dans son antenne de Guilherand-Granges (Ardèche), le C2A. C'est un titre de niveau 3 (équivalent CAP/BEP), préparé en promotions de 12 personnes maximum, avec un accompagnement individualisé (Alternance Dating, ateliers CV, coaching). Le CADP est adossé au CFA IFIR, certifié Qualiopi.",
+    nextIntake: { label: "février 2027", until: "2027-02-01" },
   },
 ];
 

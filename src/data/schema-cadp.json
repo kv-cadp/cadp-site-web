@@ -365,7 +365,7 @@
       "@type": "Course",
       "@id": "https://cadp.pro/formations/tp-advf#course",
       "name": "Titre Professionnel Assistant(e) de Vie aux Familles (ADVF)",
-      "description": "Formation en alternance aux métiers de l'aide à domicile : accompagnement des personnes fragiles, garde d'enfants, entretien du logement. Titre professionnel niveau CAP.",
+      "description": "Formation en alternance aux métiers de l'aide à domicile : accompagnement des personnes fragiles, garde d'enfants, entretien du logement. Titre professionnel niveau CAP, en 12 mois, à Pierrelatte (Drôme) et Guilherand-Granges (Ardèche).",
       "url": "https://cadp.pro/formations/tp-advf",
       "provider": { "@id": "https://cadp.pro/#organization" },
       "timeRequired": "P1Y",
@@ -390,27 +390,50 @@
       },
       "availableLanguage": "fr",
       "maximumEnrollment": 12,
-      "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "blended",
-        "courseSchedule": {
-          "@type": "Schedule",
-          "repeatFrequency": "P1W",
-          "byDay": ["Wednesday", "Thursday"],
-          "scheduleTimezone": "Europe/Paris"
+      "hasCourseInstance": [
+        {
+          "@type": "CourseInstance",
+          "courseMode": "blended",
+          "courseSchedule": {
+            "@type": "Schedule",
+            "repeatFrequency": "P1W",
+            "byDay": ["Thursday", "Friday"],
+            "scheduleTimezone": "Europe/Paris"
+          },
+          "location": {
+            "@type": "Place",
+            "name": "Campus Alternance Drôme Provence",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "2 Boulevard Frédéric Mistral",
+              "addressLocality": "Pierrelatte",
+              "postalCode": "26700",
+              "addressCountry": "FR"
+            }
+          }
         },
-        "location": {
-          "@type": "Place",
-          "name": "Campus Alternance Drôme Provence",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2 Boulevard Frédéric Mistral",
-            "addressLocality": "Pierrelatte",
-            "postalCode": "26700",
-            "addressCountry": "FR"
+        {
+          "@type": "CourseInstance",
+          "courseMode": "blended",
+          "courseSchedule": {
+            "@type": "Schedule",
+            "repeatFrequency": "P1W",
+            "byDay": ["Monday", "Tuesday"],
+            "scheduleTimezone": "Europe/Paris"
+          },
+          "location": {
+            "@type": "Place",
+            "name": "C2A, antenne du Campus Alternance Drôme Provence",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Guilherand-Granges",
+              "postalCode": "07500",
+              "addressRegion": "Ardèche",
+              "addressCountry": "FR"
+            }
           }
         }
-      }
+      ]
     }
   ]
 }

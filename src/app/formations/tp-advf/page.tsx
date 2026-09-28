@@ -16,6 +16,7 @@ import CompetenceBlocks from "@/components/formations/CompetenceBlocks";
 import FurtherStudies from "@/components/formations/FurtherStudies";
 import GratuiteBlock from "@/components/formations/GratuiteBlock";
 import ResultatsBlock from "@/components/formations/ResultatsBlock";
+import DatingFormationBlock from "@/components/dating/DatingFormationBlock";
 
 const formation = getFormationBySlug("tp-advf")!;
 
@@ -25,6 +26,8 @@ export const metadata = createPageMetadata({
   path: "/formations/tp-advf",
 });
 
+// Fiche au vouvoiement (public en grande partie adulte, comme les affiches
+// et les pages Alternance Dating) : les intertitres communs sont réécrits ici.
 export default function TPADVFPage() {
   return (
     <article>
@@ -32,14 +35,39 @@ export default function TPADVFPage() {
       <JsonLd data={generateFAQJsonLd(formation.faq)} />
       <FormationHero formation={formation} />
       <GratuiteBlock />
-      <CompetenceBlocks blocks={formation.competenceBlocks} />
-      <ProgramSection program={formation.program} />
+      <DatingFormationBlock formationSlug={formation.slug} />
+      <CompetenceBlocks
+        blocks={formation.competenceBlocks}
+        subtitle="Les compétences que vous allez acquérir, bloc par bloc."
+      />
+      <ProgramSection
+        program={formation.program}
+        subtitle="Ce que vous allez apprendre, certificat par certificat."
+      />
       <AlternanceRhythm rhythm={formation.rhythm} />
-      <CareerOutcomes careers={formation.careers} />
-      <FurtherStudies studies={formation.furtherStudies} prerequisites={formation.prerequisites} />
+      <CareerOutcomes
+        careers={formation.careers}
+        subtitle="Les métiers qui vous attendent après votre titre."
+      />
+      <FurtherStudies
+        studies={formation.furtherStudies}
+        prerequisites={formation.prerequisites}
+        studiesSubtitle="Les portes qui s'ouvrent après votre titre."
+        prerequisitesTitle="Conditions d'accès"
+        prerequisitesSubtitle="Qui peut entrer en formation."
+      />
       <FormationTestimonial testimonial={formation.testimonial} />
-      <FormationFAQ faq={formation.faq} formationName={formation.shortName} />
-      <FormationCTA formationName={formation.shortName} formationCode={formation.code.toLowerCase()} />
+      <FormationFAQ
+        faq={formation.faq}
+        formationName={formation.shortName}
+        subtitle={`Toutes les réponses à vos questions sur le ${formation.shortName}.`}
+      />
+      <FormationCTA
+        formationName={formation.shortName}
+        formationCode={formation.code.toLowerCase()}
+        title={`Le ${formation.shortName} vous intéresse ?`}
+        text="Les places sont limitées à 12 par promotion. Déposez votre candidature ou contactez-nous pour en savoir plus."
+      />
       <ResultatsBlock formation={formation} />
     </article>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getFormationBySlug } from "@/data/formations";
 import { getDatingFormationContent } from "@/lib/dating/content";
 import {
   DATING_PATH_CITY,
@@ -6,6 +7,7 @@ import {
   type DatingPath,
 } from "@/lib/dating/events";
 import { formatEventDateLongWithWeekday } from "@/lib/format-event";
+import { formatSiteRhythmSentence } from "@/lib/format-rhythm";
 import DatingCandidatForm from "./DatingCandidatForm";
 import DatingEmployeurForm from "./DatingEmployeurForm";
 import DatingEventFacts from "./DatingEventFacts";
@@ -26,6 +28,10 @@ export default function DatingRegistrationPage({
   if (!event) return <NoUpcomingDating city={DATING_PATH_CITY[path]} />;
 
   const content = getDatingFormationContent(event.formationSlug);
+  const formation = event.formationSlug ? getFormationBySlug(event.formationSlug) : undefined;
+  const siteRhythm = formation
+    ? formatSiteRhythmSentence(formation.rhythm, event.venue.city)
+    : undefined;
   const dateLabel = formatEventDateLongWithWeekday(event.date);
   const recap = <DatingEventFacts event={event} tone="light" />;
   const isCandidat = audience === "candidat";
@@ -95,6 +101,7 @@ export default function DatingRegistrationPage({
             </ol>
             <h2 className="font-serif text-2xl text-navy-deep mt-12 mb-4">Le rythme</h2>
             <div className="space-y-3 text-gray-dark leading-relaxed">
+              {siteRhythm && <p className="font-semibold text-navy-deep">{siteRhythm}</p>}
               {content.employerRhythm.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
@@ -104,6 +111,13 @@ export default function DatingRegistrationPage({
                 Coût d&apos;un alternant et aides à l&apos;embauche
               </Link>
             </p>
+            {formation && (
+              <p className="mt-3 text-sm">
+                <Link href={`/formations/${formation.slug}`} className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4">
+                  Le {formation.shortName} : programme, compétences, examen
+                </Link>
+              </p>
+            )}
           </div>
         </section>
       )}

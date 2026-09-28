@@ -4,13 +4,17 @@ import type { Career } from "@/types/formation";
 
 interface CareerOutcomesProps {
   careers: Career[];
+  subtitle?: string;
 }
 
-export default function CareerOutcomes({ careers }: CareerOutcomesProps) {
+export default function CareerOutcomes({
+  careers,
+  subtitle = "Les métiers qui t'attendent après ton diplôme.",
+}: CareerOutcomesProps) {
   return (
     <section className="py-20 bg-white">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <SectionTitle subtitle="Les métiers qui t'attendent après ton diplôme.">
+        <SectionTitle subtitle={subtitle}>
           Débouchés professionnels
         </SectionTitle>
 

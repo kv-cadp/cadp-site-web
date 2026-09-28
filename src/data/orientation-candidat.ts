@@ -153,7 +153,7 @@ export const candidatFormations: Record<string, CandidatFormation> = {
     full: "Assistant(e) De Vie aux Familles",
     niv: "Niveau 3 (CAP)",
     duree: "12 mois",
-    rythme: "Variable",
+    rythme: "2j campus / 3j entreprise",
     desc: "Formation aide à domicile : accompagnement personnes fragiles, garde d'enfants, entretien.",
     debouches: ["Auxiliaire de vie", "Aide à domicile", "Garde d'enfants", "Agent en EHPAD"],
     tags: ["Social", "Aide", "Domicile"],

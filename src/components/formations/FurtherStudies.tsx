@@ -3,9 +3,18 @@ import SectionTitle from "@/components/ui/SectionTitle";
 interface FurtherStudiesProps {
   studies: string[];
   prerequisites: string[];
+  studiesSubtitle?: string;
+  prerequisitesTitle?: string;
+  prerequisitesSubtitle?: string;
 }
 
-export default function FurtherStudies({ studies, prerequisites }: FurtherStudiesProps) {
+export default function FurtherStudies({
+  studies,
+  prerequisites,
+  studiesSubtitle = "Les portes qui s'ouvrent après ton diplôme.",
+  prerequisitesTitle = "Formations accessibles",
+  prerequisitesSubtitle = "Les profils qui peuvent intégrer cette formation.",
+}: FurtherStudiesProps) {
   return (
     <section className="py-20 bg-white">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -16,7 +25,7 @@ export default function FurtherStudies({ studies, prerequisites }: FurtherStudie
               Poursuites d&apos;études
             </h2>
             <p className="text-gray-mid text-sm mb-6">
-              Les portes qui s&apos;ouvrent après ton diplôme.
+              {studiesSubtitle}
             </p>
             <div className="w-12 h-1 bg-gold rounded-full mb-6" />
             <ul className="space-y-3">
@@ -38,10 +47,10 @@ export default function FurtherStudies({ studies, prerequisites }: FurtherStudie
           {/* Prérequis */}
           <div>
             <h2 className="font-serif text-2xl text-navy-deep mb-2">
-              Formations accessibles
+              {prerequisitesTitle}
             </h2>
             <p className="text-gray-mid text-sm mb-6">
-              Les profils qui peuvent intégrer cette formation.
+              {prerequisitesSubtitle}
             </p>
             <div className="w-12 h-1 bg-gold rounded-full mb-6" />
             <ul className="space-y-3">
