@@ -7,7 +7,7 @@ import {
   buildAccuseEmail,
   buildCfaEmail,
 } from "@/lib/email/templates/contrat-infos";
-import { SIRET_REGEX } from "@/app/entreprises/alternance-dating/schema";
+import { SIRET_REGEX } from "@/lib/validation";
 import { infosContratSchema } from "./schema";
 
 const SEND_ERROR_MESSAGE =

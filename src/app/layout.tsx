@@ -38,6 +38,13 @@ const dmMono = localFont({
   fallback: ["ui-monospace", "monospace"],
 });
 
+/**
+ * Régénération des pages au plus toutes les heures (ISR) : les événements
+ * passés (accueil, pied de page, datings) disparaissent sans redéploiement.
+ * Valeur littérale obligatoire (analyse statique de Next).
+ */
+export const revalidate = 3600;
+
 const SEO_TITLE = "CADP Pierrelatte — Formations BTS en alternance Drôme";
 const SEO_DESCRIPTION =
   "Centre de formation en alternance à Pierrelatte (26). BTS MCO, NDRC, GPME en promos de 12. Accompagnement individualisé, certification Qualiopi IFIR.";

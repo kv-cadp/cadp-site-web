@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/data/blog";
+import { DATING_PATHS } from "@/lib/dating/events";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://cadp.pro";
@@ -102,6 +103,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
+    ...DATING_PATHS.map((path) => ({
+      url: `${baseUrl}${path}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    })),
     {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),

@@ -2,10 +2,7 @@
 
 import { useEffect, useId, useRef, useState, useTransition } from "react";
 import Button from "@/components/ui/Button";
-import {
-  PHONE_FR_REGEX,
-  SIRET_REGEX,
-} from "@/app/entreprises/alternance-dating/schema";
+import { PHONE_FR_REGEX, SIRET_REGEX } from "@/lib/validation";
 import { lookupSiret, submitInfosContrat } from "./actions";
 import { FORMATIONS_CONTRAT, NIVEAUX_DIPLOME, OPCO_LIST } from "./schema";
 

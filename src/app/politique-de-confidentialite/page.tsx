@@ -13,7 +13,7 @@ export default function PolitiqueConfidentialitePage() {
     <section className="py-20 bg-white">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <h1 className="font-serif text-3xl text-navy-deep mb-4">Politique de confidentialité</h1>
-        <p className="text-gray-mid text-sm mb-10">Dernière mise à jour : avril 2026</p>
+        <p className="text-gray-mid text-sm mb-10">Dernière mise à jour : septembre 2026</p>
 
         <div className="space-y-10 text-sm leading-relaxed">
           {/* 1. Responsable de traitement */}
@@ -51,6 +51,21 @@ export default function PolitiqueConfidentialitePage() {
                 <h3 className="font-semibold text-gray-dark mb-1">Questionnaire entreprise (/entreprise-besoin)</h3>
                 <p>Données collectées : secteur d&apos;activité, effectif, missions souhaitées, critères de recrutement. Si vous choisissez d&apos;être recontacté(e) : nom de l&apos;entreprise, nom, prénom, fonction, email, téléphone.</p>
               </div>
+
+              <div>
+                <h3 className="font-semibold text-gray-dark mb-1">Candidature ou demande d&apos;information (/candidater)</h3>
+                <p>Données collectées : prénom, nom, email, téléphone, situation actuelle, formations souhaitées, question posée.</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-gray-dark mb-1">Inscription candidat à un Alternance Dating (/dating-guilherand/candidat, /dating-pierrelatte/candidat)</h3>
+                <p>Données collectées : prénom, nom, téléphone, commune de résidence, permis B, véhicule, email (facultatif).</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold text-gray-dark mb-1">Confirmation de venue employeur à un Alternance Dating (/dating-guilherand/employeur, /dating-pierrelatte/employeur)</h3>
+                <p>Données collectées : nom de la structure, SIRET (facultatif), prénom, nom, fonction, email, téléphone, nombre de postes, nombre de personnes présentes, commentaire (facultatif).</p>
+              </div>
             </div>
           </div>
 
@@ -65,6 +80,7 @@ export default function PolitiqueConfidentialitePage() {
                 <li>Vous recommander un profil d&apos;alternant adapté à vos besoins (questionnaire entreprise)</li>
                 <li>Vous recontacter si vous en avez fait la demande</li>
                 <li>Assurer la mise en relation entre candidats et entreprises partenaires</li>
+                <li>Organiser les Alternance Dating : préparer l&apos;accueil des participants et présenter les candidatures des candidats inscrits aux employeurs présents</li>
               </ul>
             </div>
           </div>
@@ -98,10 +114,16 @@ export default function PolitiqueConfidentialitePage() {
                 Vos données sont destinées exclusivement à l&apos;équipe pédagogique et administrative du CADP.
               </p>
               <p>
-                <strong className="text-gray-dark">Aucune donnée n&apos;est transmise, vendue ou louée à des tiers</strong> (publicitaires, partenaires commerciaux, etc.).
+                <strong className="text-gray-dark">Aucune donnée n&apos;est vendue ou louée, ni transmise à des tiers à des fins commerciales ou publicitaires.</strong>
               </p>
               <p>
-                Les données du formulaire de contact transitent par le service Web3Forms (sous-traitant technique) pour l&apos;acheminement des messages par email.
+                Alternance Dating : la candidature des candidats inscrits est présentée aux employeurs présents le jour de l&apos;événement, pour organiser les entretiens, avec l&apos;accord donné lors de l&apos;inscription.
+              </p>
+              <p>
+                Informations de contrat (/entreprises/infos-contrat) : elles sont transmises au CFA IFIR, partenaire du CADP, pour l&apos;établissement du contrat d&apos;apprentissage.
+              </p>
+              <p>
+                Sous-traitants techniques d&apos;acheminement des messages par email : Web3Forms pour les formulaires de contact et de candidature (/contact, /candidater), Resend pour les formulaires des Alternance Dating et des informations de contrat.
               </p>
             </div>
           </div>

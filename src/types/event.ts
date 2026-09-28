@@ -10,6 +10,18 @@
  */
 export type EventCategory = "dating" | "atelier" | "jpo" | "visite";
 
+/** Adresse complète du lieu d'un événement (pages et e-mails d'inscription). */
+export interface EventVenue {
+  /** Nom du lieu. Ex : "Mairie de Guilherand-Granges" */
+  name: string;
+  /** Numéro et voie. Ex : "1 place des Cinq-Continents" */
+  street: string;
+  postalCode: string;
+  city: string;
+  /** Département. Ex : "Ardèche" */
+  region: string;
+}
+
 export interface CadpEvent {
   /** Slug stable, identifiant + clé React */
   slug: string;
@@ -30,4 +42,12 @@ export interface CadpEvent {
   href?: string;
   /** Affichage dans la section "Prochains événements" de la home */
   publishedOnHome: boolean;
+  /** Adresse complète du lieu. Obligatoire pour un Alternance Dating à inscription. */
+  venue?: EventVenue;
+  /** Formation ciblée, slug de `src/data/formations.ts`. Ex : "tp-advf" */
+  formationSlug?: string;
+  /** Mention d'accueil affichée sous le lieu, en texte seul. */
+  hostNote?: string;
+  /** Phrase d'accroche de la page de l'événement. */
+  intro?: string;
 }

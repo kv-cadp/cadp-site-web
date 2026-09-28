@@ -1,8 +1,5 @@
 import { z } from "zod";
-import {
-  PHONE_FR_REGEX,
-  SIRET_REGEX,
-} from "@/app/entreprises/alternance-dating/schema";
+import { PHONE_FR_REGEX, SIRET_REGEX } from "@/lib/validation";
 
 // Ajouter "BTS GTLA" pour la rentrée 2027
 export const FORMATIONS_CONTRAT = [
