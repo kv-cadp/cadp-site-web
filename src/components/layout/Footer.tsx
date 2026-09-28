@@ -2,10 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import CadpWordmark from "@/components/brand/CadpWordmark";
 import { SITE } from "@/data/site";
-import { getEventBySlug } from "@/data/events";
+import { getUpcomingDatings } from "@/lib/dating/events";
 import { formatEventDateShort } from "@/lib/format-event";
-
-const datingEvent = getEventBySlug("alternance-dating-mai-2026");
 
 const formationLinks = [
   { href: "/formations/bts-mco", label: "BTS MCO" },
@@ -19,6 +17,9 @@ const formationLinks = [
 ];
 
 export default function Footer() {
+  // Recalculé à chaque régénération de page (revalidate du layout racine) :
+  // un dating passé disparaît du pied de page sans redéploiement.
+  const datings = getUpcomingDatings();
   return (
     <footer className="bg-navy-deep text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
@@ -143,17 +144,17 @@ export default function Footer() {
               <li className="pt-2">
                 <span className="text-cream/40 text-xs font-semibold uppercase tracking-wider">Accès rapide</span>
               </li>
-              {datingEvent?.date && (
-                <li>
+              {datings.map((event) => (
+                <li key={event.slug}>
                   <Link
-                    href={datingEvent.href ?? "/entreprises/alternance-dating"}
+                    href={event.href}
                     className="flex items-center gap-2 hover:text-gold transition-colors"
                   >
                     <span className="inline-block size-1.5 rounded-full bg-gold shrink-0" aria-hidden="true" />
-                    {datingEvent.title} — {formatEventDateShort(datingEvent.date)}
+                    Alternance Dating · {formatEventDateShort(event.date)} · {event.venue.city}
                   </Link>
                 </li>
-              )}
+              ))}
               <li>
                 <a href="https://app.cadp.pro/connexion" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
                   Espace candidat

@@ -24,3 +24,10 @@ if (!inboxEmail) {
 export const resend = new Resend(apiKey);
 export const FROM_EMAIL = fromEmail;
 export const INBOX_EMAIL = inboxEmail;
+
+/**
+ * Boîte qui suit les inscriptions aux Alternance Dating.
+ * Variable facultative `DATING_INBOX_EMAIL` ; à défaut, la boîte contact.
+ */
+export const DATING_INBOX_EMAIL =
+  process.env.DATING_INBOX_EMAIL?.trim() || inboxEmail;

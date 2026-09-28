@@ -6,6 +6,7 @@ import { createPageMetadata } from "@/lib/metadata";
 import { JsonLd, generateBlogPostingJsonLd, generateFAQJsonLd } from "@/lib/structured-data";
 import Button from "@/components/ui/Button";
 import CTADating from "@/components/dating/CTADating";
+import { getUpcomingDatings } from "@/lib/dating/events";
 
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
@@ -38,6 +39,9 @@ export default async function BlogArticlePage({
   if (!article) notFound();
 
   const cat = categoryLabels[article.category];
+  // Sans dating à venir, les articles « entreprise-dating » gardent un appel
+  // à l'action : celui des articles « entreprise ».
+  const hasUpcomingDating = getUpcomingDatings().length > 0;
 
   return (
     <>
@@ -83,7 +87,8 @@ export default async function BlogArticlePage({
               </div>
             </div>
           )}
-          {article.cta === "entreprise" && (
+          {(article.cta === "entreprise" ||
+            (article.cta === "entreprise-dating" && !hasUpcomingDating)) && (
             <div className="bg-cream rounded-xl p-8 text-center">
               <h3 className="font-serif text-xl text-navy-deep mb-3">Prêt à recruter votre alternant ?</h3>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -93,7 +98,7 @@ export default async function BlogArticlePage({
               </div>
             </div>
           )}
-          {article.cta === "entreprise-dating" && (
+          {article.cta === "entreprise-dating" && hasUpcomingDating && (
             <CTADating variant="carte" />
           )}
           {article.cta === "orientation" && (

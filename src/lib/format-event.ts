@@ -2,10 +2,12 @@
  * Helpers de formatage des dates et heures pour les événements CADP.
  *
  * Centralisent la mise en forme commune aux différents consumers de
- * `src/data/events.ts` (UpcomingEvents, CTADating, Footer, DatingInscriptionForm, etc.).
+ * `src/data/events.ts` (UpcomingEvents, CTADating, Footer, pages et e-mails dating, etc.).
  *
  * Ref: chantier source unique events 24/05/2026.
  */
+
+import type { EventVenue } from "@/types/event";
 
 const MONTHS_FR_LONG = [
   "janvier",
@@ -109,4 +111,37 @@ export function buildEventLocationLine(
 ): string {
   if (!startTime || !endTime) return location;
   return `${location} — ${formatEventTime(startTime)} à ${formatEventTime(endTime)}`;
+}
+
+/**
+ * Plage horaire en toutes lettres, sans tiret.
+ * Ex : ("14:00", "16:00") → "14h à 16h"
+ */
+export function formatEventTimeRange(startTime: string, endTime: string): string {
+  return `${formatEventTime(startTime)} à ${formatEventTime(endTime)}`;
+}
+
+/**
+ * Date courte numérique, pour les objets d'e-mails.
+ * Ex : "2026-11-12" → "12/11"
+ */
+export function formatEventDateNumeric(dateIso: string): string {
+  return `${dateIso.slice(8, 10)}/${dateIso.slice(5, 7)}`;
+}
+
+/**
+ * Adresse postale d'un lieu, sur une ligne.
+ * Ex : "1 place des Cinq-Continents, 07500 Guilherand-Granges"
+ */
+export function formatVenueAddress(venue: EventVenue): string {
+  return `${venue.street}, ${venue.postalCode} ${venue.city}`;
+}
+
+/**
+ * Lien d'itinéraire (Google Maps, recherche par adresse), ouvert par
+ * l'application de cartes du téléphone.
+ */
+export function buildVenueMapUrl(venue: EventVenue): string {
+  const query = `${venue.name}, ${formatVenueAddress(venue)}`;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
