@@ -472,7 +472,7 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 
 <h2>Rencontrer nos alternants disponibles : nos sessions Alternance Dating</h2>
 
-<p>Si vous cherchez à recruter un alternant pour la rentrée 2026, le CADP organise ses sessions Alternance Dating à Pierrelatte : le <strong>23 septembre 2026</strong> (toutes filières) et le <strong>18 novembre 2026</strong> (spéciale services à la personne, TP ADVF), de 14h à 16h. Format direct : nos candidats vous présentent leur projet, vous répondez en 10 minutes.</p>
+<p>Le CADP organise régulièrement des sessions Alternance Dating, à Pierrelatte et à Guilherand-Granges : <a href="/entreprises/alternance-dating">consultez les prochaines dates</a>. Format direct : nos candidats vous présentent leur projet, vous répondez en 10 minutes.</p>
 
 <h2>Questions fréquentes des employeurs</h2>
 
@@ -624,7 +624,7 @@ Campus Alternance Drôme Provence</em></p>
 
 <p>Cet article fait partie d'une série consacrée aux raisons de recruter en alternance, <a href="/blog/combien-coute-un-alternant-entreprise">au-delà des seuls arguments financiers</a> que nous avons traités précédemment, et après <a href="/blog/alternance-valorisation-tuteur">l'effet sur le tuteur</a>. Un dernier angle suivra, sur la formation aux méthodes maison et la transmission du savoir spécifique de l'entreprise.</p>
 
-<p>En attendant : si vous voulez rencontrer des candidats pré-qualifiés sur les filières BTS et TP ADVF sans engagement, nos prochaines sessions Alternance Dating à Pierrelatte (<strong>23 septembre et 18 novembre 2026</strong>, 14h-16h) sont le bon point de départ. Deux heures pour échanger directement avec des candidats sélectionnés. <a href="/contact">Contactez-nous</a> pour vous inscrire.</p>
+<p>En attendant : si vous voulez rencontrer des candidats pré-qualifiés sans engagement, nos sessions Alternance Dating sont le bon point de départ. Deux heures pour échanger directement avec des candidats sélectionnés. <a href="/entreprises/alternance-dating">Consultez les prochaines dates</a> et confirmez votre venue en ligne.</p>
 
 <p><em>Kévin Vidard<br/>
 Directeur et Responsable pédagogique<br/>

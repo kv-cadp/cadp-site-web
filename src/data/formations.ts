@@ -1138,7 +1138,7 @@ export const formations: Formation[] = [
       {
         question: "Le TP ADVF est-il reconnu par l'État ?",
         answer:
-          "Oui. Le TP ADVF est un titre professionnel du Ministère du Travail (code TP-00391), inscrit au RNCP (niveau 3). Au CADP, vous le préparez dans le cadre du CFA IFIR, certifié Qualiopi.",
+          "Oui. Le TP ADVF est un titre professionnel du Ministère du Travail (code TP-00391), inscrit au RNCP (niveau 3). À Pierrelatte comme à Guilherand-Granges, vous le préparez dans le cadre du CFA IFIR, certifié Qualiopi.",
       },
     ],
     metaTitle: "TP ADVF en alternance à Pierrelatte et Guilherand-Granges",
