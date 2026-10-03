@@ -80,7 +80,7 @@ export const events: CadpEvent[] = [
     slug: "alternance-dating-advf-guilherand-nov-2026",
     category: "dating",
     title: "Alternance Dating TP ADVF",
-    date: "2026-11-12",
+    date: "2026-11-19", // reporté du 12/11 : salle de la mairie libre le jeudi 19 seulement (03/10/2026)
     startTime: "14:00",
     endTime: "16:00",
     location: "Mairie de Guilherand-Granges",
