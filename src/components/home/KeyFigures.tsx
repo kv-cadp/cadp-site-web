@@ -1,4 +1,4 @@
-import AnimatedCounter from "@/components/ui/AnimatedCounter";
+import StatNumber from "@/components/ui/StatNumber";
 import { CATALOGUE } from "@/data/catalogue";
 
 const stats = [
@@ -14,7 +14,7 @@ export default function KeyFigures() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, i) => (
-            <AnimatedCounter
+            <StatNumber
               key={i}
               value={stat.value}
               prefix={stat.prefix}

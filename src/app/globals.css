@@ -26,7 +26,7 @@
   --font-mono: var(--font-dm-mono), ui-monospace, monospace;
 
   /* Animations */
-  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-fade-in: fade-in 0.2s ease-out;
   --animate-slide-up: slide-up 0.5s ease-out;
   --animate-bounce-subtle: bounce-subtle 2s infinite;
 }
@@ -48,6 +48,21 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Réglage système « réduire les animations » : animations, transitions et
+   défilement doux coupés (B5, 25/10/2026). */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 body {

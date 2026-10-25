@@ -1,4 +1,4 @@
-import AnimatedCounter from "@/components/ui/AnimatedCounter";
+import StatNumber from "@/components/ui/StatNumber";
 import { RESULTATS } from "@/data/resultats";
 import type { Formation } from "@/types/formation";
 
@@ -29,7 +29,7 @@ export default function ResultatsBlock({ formation }: { formation?: Formation })
         <p className="text-gray-mid text-sm mb-8">
           {formation.shortName} — Promotion {resultats.promotion}
         </p>
-        <AnimatedCounter
+        <StatNumber
           value={resultats.taux}
           suffix={"\u00a0%"}
           label="de réussite à l'examen"

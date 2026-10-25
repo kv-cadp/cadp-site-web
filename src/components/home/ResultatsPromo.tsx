@@ -1,4 +1,4 @@
-import AnimatedCounter from "@/components/ui/AnimatedCounter";
+import StatNumber from "@/components/ui/StatNumber";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
 import { RESULTATS_PROMO } from "@/data/resultats";
@@ -14,7 +14,7 @@ export default function ResultatsPromo() {
         </SectionTitle>
 
         <div className="flex flex-col items-center">
-          <AnimatedCounter
+          <StatNumber
             value={r.taux}
             suffix={"\u00a0%"}
             label="de réussite à l'examen"
