@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, type FormEvent } from "react";
 import Link from "next/link";
 import FormPrivacyNotice from "@/components/ui/FormPrivacyNotice";
+import { scrollBehavior } from "@/lib/utils";
 
 type Intention = "candidater" | "info" | "orientation" | null;
 type Status = "idle" | "submitting" | "success" | "error";
@@ -39,7 +40,7 @@ export default function CandidaterForm() {
 
   useEffect(() => {
     if (status === "success") {
-      successRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      successRef.current?.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
     }
   }, [status]);
 
@@ -50,7 +51,7 @@ export default function CandidaterForm() {
     }
     setIntention(i);
     setStep(2);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   }
 
   function toggleFormation(code: string) {

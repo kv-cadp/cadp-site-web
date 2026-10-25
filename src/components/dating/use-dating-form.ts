@@ -1,6 +1,7 @@
 "use client";
 
 import { useActionState, useEffect, useRef } from "react";
+import { scrollBehavior } from "@/lib/utils";
 import {
   INITIAL_DATING_FORM_STATE,
   type DatingFormState,
@@ -73,7 +74,7 @@ export function useDatingForm(action: DatingAction, fieldOrder: readonly string[
     }
     if (target) {
       target.focus({ preventScroll: true });
-      target.scrollIntoView({ behavior: "smooth", block: "center" });
+      target.scrollIntoView({ behavior: scrollBehavior(), block: "center" });
     }
   }, [state, fieldOrder]);
 

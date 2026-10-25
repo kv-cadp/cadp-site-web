@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef, useState, useTransition } from "react";
 import Button from "@/components/ui/Button";
 import { PHONE_FR_REGEX, SIRET_REGEX } from "@/lib/validation";
+import { scrollBehavior } from "@/lib/utils";
 import { lookupSiret, submitInfosContrat } from "./actions";
 import { FORMATIONS_CONTRAT, NIVEAUX_DIPLOME, OPCO_LIST } from "./schema";
 
@@ -187,7 +188,7 @@ export default function InfosContratForm() {
   useEffect(() => {
     if (success) {
       // La confirmation doit être visible sans scroller
-      successRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      successRef.current?.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
     }
   }, [success]);
 
@@ -356,7 +357,7 @@ export default function InfosContratForm() {
     if (!firstKey) return;
     const el = document.getElementById(firstKey);
     el?.focus();
-    el?.scrollIntoView({ behavior: "smooth", block: "center" });
+    el?.scrollIntoView({ behavior: scrollBehavior(), block: "center" });
   }
 
   function buildPayload() {
