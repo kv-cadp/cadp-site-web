@@ -2,6 +2,7 @@ import Link from "next/link";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
 import { getUpcomingEvents } from "@/data/events";
+import { RENTREE } from "@/data/rentree";
 import { formatEventDay, buildEventLocationLine } from "@/lib/format-event";
 
 export default function UpcomingEvents() {
@@ -10,13 +11,13 @@ export default function UpcomingEvents() {
   return (
     <section className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Encart rentrée 2026 */}
-        <Link href="/rentree-2026">
+        {/* Encart rentrée */}
+        <Link href={RENTREE.href}>
           <div className="bg-navy-deep rounded-xl p-6 mb-12 flex flex-col sm:flex-row items-center justify-between gap-4 hover:bg-navy-medium transition-colors group">
             <div>
-              <p className="text-gold font-semibold text-xs uppercase tracking-wider mb-1">Rentrée septembre 2026</p>
-              <p className="text-white font-serif text-lg">Six formations en alternance. 12 places par promo, pas une de plus.</p>
-              <p className="text-cream/60 text-sm mt-1">Les inscriptions sont ouvertes.</p>
+              <p className="text-gold font-semibold text-xs uppercase tracking-wider mb-1">Rentrée septembre {RENTREE.annee}</p>
+              <p className="text-white font-serif text-lg">{RENTREE.formations.length} formations en alternance. 12 places par promo, pas une de plus.</p>
+              <p className="text-cream/60 text-sm mt-1">Les candidatures sont ouvertes.</p>
             </div>
             <span className="shrink-0 px-6 py-2.5 bg-gold text-navy-deep rounded-lg font-semibold text-sm group-hover:bg-gold-light transition-colors">
               Tout savoir →

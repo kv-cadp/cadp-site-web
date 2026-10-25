@@ -6,6 +6,7 @@ import Accordion from "@/components/ui/Accordion";
 import GratuiteBlock from "@/components/formations/GratuiteBlock";
 import ResultatsBlock from "@/components/formations/ResultatsBlock";
 import FormationCTA from "@/components/formations/FormationCTA";
+import { RENTREE } from "@/data/rentree";
 
 export const metadata = createPageMetadata({
   title: "Bachelor RQSE en alternance à Pierrelatte",
@@ -132,7 +133,7 @@ const infos: [string, string][] = [
   ["Coût pour l'alternant", "Gratuit, formation financée par l'OPCO"],
   ["Prérequis", "Bac+2 validé (dérogation : Bac + 3 ans d'expérience)"],
   ["Certificateur", "CCI Portes de Normandie"],
-  ["Ouverture", "Rentrée septembre 2026"],
+  ["Prochaine rentrée", `Septembre ${RENTREE.annee}`],
   ["Places", "12 étudiants maximum"],
 ];
 
