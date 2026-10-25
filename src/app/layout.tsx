@@ -4,6 +4,7 @@ import TopBanner from "@/components/layout/TopBanner";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getTopBannerMessage } from "@/lib/top-banner";
+import { getMenuFormations } from "@/lib/menu-formations";
 import { DEFAULT_OG_IMAGE } from "@/lib/metadata";
 import "./globals.css";
 
@@ -102,7 +103,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col font-sans text-gray-dark bg-white">
         <TopBanner message={getTopBannerMessage()} />
-        <Header />
+        <Header menuFormations={getMenuFormations()} />
         <main className="flex-1 pt-30 md:pt-34">{children}</main>
         <Footer />
       </body>
