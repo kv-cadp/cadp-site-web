@@ -38,6 +38,8 @@ export default function ContactForm() {
   const [status, setStatus] = useState<FormStatus>("idle");
   const [lastObjet, setLastObjet] = useState("");
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
+  // On tutoie un candidat, on vouvoie une entreprise (principe validé le 25/10/2026).
+  const vous = data.objet === "Je suis une entreprise";
 
   function validate(): boolean {
     const e: Partial<Record<keyof FormData, string>> = {};
@@ -109,7 +111,7 @@ export default function ContactForm() {
         </div>
         <h3 className="font-serif text-xl text-navy-deep mb-2">Message envoy&eacute; !</h3>
         <p className="text-[#2E7D4F] font-medium mb-1">
-          On te recontacte sous 48h.
+          {lastObjet === "Je suis une entreprise" ? "On vous recontacte sous 48h." : "On te recontacte sous 48h."}
         </p>
         <p className="text-gray-mid text-sm">
           Campus Alternance Drôme Provence — 04 75 00 34 56
@@ -160,7 +162,7 @@ export default function ContactForm() {
             value={data.prenom}
             onChange={(e) => handleChange("prenom", e.target.value)}
             className={inputClass(!!errors.prenom)}
-            placeholder="Ton prénom"
+            placeholder={vous ? "Votre prénom" : "Ton prénom"}
           />
           {errors.prenom && <p id="prenom-error" className="text-error text-xs mt-1">{errors.prenom}</p>}
         </div>
@@ -179,7 +181,7 @@ export default function ContactForm() {
             value={data.nom}
             onChange={(e) => handleChange("nom", e.target.value)}
             className={inputClass(!!errors.nom)}
-            placeholder="Ton nom"
+            placeholder={vous ? "Votre nom" : "Ton nom"}
           />
           {errors.nom && <p id="nom-error" className="text-error text-xs mt-1">{errors.nom}</p>}
         </div>
@@ -201,7 +203,7 @@ export default function ContactForm() {
           value={data.email}
           onChange={(e) => handleChange("email", e.target.value)}
           className={inputClass(!!errors.email)}
-          placeholder="ton.email@example.com"
+          placeholder={vous ? "nom@entreprise.fr" : "ton.email@example.com"}
         />
         {errors.email && <p id="email-error" className="text-error text-xs mt-1">{errors.email}</p>}
       </div>
@@ -239,7 +241,7 @@ export default function ContactForm() {
           onChange={(e) => handleChange("objet", e.target.value)}
           className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 text-base sm:text-sm bg-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
         >
-          <option value="">— S&eacute;lectionne un objet —</option>
+          <option value="">— Choisir un objet —</option>
           <option value="Je cherche une formation">Je cherche une formation</option>
           <option value="Je suis une entreprise">Je suis une entreprise</option>
           <option value="Demande d'information générale">Demande d&apos;information g&eacute;n&eacute;rale</option>
@@ -262,7 +264,7 @@ export default function ContactForm() {
           value={data.message}
           onChange={(e) => handleChange("message", e.target.value)}
           className={`${inputClass(!!errors.message)} resize-none`}
-          placeholder="Dis-nous en quoi on peut t'aider..."
+          placeholder={vous ? "Dites-nous en quoi nous pouvons vous aider..." : "Dis-nous en quoi on peut t'aider..."}
         />
         {errors.message && <p id="message-error" className="text-error text-xs mt-1">{errors.message}</p>}
       </div>
@@ -270,7 +272,7 @@ export default function ContactForm() {
       {/* Erreur */}
       {status === "error" && (
         <div className="bg-[#8B2500]/10 border border-[#8B2500]/20 rounded-lg p-4 text-[#8B2500] text-sm">
-          Une erreur est survenue. Appelle-nous directement au{" "}
+          Une erreur est survenue.{" "}{vous ? "Appelez-nous" : "Appelle-nous"}{" "}directement au{" "}
           <a href="tel:+33475003456" className="font-semibold underline">
             04 75 00 34 56
           </a>.
@@ -286,7 +288,7 @@ export default function ContactForm() {
         {status === "submitting" ? "Envoi en cours..." : "Envoyer mon message"}
       </button>
 
-      <FormPrivacyNotice vous={data.objet === "Je suis une entreprise"} />
+      <FormPrivacyNotice vous={vous} />
     </form>
   );
 }

@@ -9,8 +9,8 @@ export default function NotFound() {
           Page introuvable
         </h1>
         <p className="text-gray-mid mb-8">
-          La page que tu cherches n&apos;existe pas ou a été déplacée.
-          Pas de panique, on te ramène à bon port.
+          Cette page n&apos;existe pas ou a été déplacée.
+          Pas de panique : l&apos;accueil est à un clic.
         </p>
         <Button href="/" variant="gold">
           Retour à l&apos;accueil
