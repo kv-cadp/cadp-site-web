@@ -6,6 +6,7 @@ import NavLink from "./NavLink";
 import MobileMenu from "./MobileMenu";
 import CadpWordmark from "@/components/brand/CadpWordmark";
 import { RENTREE } from "@/data/rentree";
+import type { MenuFormation } from "@/lib/menu-formations";
 
 const formations = [
   { href: "/formations/bts-mco", label: "BTS MCO", full: "Management Commercial Opérationnel" },
@@ -18,7 +19,7 @@ const formations = [
   { href: "/formations/bts-gtla", label: "BTS GTLA", full: "Transports et Logistique — Rentrée 2027" },
 ];
 
-export default function Header() {
+export default function Header({ menuFormations }: { menuFormations: MenuFormation[] }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -32,7 +33,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-10 left-0 right-0 z-40 transition-all duration-300 border-b-2 border-gold ${
+        className={`fixed top-[var(--banner-h,2.5rem)] left-0 right-0 z-40 transition-all duration-300 border-b-2 border-gold ${
           scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
         }`}
       >
@@ -139,7 +140,7 @@ export default function Header() {
         </nav>
       </header>
 
-      <MobileMenu isOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
+      <MobileMenu isOpen={mobileOpen} onClose={() => setMobileOpen(false)} formations={menuFormations} />
     </>
   );
 }
