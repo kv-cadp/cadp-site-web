@@ -246,7 +246,7 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 
 <p><strong>Ancrage local.</strong> Campus à Pierrelatte, entreprises partenaires sur 4 départements (Drôme, Ardèche, Vaucluse, Gard). Formé ici, recruté ici.</p>
 
-<p><strong>Adossé au CFA IFIR, certifié Qualiopi.</strong> Diplômes reconnus par l'État, qualité de formation garantie.</p>
+<p><strong>UFA du CFA IFIR.</strong> Diplômes et titres reconnus par l'État. La certification Qualiopi est celle du CFA IFIR.</p>
 
 <h2>Questions fréquentes sur l'inscription</h2>
 

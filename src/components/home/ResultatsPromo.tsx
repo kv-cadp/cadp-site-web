@@ -26,8 +26,8 @@ export default function ResultatsPromo() {
             sur {r.presentes} présentés — promotion {r.promotion}.
           </p>
           <p className="mx-auto mt-3 max-w-2xl text-center text-xs text-gray-mid">
-            100% en BTS GPME et BTS MOS, 86% en BTS NDRC. Diplômes préparés via
-            le CFA IFIR, certifié Qualiopi.
+            100% en BTS GPME et BTS MOS, 86% en BTS NDRC. Diplômes préparés au
+            CADP, UFA du CFA IFIR.
           </p>
           <div className="mt-8">
             <Button href="/formations" variant="outline">

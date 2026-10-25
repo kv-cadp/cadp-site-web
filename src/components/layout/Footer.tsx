@@ -176,7 +176,7 @@ export default function Footer() {
 
         {/* Logos partenaires */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col items-center gap-4">
-          <p className="text-xs text-cream/50 mb-2">UFA du CFA IFIR — Certifié Qualiopi</p>
+          <p className="text-xs text-cream/50 mb-2">UFA du CFA IFIR · Certification Qualiopi du CFA IFIR</p>
           <div className="flex items-center gap-8">
             <a href="https://www.ifir.fr/lifir/partenaires-formation/campus-drome-provence/" target="_blank" rel="noopener noreferrer">
               <Image
@@ -187,14 +187,10 @@ export default function Footer() {
                 className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
               />
             </a>
-            <Image
-              src="/logo-qualiopi.png"
-              alt="Certification Qualiopi — Actions de formation et actions de formation par apprentissage"
-              width={200}
-              height={100}
-              className="h-12 w-auto opacity-80"
-            />
           </div>
+          <p className="text-xs text-cream/50 text-center max-w-xl">
+            Certificat Qualiopi du CFA IFIR délivré par CERTIFOPAC (n° 13712-2) au titre des actions de formation et des actions de formation par apprentissage.
+          </p>
         </div>
 
         {/* Bottom bar */}
