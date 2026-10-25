@@ -93,7 +93,7 @@ export default function PolitiqueConfidentialitePage() {
                 <strong className="text-gray-dark">Consentement</strong> (article 6.1.a du RGPD) : en soumettant un formulaire sur ce site, vous consentez au traitement de vos données pour les finalités décrites ci-dessus.
               </p>
               <p>
-                <strong className="text-gray-dark">Intérêt légitime</strong> (article 6.1.f du RGPD) : le traitement de vos données est également nécessaire pour répondre à vos demandes et assurer le bon fonctionnement de nos services d&apos;orientation.
+                <strong className="text-gray-dark">Intérêt légitime</strong>{" "}(article 6.1.f du RGPD) : le traitement de vos données est également nécessaire pour répondre à vos demandes et assurer le bon fonctionnement de nos services d&apos;orientation.
               </p>
             </div>
           </div>

@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/check-fraicheur.mjs && next build && node scripts/check-mots-colles.mjs",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:fraicheur": "node scripts/check-fraicheur.mjs",
+    "check:mots-colles": "node scripts/check-mots-colles.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
