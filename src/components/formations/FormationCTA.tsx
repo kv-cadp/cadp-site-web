@@ -1,3 +1,6 @@
+import FormationStickyBar from "@/components/formations/FormationStickyBar";
+import { inscriptionUrl } from "@/lib/inscription";
+
 interface FormationCTAProps {
   formationName: string;
   formationCode: string;
@@ -7,39 +10,37 @@ interface FormationCTAProps {
 }
 
 export default function FormationCTA({ formationName, formationCode, title, text }: FormationCTAProps) {
-  const inscriptionUrl = `https://app.cadp.pro/inscription?${new URLSearchParams({
-    formation: formationCode,
-    source: "site_fiche",
-  }).toString()}`;
-
   return (
-    <section className="py-16 bg-navy-deep">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="font-serif text-2xl md:text-3xl text-white mb-4">
-          {title ?? <>Le {formationName}{" "}t&apos;intéresse ?</>}
-        </h2>
-        <p className="text-cream/70 mb-8 max-w-lg mx-auto">
-          {text ?? "Les places sont limitées à 12 par promo. Dépose ta candidature ou contacte-nous pour en savoir plus."}
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href={inscriptionUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-base hover:bg-gold-light transition-colors"
-          >
-            Je candidate à cette formation
-          </a>
-          <a
-            href="https://app.cadp.pro/connexion"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-gold text-gold rounded-lg font-semibold text-base hover:bg-gold hover:text-navy-deep transition-colors"
-          >
-            Déjà inscrit ? Mon espace
-          </a>
+    <>
+      <section id="formation-cta" className="py-16 bg-navy-deep">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-serif text-2xl md:text-3xl text-white mb-4">
+            {title ?? <>Le {formationName}{" "}t&apos;intéresse ?</>}
+          </h2>
+          <p className="text-cream/70 mb-8 max-w-lg mx-auto">
+            {text ?? "Les places sont limitées à 12 par promo. Dépose ta candidature ou contacte-nous pour en savoir plus."}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={inscriptionUrl(formationCode, "site_fiche")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-base hover:bg-gold-light transition-colors"
+            >
+              Je candidate à cette formation
+            </a>
+            <a
+              href="https://app.cadp.pro/connexion"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-gold text-gold rounded-lg font-semibold text-base hover:bg-gold hover:text-navy-deep transition-colors"
+            >
+              Déjà inscrit ? Mon espace
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <FormationStickyBar href={inscriptionUrl(formationCode, "site_fiche_barre")} label="Je candidate" />
+    </>
   );
 }

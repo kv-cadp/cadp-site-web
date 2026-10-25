@@ -12,6 +12,8 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import Accordion from "@/components/ui/Accordion";
 import GratuiteBlock from "@/components/formations/GratuiteBlock";
 import ResultatsBlock from "@/components/formations/ResultatsBlock";
+import FormationStickyBar from "@/components/formations/FormationStickyBar";
+import { inscriptionUrl } from "@/lib/inscription";
 
 export const metadata = createPageMetadata({
   title: "BTS GTLA en alternance à Pierrelatte — Transport et Logistique",
@@ -96,7 +98,7 @@ export default function BTSGTLAPage() {
       <JsonLd data={generateFAQJsonLd(faq)} />
 
       {/* HERO */}
-      <section className="bg-navy-deep py-20 md:py-28">
+      <section id="formation-hero" className="bg-navy-deep py-20 md:py-28">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <Badge variant="gold" className="mb-4 text-sm">GTLA</Badge>
 
@@ -127,7 +129,7 @@ export default function BTSGTLAPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <a href="https://app.cadp.pro/inscription?formation=gtla&source=site_fiche" target="_blank" rel="noopener noreferrer">
+            <a href={inscriptionUrl("gtla", "site_fiche_hero")} target="_blank" rel="noopener noreferrer">
               <Button variant="gold" className="text-lg px-8 py-4">
                 Je me pré-inscris
               </Button>
@@ -269,7 +271,7 @@ export default function BTSGTLAPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-navy-deep">
+      <section id="formation-cta" className="py-16 bg-navy-deep">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold/20 border border-gold/40 rounded-full mb-6">
             <span className="size-2 rounded-full bg-gold animate-pulse" />
@@ -282,7 +284,7 @@ export default function BTSGTLAPage() {
             Les pré-inscriptions pour la rentrée 2027 sont ouvertes. Contacte-nous pour en savoir plus.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://app.cadp.pro/inscription?formation=gtla&source=site_fiche" target="_blank" rel="noopener noreferrer">
+            <a href={inscriptionUrl("gtla", "site_fiche")} target="_blank" rel="noopener noreferrer">
               <Button variant="gold" className="px-8">
                 Je me pré-inscris
               </Button>
@@ -296,6 +298,8 @@ export default function BTSGTLAPage() {
           </div>
         </div>
       </section>
+
+      <FormationStickyBar href={inscriptionUrl("gtla", "site_fiche_barre")} label="Je me pré-inscris" />
 
       <ResultatsBlock />
     </article>
