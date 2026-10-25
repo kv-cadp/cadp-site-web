@@ -237,7 +237,7 @@ export default function RentreePage() {
               href="tel:+33475003456"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-navy-deep text-navy-deep rounded-lg font-semibold hover:bg-navy-deep hover:text-white transition-all"
             >
-              Appeler Laurent — <span className="whitespace-nowrap">04 75 00 34 56</span>
+              <span>Appeler Laurent — <span className="whitespace-nowrap">04 75 00 34 56</span></span>
             </a>
           </div>
         </div>

@@ -106,7 +106,7 @@ export default function EntreprisesPage() {
               href="tel:+33475003456"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-navy-deep transition-all"
             >
-              Appeler Laurent — <span className="whitespace-nowrap">04 75 00 34 56</span>
+              <span>Appeler Laurent — <span className="whitespace-nowrap">04 75 00 34 56</span></span>
             </a>
           </div>
         </div>
@@ -241,7 +241,7 @@ export default function EntreprisesPage() {
               href="tel:+33475003456"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-navy-deep transition-all"
             >
-              Appeler Laurent — <span className="whitespace-nowrap">04 75 00 34 56</span>
+              <span>Appeler Laurent — <span className="whitespace-nowrap">04 75 00 34 56</span></span>
             </a>
           </div>
           <p className="text-cream/40 text-sm">
