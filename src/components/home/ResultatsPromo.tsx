@@ -16,7 +16,7 @@ export default function ResultatsPromo() {
         <div className="flex flex-col items-center">
           <AnimatedCounter
             value={r.taux}
-            suffix="%"
+            suffix={"\u00a0%"}
             label="de réussite à l'examen"
           />
           <p className="mt-6 text-center text-gray-dark">
@@ -26,7 +26,7 @@ export default function ResultatsPromo() {
             sur {r.presentes} présentés — promotion {r.promotion}.
           </p>
           <p className="mx-auto mt-3 max-w-2xl text-center text-xs text-gray-mid">
-            100% en BTS GPME et BTS MOS, 86% en BTS NDRC. Diplômes préparés au
+            100&nbsp;% en BTS GPME et BTS MOS, 86&nbsp;% en BTS NDRC. Diplômes préparés au
             CADP, UFA du CFA IFIR.
           </p>
           <div className="mt-8">

@@ -31,7 +31,7 @@ export default function ResultatsBlock({ formation }: { formation?: Formation })
         </p>
         <AnimatedCounter
           value={resultats.taux}
-          suffix="%"
+          suffix={"\u00a0%"}
           label="de réussite à l'examen"
         />
         <p className="mt-6 text-gray-dark">

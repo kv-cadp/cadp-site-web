@@ -69,7 +69,7 @@ const faq = [
   },
   {
     question: "Quel est le salaire en alternance en BTS GTLA ?",
-    answer: "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC).",
+    answer: "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82\u00a0€ brut par mois en première année (43\u00a0% du SMIC) et 952,18\u00a0€ brut en deuxième année (51\u00a0% du SMIC).",
   },
   {
     question: "Comment s'inscrire au BTS GTLA au CADP ?",
@@ -208,13 +208,13 @@ export default function BTSGTLAPage() {
               ))}
             </div>
             <p className="text-gray-mid text-sm mt-4">
-              <strong className="text-navy-deep">Salaires :</strong> 24 000 à 28 000€ brut/an en début de carrière. Un responsable d&apos;exploitation expérimenté atteint 35 000 à 45 000€.
+              <strong className="text-navy-deep">Salaires :</strong> 24 000 à 28 000&nbsp;€ brut/an en début de carrière. Un responsable d&apos;exploitation expérimenté atteint 35 000 à 45 000&nbsp;€.
             </p>
           </div>
 
           <div className="bg-navy-deep/5 border-l-4 border-gold p-5 rounded-r-lg">
             <p className="text-sm font-medium text-navy-deep">
-              <strong>Bonus :</strong> Le BTS GTLA donne par équivalence l&apos;attestation de capacité professionnelle de transport de marchandises et celle de commissionnaire de transport. Avec ce diplôme, tu peux créer ta propre entreprise de transport.
+              <strong>Bonus :</strong>{" "}Le BTS GTLA donne par équivalence l&apos;attestation de capacité professionnelle de transport de marchandises et celle de commissionnaire de transport. Avec ce diplôme, tu peux créer ta propre entreprise de transport.
             </p>
           </div>
         </div>
