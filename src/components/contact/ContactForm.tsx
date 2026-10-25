@@ -286,7 +286,7 @@ export default function ContactForm() {
         {status === "submitting" ? "Envoi en cours..." : "Envoyer mon message"}
       </button>
 
-      <FormPrivacyNotice />
+      <FormPrivacyNotice vous={data.objet === "Je suis une entreprise"} />
     </form>
   );
 }
