@@ -208,7 +208,7 @@ export default function BTSGTLAPage() {
               ))}
             </div>
             <p className="text-gray-mid text-sm mt-4">
-              <strong className="text-navy-deep">Salaires :</strong> 24 000 à 28 000&nbsp;€ brut/an en début de carrière. Un responsable d&apos;exploitation expérimenté atteint 35 000 à 45 000&nbsp;€.
+              <strong className="text-navy-deep">Salaires :</strong>{" "}24 000 à 28 000&nbsp;€ brut/an en début de carrière. Un responsable d&apos;exploitation expérimenté atteint 35 000 à 45 000&nbsp;€.
             </p>
           </div>
 
