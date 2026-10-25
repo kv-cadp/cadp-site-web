@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, type FormEvent } from "react";
 import Link from "next/link";
+import FormPrivacyNotice from "@/components/ui/FormPrivacyNotice";
 
 type Intention = "candidater" | "info" | "orientation" | null;
 type Status = "idle" | "submitting" | "success" | "error";
@@ -20,7 +21,7 @@ const formationsList = [
 ];
 
 const inputClass =
-  "w-full px-4 py-3 rounded-lg border-2 border-gray-200 text-sm transition-all focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent";
+  "w-full px-4 py-3 rounded-lg border-2 border-gray-200 text-base sm:text-sm transition-all focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent";
 
 export default function CandidaterForm() {
   const [intention, setIntention] = useState<Intention>(null);
@@ -257,21 +258,29 @@ export default function CandidaterForm() {
               <form onSubmit={handleSubmit} className="space-y-6" noValidate>
                 <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" />
 
+                <p className="text-xs text-gray-mid">Les champs marqués d&apos;un astérisque (*) sont obligatoires.</p>
+
                 {/* Formations */}
                 <div>
-                  <p className="text-sm font-medium text-gray-dark mb-1">
+                  <p id="formations-label" className="text-sm font-medium text-gray-dark mb-1">
                     {intention === "candidater"
-                      ? "Formation(s) souhaitée(s) *"
+                      ? <>Formation(s) souhaitée(s) <span className="text-gold" aria-hidden="true">*</span></>
                       : "Formation(s) qui t'intéresse(nt)"}
                   </p>
                   {intention === "candidater" && (
                     <p className="text-xs text-gray-mid mb-3">Tu peux en sélectionner plusieurs si tu hésites entre deux formations.</p>
                   )}
-                  <div className="space-y-2">
+                  <div
+                    role="group"
+                    aria-labelledby="formations-label"
+                    aria-describedby={errors.formations ? "formations-error" : undefined}
+                    className="space-y-2"
+                  >
                     {formationsList.map((f) => (
                       <button
                         key={f.code}
                         type="button"
+                        aria-pressed={selectedFormations.has(f.code)}
                         onClick={() => toggleFormation(f.code)}
                         className={`w-full text-left px-4 py-3 rounded-lg border-2 text-sm transition-all flex items-center gap-3 ${
                           selectedFormations.has(f.code)
@@ -280,6 +289,7 @@ export default function CandidaterForm() {
                         }`}
                       >
                         <div
+                          aria-hidden="true"
                           className={`size-5 rounded border-2 flex items-center justify-center shrink-0 transition-colors ${
                             selectedFormations.has(f.code) ? "bg-gold border-gold" : "border-gray-300"
                           }`}
@@ -294,24 +304,28 @@ export default function CandidaterForm() {
                       </button>
                     ))}
                   </div>
-                  {errors.formations && <p className="text-error text-xs mt-1">{errors.formations}</p>}
+                  {errors.formations && <p id="formations-error" className="text-error text-xs mt-1">{errors.formations}</p>}
                 </div>
 
                 {/* Question (info only) */}
                 {intention === "info" && (
                   <div>
                     <label htmlFor="question" className="block text-sm font-medium text-gray-dark mb-1.5">
-                      Ta question <span className="text-gold">*</span>
+                      Ta question <span className="text-gold" aria-hidden="true">*</span>
                     </label>
                     <textarea
                       id="question"
+                      name="question"
+                      required
+                      aria-invalid={errors.question ? true : undefined}
+                      aria-describedby={errors.question ? "question-error" : undefined}
                       rows={4}
                       value={question}
                       onChange={(e) => { setQuestion(e.target.value); if (errors.question) setErrors({ ...errors, question: "" }); }}
                       className={`${inputClass} resize-none ${errors.question ? "border-error" : ""}`}
                       placeholder="Dis-nous ce que tu veux savoir..."
                     />
-                    {errors.question && <p className="text-error text-xs mt-1">{errors.question}</p>}
+                    {errors.question && <p id="question-error" className="text-error text-xs mt-1">{errors.question}</p>}
                   </div>
                 )}
 
@@ -319,53 +333,61 @@ export default function CandidaterForm() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="prenom" className="block text-sm font-medium text-gray-dark mb-1.5">
-                      Prénom <span className="text-gold">*</span>
+                      Prénom <span className="text-gold" aria-hidden="true">*</span>
                     </label>
-                    <input type="text" id="prenom" value={prenom}
+                    <input type="text" id="prenom" name="prenom" autoComplete="given-name" required value={prenom}
+                      aria-invalid={errors.prenom ? true : undefined}
+                      aria-describedby={errors.prenom ? "prenom-error" : undefined}
                       onChange={(e) => { setPrenom(e.target.value); if (errors.prenom) setErrors({ ...errors, prenom: "" }); }}
                       className={`${inputClass} ${errors.prenom ? "border-error" : ""}`}
                       placeholder="Ton prénom" />
-                    {errors.prenom && <p className="text-error text-xs mt-1">{errors.prenom}</p>}
+                    {errors.prenom && <p id="prenom-error" className="text-error text-xs mt-1">{errors.prenom}</p>}
                   </div>
                   <div>
                     <label htmlFor="nom" className="block text-sm font-medium text-gray-dark mb-1.5">
-                      Nom <span className="text-gold">*</span>
+                      Nom <span className="text-gold" aria-hidden="true">*</span>
                     </label>
-                    <input type="text" id="nom" value={nom}
+                    <input type="text" id="nom" name="nom" autoComplete="family-name" required value={nom}
+                      aria-invalid={errors.nom ? true : undefined}
+                      aria-describedby={errors.nom ? "nom-error" : undefined}
                       onChange={(e) => { setNom(e.target.value); if (errors.nom) setErrors({ ...errors, nom: "" }); }}
                       className={`${inputClass} ${errors.nom ? "border-error" : ""}`}
                       placeholder="Ton nom" />
-                    {errors.nom && <p className="text-error text-xs mt-1">{errors.nom}</p>}
+                    {errors.nom && <p id="nom-error" className="text-error text-xs mt-1">{errors.nom}</p>}
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-dark mb-1.5">
-                    Email <span className="text-gold">*</span>
+                    Email <span className="text-gold" aria-hidden="true">*</span>
                   </label>
-                  <input type="email" id="email" value={email}
+                  <input type="email" id="email" name="email" autoComplete="email" required value={email}
+                    aria-invalid={errors.email ? true : undefined}
+                    aria-describedby={errors.email ? "email-error" : undefined}
                     onChange={(e) => { setEmail(e.target.value); if (errors.email) setErrors({ ...errors, email: "" }); }}
                     className={`${inputClass} ${errors.email ? "border-error" : ""}`}
                     placeholder="ton.email@example.com" />
-                  {errors.email && <p className="text-error text-xs mt-1">{errors.email}</p>}
+                  {errors.email && <p id="email-error" className="text-error text-xs mt-1">{errors.email}</p>}
                 </div>
 
                 <div>
                   <label htmlFor="telephone" className="block text-sm font-medium text-gray-dark mb-1.5">
-                    Téléphone <span className="text-gold">*</span>
+                    Téléphone <span className="text-gold" aria-hidden="true">*</span>
                   </label>
-                  <input type="tel" id="telephone" value={telephone}
+                  <input type="tel" id="telephone" name="telephone" autoComplete="tel" required value={telephone}
+                    aria-invalid={errors.telephone ? true : undefined}
+                    aria-describedby={errors.telephone ? "telephone-error" : undefined}
                     onChange={(e) => { setTelephone(e.target.value); if (errors.telephone) setErrors({ ...errors, telephone: "" }); }}
                     className={`${inputClass} ${errors.telephone ? "border-error" : ""}`}
                     placeholder="06 XX XX XX XX" />
-                  {errors.telephone && <p className="text-error text-xs mt-1">{errors.telephone}</p>}
+                  {errors.telephone && <p id="telephone-error" className="text-error text-xs mt-1">{errors.telephone}</p>}
                 </div>
 
                 <div>
                   <label htmlFor="situation" className="block text-sm font-medium text-gray-dark mb-1.5">
                     Situation actuelle
                   </label>
-                  <select id="situation" value={situation}
+                  <select id="situation" name="situation" value={situation}
                     onChange={(e) => setSituation(e.target.value)}
                     className={`${inputClass} bg-white`}>
                     <option value="">— Sélectionne —</option>
@@ -391,8 +413,12 @@ export default function CandidaterForm() {
                   disabled={status === "submitting"}
                   className="w-full px-6 py-3.5 bg-gold text-navy-deep rounded-lg font-semibold text-base hover:bg-gold-light transition-all focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {status === "submitting" ? "Envoi en cours..." : "Envoyer"}
+                  {status === "submitting"
+                    ? "Envoi en cours..."
+                    : intention === "candidater" ? "Envoyer ma candidature" : "Envoyer ma question"}
                 </button>
+
+                <FormPrivacyNotice />
               </form>
             </div>
           )}

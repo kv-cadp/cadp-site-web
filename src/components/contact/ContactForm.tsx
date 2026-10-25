@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import FormPrivacyNotice from "@/components/ui/FormPrivacyNotice";
 
 // TODO: Remplacer par la vraie clé Web3Forms
 // 1. Va sur https://web3forms.com
@@ -21,7 +22,7 @@ interface FormData {
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
 const inputClass = (hasError: boolean) =>
-  `w-full px-4 py-3 rounded-lg border-2 text-sm transition-all focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent ${
+  `w-full px-4 py-3 rounded-lg border-2 text-base sm:text-sm transition-all focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent ${
     hasError ? "border-error" : "border-gray-200"
   }`;
 
@@ -140,72 +141,90 @@ export default function ContactForm() {
       {/* Honeypot — champ invisible anti-bot */}
       <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" />
 
+      <p className="text-xs text-gray-mid">Les champs marqués d&apos;un astérisque (*) sont obligatoires.</p>
+
       {/* Nom + Prénom */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="prenom" className="block text-sm font-medium text-gray-dark mb-1.5">
-            Pr&eacute;nom <span className="text-gold">*</span>
+            Pr&eacute;nom <span className="text-gold" aria-hidden="true">*</span>
           </label>
           <input
             type="text"
             id="prenom"
             name="prenom"
+            autoComplete="given-name"
+            required
+            aria-invalid={errors.prenom ? true : undefined}
+            aria-describedby={errors.prenom ? "prenom-error" : undefined}
             value={data.prenom}
             onChange={(e) => handleChange("prenom", e.target.value)}
             className={inputClass(!!errors.prenom)}
             placeholder="Ton prénom"
           />
-          {errors.prenom && <p className="text-error text-xs mt-1">{errors.prenom}</p>}
+          {errors.prenom && <p id="prenom-error" className="text-error text-xs mt-1">{errors.prenom}</p>}
         </div>
         <div>
           <label htmlFor="nom" className="block text-sm font-medium text-gray-dark mb-1.5">
-            Nom <span className="text-gold">*</span>
+            Nom <span className="text-gold" aria-hidden="true">*</span>
           </label>
           <input
             type="text"
             id="nom"
             name="nom"
+            autoComplete="family-name"
+            required
+            aria-invalid={errors.nom ? true : undefined}
+            aria-describedby={errors.nom ? "nom-error" : undefined}
             value={data.nom}
             onChange={(e) => handleChange("nom", e.target.value)}
             className={inputClass(!!errors.nom)}
             placeholder="Ton nom"
           />
-          {errors.nom && <p className="text-error text-xs mt-1">{errors.nom}</p>}
+          {errors.nom && <p id="nom-error" className="text-error text-xs mt-1">{errors.nom}</p>}
         </div>
       </div>
 
       {/* Email */}
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-dark mb-1.5">
-          Email <span className="text-gold">*</span>
+          Email <span className="text-gold" aria-hidden="true">*</span>
         </label>
         <input
           type="email"
           id="email"
           name="email"
+          autoComplete="email"
+          required
+          aria-invalid={errors.email ? true : undefined}
+          aria-describedby={errors.email ? "email-error" : undefined}
           value={data.email}
           onChange={(e) => handleChange("email", e.target.value)}
           className={inputClass(!!errors.email)}
           placeholder="ton.email@example.com"
         />
-        {errors.email && <p className="text-error text-xs mt-1">{errors.email}</p>}
+        {errors.email && <p id="email-error" className="text-error text-xs mt-1">{errors.email}</p>}
       </div>
 
       {/* Téléphone */}
       <div>
         <label htmlFor="telephone" className="block text-sm font-medium text-gray-dark mb-1.5">
-          T&eacute;l&eacute;phone <span className="text-gold">*</span>
+          T&eacute;l&eacute;phone <span className="text-gold" aria-hidden="true">*</span>
         </label>
         <input
           type="tel"
           id="telephone"
           name="telephone"
+          autoComplete="tel"
+          required
+          aria-invalid={errors.telephone ? true : undefined}
+          aria-describedby={errors.telephone ? "telephone-error" : undefined}
           value={data.telephone}
           onChange={(e) => handleChange("telephone", e.target.value)}
           className={inputClass(!!errors.telephone)}
           placeholder="06 XX XX XX XX"
         />
-        {errors.telephone && <p className="text-error text-xs mt-1">{errors.telephone}</p>}
+        {errors.telephone && <p id="telephone-error" className="text-error text-xs mt-1">{errors.telephone}</p>}
       </div>
 
       {/* Objet */}
@@ -218,7 +237,7 @@ export default function ContactForm() {
           name="objet"
           value={data.objet}
           onChange={(e) => handleChange("objet", e.target.value)}
-          className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
+          className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 text-base sm:text-sm bg-white focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
         >
           <option value="">— S&eacute;lectionne un objet —</option>
           <option value="Je cherche une formation">Je cherche une formation</option>
@@ -231,18 +250,21 @@ export default function ContactForm() {
       {/* Message */}
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-dark mb-1.5">
-          Message <span className="text-gold">*</span>
+          Message <span className="text-gold" aria-hidden="true">*</span>
         </label>
         <textarea
           id="message"
           name="message"
+          required
+          aria-invalid={errors.message ? true : undefined}
+          aria-describedby={errors.message ? "message-error" : undefined}
           rows={5}
           value={data.message}
           onChange={(e) => handleChange("message", e.target.value)}
           className={`${inputClass(!!errors.message)} resize-none`}
           placeholder="Dis-nous en quoi on peut t'aider..."
         />
-        {errors.message && <p className="text-error text-xs mt-1">{errors.message}</p>}
+        {errors.message && <p id="message-error" className="text-error text-xs mt-1">{errors.message}</p>}
       </div>
 
       {/* Erreur */}
@@ -263,6 +285,8 @@ export default function ContactForm() {
       >
         {status === "submitting" ? "Envoi en cours..." : "Envoyer mon message"}
       </button>
+
+      <FormPrivacyNotice />
     </form>
   );
 }
