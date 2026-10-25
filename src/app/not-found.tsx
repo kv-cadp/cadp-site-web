@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <section className="py-32 bg-white text-center">
       <div className="mx-auto max-w-lg px-4">
-        <div className="font-serif text-8xl text-gold mb-6">404</div>
+        <div className="font-serif text-8xl text-navy-deep mb-6">404</div>
         <h1 className="font-serif text-2xl text-navy-deep mb-4">
           Page introuvable
         </h1>

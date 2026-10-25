@@ -142,7 +142,7 @@ export default function Footer() {
                 <span className="text-cream/50">Horaires : {SITE.hours}</span>
               </li>
               <li className="pt-2">
-                <span className="text-cream/40 text-xs font-semibold uppercase tracking-wider">Accès rapide</span>
+                <span className="text-cream/70 text-xs font-semibold uppercase tracking-wider">Accès rapide</span>
               </li>
               {datings.map((event) => (
                 <li key={event.slug}>

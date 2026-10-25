@@ -25,8 +25,8 @@ export default function MentionsLegalesPage() {
               <p><strong className="text-gray-dark">SIRET :</strong> 932 985 922 00024</p>
               <p><strong className="text-gray-dark">RCS :</strong> Romans-sur-Isère</p>
               <p><strong className="text-gray-dark">Siège social :</strong> 2 Boulevard Frédéric Mistral, 26700 Pierrelatte</p>
-              <p><strong className="text-gray-dark">Téléphone :</strong> <a href="tel:+33475003456" className="text-gold hover:text-gold-light">04 75 00 34 56</a></p>
-              <p><strong className="text-gray-dark">Email :</strong> <a href="mailto:contact@cadp.pro" className="text-gold hover:text-gold-light">contact@cadp.pro</a></p>
+              <p><strong className="text-gray-dark">Téléphone :</strong> <a href="tel:+33475003456" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep">04 75 00 34 56</a></p>
+              <p><strong className="text-gray-dark">Email :</strong> <a href="mailto:contact@cadp.pro" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep">contact@cadp.pro</a></p>
               <p><strong className="text-gray-dark">Directeur de la publication :</strong> Laurent Aubret — laurent.aubret@cadp.pro</p>
               <p><strong className="text-gray-dark">Directeur général et responsable pédagogique :</strong> Kévin Vidard — kevin.vidard@cadp.pro</p>
             </div>
@@ -95,7 +95,7 @@ export default function MentionsLegalesPage() {
               </p>
               <p>
                 <strong className="text-gray-dark">Référent handicap :</strong> Laurent Aubret —{" "}
-                <a href="mailto:laurent.aubret@cadp.pro" className="text-gold hover:text-gold-light">laurent.aubret@cadp.pro</a>
+                <a href="mailto:laurent.aubret@cadp.pro" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep">laurent.aubret@cadp.pro</a>
               </p>
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function MentionsLegalesPage() {
             <p className="text-gray-mid">
               Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez de droits sur vos données personnelles.
               Pour plus d&apos;informations, consultez notre{" "}
-              <Link href="/politique-de-confidentialite" className="text-gold hover:text-gold-light font-semibold">
+              <Link href="/politique-de-confidentialite" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep">
                 politique de confidentialité
               </Link>.
             </p>

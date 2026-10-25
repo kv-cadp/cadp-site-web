@@ -478,14 +478,14 @@ export default function InfosContratForm() {
           Une question ?{" "}
           <a
             href="mailto:contact@cadp.pro"
-            className="text-gold font-semibold hover:text-gold-light"
+            className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep"
           >
             contact@cadp.pro
           </a>{" "}
           —{" "}
           <a
             href="tel:+33475003456"
-            className="text-gold font-semibold hover:text-gold-light"
+            className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep"
           >
             04 75 00 34 56
           </a>
@@ -531,7 +531,7 @@ export default function InfosContratForm() {
               htmlFor="apprenti_prenom"
               className="block text-sm font-medium text-gray-dark mb-1.5"
             >
-              Prénom <span className="text-gold">*</span>
+              Prénom <span className="text-navy-deep">*</span>
             </label>
             <input
               id="apprenti_prenom"
@@ -551,7 +551,7 @@ export default function InfosContratForm() {
               htmlFor="apprenti_nom"
               className="block text-sm font-medium text-gray-dark mb-1.5"
             >
-              Nom <span className="text-gold">*</span>
+              Nom <span className="text-navy-deep">*</span>
             </label>
             <input
               id="apprenti_nom"
@@ -573,7 +573,7 @@ export default function InfosContratForm() {
             htmlFor="formation"
             className="block text-sm font-medium text-gray-dark mb-1.5"
           >
-            Formation <span className="text-gold">*</span>
+            Formation <span className="text-navy-deep">*</span>
           </label>
           <select
             id="formation"
@@ -600,7 +600,7 @@ export default function InfosContratForm() {
               htmlFor="date_debut"
               className="block text-sm font-medium text-gray-dark mb-1.5"
             >
-              Date de début souhaitée <span className="text-gold">*</span>
+              Date de début souhaitée <span className="text-navy-deep">*</span>
             </label>
             <input
               id="date_debut"
@@ -622,7 +622,7 @@ export default function InfosContratForm() {
               htmlFor="date_fin"
               className="block text-sm font-medium text-gray-dark mb-1.5"
             >
-              Date de fin souhaitée <span className="text-gold">*</span>
+              Date de fin souhaitée <span className="text-navy-deep">*</span>
             </label>
             <input
               id="date_fin"
@@ -677,7 +677,7 @@ export default function InfosContratForm() {
             className="block text-sm font-medium text-gray-dark mb-1.5"
           >
             SIRET de l&apos;établissement d&apos;accueil{" "}
-            <span className="text-gold">*</span>
+            <span className="text-navy-deep">*</span>
           </label>
           <div className="flex flex-col sm:flex-row gap-3">
             <input
@@ -731,7 +731,7 @@ export default function InfosContratForm() {
             htmlFor="raison_sociale"
             className="block text-sm font-medium text-gray-dark mb-1.5"
           >
-            Raison sociale <span className="text-gold">*</span>
+            Raison sociale <span className="text-navy-deep">*</span>
           </label>
           <input
             id="raison_sociale"
@@ -808,7 +808,7 @@ export default function InfosContratForm() {
               href="https://code.travail.gouv.fr/outils/convention-collective"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gold font-semibold hover:text-gold-light"
+              className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep"
             >
               Retrouver ma convention collective
             </a>
@@ -821,7 +821,7 @@ export default function InfosContratForm() {
             htmlFor="opco"
             className="block text-sm font-medium text-gray-dark mb-1.5"
           >
-            OPCO <span className="text-gold">*</span>
+            OPCO <span className="text-navy-deep">*</span>
           </label>
           <select
             id="opco"
@@ -844,7 +844,7 @@ export default function InfosContratForm() {
               href="https://www.cfadock.fr/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gold font-semibold hover:text-gold-light"
+              className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep"
             >
               Trouver mon OPCO avec mon SIRET
             </a>
@@ -865,7 +865,7 @@ export default function InfosContratForm() {
               htmlFor="interlocuteur_nom"
               className="block text-sm font-medium text-gray-dark mb-1.5"
             >
-              Nom <span className="text-gold">*</span>
+              Nom <span className="text-navy-deep">*</span>
             </label>
             <input
               id="interlocuteur_nom"
@@ -888,7 +888,7 @@ export default function InfosContratForm() {
               htmlFor="interlocuteur_prenom"
               className="block text-sm font-medium text-gray-dark mb-1.5"
             >
-              Prénom <span className="text-gold">*</span>
+              Prénom <span className="text-navy-deep">*</span>
             </label>
             <input
               id="interlocuteur_prenom"
@@ -914,7 +914,7 @@ export default function InfosContratForm() {
               htmlFor="interlocuteur_email"
               className="block text-sm font-medium text-gray-dark mb-1.5"
             >
-              Email <span className="text-gold">*</span>
+              Email <span className="text-navy-deep">*</span>
             </label>
             <input
               id="interlocuteur_email"
@@ -937,7 +937,7 @@ export default function InfosContratForm() {
               htmlFor="interlocuteur_tel"
               className="block text-sm font-medium text-gray-dark mb-1.5"
             >
-              Téléphone portable <span className="text-gold">*</span>
+              Téléphone portable <span className="text-navy-deep">*</span>
             </label>
             <input
               id="interlocuteur_tel"
@@ -988,7 +988,7 @@ export default function InfosContratForm() {
                   htmlFor="ma_nom"
                   className="block text-sm font-medium text-gray-dark mb-1.5"
                 >
-                  Nom <span className="text-gold">*</span>
+                  Nom <span className="text-navy-deep">*</span>
                 </label>
                 <input
                   id="ma_nom"
@@ -1008,7 +1008,7 @@ export default function InfosContratForm() {
                   htmlFor="ma_prenom"
                   className="block text-sm font-medium text-gray-dark mb-1.5"
                 >
-                  Prénom <span className="text-gold">*</span>
+                  Prénom <span className="text-navy-deep">*</span>
                 </label>
                 <input
                   id="ma_prenom"
@@ -1031,7 +1031,7 @@ export default function InfosContratForm() {
                   htmlFor="ma_email"
                   className="block text-sm font-medium text-gray-dark mb-1.5"
                 >
-                  Email <span className="text-gold">*</span>
+                  Email <span className="text-navy-deep">*</span>
                 </label>
                 <input
                   id="ma_email"
@@ -1051,7 +1051,7 @@ export default function InfosContratForm() {
                   htmlFor="ma_tel"
                   className="block text-sm font-medium text-gray-dark mb-1.5"
                 >
-                  Téléphone portable <span className="text-gold">*</span>
+                  Téléphone portable <span className="text-navy-deep">*</span>
                 </label>
                 <input
                   id="ma_tel"
@@ -1079,7 +1079,7 @@ export default function InfosContratForm() {
               htmlFor="ma_date_naissance"
               className="block text-sm font-medium text-gray-dark mb-1.5"
             >
-              Date de naissance <span className="text-gold">*</span>
+              Date de naissance <span className="text-navy-deep">*</span>
             </label>
             <input
               id="ma_date_naissance"
@@ -1108,7 +1108,7 @@ export default function InfosContratForm() {
               htmlFor="ma_poste"
               className="block text-sm font-medium text-gray-dark mb-1.5"
             >
-              Poste occupé <span className="text-gold">*</span>
+              Poste occupé <span className="text-navy-deep">*</span>
             </label>
             <input
               id="ma_poste"
@@ -1130,7 +1130,7 @@ export default function InfosContratForm() {
             htmlFor="ma_diplome_niveau"
             className="block text-sm font-medium text-gray-dark mb-1.5"
           >
-            Diplôme le plus élevé obtenu <span className="text-gold">*</span>
+            Diplôme le plus élevé obtenu <span className="text-navy-deep">*</span>
           </label>
           <select
             id="ma_diplome_niveau"
@@ -1160,7 +1160,7 @@ export default function InfosContratForm() {
             className="block text-sm font-medium text-gray-dark mb-1.5"
           >
             Intitulé du diplôme{" "}
-            {!intituleDisabled && <span className="text-gold">*</span>}
+            {!intituleDisabled && <span className="text-navy-deep">*</span>}
           </label>
           <input
             id="ma_diplome_intitule"

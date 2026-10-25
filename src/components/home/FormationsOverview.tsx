@@ -19,7 +19,7 @@ export default function FormationsOverview() {
                 <Badge variant="gold" className="mb-4">
                   {formation.code}
                 </Badge>
-                <h3 className="font-serif text-xl text-navy-deep mb-3 group-hover:text-gold transition-colors">
+                <h3 className="font-serif text-xl text-navy-deep mb-3 group-hover:underline group-hover:decoration-gold group-hover:decoration-2 group-hover:underline-offset-4">
                   {formation.fullName}
                 </h3>
                 <p className="text-gray-mid text-sm leading-relaxed mb-4">
@@ -33,7 +33,7 @@ export default function FormationsOverview() {
                     {formation.duration}
                   </span>
                 </div>
-                <div className="mt-4 flex items-center gap-1 text-gold font-semibold text-sm group-hover:gap-2 transition-all">
+                <div className="mt-4 flex items-center gap-1 text-navy-deep font-semibold text-sm underline decoration-gold decoration-2 underline-offset-4 group-hover:gap-2 transition-all">
                   En savoir plus
                   <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

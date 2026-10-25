@@ -54,7 +54,7 @@ export default async function BlogArticlePage({
       <section className="bg-navy-deep py-16 md:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${cat.color}`}>
+            <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-white/10 text-cream">
               {cat.label}
             </span>
             <span className="text-cream/50 text-xs">
@@ -110,7 +110,7 @@ export default async function BlogArticlePage({
 
           {/* Retour blog */}
           <div className="mt-8 text-center">
-            <Link href="/blog" className="text-gold font-semibold text-sm hover:text-gold-light transition-colors">
+            <Link href="/blog" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors">
               ← Retour au blog
             </Link>
           </div>

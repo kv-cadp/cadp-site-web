@@ -150,7 +150,7 @@ export default function EntrepriseQuiz() {
             <>
               <div className="flex justify-center gap-1.5 mt-4 text-xs font-semibold uppercase tracking-wider">
                 {stepLabels.map((label, i) => (
-                  <span key={i} className={i === (step - 1) * 2 ? "text-gold" : "text-white/30"}>{label}</span>
+                  <span key={i} className={i === (step - 1) * 2 ? "text-gold" : "text-white/60"}>{label}</span>
                 ))}
               </div>
               <div className="w-full h-1 bg-white/15 rounded mt-2.5 overflow-hidden">
@@ -345,7 +345,7 @@ export default function EntrepriseQuiz() {
                           className="px-4 py-2 bg-gold text-navy-deep rounded-lg font-semibold text-xs hover:bg-gold-light transition-colors">
                           Voir la fiche formation
                         </Link>
-                        <Link href="/contact" className="px-4 py-2 border border-gold text-gold rounded-lg font-semibold text-xs hover:bg-gold hover:text-navy-deep transition-colors">
+                        <Link href="/contact" className="px-4 py-2 border border-gold text-navy-deep rounded-lg font-semibold text-xs hover:bg-gold hover:text-navy-deep transition-colors">
                           Nous contacter
                         </Link>
                       </div>
@@ -406,7 +406,7 @@ export default function EntrepriseQuiz() {
                   </div>
                   <div className="bg-white rounded-xl p-4">
                     <p className="text-xs text-gray-mid mb-1">Coût alternant</p>
-                    <p className="text-lg font-bold text-gold">{fmt(sim.coutNet)}</p>
+                    <p className="text-lg font-bold text-navy-deep">{fmt(sim.coutNet)}</p>
                     <p className="text-[10px] text-gray-mid">sur {sim.duree} mois — aide de {fmt(sim.aide)} déduite</p>
                   </div>
                   <div className="bg-success/5 rounded-xl p-4">
@@ -503,7 +503,7 @@ export default function EntrepriseQuiz() {
                     ].map((field) => (
                       <div key={field.id}>
                         <label className="block text-xs font-semibold text-gray-mid mb-1">
-                          {field.label} {field.required && <span className="text-gold">*</span>}
+                          {field.label} {field.required && <span className="text-navy-deep">*</span>}
                         </label>
                         <input type={field.type || "text"}
                           value={contactForm[field.id as keyof typeof contactForm]}

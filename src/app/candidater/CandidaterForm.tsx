@@ -264,7 +264,7 @@ export default function CandidaterForm() {
                 <div>
                   <p id="formations-label" className="text-sm font-medium text-gray-dark mb-1">
                     {intention === "candidater"
-                      ? <>Formation(s) souhaitée(s) <span className="text-gold" aria-hidden="true">*</span></>
+                      ? <>Formation(s) souhaitée(s) <span className="text-navy-deep" aria-hidden="true">*</span></>
                       : "Formation(s) qui t'intéresse(nt)"}
                   </p>
                   {intention === "candidater" && (
@@ -311,7 +311,7 @@ export default function CandidaterForm() {
                 {intention === "info" && (
                   <div>
                     <label htmlFor="question" className="block text-sm font-medium text-gray-dark mb-1.5">
-                      Ta question <span className="text-gold" aria-hidden="true">*</span>
+                      Ta question <span className="text-navy-deep" aria-hidden="true">*</span>
                     </label>
                     <textarea
                       id="question"
@@ -333,7 +333,7 @@ export default function CandidaterForm() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="prenom" className="block text-sm font-medium text-gray-dark mb-1.5">
-                      Prénom <span className="text-gold" aria-hidden="true">*</span>
+                      Prénom <span className="text-navy-deep" aria-hidden="true">*</span>
                     </label>
                     <input type="text" id="prenom" name="prenom" autoComplete="given-name" required value={prenom}
                       aria-invalid={errors.prenom ? true : undefined}
@@ -345,7 +345,7 @@ export default function CandidaterForm() {
                   </div>
                   <div>
                     <label htmlFor="nom" className="block text-sm font-medium text-gray-dark mb-1.5">
-                      Nom <span className="text-gold" aria-hidden="true">*</span>
+                      Nom <span className="text-navy-deep" aria-hidden="true">*</span>
                     </label>
                     <input type="text" id="nom" name="nom" autoComplete="family-name" required value={nom}
                       aria-invalid={errors.nom ? true : undefined}
@@ -359,7 +359,7 @@ export default function CandidaterForm() {
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-dark mb-1.5">
-                    Email <span className="text-gold" aria-hidden="true">*</span>
+                    Email <span className="text-navy-deep" aria-hidden="true">*</span>
                   </label>
                   <input type="email" id="email" name="email" autoComplete="email" required value={email}
                     aria-invalid={errors.email ? true : undefined}
@@ -372,7 +372,7 @@ export default function CandidaterForm() {
 
                 <div>
                   <label htmlFor="telephone" className="block text-sm font-medium text-gray-dark mb-1.5">
-                    Téléphone <span className="text-gold" aria-hidden="true">*</span>
+                    Téléphone <span className="text-navy-deep" aria-hidden="true">*</span>
                   </label>
                   <input type="tel" id="telephone" name="telephone" autoComplete="tel" required value={telephone}
                     aria-invalid={errors.telephone ? true : undefined}
@@ -428,7 +428,7 @@ export default function CandidaterForm() {
             <div className="mt-8 pt-6 border-t border-gray-200 text-center">
               <Link
                 href="/orientation"
-                className="inline-flex items-center gap-2 text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+                className="inline-flex items-center gap-2 text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
               >
                 Pas encore sûr de ta formation ? Fais le test d&apos;orientation
                 <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

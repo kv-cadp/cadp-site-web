@@ -56,7 +56,7 @@ export default function UpcomingEvents() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-navy-deep mb-1">{event.title}</h3>
-                  <p className="text-gold text-xs font-medium mb-2">{locationLine}</p>
+                  <p className="text-navy-deep/70 text-xs font-medium mb-2">{locationLine}</p>
                   <p className="text-gray-mid text-sm leading-relaxed">{event.shortDescription}</p>
                   {event.category === "visite" && !event.href && (
                     <a

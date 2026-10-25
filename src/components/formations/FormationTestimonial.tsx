@@ -12,7 +12,7 @@ export default function FormationTestimonial({ testimonial }: FormationTestimoni
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="bg-navy-deep rounded-xl p-8 md:p-10 text-center relative overflow-hidden">
           {/* Decorative */}
-          <div className="absolute top-4 left-4 text-gold/10 text-8xl font-serif leading-none">
+          <div className="absolute top-4 left-4 text-gold/10 text-8xl font-serif leading-none" aria-hidden="true">
             &ldquo;
           </div>
 

@@ -45,7 +45,7 @@ export default function ContactPage() {
             <div className="mt-8 pt-6 border-t border-gray-200 text-center">
               <Link
                 href="/orientation"
-                className="inline-flex items-center gap-2 text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+                className="inline-flex items-center gap-2 text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
               >
                 Pas encore s&ucirc;r de ta formation ? Fais le test d&apos;orientation
                 <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -62,16 +62,16 @@ export default function ContactPage() {
                   href="https://app.cadp.pro/connexion"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+                  className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
                 >
                   Espace candidat
                 </a>
-                <span className="text-gray-mid/30">|</span>
+                <span className="text-gray-mid/30" aria-hidden="true">|</span>
                 <a
                   href="https://app.cadp.pro/connexion"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+                  className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
                 >
                   Espace entreprise
                 </a>

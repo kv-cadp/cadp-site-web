@@ -54,11 +54,12 @@ export default function AnimatedCounter({
 
   return (
     <div ref={ref} className="text-center">
-      <div className="font-serif text-4xl md:text-5xl text-gold mb-2">
+      <div className="font-serif text-4xl md:text-5xl text-navy-deep">
         {prefix}
         {displayValue}
         {suffix}
       </div>
+      <div className="w-7 h-[3px] mx-auto mt-2 mb-2 bg-gold rounded-full" aria-hidden="true" />
       <div className="text-gray-mid text-sm uppercase tracking-wider font-semibold">
         {label}
       </div>

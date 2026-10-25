@@ -157,10 +157,10 @@ export default function FormationsHubPage() {
                     <Badge variant="gold">{f.code}</Badge>
                     <span className="text-xs text-gray-mid">{f.niveau}</span>
                   </div>
-                  <h3 className="font-serif text-lg text-navy-deep mb-1 group-hover:text-gold transition-colors">
+                  <h3 className="font-serif text-lg text-navy-deep mb-1 group-hover:underline group-hover:decoration-gold group-hover:decoration-2 group-hover:underline-offset-4">
                     {f.full}
                   </h3>
-                  <p className="text-gold text-sm font-semibold mb-3">{f.enUnMot}</p>
+                  <p className="text-navy-deep text-sm font-semibold mb-3">{f.enUnMot}</p>
                   <p className="text-gray-mid text-xs mb-3">
                     <strong className="text-gray-dark">Profil :</strong> {f.profil}
                   </p>
@@ -172,7 +172,7 @@ export default function FormationsHubPage() {
                     <span className="bg-cream px-2 py-0.5 rounded font-medium">Gratuit</span>
                     <span className="bg-cream px-2 py-0.5 rounded font-medium">12 max</span>
                   </div>
-                  <div className="flex items-center gap-1 text-gold font-semibold text-sm group-hover:gap-2 transition-all">
+                  <div className="flex items-center gap-1 text-navy-deep font-semibold text-sm underline decoration-gold decoration-2 underline-offset-4 group-hover:gap-2 transition-all">
                     En savoir plus
                     <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -237,7 +237,7 @@ export default function FormationsHubPage() {
           </div>
 
           <p className="text-center text-gray-mid text-sm mt-8">
-            Le <Link href="/formations/bts-gtla" className="text-gold font-semibold hover:text-gold-light">BTS GTLA (Transport et Logistique)</Link> ouvre en 2027. Pré-inscriptions ouvertes.
+            Le <Link href="/formations/bts-gtla" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep">BTS GTLA (Transport et Logistique)</Link> ouvre en 2027. Pré-inscriptions ouvertes.
           </p>
         </div>
       </section>
@@ -278,7 +278,7 @@ export default function FormationsHubPage() {
             <div className="text-center">
               <Link
                 href="/orientation"
-                className="inline-flex items-center gap-2 text-gold font-semibold hover:text-gold-light transition-colors"
+                className="inline-flex items-center gap-2 text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep transition-colors"
               >
                 Pas encore sûr ? Fais le test d&apos;orientation
                 <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -341,7 +341,7 @@ export default function FormationsHubPage() {
           </div>
           <Link
             href="/entreprise-besoin"
-            className="text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+            className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
           >
             Vous êtes une entreprise ?
           </Link>
