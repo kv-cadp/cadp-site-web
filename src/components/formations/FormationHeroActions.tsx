@@ -25,7 +25,7 @@ export default function FormationHeroActions({
         href={SITE.phoneHref}
         className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-white text-white rounded-lg font-semibold text-base hover:bg-white hover:text-navy-deep transition-colors"
       >
-        Une question ? {SITE.phone}
+        Une question ? <span className="whitespace-nowrap">{SITE.phone}</span>
       </a>
     </div>
   );

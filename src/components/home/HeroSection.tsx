@@ -24,7 +24,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Formations en alternance à Pierrelatte. Première promotion : 96% de
+          Formations en alternance à Pierrelatte. Première promotion : 96&nbsp;% de
           réussite à l&apos;examen. Promos de 12 étudiants, accompagnement
           individualisé.
         </p>

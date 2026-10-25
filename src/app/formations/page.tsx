@@ -10,7 +10,7 @@ import { formatRhythmShort } from "@/lib/format-rhythm";
 export const metadata = createPageMetadata({
   title: "Nos formations en alternance à Pierrelatte",
   description:
-    "5 BTS, 1 Bachelor et 1 Titre Professionnel en alternance à Pierrelatte. Promos de 12 étudiants, formation 100% financée. Comparez nos formations et trouvez celle qui vous correspond.",
+    "5 BTS, 1 Bachelor et 1 Titre Professionnel en alternance à Pierrelatte. Promos de 12 étudiants, formation 100\u00a0% financée. Comparez nos formations et trouvez celle qui vous correspond.",
   path: "/formations",
 });
 
@@ -89,7 +89,7 @@ const formations = [
     rythme: "Regroupements",
   },
   {
-    slug: "tp-advf", code: "ADVF", name: "TP ADVF", full: "Assistant De Vie aux Familles",
+    slug: "tp-advf", code: "ADVF", name: "TP ADVF", full: "Assistant de vie aux familles",
     niveau: "Niveau 3 (CAP/BEP)", duree: "12 mois", rncp: "RNCP37715",
     enUnMot: "Tu accompagnes les personnes fragiles au quotidien.",
     profil: "Empathique, patient, sens du service, envie d'aider.",
@@ -136,7 +136,7 @@ export default function FormationsHubPage() {
             {formations.length} formations. Un même engagement.
           </h1>
           <p className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Toutes nos formations sont en alternance, en promos de 12 étudiants, et 100% financées par l&apos;OPCO de ton entreprise. Zéro frais pour toi.
+            Toutes nos formations sont en alternance, en promos de 12 étudiants, et 100&nbsp;% financées par l&apos;OPCO de ton entreprise. Zéro frais pour toi.
           </p>
         </div>
       </section>
@@ -189,7 +189,7 @@ export default function FormationsHubPage() {
       <section className="py-20 bg-cream">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl md:text-3xl text-navy-deep mb-4 text-center">
-            Comparatif en un coup d&apos;oeil
+            Comparatif en un coup d&apos;œil
           </h2>
           <div className="w-16 h-1 mx-auto bg-gold rounded-full mb-12" />
 
@@ -271,7 +271,7 @@ export default function FormationsHubPage() {
               <h3 className="font-serif text-lg text-navy-deep mb-3">BTS ou TP ADVF ?</h3>
               <p className="text-gray-mid text-sm leading-relaxed">
                 Les 5 BTS mènent à un Bac+2 en 2 ans et visent des métiers tertiaires (commerce, gestion, sécurité). Le{" "}
-                <strong className="text-navy-deep">TP ADVF</strong> est un titre de niveau 3 (CAP/BEP) sur 12 mois, orienté vers les métiers de l&apos;aide à la personne. Ce sont deux univers différents — le bon choix dépend de ton projet, pas de ton niveau.
+                <strong className="text-navy-deep">TP ADVF</strong>{" "}est un titre de niveau 3 (CAP/BEP) sur 12 mois, orienté vers les métiers de l&apos;aide à la personne. Ce sont deux univers différents — le bon choix dépend de ton projet, pas de ton niveau.
               </p>
             </div>
 
@@ -300,11 +300,11 @@ export default function FormationsHubPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: "100% alternance",
+                title: "100\u00a0% alternance",
                 text: "Toutes nos formations se font en contrat d'apprentissage. Tu es salarié, tu apprends en entreprise et au campus.",
               },
               {
-                title: "100% financé",
+                title: "100\u00a0% financé",
                 text: "Aucun frais d'inscription ni de scolarité. La formation est prise en charge par l'OPCO de ton entreprise.",
               },
               {

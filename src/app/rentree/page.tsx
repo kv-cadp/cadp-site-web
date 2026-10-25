@@ -13,7 +13,7 @@ const { annee, formations } = RENTREE;
 export const metadata = createPageMetadata({
   title: `Rentrée ${annee} — Candidatures ouvertes`,
   description:
-    `Les candidatures pour la rentrée de septembre ${annee} au Campus Alternance Drôme Provence sont ouvertes. ${formations.length} formations en alternance, promos de 12 étudiants, 100% financé. Candidatez maintenant.`,
+    `Les candidatures pour la rentrée de septembre ${annee} au Campus Alternance Drôme Provence sont ouvertes. ${formations.length} formations en alternance, promos de 12 étudiants, 100\u00a0% financé. Candidatez maintenant.`,
   path: RENTREE.href,
 });
 
@@ -164,7 +164,7 @@ export default function RentreePage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="font-serif text-4xl text-gold mb-3">0€</div>
+              <div className="font-serif text-4xl text-gold mb-3">0&nbsp;€</div>
               <h3 className="font-semibold text-navy-deep mb-2">Tu ne paies rien. Tu es payé.</h3>
               <p className="text-gray-mid text-sm leading-relaxed">
                 Formation financée par l&apos;OPCO. Zéro frais. Et dès le premier mois, tu touches un salaire.
@@ -227,7 +227,7 @@ export default function RentreePage() {
             Vous cherchez un alternant pour septembre ?
           </h2>
           <p className="text-gray-mid mb-8 max-w-lg mx-auto">
-            Dites-nous quel poste vous cherchez à pourvoir. On vous envoie le bon profil, on monte le dossier, on s&apos;occupe de l&apos;OPCO. Coût net réel : environ 500€/mois la première année, aide déduite.
+            Dites-nous quel poste vous cherchez à pourvoir. On vous envoie le bon profil, on monte le dossier, on s&apos;occupe de l&apos;OPCO. Coût net réel : environ 500&nbsp;€/mois la première année, aide déduite.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/entreprise-besoin" variant="gold">
@@ -237,7 +237,7 @@ export default function RentreePage() {
               href="tel:+33475003456"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-navy-deep text-navy-deep rounded-lg font-semibold hover:bg-navy-deep hover:text-white transition-all"
             >
-              Appeler Laurent — 04 75 00 34 56
+              Appeler Laurent — <span className="whitespace-nowrap">04 75 00 34 56</span>
             </a>
           </div>
         </div>

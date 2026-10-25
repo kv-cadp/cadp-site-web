@@ -96,7 +96,7 @@ const secteursText =
   "Industrie (métallurgie, agroalimentaire, pharmaceutique, chimie, plasturgie), énergie et environnement, construction et BTP, transport et logistique, santé, services. Le profil QSE est particulièrement recherché dans les organisations engagées dans des démarches de certification ISO ou soumises à de fortes contraintes réglementaires, comme sur le bassin du Tricastin.";
 
 const marcheText =
-  "Selon France Travail (T1 2025), près de 80 % des offres de Responsable QSE proposent une rémunération comprise entre 1 820 € et 3 333 € brut par mois, sur un marché marqué par une forte difficulté de recrutement. Autrement dit : un titre qui mène à l'emploi.";
+  "Selon France Travail (T1 2025), près de 80\u00a0% des offres de Responsable QSE proposent une rémunération comprise entre 1 820\u00a0€ et 3 333\u00a0€ brut par mois, sur un marché marqué par une forte difficulté de recrutement. Autrement dit : un titre qui mène à l'emploi.";
 
 const poursuiteText =
   "Le Bachelor vise d'abord l'insertion directe sur un poste qualifié. Il ouvre aussi la voie vers un Bac+5 (niveau 7) en QHSE ou en management des risques, en alternance ou en formation continue.";
@@ -143,7 +143,7 @@ const faq = [
   {
     question: "Quel est le salaire en alternance en Bachelor RQSE ?",
     answer:
-      "Le Bachelor étant un cycle Bac+3, la rémunération en apprentissage est calculée sur la base de la 3e année d'exécution du contrat, quel que soit ton parcours antérieur. Un apprenti de 18-20 ans perçoit 67 % du SMIC (environ 1 250,90 € brut par mois), de 21-25 ans 78 % (environ 1 456,28 €), et 100 % à partir de 26 ans (1 867,02 €). Sous le seuil de 50 % du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
+      "Le Bachelor étant un cycle Bac+3, la rémunération en apprentissage est calculée sur la base de la 3e année d'exécution du contrat, quel que soit ton parcours antérieur. Un apprenti de 18-20 ans perçoit 67\u00a0% du SMIC (environ 1 250,90\u00a0€ brut par mois), de 21-25 ans 78\u00a0% (environ 1 456,28\u00a0€), et 100\u00a0% à partir de 26 ans (1 867,02\u00a0€). Sous le seuil de 50\u00a0% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
   },
   {
     question: "Quels sont les prérequis pour intégrer le Bachelor RQSE ?",
@@ -173,7 +173,7 @@ const faq = [
   {
     question: "Apprentissage ou contrat de professionnalisation ?",
     answer:
-      "Les deux sont possibles. En apprentissage, la rémunération suit le barème de la 3e année d'exécution (67 %, 78 %, 100 % selon l'âge). Le contrat de professionnalisation suit un barème distinct et est géré par le CFA IFIR au même tarif. Le dispositif est arrêté avec ton entreprise et le CFA.",
+      "Les deux sont possibles. En apprentissage, la rémunération suit le barème de la 3e année d'exécution (67\u00a0%, 78\u00a0%, 100\u00a0% selon l'âge). Le contrat de professionnalisation suit un barème distinct et est géré par le CFA IFIR au même tarif. Le dispositif est arrêté avec ton entreprise et le CFA.",
   },
   {
     question: "Le Bachelor RQSE est-il reconnu par l'État ?",

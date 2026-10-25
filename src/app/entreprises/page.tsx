@@ -6,7 +6,7 @@ import CTADating from "@/components/dating/CTADating";
 export const metadata = createPageMetadata({
   title: "Recrutez un alternant au CADP | Entreprises",
   description:
-    "Recrutez un alternant en BTS ou TP ADVF au CADP à Pierrelatte. Aide jusqu'à 5 000€, formation financée par l'OPCO, promos de 12 étudiants. PME de Drôme, Ardèche, Vaucluse, Gard.",
+    "Recrutez un alternant en BTS ou TP ADVF au CADP à Pierrelatte. Aide jusqu'à 5 000\u00a0€, formation financée par l'OPCO, promos de 12 étudiants. PME de Drôme, Ardèche, Vaucluse, Gard.",
   path: "/entreprises",
 });
 
@@ -106,7 +106,7 @@ export default function EntreprisesPage() {
               href="tel:+33475003456"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-navy-deep transition-all"
             >
-              Appeler Laurent — 04 75 00 34 56
+              Appeler Laurent — <span className="whitespace-nowrap">04 75 00 34 56</span>
             </a>
           </div>
         </div>
@@ -148,7 +148,7 @@ export default function EntreprisesPage() {
 
           <p className="text-gray-mid text-center mb-10 max-w-2xl mx-auto leading-relaxed">
             Pour une PME de moins de 250 salariés qui recrute un alternant en BTS de 20 ans : le coût net est d&apos;environ{" "}
-            <strong className="text-navy-deep">500€ par mois</strong> la première année, aide de l&apos;État déduite.
+            <strong className="text-navy-deep">500&nbsp;€ par mois</strong>{" "}la première année, aide de l&apos;État déduite.
             La formation est intégralement financée par votre OPCO — le CADP ne vous facture rien.
           </p>
 
@@ -187,7 +187,7 @@ export default function EntreprisesPage() {
           </p>
 
           <p className="text-xs text-gray-mid text-center italic mb-6">
-            À noter : pour un contrat de niveau 6 ou 7, l&apos;employeur verse une participation forfaitaire de 750 € (depuis le 1er juillet 2025).
+            À noter : pour un contrat de niveau 6 ou 7, l&apos;employeur verse une participation forfaitaire de 750&nbsp;€ (depuis le 1er juillet 2025).
           </p>
 
           <div className="text-center mb-8">
@@ -200,7 +200,7 @@ export default function EntreprisesPage() {
           </div>
 
           <p className="text-xs text-gray-mid/60 text-center">
-            Entreprises de 250 salariés et plus : aide de 2 000€ (niv. 3-4), 1 500€ (niv. 5) ou 750€ (niv. 6-7), sous condition de seuil de 5% de contrats en alternance.
+            Entreprises de 250 salariés et plus : aide de 2 000&nbsp;€ (niv. 3-4), 1 500&nbsp;€ (niv. 5) ou 750&nbsp;€ (niv. 6-7), sous condition de seuil de 5&nbsp;% de contrats en alternance.
           </p>
         </div>
       </section>
@@ -241,7 +241,7 @@ export default function EntreprisesPage() {
               href="tel:+33475003456"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-navy-deep transition-all"
             >
-              Appeler Laurent — 04 75 00 34 56
+              Appeler Laurent — <span className="whitespace-nowrap">04 75 00 34 56</span>
             </a>
           </div>
           <p className="text-cream/40 text-sm">

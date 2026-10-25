@@ -89,27 +89,27 @@ export const formations: Formation[] = [
       {
         title: "Responsable de magasin",
         description: "Tu gères un point de vente de A à Z : équipe, stock, chiffre d'affaires, merchandising.",
-        salary: "25 000 - 35 000 € brut/an",
+        salary: "25 000 - 35 000\u00a0€ brut/an",
       },
       {
         title: "Chef de rayon",
         description: "Tu animes et développes ton rayon en grande distribution ou magasin spécialisé.",
-        salary: "23 000 - 30 000 € brut/an",
+        salary: "23 000 - 30 000\u00a0€ brut/an",
       },
       {
         title: "Chargé(e) de clientèle",
         description: "Tu accompagnes les clients dans leurs projets et développes un portefeuille fidèle.",
-        salary: "22 000 - 28 000 € brut/an",
+        salary: "22 000 - 28 000\u00a0€ brut/an",
       },
       {
         title: "Manager e-commerce",
         description: "Tu pilotes la stratégie de vente en ligne : catalogue, promotions, expérience client.",
-        salary: "26 000 - 38 000 € brut/an",
+        salary: "26 000 - 38 000\u00a0€ brut/an",
       },
       {
         title: "Assistant(e) commercial(e)",
         description: "Tu soutiens l'équipe commerciale dans la gestion des commandes et la relation client.",
-        salary: "22 000 - 26 000 € brut/an",
+        salary: "22 000 - 26 000\u00a0€ brut/an",
       },
     ],
     furtherStudies: [
@@ -129,7 +129,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS MCO ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82\u00a0€ brut par mois en première année (43\u00a0% du SMIC) et 952,18\u00a0€ brut en deuxième année (51\u00a0% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50\u00a0% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
       },
       {
         question: "Quels métiers après un BTS MCO ?",
@@ -277,27 +277,27 @@ export const formations: Formation[] = [
       {
         title: "Business developer",
         description: "Tu prospectes de nouveaux marchés et développes le chiffre d'affaires de l'entreprise.",
-        salary: "25 000 - 40 000 € brut/an",
+        salary: "25 000 - 40 000\u00a0€ brut/an",
       },
       {
         title: "Commercial(e) terrain",
         description: "Tu vas à la rencontre des clients, présentes les solutions et négocies les contrats.",
-        salary: "23 000 - 35 000 € brut/an",
+        salary: "23 000 - 35 000\u00a0€ brut/an",
       },
       {
         title: "Chargé(e) d'affaires",
         description: "Tu gères un portefeuille de clients professionnels et construis des relations durables.",
-        salary: "26 000 - 38 000 € brut/an",
+        salary: "26 000 - 38 000\u00a0€ brut/an",
       },
       {
         title: "Responsable e-commerce",
         description: "Tu pilotes la relation client en ligne, du premier clic à la fidélisation.",
-        salary: "26 000 - 36 000 € brut/an",
+        salary: "26 000 - 36 000\u00a0€ brut/an",
       },
       {
         title: "Conseiller(ère) commercial(e)",
         description: "Tu accueilles, conseilles et orientes les clients vers les solutions adaptées à leurs besoins.",
-        salary: "22 000 - 28 000 € brut/an",
+        salary: "22 000 - 28 000\u00a0€ brut/an",
       },
     ],
     furtherStudies: [
@@ -317,7 +317,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS NDRC ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales. Certains contrats prévoient des commissions sur les ventes, ce qui peut augmenter ta rémunération.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82\u00a0€ brut par mois en première année (43\u00a0% du SMIC) et 952,18\u00a0€ brut en deuxième année (51\u00a0% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50\u00a0% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales. Certains contrats prévoient des commissions sur les ventes, ce qui peut augmenter ta rémunération.",
       },
       {
         question: "Quels métiers après un BTS NDRC ?",
@@ -362,7 +362,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le taux de réussite du BTS NDRC au CADP ?",
         answer:
-          "La première promotion (2024-2026) a obtenu 86% de réussite à l'examen : 6 admis sur 7 présentés. Un résultat porté par l'accompagnement individualisé en promo de 12 étudiants. Le BTS NDRC est un diplôme national, préparé au CADP, UFA du CFA IFIR.",
+          "La première promotion (2024-2026) a obtenu 86\u00a0% de réussite à l'examen : 6 admis sur 7 présentés. Un résultat porté par l'accompagnement individualisé en promo de 12 étudiants. Le BTS NDRC est un diplôme national, préparé au CADP, UFA du CFA IFIR.",
       },
       {
         question: "Comment s'inscrire au BTS NDRC au CADP ?",
@@ -472,27 +472,27 @@ export const formations: Formation[] = [
       {
         title: "Assistant(e) de gestion PME",
         description: "Tu gères l'administratif, le commercial et les RH d'une PME au quotidien.",
-        salary: "22 000 - 28 000 € brut/an",
+        salary: "22 000 - 28 000\u00a0€ brut/an",
       },
       {
         title: "Assistant(e) RH",
         description: "Tu contribues au recrutement, à la paie, aux congés et au suivi administratif du personnel.",
-        salary: "23 000 - 30 000 € brut/an",
+        salary: "23 000 - 30 000\u00a0€ brut/an",
       },
       {
         title: "Office manager",
         description: "Tu coordonnes le fonctionnement du bureau : services généraux, accueil, organisation.",
-        salary: "25 000 - 32 000 € brut/an",
+        salary: "25 000 - 32 000\u00a0€ brut/an",
       },
       {
         title: "Assistant(e) de direction",
         description: "Tu assistes le dirigeant dans l'organisation, la communication et le suivi des projets.",
-        salary: "24 000 - 32 000 € brut/an",
+        salary: "24 000 - 32 000\u00a0€ brut/an",
       },
       {
         title: "Gestionnaire administratif(ve)",
         description: "Tu traites les dossiers administratifs, la facturation et le suivi comptable de l'entreprise.",
-        salary: "22 000 - 27 000 € brut/an",
+        salary: "22 000 - 27 000\u00a0€ brut/an",
       },
     ],
     furtherStudies: [
@@ -512,7 +512,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS GPME ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82\u00a0€ brut par mois en première année (43\u00a0% du SMIC) et 952,18\u00a0€ brut en deuxième année (51\u00a0% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50\u00a0% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
       },
       {
         question: "Quels métiers après un BTS GPME ?",
@@ -557,7 +557,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le taux de réussite du BTS GPME au CADP ?",
         answer:
-          "La première promotion (2024-2026) a obtenu 100% de réussite à l'examen : 12 admis sur 12 présentés. Un résultat porté par l'accompagnement individualisé en promo de 12 étudiants. Le BTS GPME est un diplôme national, préparé au CADP, UFA du CFA IFIR.",
+          "La première promotion (2024-2026) a obtenu 100\u00a0% de réussite à l'examen : 12 admis sur 12 présentés. Un résultat porté par l'accompagnement individualisé en promo de 12 étudiants. Le BTS GPME est un diplôme national, préparé au CADP, UFA du CFA IFIR.",
       },
       {
         question: "Comment s'inscrire au BTS GPME au CADP ?",
@@ -655,27 +655,27 @@ export const formations: Formation[] = [
       {
         title: "Comptable",
         description: "Tu tiens la comptabilité courante, établis les déclarations fiscales et prépares les bilans.",
-        salary: "24 000 - 32 000 € brut/an",
+        salary: "24 000 - 32 000\u00a0€ brut/an",
       },
       {
         title: "Collaborateur en cabinet comptable",
         description: "Tu gères un portefeuille de clients, de la saisie comptable jusqu'à la révision des comptes.",
-        salary: "24 000 - 34 000 € brut/an",
+        salary: "24 000 - 34 000\u00a0€ brut/an",
       },
       {
         title: "Gestionnaire de paie",
         description: "Tu établis les bulletins de salaire, gères les déclarations sociales et le suivi des absences.",
-        salary: "24 000 - 30 000 € brut/an",
+        salary: "24 000 - 30 000\u00a0€ brut/an",
       },
       {
         title: "Assistant(e) de gestion financière",
         description: "Tu participes au suivi budgétaire, à la trésorerie et au reporting financier de l'entreprise.",
-        salary: "23 000 - 28 000 € brut/an",
+        salary: "23 000 - 28 000\u00a0€ brut/an",
       },
       {
         title: "Contrôleur de gestion junior",
         description: "Tu analyses les coûts, construis les tableaux de bord et aides à la prise de décision.",
-        salary: "26 000 - 35 000 € brut/an",
+        salary: "26 000 - 35 000\u00a0€ brut/an",
       },
     ],
     furtherStudies: [
@@ -694,7 +694,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS CG ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82\u00a0€ brut par mois en première année (43\u00a0% du SMIC) et 952,18\u00a0€ brut en deuxième année (51\u00a0% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50\u00a0% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales.",
       },
       {
         question: "Quels métiers après un BTS CG ?",
@@ -845,27 +845,27 @@ export const formations: Formation[] = [
       {
         title: "Responsable sécurité",
         description: "Tu diriges les opérations de sécurité d'un site : équipes, plannings, procédures, incidents.",
-        salary: "26 000 - 38 000 € brut/an",
+        salary: "26 000 - 38 000\u00a0€ brut/an",
       },
       {
         title: "Chef de poste sécurité",
         description: "Tu coordonnes les agents sur le terrain, gères les rondes et les interventions.",
-        salary: "24 000 - 32 000 € brut/an",
+        salary: "24 000 - 32 000\u00a0€ brut/an",
       },
       {
         title: "Chargé(e) de prévention des risques",
         description: "Tu identifies les menaces, mets en place les plans de prévention et formes les équipes.",
-        salary: "25 000 - 34 000 € brut/an",
+        salary: "25 000 - 34 000\u00a0€ brut/an",
       },
       {
         title: "Responsable d'exploitation sécurité",
         description: "Tu pilotes plusieurs sites, gères les contrats clients et assures la qualité des prestations.",
-        salary: "28 000 - 42 000 € brut/an",
+        salary: "28 000 - 42 000\u00a0€ brut/an",
       },
       {
         title: "Commercial(e) en sécurité privée",
         description: "Tu développes le portefeuille clients et proposes des solutions de sécurité adaptées.",
-        salary: "25 000 - 40 000 € brut/an",
+        salary: "25 000 - 40 000\u00a0€ brut/an",
       },
     ],
     furtherStudies: [
@@ -884,7 +884,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire en alternance en BTS MOS ?",
         answer:
-          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82€ brut par mois en première année (43% du SMIC) et 952,18€ brut en deuxième année (51% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales. Certaines entreprises de sécurité ajoutent des primes de nuit ou de week-end.",
+          "La rémunération dépend de ton âge et de l'année de contrat. Un alternant de 18-20 ans perçoit 802,82\u00a0€ brut par mois en première année (43\u00a0% du SMIC) et 952,18\u00a0€ brut en deuxième année (51\u00a0% du SMIC). Pour les moins de 26 ans rémunérés sous le seuil de 50\u00a0% du SMIC, le net est très proche du brut grâce à l'exonération de cotisations salariales. Certaines entreprises de sécurité ajoutent des primes de nuit ou de week-end.",
       },
       {
         question: "Quels métiers après un BTS MOS ?",
@@ -929,7 +929,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le taux de réussite du BTS MOS au CADP ?",
         answer:
-          "La première promotion (2024-2026) a obtenu 100% de réussite à l'examen : 6 admis sur 6 présentés. Un résultat porté par l'accompagnement individualisé en petite promo. Le BTS MOS est un diplôme national, préparé au CADP, UFA du CFA IFIR.",
+          "La première promotion (2024-2026) a obtenu 100\u00a0% de réussite à l'examen : 6 admis sur 6 présentés. Un résultat porté par l'accompagnement individualisé en petite promo. Le BTS MOS est un diplôme national, préparé au CADP, UFA du CFA IFIR.",
       },
       {
         question: "Comment s'inscrire au BTS MOS au CADP ?",
@@ -950,12 +950,12 @@ export const formations: Formation[] = [
   },
 
   // ============================================================
-  // TP ADVF — Assistant De Vie aux Familles
+  // TP ADVF — Assistant de vie aux familles
   // ============================================================
   {
     slug: "tp-advf",
     code: "ADVF",
-    fullName: "Titre Professionnel Assistant De Vie aux Familles",
+    fullName: "Titre Professionnel Assistant de vie aux familles",
     shortName: "TP ADVF",
     heroTitle: "Prendre soin des autres. Le plus beau des métiers.",
     heroSubtitle:
@@ -1043,22 +1043,22 @@ export const formations: Formation[] = [
       {
         title: "Assistant(e) de vie aux familles",
         description: "Vous accompagnez les personnes fragiles dans les gestes du quotidien : repas, toilette, courses, lien social.",
-        salary: "22 400 - 24 000 € brut/an",
+        salary: "22 400 - 24 000\u00a0€ brut/an",
       },
       {
         title: "Aide à domicile",
         description: "Vous intervenez chez les personnes âgées ou en situation de handicap pour l'entretien du logement et l'accompagnement.",
-        salary: "22 400 - 24 000 € brut/an",
+        salary: "22 400 - 24 000\u00a0€ brut/an",
       },
       {
         title: "Garde d'enfants à domicile",
         description: "Vous prenez en charge les enfants au domicile des parents : repas, devoirs, activités, sécurité.",
-        salary: "22 400 - 23 000 € brut/an",
+        salary: "22 400 - 23 000\u00a0€ brut/an",
       },
       {
         title: "Auxiliaire de vie sociale",
         description: "Vous accompagnez les personnes dépendantes dans le maintien de leur autonomie et de leur vie sociale.",
-        salary: "22 400 - 25 000 € brut/an",
+        salary: "22 400 - 25 000\u00a0€ brut/an",
       },
     ],
     furtherStudies: [
@@ -1083,7 +1083,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le salaire d'un assistant de vie aux familles ?",
         answer:
-          "En début de carrière, un ADVF touche environ le SMIC, soit environ 1 478 € net par mois. Avec l'expérience et des certifications complémentaires (comme le DEAES), la rémunération peut évoluer. Le secteur offre aussi la stabilité de l'emploi.",
+          "En début de carrière, un ADVF touche environ le SMIC, soit environ 1 478\u00a0€ net par mois. Avec l'expérience et des certifications complémentaires (comme le DEAES), la rémunération peut évoluer. Le secteur offre aussi la stabilité de l'emploi.",
       },
       {
         question: "Faut-il un diplôme pour entrer en formation TP ADVF ?",
@@ -1145,7 +1145,7 @@ export const formations: Formation[] = [
     metaDescription:
       "Titre Professionnel ADVF en 12 mois, en apprentissage, à Pierrelatte (Drôme) et Guilherand-Granges (Ardèche). Aucun diplôme exigé, formation gratuite.",
     definition:
-      "Le Titre Professionnel Assistant De Vie aux Familles (TP ADVF) se prépare en 12 mois, en contrat d'apprentissage, au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) et dans son antenne de Guilherand-Granges (Ardèche), le C2A. C'est un titre de niveau 3 (équivalent CAP/BEP), préparé en promotions de 12 personnes maximum, avec un accompagnement individualisé (Alternance Dating, ateliers CV, coaching). Le CADP est une unité de formation par apprentissage (UFA) du CFA IFIR. La certification Qualiopi est celle du CFA IFIR.",
+      "Le Titre Professionnel Assistant de vie aux familles (TP ADVF) se prépare en 12 mois, en contrat d'apprentissage, au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) et dans son antenne de Guilherand-Granges (Ardèche), le C2A. C'est un titre de niveau 3 (équivalent CAP/BEP), préparé en promotions de 12 personnes maximum, avec un accompagnement individualisé (Alternance Dating, ateliers CV, coaching). Le CADP est une unité de formation par apprentissage (UFA) du CFA IFIR. La certification Qualiopi est celle du CFA IFIR.",
     nextIntake: { label: "février 2027", until: "2027-02-01" },
   },
 ];

@@ -361,7 +361,7 @@ export default function EntrepriseQuiz() {
                 </h3>
                 <p className="text-xs text-gray-mid mb-5">
                   Montants calculés sur la durée totale du contrat ({sim.duree} mois), à temps de présence en entreprise identique ({Math.round(sim.hEnt)}h).
-                  Base de calcul : SMIC brut mensuel en vigueur = 1 867,02 €.
+                  Base de calcul : SMIC brut mensuel en vigueur = 1 867,02&nbsp;€.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
@@ -419,7 +419,7 @@ export default function EntrepriseQuiz() {
                 {sim.type === "bachelor" && (
                   <div className="bg-cream border-l-4 border-gold rounded-lg p-3 mb-4 text-center">
                     <p className="text-sm text-gray-dark">
-                      Participation employeur à la formation : <strong>750 €</strong> (contrats Bac+3, facturée par le CFA après 45 jours de présence). À ajouter au coût ci-dessus.
+                      Participation employeur à la formation : <strong>750&nbsp;€</strong> (contrats Bac+3, facturée par le CFA après 45 jours de présence). À ajouter au coût ci-dessus.
                     </p>
                   </div>
                 )}

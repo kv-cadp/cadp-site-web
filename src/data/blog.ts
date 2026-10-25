@@ -54,7 +54,7 @@ export const articles: BlogArticle[] = [
 
 <p>C'est le levier qu'on active le plus souvent dans nos accompagnements, et c'est celui qu'on recommande en premier réflexe à un dirigeant qui se reconnaît dans le « j'ai besoin mais pas à plein temps ». Le cadre est posé par l'article R6223-10 du Code du travail, dans sa version modifiée par le décret du 27 décembre 2023.</p>
 
-<p>Le principe est simple. Le contrat d'apprentissage reste signé avec un seul employeur. C'est cet employeur qui rémunère l'apprenti et qui assume la responsabilité juridique du contrat. Mais une partie de la formation pratique peut être dispensée dans une autre entreprise, dite « entreprise d'accueil ». La règle clé : cette part ne peut pas dépasser 50 % du temps de formation en entreprise prévu au contrat. Et le nombre d'entreprises d'accueil est limité à deux sur la durée du contrat — trois seulement si l'employeur principal est un groupement d'employeurs.</p>
+<p>Le principe est simple. Le contrat d'apprentissage reste signé avec un seul employeur. C'est cet employeur qui rémunère l'apprenti et qui assume la responsabilité juridique du contrat. Mais une partie de la formation pratique peut être dispensée dans une autre entreprise, dite « entreprise d'accueil ». La règle clé : cette part ne peut pas dépasser 50\u00a0% du temps de formation en entreprise prévu au contrat. Et le nombre d'entreprises d'accueil est limité à deux sur la durée du contrat — trois seulement si l'employeur principal est un groupement d'employeurs.</p>
 
 <p>La mécanique passe par une convention tripartite, signée entre l'employeur, l'entreprise d'accueil et l'apprenti. Ce n'est pas un formulaire à remplir en cinq minutes. Elle précise la nature des tâches confiées dans chaque entreprise, les périodes d'accueil, le maître d'apprentissage désigné dans chaque structure, et les obligations en matière de santé et de sécurité au travail. Mais une fois cadrée, elle tient — et nous pouvons aider à la rédiger.</p>
 
@@ -88,7 +88,7 @@ export const articles: BlogArticle[] = [
 
 <p>La démarche s'est enclenchée à partir de là. Identifier dans notre réseau un second commerçant aux besoins compatibles, aux pics d'activité décalés, et géographiquement proche. Trois critères se vérifient en amont : compatibilité métier (le BTS MCO doit avoir du sens dans les deux structures, donc deux activités avec un vrai pilotage commercial), compatibilité géographique (l'apprenti ne va pas faire 50 km matin et soir entre deux points), et capacité de tutorat équivalente côté maître d'apprentissage. C'est ce travail de mise en correspondance qui a conduit à un fleuriste du même secteur, dont les pics d'activité — Saint-Valentin, fête des mères, Toussaint, fêtes de fin d'année — alternent avec ceux du traiteur sur l'année et créent une complémentarité naturelle.</p>
 
-<p>La suite, à construire pour la rentrée : une convention tripartite calée sur les périodes d'accueil de chacun, un maître d'apprentissage désigné dans chaque structure, le respect strict de la limite des 50 % de temps en entreprise prévue par le Code du travail. L'apprenti reste juridiquement employé par le traiteur, qui a initié la démarche.</p>
+<p>La suite, à construire pour la rentrée : une convention tripartite calée sur les périodes d'accueil de chacun, un maître d'apprentissage désigné dans chaque structure, le respect strict de la limite des 50\u00a0% de temps en entreprise prévue par le Code du travail. L'apprenti reste juridiquement employé par le traiteur, qui a initié la démarche.</p>
 
 <p>Bénéfice pour chaque commerçant : environ la moitié du coût d'un alternant à plein temps. Bénéfice pour l'alternant : deux contextes professionnels complémentaires sur des métiers de commerce de proximité, deux maîtres d'apprentissage, une employabilité renforcée à la sortie. Bénéfice pour le territoire : deux commerces indépendants qui se professionnalisent sans renoncer à l'investissement humain qui va avec.</p>
 
@@ -180,12 +180,12 @@ export const articles: BlogArticle[] = [
 <li><strong><a href="/formations/bts-gpme">BTS GPME</a></strong> — Gestion de la PME — Bac+2, 2 ans</li>
 <li><strong><a href="/formations/bts-cg">BTS CG</a></strong> — Comptabilité et Gestion — Bac+2, 2 ans</li>
 <li><strong><a href="/formations/bts-mos">BTS MOS</a></strong> — Management Opérationnel de la Sécurité — Bac+2, 2 ans</li>
-<li><strong><a href="/formations/tp-advf">TP ADVF</a></strong> — Assistant De Vie aux Familles — Niveau 3 (CAP/BEP), 12 mois</li>
+<li><strong><a href="/formations/tp-advf">TP ADVF</a></strong> — Assistant de vie aux familles — Niveau 3 (CAP/BEP), 12 mois</li>
 </ul>
 
 <p>Le <strong><a href="/formations/bts-gtla">BTS GTLA</a></strong> (Gestion des Transports et Logistique Associée) ouvrira à la rentrée 2027 — les pré-inscriptions sont déjà ouvertes.</p>
 
-<p>Toutes les formations sont en alternance, 100% financées par l'OPCO de l'entreprise. Zéro frais pour toi.</p>
+<p>Toutes les formations sont en alternance, 100\u00a0% financées par l'OPCO de l'entreprise. Zéro frais pour toi.</p>
 
 <h2>Comment s'inscrire ? Les 3 étapes</h2>
 
@@ -232,9 +232,9 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 
 <h2>Combien ça coûte ?</h2>
 
-<p>Zéro euro. La formation est financée à 100% par l'OPCO de l'entreprise d'accueil dans le cadre du contrat d'apprentissage. Pas de frais d'inscription, pas de frais de scolarité, pas de frais cachés.</p>
+<p>Zéro euro. La formation est financée à 100\u00a0% par l'OPCO de l'entreprise d'accueil dans le cadre du contrat d'apprentissage. Pas de frais d'inscription, pas de frais de scolarité, pas de frais cachés.</p>
 
-<p>En plus, tu es salarié et tu perçois une rémunération mensuelle : 802,82€ brut/mois pour un 18-20 ans en 1ère année de BTS (43% du SMIC 2026).</p>
+<p>En plus, tu es salarié et tu perçois une rémunération mensuelle : 802,82\u00a0€ brut/mois pour un 18-20 ans en 1ère année de BTS (43\u00a0% du SMIC 2026).</p>
 
 <p><a href="/blog/combien-coute-un-alternant-entreprise">Voir le détail du coût pour l'entreprise →</a></p>
 
@@ -310,7 +310,7 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 
 <p>Les deux BTS ouvrent des portes. Le MCO mène aux postes de manager de rayon, responsable de magasin, chef de secteur, responsable e-commerce. Le NDRC mène aux postes de commercial terrain, business developer, chargé d'affaires, conseiller commercial.</p>
 
-<p>En termes de salaire, les fourchettes sont comparables en début de carrière (22 000 à 28 000€ brut/an). La différence se joue à moyen terme : les profils NDRC performants accèdent souvent à des rémunérations variables (commissions) qui peuvent significativement augmenter le package.</p>
+<p>En termes de salaire, les fourchettes sont comparables en début de carrière (22 000 à 28 000\u00a0€ brut/an). La différence se joue à moyen terme : les profils NDRC performants accèdent souvent à des rémunérations variables (commissions) qui peuvent significativement augmenter le package.</p>
 
 <h2>Au CADP, qu'est-ce qui change ?</h2>
 
@@ -348,7 +348,7 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
         answer: "Oui pour les apprentis majeurs, dans la limite légale. Les apprentis mineurs ne peuvent pas dépasser 35h/semaine ni 8h/jour, et ne peuvent pas travailler de nuit, le dimanche ou les jours fériés.",
       },
       {
-        question: "Comment recevoir les 4 500 € d'aide pour un BTS ?",
+        question: "Comment recevoir les 4 500\u00a0€ d'aide pour un BTS ?",
         answer: "Vous transmettez le contrat signé à votre OPCO dans les 6 mois suivant sa conclusion. L'OPCO transmet les informations à l'ASP, qui verse l'aide mensuellement sur 12 mois, sous réserve de la déclaration sociale nominative (DSN) à jour.",
       },
       {
@@ -363,12 +363,12 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 
 <h2>Le salaire de l'alternant</h2>
 
-<p>La rémunération d'un apprenti est fixée en pourcentage du SMIC (1 867,02 € brut mensuel au 1er juin 2026) et dépend de l'âge et de l'année de contrat :</p>
+<p>La rémunération d'un apprenti est fixée en pourcentage du SMIC (1 867,02\u00a0€ brut mensuel au 1er juin 2026) et dépend de l'âge et de l'année de contrat :</p>
 
 <ul>
-<li><strong>18-20 ans :</strong> 1ère année 43% (802,82 €) / 2ème année 51% (952,18 €) / 3ème année 67% (1 250,90 €)</li>
-<li><strong>21-25 ans :</strong> 1ère année 53% (989,52 €) / 2ème année 61% (1 138,88 €) / 3ème année 78% (1 456,27 €)</li>
-<li><strong>26 ans et + :</strong> 100% du SMIC dans tous les cas (1 867,02 €)</li>
+<li><strong>18-20 ans :</strong> 1ère année 43\u00a0% (802,82\u00a0€) / 2ème année 51\u00a0% (952,18\u00a0€) / 3ème année 67\u00a0% (1 250,90\u00a0€)</li>
+<li><strong>21-25 ans :</strong> 1ère année 53\u00a0% (989,52\u00a0€) / 2ème année 61\u00a0% (1 138,88\u00a0€) / 3ème année 78\u00a0% (1 456,27\u00a0€)</li>
+<li><strong>26 ans et + :</strong> 100\u00a0% du SMIC dans tous les cas (1 867,02\u00a0€)</li>
 </ul>
 
 <p>Les charges patronales sur un contrat d'apprentissage sont fortement réduites, en particulier dans les structures de moins de 11 salariés.</p>
@@ -384,10 +384,10 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 <tr><th>Âge</th><th>1ère année</th><th>2ème année</th><th>3ème année</th></tr>
 </thead>
 <tbody>
-<tr><td>&lt; 18 ans</td><td>542,99 €</td><td>784,33 €</td><td>1 110,08 €</td></tr>
-<tr><td>18-20 ans</td><td>864,80 €</td><td>1 026,48 €</td><td>1 360,94 €</td></tr>
-<tr><td>21-25 ans</td><td>1 068,25 €</td><td>1 235,52 €</td><td>1 590,86 €</td></tr>
-<tr><td>26 ans et +</td><td>2 058,92 €</td><td>2 058,92 €</td><td>2 058,92 €</td></tr>
+<tr><td>&lt; 18 ans</td><td>542,99\u00a0€</td><td>784,33\u00a0€</td><td>1 110,08\u00a0€</td></tr>
+<tr><td>18-20 ans</td><td>864,80\u00a0€</td><td>1 026,48\u00a0€</td><td>1 360,94\u00a0€</td></tr>
+<tr><td>21-25 ans</td><td>1 068,25\u00a0€</td><td>1 235,52\u00a0€</td><td>1 590,86\u00a0€</td></tr>
+<tr><td>26 ans et +</td><td>2 058,92\u00a0€</td><td>2 058,92\u00a0€</td><td>2 058,92\u00a0€</td></tr>
 </tbody>
 </table>
 
@@ -398,14 +398,14 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 <tr><th>Âge</th><th>1ère année</th><th>2ème année</th><th>3ème année</th></tr>
 </thead>
 <tbody>
-<tr><td>&lt; 18 ans</td><td>511,98 €</td><td>739,50 €</td><td>1 042,89 €</td></tr>
-<tr><td>18-20 ans</td><td>815,36 €</td><td>967,07 €</td><td>1 270,44 €</td></tr>
-<tr><td>21-25 ans</td><td>1 004,98 €</td><td>1 156,67 €</td><td>1 479,02 €</td></tr>
-<tr><td>26 ans et +</td><td>1 896,18 €</td><td>1 896,18 €</td><td>1 896,18 €</td></tr>
+<tr><td>&lt; 18 ans</td><td>511,98\u00a0€</td><td>739,50\u00a0€</td><td>1 042,89\u00a0€</td></tr>
+<tr><td>18-20 ans</td><td>815,36\u00a0€</td><td>967,07\u00a0€</td><td>1 270,44\u00a0€</td></tr>
+<tr><td>21-25 ans</td><td>1 004,98\u00a0€</td><td>1 156,67\u00a0€</td><td>1 479,02\u00a0€</td></tr>
+<tr><td>26 ans et +</td><td>1 896,18\u00a0€</td><td>1 896,18\u00a0€</td><td>1 896,18\u00a0€</td></tr>
 </tbody>
 </table>
 
-<p>Coût total = salaire brut + charges patronales + taxe sur salaires. Hors abonnement transport (50% à charge de l'employeur si l'apprenti utilise les transports en commun) et hors mutuelle (50% à charge de l'employeur).</p>
+<p>Coût total = salaire brut + charges patronales + taxe sur salaires. Hors abonnement transport (50\u00a0% à charge de l'employeur si l'apprenti utilise les transports en commun) et hors mutuelle (50\u00a0% à charge de l'employeur).</p>
 
 <h2>Les aides employeur en 2026</h2>
 
@@ -413,19 +413,19 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 
 <p><strong>Entreprises de moins de 250 salariés :</strong></p>
 <ul>
-<li>Niveau 3-4 (CAP, Bac) dont TP ADVF : aide unique de <strong>5 000 €</strong></li>
-<li>Niveau 5 (Bac+2) tous les BTS : aide exceptionnelle de <strong>4 500 €</strong></li>
-<li>Niveau 6-7 (Bac+3 à Bac+5) : aide exceptionnelle de <strong>2 000 €</strong></li>
+<li>Niveau 3-4 (CAP, Bac) dont TP ADVF : aide unique de <strong>5 000\u00a0€</strong></li>
+<li>Niveau 5 (Bac+2) tous les BTS : aide exceptionnelle de <strong>4 500\u00a0€</strong></li>
+<li>Niveau 6-7 (Bac+3 à Bac+5) : aide exceptionnelle de <strong>2 000\u00a0€</strong></li>
 </ul>
 
 <p><strong>Entreprises de 250 salariés et plus</strong> (sous condition de respect du seuil de contrats favorisant l'insertion professionnelle) :</p>
 <ul>
-<li>Niveau 3-4 : 2 000 €</li>
-<li>Niveau 5 : 1 500 €</li>
-<li>Niveau 6-7 : 750 €</li>
+<li>Niveau 3-4 : 2 000\u00a0€</li>
+<li>Niveau 5 : 1 500\u00a0€</li>
+<li>Niveau 6-7 : 750\u00a0€</li>
 </ul>
 
-<p>Dans tous les cas, le montant est porté à <strong>6 000 €</strong> si l'apprenti est reconnu travailleur handicapé.</p>
+<p>Dans tous les cas, le montant est porté à <strong>6 000\u00a0€</strong> si l'apprenti est reconnu travailleur handicapé.</p>
 
 <p>L'aide est versée mensuellement par l'ASP (Agence de Services et de Paiement) sur la première année du contrat seulement, sous réserve de transmission du contrat à l'OPCO dans les 6 mois suivant sa conclusion.</p>
 
@@ -433,15 +433,15 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 
 <p>Prenons le cas le plus fréquent : un alternant de 20 ans en BTS, dans une PME de moins de 50 salariés.</p>
 
-<p><strong>Année 1 :</strong> Coût employeur 864,80 €/mois × 12 = 10 378 € — aide 4 500 € = <strong>coût net annuel 5 878 €, soit environ 490 €/mois</strong> pour un collaborateur présent 3 jours par semaine.</p>
+<p><strong>Année 1 :</strong> Coût employeur 864,80\u00a0€/mois × 12 = 10 378\u00a0€ — aide 4 500\u00a0€ = <strong>coût net annuel 5 878\u00a0€, soit environ 490\u00a0€/mois</strong> pour un collaborateur présent 3 jours par semaine.</p>
 
-<p><strong>Année 2 :</strong> Coût employeur 1 026,48 €/mois × 12 = <strong>12 318 € sur l'année</strong> (pas d'aide), soit 1 026 €/mois.</p>
+<p><strong>Année 2 :</strong> Coût employeur 1 026,48\u00a0€/mois × 12 = <strong>12 318\u00a0€ sur l'année</strong> (pas d'aide), soit 1 026\u00a0€/mois.</p>
 
-<p><strong>Sur la durée du BTS (2 ans), le coût total est d'environ 18 196 €</strong> pour un collaborateur formé à vos méthodes, opérationnel à la sortie, qu'aucun cabinet de recrutement ne peut vous proposer à ce prix.</p>
+<p><strong>Sur la durée du BTS (2 ans), le coût total est d'environ 18 196\u00a0€</strong> pour un collaborateur formé à vos méthodes, opérationnel à la sortie, qu'aucun cabinet de recrutement ne peut vous proposer à ce prix.</p>
 
 <h2>Ce qui est inclus dans le « gratuit »</h2>
 
-<p>La formation elle-même est financée par l'OPCO de l'entreprise, via la taxe d'apprentissage (NPEC, niveau de prise en charge entre 5 000 € et 7 000 € selon le diplôme et l'OPCO). L'entreprise n'a rien à payer directement au CADP ni au CFA IFIR.</p>
+<p>La formation elle-même est financée par l'OPCO de l'entreprise, via la taxe d'apprentissage (NPEC, niveau de prise en charge entre 5 000\u00a0€ et 7 000\u00a0€ selon le diplôme et l'OPCO). L'entreprise n'a rien à payer directement au CADP ni au CFA IFIR.</p>
 
 <h2>Apprentissage ou contrat de professionnalisation ?</h2>
 
@@ -454,13 +454,13 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 <tbody>
 <tr><td><strong>Public</strong></td><td>16 à 29 ans</td><td>16-25 ans + demandeurs d'emploi 26 ans et +</td></tr>
 <tr><td><strong>Objectif</strong></td><td>Diplôme ou titre RNCP</td><td>Qualification professionnelle</td></tr>
-<tr><td><strong>Salaire min.</strong></td><td>27% à 100% du SMIC</td><td>55% à 100% du SMIC</td></tr>
-<tr><td><strong>Aide à l'embauche</strong></td><td>5 000 € (≤Bac), 4 500 € (Bac+2), 2 000 € (Bac+3 à 5) en &lt;250 sal.</td><td>Pas d'aide généralisée</td></tr>
-<tr><td><strong>Cas particuliers</strong></td><td>6 000 € si apprenti RQTH</td><td>Aides ciblées seniors / RQTH</td></tr>
+<tr><td><strong>Salaire min.</strong></td><td>27\u00a0% à 100\u00a0% du SMIC</td><td>55\u00a0% à 100\u00a0% du SMIC</td></tr>
+<tr><td><strong>Aide à l'embauche</strong></td><td>5 000\u00a0€ (≤Bac), 4 500\u00a0€ (Bac+2), 2 000\u00a0€ (Bac+3 à 5) en &lt;250 sal.</td><td>Pas d'aide généralisée</td></tr>
+<tr><td><strong>Cas particuliers</strong></td><td>6 000\u00a0€ si apprenti RQTH</td><td>Aides ciblées seniors / RQTH</td></tr>
 </tbody>
 </table>
 
-<p>Pour la majorité des employeurs de moins de 250 salariés, <strong>le contrat d'apprentissage est plus avantageux financièrement</strong> : aide à l'embauche systématique, salaire minimum plus bas, et formation prise en charge par l'OPCO à un meilleur niveau (NPEC moyen entre 5 000 € et 7 000 € pour l'apprentissage, contre 3 843 € pour la professionnalisation, financés à l'heure).</p>
+<p>Pour la majorité des employeurs de moins de 250 salariés, <strong>le contrat d'apprentissage est plus avantageux financièrement</strong> : aide à l'embauche systématique, salaire minimum plus bas, et formation prise en charge par l'OPCO à un meilleur niveau (NPEC moyen entre 5 000\u00a0€ et 7 000\u00a0€ pour l'apprentissage, contre 3 843\u00a0€ pour la professionnalisation, financés à l'heure).</p>
 
 <p>Au CADP, toutes nos formations BTS et le Titre Pro ADVF sont éligibles à l'apprentissage.</p>
 
@@ -488,7 +488,7 @@ b) Appeler 10 prospects le matin, avoir 2 rendez-vous l'après-midi → <strong>
 <h3>Mon alternant peut-il faire des heures supplémentaires ?</h3>
 <p>Oui pour les apprentis majeurs, dans la limite légale. Les apprentis mineurs ne peuvent pas dépasser 35h/semaine ni 8h/jour, et ne peuvent pas travailler de nuit, le dimanche ou les jours fériés.</p>
 
-<h3>Comment recevoir les 4 500 € d'aide pour un BTS ?</h3>
+<h3>Comment recevoir les 4 500\u00a0€ d'aide pour un BTS ?</h3>
 <p>Vous transmettez le contrat signé à votre OPCO dans les 6 mois suivant sa conclusion. L'OPCO transmet les informations à l'ASP, qui verse l'aide mensuellement sur 12 mois, sous réserve de la déclaration sociale nominative (DSN) à jour.</p>
 
 <h3>Le contrat d'apprentissage est-il possible pour un salarié de plus de 30 ans ?</h3>
@@ -758,7 +758,7 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 
 <p><strong>Associations et collectivités</strong> — Les structures associatives et les petites collectivités recrutent des profils polyvalents capables de gérer à la fois l'administratif, la compta et la communication.</p>
 
-<p>En termes de salaire, un assistant de gestion PME débute entre 22 000 et 26 000€ brut annuel. Avec 3-5 ans d'expérience, un office manager ou responsable administratif atteint 28 000 à 35 000€.</p>
+<p>En termes de salaire, un assistant de gestion PME débute entre 22 000 et 26 000\u00a0€ brut annuel. Avec 3-5 ans d'expérience, un office manager ou responsable administratif atteint 28 000 à 35 000\u00a0€.</p>
 
 <h2>Le BTS GPME au CADP — ce qui fait la différence</h2>
 
@@ -844,7 +844,7 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 
 <p><strong>Associations et collectivités</strong> — Comptabilité associative, gestion budgétaire publique : des postes stables et accessibles.</p>
 
-<p>En termes de rémunération, un comptable junior débute entre 24 000 et 28 000€ brut annuel. Un collaborateur confirmé en cabinet atteint 32 000 à 40 000€. Un expert-comptable diplômé : 50 000€ et plus.</p>
+<p>En termes de rémunération, un comptable junior débute entre 24 000 et 28 000\u00a0€ brut annuel. Un collaborateur confirmé en cabinet atteint 32 000 à 40 000\u00a0€. Un expert-comptable diplômé : 50 000\u00a0€ et plus.</p>
 
 <h2>Le BTS CG au CADP — ce qui fait la différence</h2>
 
@@ -939,7 +939,7 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 <li>Coordinateur événementiel sécurité</li>
 </ul>
 
-<p>En termes de rémunération, un chef de poste débute entre 24 000 et 28 000€ brut annuel. Un responsable de site expérimenté atteint 32 000 à 40 000€. Les postes de responsable sûreté en milieu industriel (nucléaire, SEVESO) peuvent dépasser 45 000€ avec l'expérience.</p>
+<p>En termes de rémunération, un chef de poste débute entre 24 000 et 28 000\u00a0€ brut annuel. Un responsable de site expérimenté atteint 32 000 à 40 000\u00a0€. Les postes de responsable sûreté en milieu industriel (nucléaire, SEVESO) peuvent dépasser 45 000\u00a0€ avec l'expérience.</p>
 
 <p>La particularité du secteur : les perspectives d'évolution sont rapides. Un titulaire du BTS MOS performant peut accéder à un poste de directeur d'agence en 5-7 ans.</p>
 
@@ -1017,7 +1017,7 @@ Tu as envoyé 20 CV et pas de réponse ? Relance une semaine après. La relance 
 
 <h2>Et après ?</h2>
 
-<p><strong>Insertion directe</strong> — Le marché recrute massivement. Exploitant transport, affréteur, gestionnaire de stocks, coordinateur logistique : les postes sont disponibles et les salaires progressent vite (24 000 à 28 000€ en début de carrière, 35 000 à 45 000€ avec expérience).</p>
+<p><strong>Insertion directe</strong> — Le marché recrute massivement. Exploitant transport, affréteur, gestionnaire de stocks, coordinateur logistique : les postes sont disponibles et les salaires progressent vite (24 000 à 28 000\u00a0€ en début de carrière, 35 000 à 45 000\u00a0€ avec expérience).</p>
 
 <p><strong>Poursuite d'études</strong> — Licence pro Logistique et Pilotage des Flux, Bachelor Responsable Transport, école de commerce en admission parallèle.</p>
 

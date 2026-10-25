@@ -3,6 +3,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
 import { getUpcomingEvents } from "@/data/events";
 import { RENTREE } from "@/data/rentree";
+import { SITE } from "@/data/site";
 import { formatEventDay, buildEventLocationLine } from "@/lib/format-event";
 
 export default function UpcomingEvents() {
@@ -57,6 +58,14 @@ export default function UpcomingEvents() {
                   <h3 className="font-semibold text-navy-deep mb-1">{event.title}</h3>
                   <p className="text-gold text-xs font-medium mb-2">{locationLine}</p>
                   <p className="text-gray-mid text-sm leading-relaxed">{event.shortDescription}</p>
+                  {event.category === "visite" && !event.href && (
+                    <a
+                      href={SITE.phoneHref}
+                      className="inline-block mt-2 text-sm font-semibold text-navy-deep underline decoration-gold underline-offset-2"
+                    >
+                      Appeler le <span className="whitespace-nowrap">{SITE.phone}</span>
+                    </a>
+                  )}
                 </div>
               </Card>
             );
