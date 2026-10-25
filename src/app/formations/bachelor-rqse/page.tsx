@@ -216,7 +216,7 @@ export default function BachelorRQSEPage() {
       {/* HERO */}
       <section id="formation-hero" className="bg-navy-deep py-20 md:py-28">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <Badge variant="gold" className="mb-6 text-sm">
+          <Badge variant="gold-dark" className="mb-6 text-sm">
             Bachelor RQSE
           </Badge>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight">
@@ -286,7 +286,7 @@ export default function BachelorRQSEPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
             {activites.map((a, i) => (
               <div key={a} className="flex items-start gap-3 bg-cream rounded-lg p-4">
-                <span className="font-serif text-gold text-lg font-bold shrink-0">{i + 1}</span>
+                <span className="font-serif text-navy-deep text-lg font-bold shrink-0">{i + 1}</span>
                 <span className="text-gray-dark text-sm">{a}</span>
               </div>
             ))}
@@ -308,7 +308,7 @@ export default function BachelorRQSEPage() {
             <div className="bg-gold rounded-xl p-8 text-center">
               <p className="font-serif text-4xl md:text-5xl text-navy-deep font-bold mb-1">12-13</p>
               <p className="text-navy-deep font-semibold">semaines au campus</p>
-              <p className="text-navy-deep/70 text-sm mt-1">≈ 500 h de formation</p>
+              <p className="text-navy-deep/80 text-sm mt-1">≈ 500 h de formation</p>
             </div>
             <div className="bg-navy-deep rounded-xl p-8 text-center">
               <p className="font-serif text-4xl md:text-5xl text-white font-bold mb-1">39-40</p>
@@ -320,7 +320,7 @@ export default function BachelorRQSEPage() {
             {rythmePoints.map((p, i) => (
               <div key={p.title} className="bg-white rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="font-serif text-gold text-xl font-bold">{i + 1}</span>
+                  <span className="font-serif text-navy-deep text-xl font-bold">{i + 1}</span>
                   <h3 className="font-semibold text-navy-deep text-sm">{p.title}</h3>
                 </div>
                 <p className="text-gray-mid text-sm leading-relaxed">{p.text}</p>
@@ -339,7 +339,7 @@ export default function BachelorRQSEPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {romes.map((r) => (
               <div key={r.code} className="bg-cream rounded-lg p-5 text-center">
-                <p className="font-mono text-xs text-gold font-semibold mb-2">{r.code}</p>
+                <p className="font-mono text-xs text-navy-deep/70 font-semibold mb-2">{r.code}</p>
                 <p className="text-navy-deep text-sm font-medium">{r.label}</p>
               </div>
             ))}

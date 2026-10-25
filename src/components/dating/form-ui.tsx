@@ -36,7 +36,7 @@ export function FieldLabel({
       {optional ? (
         <span className="text-gray-mid text-xs font-normal">(facultatif)</span>
       ) : (
-        <span className="text-gold" aria-hidden="true">
+        <span className="text-navy-deep" aria-hidden="true">
           *
         </span>
       )}
@@ -120,7 +120,7 @@ export function ChoiceGroup({
     >
       <legend className="block text-sm font-medium text-gray-dark mb-2">
         {legend}{" "}
-        <span className="text-gold" aria-hidden="true">
+        <span className="text-navy-deep" aria-hidden="true">
           *
         </span>
       </legend>

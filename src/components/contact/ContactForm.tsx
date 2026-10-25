@@ -119,7 +119,7 @@ export default function ContactForm() {
             href="https://app.cadp.pro/inscription?source=site_contact"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-4 text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+            className="inline-flex items-center gap-2 mt-4 text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
           >
             Tu veux aller plus loin ? Crée ton espace candidat →
           </a>
@@ -127,7 +127,7 @@ export default function ContactForm() {
         <button
           type="button"
           onClick={() => setStatus("idle")}
-          className="mt-6 text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+          className="mt-6 text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
         >
           Envoyer un autre message
         </button>
@@ -147,7 +147,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label htmlFor="prenom" className="block text-sm font-medium text-gray-dark mb-1.5">
-            Pr&eacute;nom <span className="text-gold" aria-hidden="true">*</span>
+            Pr&eacute;nom <span className="text-navy-deep" aria-hidden="true">*</span>
           </label>
           <input
             type="text"
@@ -166,7 +166,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="nom" className="block text-sm font-medium text-gray-dark mb-1.5">
-            Nom <span className="text-gold" aria-hidden="true">*</span>
+            Nom <span className="text-navy-deep" aria-hidden="true">*</span>
           </label>
           <input
             type="text"
@@ -188,7 +188,7 @@ export default function ContactForm() {
       {/* Email */}
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-dark mb-1.5">
-          Email <span className="text-gold" aria-hidden="true">*</span>
+          Email <span className="text-navy-deep" aria-hidden="true">*</span>
         </label>
         <input
           type="email"
@@ -209,7 +209,7 @@ export default function ContactForm() {
       {/* Téléphone */}
       <div>
         <label htmlFor="telephone" className="block text-sm font-medium text-gray-dark mb-1.5">
-          T&eacute;l&eacute;phone <span className="text-gold" aria-hidden="true">*</span>
+          T&eacute;l&eacute;phone <span className="text-navy-deep" aria-hidden="true">*</span>
         </label>
         <input
           type="tel"
@@ -250,7 +250,7 @@ export default function ContactForm() {
       {/* Message */}
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-dark mb-1.5">
-          Message <span className="text-gold" aria-hidden="true">*</span>
+          Message <span className="text-navy-deep" aria-hidden="true">*</span>
         </label>
         <textarea
           id="message"

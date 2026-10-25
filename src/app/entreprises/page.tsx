@@ -127,10 +127,10 @@ export default function EntreprisesPage() {
             {profils.map((p) => (
               <Link key={p.slug} href={`/formations/${p.slug}`}>
                 <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md hover:-translate-y-0.5 transition-all group h-full">
-                  <p className="text-gold font-serif text-lg mb-1">…{p.besoin}</p>
+                  <p className="text-navy-deep font-serif text-lg mb-1">…{p.besoin}</p>
                   <p className="text-navy-deep font-bold text-sm mb-2">{p.formation}</p>
                   <p className="text-gray-mid text-sm leading-relaxed mb-3">{p.desc}</p>
-                  <p className="text-xs text-gray-mid/70 italic">{p.secteurs}</p>
+                  <p className="text-xs text-gray-mid italic">{p.secteurs}</p>
                 </div>
               </Link>
             ))}
@@ -164,19 +164,19 @@ export default function EntreprisesPage() {
               <tbody>
                 <tr className="border-b border-gray-100">
                   <td className="px-5 py-4 text-gray-dark">TP ADVF (niveau 3)</td>
-                  <td className="px-5 py-4 text-right font-bold text-gold text-lg">5 000 €</td>
+                  <td className="px-5 py-4 text-right font-bold text-navy-deep text-lg">5 000 €</td>
                 </tr>
                 <tr className="bg-cream/30 border-b border-gray-100">
                   <td className="px-5 py-4 text-gray-dark">BTS MCO, NDRC, GPME, CG, MOS (niveau 5)</td>
-                  <td className="px-5 py-4 text-right font-bold text-gold text-lg">4 500 €</td>
+                  <td className="px-5 py-4 text-right font-bold text-navy-deep text-lg">4 500 €</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="px-5 py-4 text-gray-dark">Bachelor RQSE (niveau 6)</td>
-                  <td className="px-5 py-4 text-right font-bold text-gold text-lg">2 000 €</td>
+                  <td className="px-5 py-4 text-right font-bold text-navy-deep text-lg">2 000 €</td>
                 </tr>
                 <tr>
                   <td className="px-5 py-4 text-gray-dark">Apprenti reconnu travailleur handicapé</td>
-                  <td className="px-5 py-4 text-right font-bold text-gold text-lg">6 000 €</td>
+                  <td className="px-5 py-4 text-right font-bold text-navy-deep text-lg">6 000 €</td>
                 </tr>
               </tbody>
             </table>
@@ -193,13 +193,13 @@ export default function EntreprisesPage() {
           <div className="text-center mb-8">
             <Link
               href="/blog/combien-coute-un-alternant-entreprise"
-              className="text-gold font-semibold text-sm hover:text-gold-light transition-colors"
+              className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
             >
               Voir la simulation complète du coût →
             </Link>
           </div>
 
-          <p className="text-xs text-gray-mid/60 text-center">
+          <p className="text-xs text-gray-mid text-center">
             Entreprises de 250 salariés et plus : aide de 2 000&nbsp;€ (niv. 3-4), 1 500&nbsp;€ (niv. 5) ou 750&nbsp;€ (niv. 6-7), sous condition de seuil de 5&nbsp;% de contrats en alternance.
           </p>
         </div>
@@ -244,7 +244,7 @@ export default function EntreprisesPage() {
               <span>Appeler Laurent — <span className="whitespace-nowrap">04 75 00 34 56</span></span>
             </a>
           </div>
-          <p className="text-cream/40 text-sm">
+          <p className="text-cream/70 text-sm">
             Ou écrivez-nous : <a href="mailto:contact@cadp.pro" className="text-gold hover:text-gold-light">contact@cadp.pro</a>
           </p>
         </div>

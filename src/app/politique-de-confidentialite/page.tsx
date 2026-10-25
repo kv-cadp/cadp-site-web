@@ -24,8 +24,8 @@ export default function PolitiqueConfidentialitePage() {
               <p className="mt-2"><strong className="text-gray-dark">SAS Campus Alternance Drôme Provence - CADP</strong></p>
               <p>2 Boulevard Frédéric Mistral, 26700 Pierrelatte</p>
               <p>SIRET : 932 985 922 00024</p>
-              <p>Contact RGPD : <a href="mailto:contact@cadp.pro" className="text-gold hover:text-gold-light">contact@cadp.pro</a></p>
-              <p>Téléphone : <a href="tel:+33475003456" className="text-gold hover:text-gold-light">04 75 00 34 56</a></p>
+              <p>Contact RGPD : <a href="mailto:contact@cadp.pro" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep">contact@cadp.pro</a></p>
+              <p>Téléphone : <a href="tel:+33475003456" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep">04 75 00 34 56</a></p>
             </div>
           </div>
 
@@ -142,7 +142,7 @@ export default function PolitiqueConfidentialitePage() {
                 <li><strong className="text-gray-dark">Droit à la limitation :</strong> demander la restriction du traitement</li>
               </ul>
               <p className="mt-3">
-                Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@cadp.pro" className="text-gold hover:text-gold-light font-semibold">contact@cadp.pro</a>
+                Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@cadp.pro" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep">contact@cadp.pro</a>
               </p>
               <p>
                 Vous disposez également du droit d&apos;introduire une réclamation auprès de la CNIL (Commission Nationale de l&apos;Informatique et des Libertés) : <span className="text-gray-dark">www.cnil.fr</span>.
@@ -192,7 +192,7 @@ export default function PolitiqueConfidentialitePage() {
 
           {/* Retour */}
           <div className="pt-6 border-t border-gray-200">
-            <Link href="/mentions-legales" className="text-gold hover:text-gold-light font-semibold text-sm">
+            <Link href="/mentions-legales" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm">
               ← Retour aux mentions légales
             </Link>
           </div>

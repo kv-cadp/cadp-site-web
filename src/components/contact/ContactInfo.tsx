@@ -16,7 +16,7 @@ export default function ContactInfo() {
             </svg>
           </div>
           <span className="text-sm font-semibold text-navy-deep">T&eacute;l&eacute;phone</span>
-          <span className="text-gold font-bold text-sm">{SITE.phone}</span>
+          <span className="text-navy-deep font-bold text-sm">{SITE.phone}</span>
         </a>
 
         <a
@@ -29,7 +29,7 @@ export default function ContactInfo() {
             </svg>
           </div>
           <span className="text-sm font-semibold text-navy-deep">Email</span>
-          <span className="text-gold font-bold text-sm">{SITE.email}</span>
+          <span className="text-navy-deep font-bold text-sm">{SITE.email}</span>
         </a>
 
         <div className="flex flex-col items-center gap-2 p-5 rounded-xl bg-cream text-center">

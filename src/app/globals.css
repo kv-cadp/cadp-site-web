@@ -97,12 +97,15 @@ body {
   margin-bottom: 0.4rem;
 }
 .prose-cadp a {
-  color: var(--color-gold);
+  color: var(--color-navy-deep);
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--color-gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 .prose-cadp a:hover {
-  color: var(--color-gold-light);
+  text-decoration-color: var(--color-navy-deep);
 }
 .prose-cadp table {
   width: 100%;

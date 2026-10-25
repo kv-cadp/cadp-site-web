@@ -292,7 +292,7 @@ export default function OrientationQuiz() {
                     className={
                       i === (step - 1) * 2
                         ? "text-gold"
-                        : "text-white/30"
+                        : "text-white/60"
                     }
                   >
                     {label}
@@ -682,7 +682,7 @@ export default function OrientationQuiz() {
                           </a>
                           <Link
                             href={`/formations/${f.slug}`}
-                            className="px-4 py-2 border border-gray-300 text-gray-mid rounded-lg font-semibold text-xs hover:border-gold hover:text-gold transition-colors"
+                            className="px-4 py-2 border border-gray-300 text-gray-mid rounded-lg font-semibold text-xs hover:border-gold hover:text-navy-deep transition-colors"
                           >
                             Voir la fiche
                           </Link>
@@ -691,7 +691,7 @@ export default function OrientationQuiz() {
                         <p className="mt-3 text-xs text-gray-mid italic">
                           Cette formation correspond à ton profil mais n&apos;est pas proposée au Campus Alternance Drôme Provence.
                           Renseigne-toi sur{" "}
-                          <a href="https://www.parcoursup.gouv.fr" target="_blank" rel="noopener noreferrer" className="text-gold underline">
+                          <a href="https://www.parcoursup.gouv.fr" target="_blank" rel="noopener noreferrer" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4">
                             Parcoursup
                           </a>{" "}
                           ou auprès des CFA de ta région.
@@ -744,7 +744,7 @@ export default function OrientationQuiz() {
                     ].map((field) => (
                       <div key={field.id}>
                         <label className="block text-xs font-semibold text-gray-mid mb-1">
-                          {field.label} {field.required && <span className="text-gold">*</span>}
+                          {field.label} {field.required && <span className="text-navy-deep">*</span>}
                         </label>
                         <input
                           type={field.type || "text"}

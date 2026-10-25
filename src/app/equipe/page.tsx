@@ -158,11 +158,11 @@ export default function EquipePage() {
                   <Avatar initials={person.initials} />
                 </div>
                 <h3 className="font-serif text-lg text-navy-deep mb-1">{person.name}</h3>
-                <p className="text-gold text-sm font-semibold mb-4">{person.role}</p>
+                <p className="text-navy-deep/70 text-sm font-semibold mb-4">{person.role}</p>
                 <p className="text-gray-mid text-sm leading-relaxed mb-4">{person.bio}</p>
                 <a
                   href={`mailto:${person.email}`}
-                  className="text-gold text-sm font-medium hover:text-gold-light transition-colors"
+                  className="text-navy-deep text-sm font-medium underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep transition-colors"
                 >
                   {person.email}
                 </a>
@@ -189,20 +189,20 @@ export default function EquipePage() {
                   <Avatar initials={person.initials} size="sm" />
                   <div>
                     <h3 className="font-semibold text-navy-deep text-sm">{person.name}</h3>
-                    <p className="text-gold text-xs font-medium">{person.role}</p>
+                    <p className="text-navy-deep/70 text-xs font-medium">{person.role}</p>
                   </div>
                 </div>
                 <p className="text-gray-mid text-sm leading-relaxed italic">
                   {person.source ? `"${person.accroche}"` : person.accroche}
                 </p>
                 {person.source && (
-                  <p className="text-gray-mid/50 text-xs mt-2">— {person.source}</p>
+                  <p className="text-gray-mid text-xs mt-2">— {person.source}</p>
                 )}
               </div>
             ))}
           </div>
 
-          <p className="text-gray-mid/60 text-sm text-center mt-8 italic">
+          <p className="text-gray-mid text-sm text-center mt-8 italic">
             Et toute notre équipe de formateurs experts issus du monde professionnel.
           </p>
         </div>

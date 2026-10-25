@@ -14,9 +14,9 @@ export interface BlogArticle {
 }
 
 export const categoryLabels: Record<string, { label: string; color: string }> = {
-  orientation: { label: "Orientation & formations", color: "bg-gold/10 text-gold" },
+  orientation: { label: "Orientation & formations", color: "bg-gold-pale text-navy-deep" },
   entreprise: { label: "Entreprise & recrutement", color: "bg-navy-deep/10 text-navy-deep" },
-  alternance: { label: "Alternance pratique", color: "bg-success/10 text-success" },
+  alternance: { label: "Alternance pratique", color: "bg-success/5 text-success" },
   inscription: { label: "Inscription & rentrée", color: "bg-gold/20 text-navy-deep" },
 };
 

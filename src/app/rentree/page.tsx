@@ -84,15 +84,15 @@ export default function RentreePage() {
                 <Card className="h-full group">
                   <div className="flex items-center gap-3 mb-3">
                     <Badge variant="gold">{f.code}</Badge>
-                    <span className="px-2 py-0.5 bg-success/10 text-success text-xs font-semibold rounded-full">
+                    <span className="px-2 py-0.5 bg-success/5 text-success text-xs font-semibold rounded-full">
                       {f.nouveau ? `Nouveau en ${annee}` : "Candidatures ouvertes"}
                     </span>
                   </div>
-                  <h3 className="font-serif text-lg text-navy-deep mb-1 group-hover:text-gold transition-colors">
+                  <h3 className="font-serif text-lg text-navy-deep mb-1 group-hover:underline group-hover:decoration-gold group-hover:decoration-2 group-hover:underline-offset-4">
                     {f.name}
                   </h3>
                   <p className="text-gray-mid text-xs mb-3">{f.niveau} — {f.duree}</p>
-                  <span className="text-gold font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span className="text-navy-deep font-semibold text-sm flex items-center gap-1 underline decoration-gold decoration-2 underline-offset-4 group-hover:gap-2 transition-all">
                     En savoir plus
                     <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -105,7 +105,7 @@ export default function RentreePage() {
 
           {advfIntake && (
             <p className="text-center text-gray-mid text-sm mt-8">
-              Le <Link href="/formations/tp-advf" className="text-gold font-semibold hover:text-gold-light">TP ADVF (Assistant de vie aux familles)</Link> démarre en {advfIntake.label}
+              Le <Link href="/formations/tp-advf" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep">TP ADVF (Assistant de vie aux familles)</Link> démarre en {advfIntake.label}
               {advfVilles.length > 0 && <>, à {advfVilles.join(" et à ")}</>}.
             </p>
           )}
@@ -130,7 +130,7 @@ export default function RentreePage() {
                 </div>
                 {/* Content */}
                 <div className="pb-8">
-                  <p className="text-xs font-semibold text-gold uppercase tracking-wider mb-1">{step.date}</p>
+                  <p className="text-xs font-semibold text-navy-deep/70 uppercase tracking-wider mb-1">{step.date}</p>
                   <h3 className="font-semibold text-navy-deep mb-1">{step.title}</h3>
                   <p className="text-gray-mid text-sm leading-relaxed">{step.desc}</p>
                 </div>
@@ -150,21 +150,24 @@ export default function RentreePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="font-serif text-4xl text-gold mb-3">12</div>
+              <div className="font-serif text-4xl text-navy-deep">12</div>
+              <div className="w-7 h-[3px] mx-auto mt-2 mb-3 bg-gold rounded-full" aria-hidden="true" />
               <h3 className="font-semibold text-navy-deep mb-2">places. Pas 13.</h3>
               <p className="text-gray-mid text-sm leading-relaxed">
                 Quand la promo est complète, on n&apos;ouvre pas de deuxième classe. Pas de liste d&apos;attente, pas de session de rattrapage. C&apos;est ça, la taille humaine.
               </p>
             </div>
             <div className="text-center">
-              <div className="font-serif text-4xl text-gold mb-3">50+</div>
+              <div className="font-serif text-4xl text-navy-deep">50+</div>
+              <div className="w-7 h-[3px] mx-auto mt-2 mb-3 bg-gold rounded-full" aria-hidden="true" />
               <h3 className="font-semibold text-navy-deep mb-2">On cherche avec toi.</h3>
               <p className="text-gray-mid text-sm leading-relaxed">
                 Alternance Dating, ateliers CV, coaching entretien, transmission directe aux recruteurs. Mais on ne peut rien faire si on ne te connaît pas encore.
               </p>
             </div>
             <div className="text-center">
-              <div className="font-serif text-4xl text-gold mb-3">0&nbsp;€</div>
+              <div className="font-serif text-4xl text-navy-deep">0&nbsp;€</div>
+              <div className="w-7 h-[3px] mx-auto mt-2 mb-3 bg-gold rounded-full" aria-hidden="true" />
               <h3 className="font-semibold text-navy-deep mb-2">Tu ne paies rien. Tu es payé.</h3>
               <p className="text-gray-mid text-sm leading-relaxed">
                 Formation financée par l&apos;OPCO. Zéro frais. Et dès le premier mois, tu touches un salaire.
@@ -202,14 +205,14 @@ export default function RentreePage() {
               },
             ].map((step) => (
               <div key={step.num} className="flex gap-6 items-start">
-                <div className="font-serif text-5xl text-gold leading-none shrink-0 w-12 text-center">
+                <div className="font-serif text-5xl text-navy-deep leading-none shrink-0 w-12 text-center">
                   {step.num}
                 </div>
                 <div>
                   <h3 className="font-semibold text-navy-deep text-lg mb-2">{step.title}</h3>
                   <p className="text-gray-mid text-sm leading-relaxed">{step.desc}</p>
                   {step.cta && (
-                    <Link href={step.cta.href} className="text-gold font-semibold text-sm mt-2 inline-block hover:text-gold-light transition-colors">
+                    <Link href={step.cta.href} className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm mt-2 inline-block transition-colors">
                       {step.cta.label}
                     </Link>
                   )}
@@ -260,7 +263,7 @@ export default function RentreePage() {
               Test d&apos;orientation →
             </Button>
           </div>
-          <p className="text-cream/40 text-sm">
+          <p className="text-cream/70 text-sm">
             Des questions ? Appelle-nous au{" "}
             <a href="tel:+33475003456" className="text-gold hover:text-gold-light">04 75 00 34 56</a>{" "}
             ou écris-nous à{" "}

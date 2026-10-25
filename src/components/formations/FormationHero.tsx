@@ -19,7 +19,7 @@ export default function FormationHero({ formation }: FormationHeroProps) {
   return (
     <section id="formation-hero" className="bg-navy-deep py-20 md:py-28">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-        <Badge variant="gold" className="mb-6 text-sm">
+        <Badge variant="gold-dark" className="mb-6 text-sm">
           {formation.code}
         </Badge>
         <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight">

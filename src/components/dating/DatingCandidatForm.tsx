@@ -179,7 +179,7 @@ function CandidatForm({
             <Link href="/politique-de-confidentialite" target="_blank" className="font-semibold text-navy-deep underline decoration-gold underline-offset-2">
               politique de confidentialité
             </Link>
-            . <span className="text-gold" aria-hidden="true">*</span>
+            . <span className="text-navy-deep" aria-hidden="true">*</span>
           </span>
         </label>
         <FieldError id="err-consentement" errors={err.consentement} />

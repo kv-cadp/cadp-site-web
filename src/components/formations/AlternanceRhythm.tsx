@@ -24,7 +24,7 @@ function WeekGrid({ campusDays, className }: { campusDays: number[]; className: 
             className={`rounded-lg px-1 py-3 sm:p-4 text-center transition-all ${
               isSchool
                 ? "bg-navy-deep text-white"
-                : "bg-gold/10 text-gold border border-gold/20"
+                : "bg-gold-pale/50 text-navy-deep border border-gold/40"
             }`}
           >
             <span

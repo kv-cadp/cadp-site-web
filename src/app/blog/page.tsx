@@ -44,13 +44,13 @@ export default function BlogPage() {
                       </span>
                       <span className="text-xs text-gray-mid">{article.date}</span>
                     </div>
-                    <h2 className="font-serif text-xl text-navy-deep mb-2 group-hover:text-gold transition-colors">
+                    <h2 className="font-serif text-xl text-navy-deep mb-2 group-hover:underline group-hover:decoration-gold group-hover:decoration-2 group-hover:underline-offset-4">
                       {article.title}
                     </h2>
                     <p className="text-gray-mid text-sm leading-relaxed mb-3">
                       {article.excerpt}
                     </p>
-                    <span className="text-gold font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    <span className="text-navy-deep font-semibold text-sm flex items-center gap-1 underline decoration-gold decoration-2 underline-offset-4 group-hover:gap-2 transition-all">
                       Lire l&apos;article
                       <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
