@@ -70,13 +70,13 @@ export const articles: BlogArticle[] = [
 
 <p>Mais soyons honnêtes : créer un groupement d'employeurs depuis zéro n'est pas un projet de quelques semaines. C'est une démarche structurée qui suppose un noyau d'entreprises engagées, un projet partagé, une gouvernance et une gestion à monter. En pratique, ce levier est intéressant pour vous si un groupement existe déjà sur votre territoire et qu'il accepte de nouveaux adhérents. Plusieurs groupements sont actifs en Auvergne-Rhône-Alpes ; nous pouvons orienter ceux qui souhaitent explorer cette piste, mais nous ne la présentons jamais comme la solution de premier réflexe.</p>
 
-<h2>Troisième voie — le rôle du CFA dans le montage</h2>
+<h2>Troisième voie : le rôle du centre de formation dans le montage</h2>
 
-<p>C'est l'angle dont on parle peu, et c'est sans doute le plus différenciant pour un CFA de taille humaine comme le nôtre.</p>
+<p>C'est l'angle dont on parle peu, et c'est sans doute le plus différenciant pour un centre de formation de taille humaine comme le nôtre.</p>
 
 <p>Nous connaissons les entreprises de notre réseau, leurs saisonnalités, leurs métiers, leurs équipes. Quand un dirigeant nous contacte en disant qu'il aurait besoin d'un coup de main mais pas à temps plein, notre premier réflexe n'est pas de répondre « impossible », ni d'envoyer un mode d'emploi juridique. C'est de regarder qui, dans notre carnet, pourrait être un partenaire crédible pour un montage de mise à disposition.</p>
 
-<p>Cela prend plusieurs formes en pratique. La mise en relation directe entre deux entreprises qu'on identifie comme compatibles sur les besoins, le calendrier et la géographie. La co-construction du montage juridique, avec un appui à la rédaction de la convention tripartite et à la désignation des maîtres d'apprentissage. Et un suivi pédagogique unique côté CFA : un seul interlocuteur pour les deux entreprises et pour l'apprenti, ce qui simplifie largement la coordination sur deux ans.</p>
+<p>Cela prend plusieurs formes en pratique. La mise en relation directe entre deux entreprises qu'on identifie comme compatibles sur les besoins, le calendrier et la géographie. La co-construction du montage juridique, avec un appui à la rédaction de la convention tripartite et à la désignation des maîtres d'apprentissage. Et un suivi pédagogique unique côté centre de formation : un seul interlocuteur pour les deux entreprises et pour l'apprenti, ce qui simplifie largement la coordination sur deux ans.</p>
 
 <p>C'est un service que nous proposons aux entreprises qui hésitent à se lancer. Aucune facturation supplémentaire : en pratique, un alternant mutualisé qui rejoint notre promo vaut mieux qu'un projet qui ne se fait pas, pour le dirigeant comme pour le territoire.</p>
 
@@ -94,7 +94,7 @@ export const articles: BlogArticle[] = [
 
 <h2>Ce qu'on en pense après les avoir vus à l'œuvre</h2>
 
-<p>Pour être direct : la solution qui marche le mieux en pratique, et de loin, c'est la première — la mise à disposition entre deux entreprises. Le groupement d'employeurs est intéressant en théorie, mais il suppose qu'un GE existe déjà sur votre territoire et soit ouvert à de nouveaux adhérents. C'est rare. Et la mise en relation que nous opérons côté CFA n'a de sens que si la mise à disposition est juridiquement possible : c'est un levier qui amplifie la première solution, ce n'est pas une solution autonome.</p>
+<p>Pour être direct : la solution qui marche le mieux en pratique, et de loin, c'est la première — la mise à disposition entre deux entreprises. Le groupement d'employeurs est intéressant en théorie, mais il suppose qu'un GE existe déjà sur votre territoire et soit ouvert à de nouveaux adhérents. C'est rare. Et la mise en relation que nous opérons côté centre de formation n'a de sens que si la mise à disposition est juridiquement possible : c'est un levier qui amplifie la première solution, ce n'est pas une solution autonome.</p>
 
 <p>Notre recommandation, si vous êtes dirigeant et que vous vous reconnaissez dans le « j'ai besoin mais pas à plein temps » : commencez par nous appeler. En une demi-heure de discussion, on saura vous dire si votre besoin est compatible avec un montage mutualisé, sous quelle forme, et avec quel calendrier. Si oui, on enclenche. Si non, on cherche une autre piste avec vous.</p>
 
