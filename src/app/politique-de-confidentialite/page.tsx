@@ -13,7 +13,7 @@ export default function PolitiqueConfidentialitePage() {
     <section className="py-20 bg-white">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <h1 className="font-serif text-3xl text-navy-deep mb-4">Politique de confidentialité</h1>
-        <p className="text-gray-mid text-sm mb-10">Dernière mise à jour : septembre 2026</p>
+        <p className="text-gray-mid text-sm mb-10">Dernière mise à jour : octobre 2026</p>
 
         <div className="space-y-10 text-sm leading-relaxed">
           {/* 1. Responsable de traitement */}
@@ -162,6 +162,9 @@ export default function PolitiqueConfidentialitePage() {
               </p>
               <p>
                 Aucun outil d&apos;analyse d&apos;audience (Google Analytics, Matomo, etc.) n&apos;est utilisé sur ce site.
+              </p>
+              <p>
+                Sur la page Contact, la carte Google Maps n&apos;est chargée que si vous cliquez sur « Afficher la carte ». Google peut alors déposer ses propres cookies, régis par sa politique de confidentialité.
               </p>
             </div>
           </div>
