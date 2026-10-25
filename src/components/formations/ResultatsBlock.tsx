@@ -43,7 +43,7 @@ export default function ResultatsBlock({ formation }: { formation?: Formation })
         </p>
         <p className="mx-auto mt-4 max-w-2xl text-xs text-gray-mid">
           Résultats de la première promotion du CADP. Diplôme national préparé
-          via le CFA IFIR, certifié Qualiopi. Les taux d&apos;insertion
+          au CADP, UFA du CFA IFIR. Les taux d&apos;insertion
           professionnelle et de poursuite d&apos;études seront publiés dès leur
           disponibilité.
         </p>

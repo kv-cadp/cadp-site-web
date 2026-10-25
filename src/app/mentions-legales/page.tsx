@@ -59,8 +59,9 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="font-serif text-xl text-navy-deep mb-3">CFA de rattachement et certification</h2>
             <p className="text-gray-mid">
-              Le CADP est adossé au <strong className="text-gray-dark">CFA IFIR</strong>, certifié <strong className="text-gray-dark">Qualiopi</strong> au titre des actions de formation par apprentissage.
-              Les formations sont dispensées dans le cadre réglementaire du CFA IFIR.
+              Le CADP est une unité de formation par apprentissage (UFA) du <strong className="text-gray-dark">CFA IFIR</strong> (IFIR ARL, NDA 82690331669).
+              Le CFA IFIR est certifié <strong className="text-gray-dark">Qualiopi</strong> par CERTIFOPAC (certificat n° 13712-2, valable jusqu’au 06/06/2027) au titre des actions de formation et des actions de formation par apprentissage.
+              Le CADP ne détient pas de certification Qualiopi en propre. Les formations sont dispensées dans le cadre réglementaire du CFA IFIR.
             </p>
           </div>
 
