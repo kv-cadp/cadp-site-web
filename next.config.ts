@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/entreprises/alternance-dating",
         permanent: true,
       },
+      {
+        source: "/rentree-2026",
+        destination: "/rentree",
+        permanent: true,
+      },
     ];
   },
 };

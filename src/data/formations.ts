@@ -169,7 +169,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le taux de réussite du BTS MCO au CADP ?",
         answer:
-          "Le BTS MCO ouvre au CADP en septembre 2026. La première promotion passera l'examen à l'été 2028. Les résultats ne sont donc pas encore disponibles. Cependant, l'accompagnement individualisé en petites promos de 12 étudiants est conçu pour maximiser tes chances de réussite.",
+          "Le BTS MCO a ouvert au CADP en septembre 2026. La première promotion passera l'examen à l'été 2028. Les résultats ne sont donc pas encore disponibles. Cependant, l'accompagnement individualisé en petites promos de 12 étudiants est conçu pour maximiser tes chances de réussite.",
       },
       {
         question: "Comment s'inscrire au BTS MCO au CADP ?",
@@ -739,7 +739,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le taux de réussite du BTS CG au CADP ?",
         answer:
-          "Le BTS CG ouvre au CADP en septembre 2026. La première promotion passera l'examen à l'été 2028. Les résultats ne sont donc pas encore disponibles. Cependant, l'accompagnement individualisé en petites promos de 12 étudiants est conçu pour maximiser tes chances de réussite.",
+          "Le BTS CG a ouvert au CADP en septembre 2026. La première promotion passera l'examen à l'été 2028. Les résultats ne sont donc pas encore disponibles. Cependant, l'accompagnement individualisé en petites promos de 12 étudiants est conçu pour maximiser tes chances de réussite.",
       },
       {
         question: "Comment s'inscrire au BTS CG au CADP ?",

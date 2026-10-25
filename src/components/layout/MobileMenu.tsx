@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
+import { RENTREE } from "@/data/rentree";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -52,8 +53,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           Accueil
         </NavLink>
 
-        <NavLink href="/rentree-2026" onClick={onClose} className="text-2xl text-gold">
-          Rentrée 2026
+        <NavLink href={RENTREE.href} onClick={onClose} className="text-2xl text-gold">
+          Rentrée {RENTREE.annee}
         </NavLink>
 
         <div className="flex flex-col items-center gap-4">

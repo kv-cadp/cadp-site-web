@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import TopBanner from "@/components/layout/TopBanner";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { getTopBannerMessage } from "@/lib/top-banner";
 import { DEFAULT_OG_IMAGE } from "@/lib/metadata";
 import "./globals.css";
 
@@ -100,7 +101,7 @@ export default function RootLayout({
       className={`${dmSans.variable} ${dmSerifDisplay.variable} ${dmMono.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col font-sans text-gray-dark bg-white">
-        <TopBanner />
+        <TopBanner message={getTopBannerMessage()} />
         <Header />
         <main className="flex-1 pt-30 md:pt-34">{children}</main>
         <Footer />

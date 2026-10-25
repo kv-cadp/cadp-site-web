@@ -5,6 +5,7 @@ import Link from "next/link";
 import NavLink from "./NavLink";
 import MobileMenu from "./MobileMenu";
 import CadpWordmark from "@/components/brand/CadpWordmark";
+import { RENTREE } from "@/data/rentree";
 
 const formations = [
   { href: "/formations/bts-mco", label: "BTS MCO", full: "Management Commercial Opérationnel" },
@@ -47,10 +48,10 @@ export default function Header() {
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
             <Link
-              href="/rentree-2026"
+              href={RENTREE.href}
               className="inline-flex items-center whitespace-nowrap shrink-0 rounded-full bg-gold/15 px-3 py-1 text-sm font-semibold text-navy-deep hover:bg-gold/25 transition-colors"
             >
-              Rentrée 2026
+              Rentrée {RENTREE.annee}
             </Link>
 
             {/* Dropdown formations */}

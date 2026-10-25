@@ -4,42 +4,45 @@ import { JsonLd } from "@/lib/structured-data";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import Card from "@/components/ui/Card";
+import { RENTREE } from "@/data/rentree";
+import { getFormationBySlug } from "@/data/formations";
+import { parisTodayIso } from "@/lib/paris-time";
 
-
+const { annee, formations } = RENTREE;
 
 export const metadata = createPageMetadata({
-  title: "Rentrée 2026 — Inscriptions ouvertes",
+  title: `Rentrée ${annee} — Candidatures ouvertes`,
   description:
-    "Les inscriptions pour la rentrée de septembre 2026 au Campus Alternance Drôme Provence sont ouvertes. 6 formations en alternance, promos de 12 étudiants, 100% financé. Candidatez maintenant.",
-  path: "/rentree-2026",
+    `Les candidatures pour la rentrée de septembre ${annee} au Campus Alternance Drôme Provence sont ouvertes. ${formations.length} formations en alternance, promos de 12 étudiants, 100% financé. Candidatez maintenant.`,
+  path: RENTREE.href,
 });
 
-const formations = [
-  { code: "MCO", name: "Management Commercial Opérationnel", niveau: "Bac+2 — Niveau 5", duree: "2 ans", slug: "bts-mco" },
-  { code: "NDRC", name: "Négociation et Digitalisation de la Relation Client", niveau: "Bac+2 — Niveau 5", duree: "2 ans", slug: "bts-ndrc" },
-  { code: "GPME", name: "Gestion de la PME", niveau: "Bac+2 — Niveau 5", duree: "2 ans", slug: "bts-gpme" },
-  { code: "CG", name: "Comptabilité et Gestion", niveau: "Bac+2 — Niveau 5", duree: "2 ans", slug: "bts-cg" },
-  { code: "MOS", name: "Management Opérationnel de la Sécurité", niveau: "Bac+2 — Niveau 5", duree: "2 ans", slug: "bts-mos" },
-  { code: "ADVF", name: "Assistant De Vie aux Familles", niveau: "Niveau 3 (CAP/BEP)", duree: "12 mois", slug: "tp-advf" },
-];
-
 const timeline = [
-  { date: "Maintenant → Juillet 2026", title: "Candidatures ouvertes", desc: "Les inscriptions sont ouvertes pour toutes les formations. Chaque promo est limitée à 12 étudiants — quand c'est complet, c'est complet." },
-  { date: "Mai — Juin 2026", title: "Entretiens de motivation", desc: "On se rencontre pour discuter de ton projet. Ce n'est pas un concours — c'est une conversation." },
-  { date: "Juin — Août 2026", title: "Signature des contrats", desc: "Avec l'appui de notre réseau de 50+ entreprises partenaires, tu signes ton contrat d'apprentissage." },
-  { date: "Septembre 2026", title: "Rentrée au campus", desc: "Début des cours et de l'alternance. C'est parti." },
+  { date: `Maintenant → Juillet ${annee}`, title: "Candidatures ouvertes", desc: "Les inscriptions sont ouvertes pour toutes les formations. Chaque promo est limitée à 12 étudiants — quand c'est complet, c'est complet." },
+  { date: "Dès ta candidature", title: "Entretien de motivation", desc: "On te propose un rendez-vous dès qu'on reçoit ta candidature, sans attendre une date de session. Ce n'est pas un concours — c'est une conversation." },
+  { date: `Juin — Août ${annee}`, title: "Signature des contrats", desc: "Avec l'appui de notre réseau de 50+ entreprises partenaires, tu signes ton contrat d'apprentissage." },
+  { date: `Septembre ${annee}`, title: "Rentrée au campus", desc: "Début des cours et de l'alternance. C'est parti." },
 ];
 
-export default function Rentree2026Page() {
+export default function RentreePage() {
+  // Le TP ADVF n'entre pas en septembre : sa prochaine entrée est annoncée à part,
+  // puis retirée d'elle-même à la date prévue (pages régénérées toutes les heures).
+  const advf = getFormationBySlug("tp-advf");
+  const advfIntake =
+    advf?.nextIntake && parisTodayIso() < advf.nextIntake.until
+      ? advf.nextIntake
+      : undefined;
+  const advfVilles = (advf?.rhythm.sites ?? []).map((site) => site.city);
+
   return (
     <>
       <JsonLd
         data={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          name: "Rentrée 2026 — Inscriptions ouvertes | CADP Pierrelatte",
-          description: "Les inscriptions pour la rentrée de septembre 2026 au Campus Alternance Drôme Provence sont ouvertes.",
-          url: "https://cadp.pro/rentree-2026",
+          name: `Rentrée ${annee} — Candidatures ouvertes | CADP Pierrelatte`,
+          description: `Les candidatures pour la rentrée de septembre ${annee} au Campus Alternance Drôme Provence sont ouvertes.`,
+          url: `https://cadp.pro${RENTREE.href}`,
           provider: { "@id": "https://cadp.pro/#organization" },
         }}
       />
@@ -48,13 +51,13 @@ export default function Rentree2026Page() {
       <section className="bg-navy-deep py-14 md:py-18">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gold font-semibold text-sm uppercase tracking-widest mb-4">
-            Rentrée septembre 2026
+            Rentrée septembre {annee}
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight">
-            Septembre 2026. Ta promo se remplit.
+            Septembre {annee}. Les candidatures sont ouvertes.
           </h1>
           <p className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-            6 formations en alternance. Promos de 12. Zéro frais. C&apos;est maintenant que ça se joue.
+            {formations.length}{" "}formations en alternance. Promos de 12. Zéro frais. C&apos;est maintenant que ça se joue.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/candidater" variant="gold" className="text-lg px-8 py-4">
@@ -71,7 +74,7 @@ export default function Rentree2026Page() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl md:text-3xl text-navy-deep mb-4 text-center">
-            Six formations. Toutes ouvertes. Toutes gratuites.
+            {formations.length} formations. Candidatures ouvertes. Toutes gratuites.
           </h2>
           <div className="w-16 h-1 mx-auto bg-gold rounded-full mb-12" />
 
@@ -82,7 +85,7 @@ export default function Rentree2026Page() {
                   <div className="flex items-center gap-3 mb-3">
                     <Badge variant="gold">{f.code}</Badge>
                     <span className="px-2 py-0.5 bg-success/10 text-success text-xs font-semibold rounded-full">
-                      Places disponibles
+                      {f.nouveau ? `Nouveau en ${annee}` : "Candidatures ouvertes"}
                     </span>
                   </div>
                   <h3 className="font-serif text-lg text-navy-deep mb-1 group-hover:text-gold transition-colors">
@@ -100,9 +103,12 @@ export default function Rentree2026Page() {
             ))}
           </div>
 
-          <p className="text-center text-gray-mid text-sm mt-8">
-            Le <Link href="/formations/bts-gtla" className="text-gold font-semibold hover:text-gold-light">BTS GTLA (Transport et Logistique)</Link> ouvre en 2027. Pré-inscriptions ouvertes.
-          </p>
+          {advfIntake && (
+            <p className="text-center text-gray-mid text-sm mt-8">
+              Le <Link href="/formations/tp-advf" className="text-gold font-semibold hover:text-gold-light">TP ADVF (Assistant de vie aux familles)</Link> démarre en {advfIntake.label}
+              {advfVilles.length > 0 && <>, à {advfVilles.join(" et à ")}</>}.
+            </p>
+          )}
         </div>
       </section>
 
@@ -241,7 +247,7 @@ export default function Rentree2026Page() {
       <section className="bg-navy-deep py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-2xl md:text-3xl text-white mb-4">
-            Septembre 2026. Première rentrée ou jamais.
+            Septembre {annee}. 12 places par promo, pas une de plus.
           </h2>
           <p className="text-cream/70 mb-10 max-w-lg mx-auto">
             Candidate. On se rencontre. On trouve ton entreprise ensemble.
