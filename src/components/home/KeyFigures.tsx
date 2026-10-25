@@ -1,9 +1,8 @@
-"use client";
-
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
+import { CATALOGUE } from "@/data/catalogue";
 
 const stats = [
-  { value: 6, prefix: "", suffix: "", label: "formations" },
+  { value: CATALOGUE.length, prefix: "", suffix: "", label: "formations" },
   { value: 50, prefix: "", suffix: "+", label: "entreprises partenaires" },
   { value: 12, prefix: "", suffix: "", label: "étudiants max par promo" },
   { value: 4, prefix: "", suffix: "", label: "départements couverts" },

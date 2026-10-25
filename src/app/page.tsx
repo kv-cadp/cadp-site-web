@@ -13,7 +13,7 @@ export const metadata = createPageMetadata({
     absolute: "CADP Pierrelatte — BTS en alternance Drôme Provence",
   },
   description:
-    "Campus d'alternance à Pierrelatte, UFA du CFA IFIR : 5 BTS (MCO, NDRC, GPME, CG, MOS) et TP ADVF. Promos de 12, pédagogie humaine.",
+    "Campus d'alternance à Pierrelatte, UFA du CFA IFIR : 5 BTS (MCO, NDRC, GPME, CG, MOS), Bachelor RQSE et TP ADVF. Promos de 12, pédagogie humaine.",
   path: "/",
 });
 

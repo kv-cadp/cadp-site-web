@@ -2,29 +2,9 @@ import Link from "next/link";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Badge from "@/components/ui/Badge";
 import Card from "@/components/ui/Card";
-import { formations } from "@/data/formations";
+import { CATALOGUE } from "@/data/catalogue";
 
 export default function FormationsOverview() {
-  const cards = [
-    ...formations.map((f) => ({
-      slug: f.slug,
-      code: f.code,
-      fullName: f.fullName,
-      shortDescription: f.shortDescription,
-      level: f.level,
-      duration: f.duration,
-    })),
-    {
-      slug: "bachelor-rqse",
-      code: "RQSE",
-      fullName: "Bachelor Responsable QSE",
-      shortDescription:
-        "Pilote la démarche qualité, sécurité et environnement d'une entreprise : conformité, audits ISO, prévention des risques. Un Bac+3 en 12 mois.",
-      level: "Bac+3 — Niveau 6",
-      duration: "12 mois",
-    },
-  ];
-
   return (
     <section id="formations" className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -33,7 +13,7 @@ export default function FormationsOverview() {
         </SectionTitle>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cards.map((formation) => (
+          {CATALOGUE.map((formation) => (
             <Link key={formation.slug} href={`/formations/${formation.slug}`}>
               <Card className="h-full group">
                 <Badge variant="gold" className="mb-4">

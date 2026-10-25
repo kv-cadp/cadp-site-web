@@ -10,7 +10,7 @@ import { formatRhythmShort } from "@/lib/format-rhythm";
 export const metadata = createPageMetadata({
   title: "Nos formations en alternance à Pierrelatte",
   description:
-    "5 BTS et 1 Titre Professionnel en alternance à Pierrelatte. Promos de 12 étudiants, formation 100% financée. Comparez nos formations et trouvez celle qui vous correspond.",
+    "5 BTS, 1 Bachelor et 1 Titre Professionnel en alternance à Pierrelatte. Promos de 12 étudiants, formation 100% financée. Comparez nos formations et trouvez celle qui vous correspond.",
   path: "/formations",
 });
 
@@ -133,7 +133,7 @@ export default function FormationsHubPage() {
             Nos formations
           </p>
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6 leading-tight">
-            Sept formations. Un même engagement.
+            {formations.length} formations. Un même engagement.
           </h1>
           <p className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Toutes nos formations sont en alternance, en promos de 12 étudiants, et 100% financées par l&apos;OPCO de ton entreprise. Zéro frais pour toi.
