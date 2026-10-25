@@ -5,9 +5,9 @@ import ContactInfo from "@/components/contact/ContactInfo";
 import { JsonLd, generateContactJsonLd } from "@/lib/structured-data";
 
 export const metadata = createPageMetadata({
-  title: "Contactez le CADP — Campus Alternance Drôme Provence",
+  title: "Contacter le CADP — Campus Alternance Drôme Provence",
   description:
-    "Contactez le Campus Alternance Drôme Provence à Pierrelatte (Drôme). Formulaire, téléphone 04 75 00 34 56, email contact@cadp.pro. Renseignements formations en alternance.",
+    "Contacter le Campus Alternance Drôme Provence à Pierrelatte (Drôme). Formulaire, téléphone 04 75 00 34 56, email contact@cadp.pro. Renseignements formations en alternance.",
   path: "/contact",
 });
 
@@ -21,10 +21,10 @@ export default function ContactPage() {
           {/* H1 */}
           <div className="text-center mb-12">
             <h1 className="font-serif text-3xl md:text-4xl text-navy-deep mb-4">
-              Contacte-nous
+              Nous contacter
             </h1>
             <p className="text-lg text-gray-mid max-w-2xl mx-auto">
-              Une question ? Un projet d&apos;alternance ? On est l&agrave; pour toi.
+              Une question ? Un projet d&apos;alternance ? On est l&agrave; pour en parler.
             </p>
             <div className="w-16 h-1 mx-auto mt-6 rounded-full bg-gold" />
           </div>
@@ -37,7 +37,7 @@ export default function ContactPage() {
           {/* Formulaire */}
           <div className="max-w-2xl mx-auto">
             <h2 className="font-serif text-xl text-navy-deep mb-6">
-              Envoie-nous un message
+              Envoyer un message
             </h2>
             <ContactForm />
 
@@ -56,7 +56,7 @@ export default function ContactPage() {
 
             {/* Lien espaces CADP Connect */}
             <div className="mt-6 pt-6 border-t border-gray-200 text-center">
-              <p className="text-gray-mid text-sm mb-3">Vous êtes déjà candidat ou entreprise partenaire ?</p>
+              <p className="text-gray-mid text-sm mb-3">Déjà candidat ou entreprise partenaire ?</p>
               <div className="flex gap-4 justify-center">
                 <a
                   href="https://app.cadp.pro/connexion"

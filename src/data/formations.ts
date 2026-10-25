@@ -961,7 +961,7 @@ export const formations: Formation[] = [
     heroSubtitle:
       "Le TP ADVF vous forme à l'accompagnement des personnes âgées, des personnes en situation de handicap et des familles au quotidien. Un métier humain, concret et essentiel.",
     shortDescription:
-      "Accompagne les personnes fragiles au quotidien : aide à domicile, garde d'enfants, soutien aux personnes âgées et en situation de handicap. Le TP ADVF te forme à un métier essentiel et porteur.",
+      "Accompagnez les personnes fragiles au quotidien : aide à domicile, garde d'enfants, soutien aux personnes âgées et en situation de handicap. Le TP ADVF vous forme à un métier essentiel et porteur.",
     duration: "12 mois",
     level: "Niveau 3 (CAP/BEP)",
     rncp: "RNCP37715",
