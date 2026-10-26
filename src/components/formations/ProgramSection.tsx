@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useRef, useState, type KeyboardEvent } from "react";
 import SectionTitle from "@/components/ui/SectionTitle";
 import type { ProgramYear } from "@/types/formation";
 import { cn } from "@/lib/utils";
@@ -15,6 +15,23 @@ export default function ProgramSection({
   subtitle = "Ce que tu vas apprendre, année par année.",
 }: ProgramSectionProps) {
   const [activeYear, setActiveYear] = useState(0);
+  const tabsRef = useRef<(HTMLButtonElement | null)[]>([]);
+  const id = useId();
+
+  // Onglets WAI-ARIA : flèches gauche et droite, Début et Fin (B3, 25/10/2026).
+  const onKeyDown = (e: KeyboardEvent<HTMLButtonElement>) => {
+    const last = program.length - 1;
+    const next =
+      e.key === "ArrowRight" ? (activeYear === last ? 0 : activeYear + 1)
+      : e.key === "ArrowLeft" ? (activeYear === 0 ? last : activeYear - 1)
+      : e.key === "Home" ? 0
+      : e.key === "End" ? last
+      : null;
+    if (next === null) return;
+    e.preventDefault();
+    setActiveYear(next);
+    tabsRef.current[next]?.focus();
+  };
 
   return (
     <section className="py-20 bg-white">
@@ -24,12 +41,21 @@ export default function ProgramSection({
         </SectionTitle>
 
         {/* Year tabs */}
-        <div className="flex justify-center gap-4 mb-10">
+        <div role="tablist" aria-label="Programme par année" className="flex justify-center gap-4 mb-10">
           {program.map((year, i) => (
             <button
               key={i}
+              ref={(el) => {
+                tabsRef.current[i] = el;
+              }}
               type="button"
+              role="tab"
+              id={`${id}-tab-${i}`}
+              aria-selected={activeYear === i}
+              aria-controls={`${id}-panel`}
+              tabIndex={activeYear === i ? 0 : -1}
               onClick={() => setActiveYear(i)}
+              onKeyDown={onKeyDown}
               className={cn(
                 "px-6 py-3 rounded-lg font-semibold text-sm transition-all",
                 activeYear === i
@@ -43,7 +69,7 @@ export default function ProgramSection({
         </div>
 
         {/* Active year content */}
-        <div>
+        <div role="tabpanel" id={`${id}-panel`} aria-labelledby={`${id}-tab-${activeYear}`} tabIndex={0}>
           <h3 className="font-serif text-xl text-navy-deep mb-6 text-center">
             {program[activeYear].title}
           </h3>
