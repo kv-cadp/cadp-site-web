@@ -1,8 +1,8 @@
+import Link from "next/link";
 import { SITE } from "@/data/site";
-import NewTabHint from "@/components/ui/NewTabHint";
 
 interface FormationHeroActionsProps {
-  /** Lien vers le formulaire d'inscription (voir lib/inscription.ts) */
+  /** Lien vers le formulaire de candidature du site (voir lib/inscription.ts) */
   href: string;
   label?: string;
 }
@@ -14,15 +14,12 @@ export default function FormationHeroActions({
 }: FormationHeroActionsProps) {
   return (
     <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-      <a
+      <Link
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
         className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-base hover:bg-gold-light transition-colors"
       >
         {label}
-        <NewTabHint />
-      </a>
+      </Link>
       <a
         href={SITE.phoneHref}
         className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-white text-white rounded-lg font-semibold text-base hover:bg-white hover:text-navy-deep transition-colors"

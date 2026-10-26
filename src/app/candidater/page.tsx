@@ -8,6 +8,14 @@ export const metadata = createPageMetadata({
   path: "/candidater",
 });
 
-export default function CandidaterPage() {
-  return <CandidaterForm />;
+type CandidaterPageProps = {
+  searchParams: Promise<{ formation?: string | string[]; source?: string | string[] }>;
+};
+
+const premier = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
+
+export default async function CandidaterPage({ searchParams }: CandidaterPageProps) {
+  // ?formation=mco&source=site_fiche_hero : liens « Je candidate » des fiches (lib/inscription.ts)
+  const { formation, source } = await searchParams;
+  return <CandidaterForm formationInitiale={premier(formation)} source={premier(source)} />;
 }

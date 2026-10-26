@@ -1,6 +1,6 @@
 import Badge from "@/components/ui/Badge";
 import FormationHeroActions from "@/components/formations/FormationHeroActions";
-import { inscriptionUrl } from "@/lib/inscription";
+import { candidatureUrl } from "@/lib/inscription";
 import { parisTodayIso } from "@/lib/paris-time";
 import type { Formation } from "@/types/formation";
 
@@ -28,7 +28,7 @@ export default function FormationHero({ formation }: FormationHeroProps) {
         <p className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-8">
           {formation.heroSubtitle}
         </p>
-        <FormationHeroActions href={inscriptionUrl(formation.code.toLowerCase(), "site_fiche_hero")} />
+        <FormationHeroActions href={candidatureUrl(formation.code.toLowerCase(), "site_fiche_hero")} />
         <div className="flex flex-wrap justify-center gap-3 mb-10">
           <span className="px-4 py-2 bg-navy-light rounded-lg text-cream text-sm font-medium">
             {formation.level}

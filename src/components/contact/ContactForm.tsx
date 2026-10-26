@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import FormPrivacyNotice from "@/components/ui/FormPrivacyNotice";
-import NewTabHint from "@/components/ui/NewTabHint";
+import Link from "next/link";
 
 // TODO: Remplacer par la vraie clé Web3Forms
 // 1. Va sur https://web3forms.com
@@ -118,15 +118,12 @@ export default function ContactForm() {
           Campus Alternance Drôme Provence — 04 75 00 34 56
         </p>
         {lastObjet === "Je cherche une formation" && (
-          <a
-            href="https://app.cadp.pro/inscription?source=site_contact"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/candidater?source=site_contact"
             className="inline-flex items-center gap-2 mt-4 text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
           >
-            Tu veux aller plus loin ? Crée ton espace candidat →
-            <NewTabHint />
-          </a>
+            Tu veux aller plus loin ? Dépose ta candidature →
+          </Link>
         )}
         <button
           type="button"

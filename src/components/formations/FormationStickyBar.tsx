@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { SITE } from "@/data/site";
-import NewTabHint from "@/components/ui/NewTabHint";
 
 interface FormationStickyBarProps {
-  /** Lien vers le formulaire d'inscription (voir lib/inscription.ts) */
+  /** Lien vers le formulaire de candidature du site (voir lib/inscription.ts) */
   href: string;
   label: string;
 }
@@ -54,15 +54,12 @@ export default function FormationStickyBar({ href, label }: FormationStickyBarPr
         visible ? "translate-y-0" : "translate-y-full invisible",
       )}
     >
-      <a
+      <Link
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
         className="flex-1 inline-flex items-center justify-center min-h-11 px-4 bg-gold text-navy-deep rounded-lg font-semibold text-base"
       >
         {label}
-        <NewTabHint />
-      </a>
+      </Link>
       <a
         href={SITE.phoneHref}
         className="inline-flex items-center justify-center min-h-11 px-4 border-2 border-white text-white rounded-lg font-semibold text-base"

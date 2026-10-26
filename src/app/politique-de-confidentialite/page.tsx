@@ -44,7 +44,7 @@ export default function PolitiqueConfidentialitePage() {
 
               <div>
                 <h3 className="font-semibold text-gray-dark mb-1">Questionnaire d&apos;orientation (/orientation)</h3>
-                <p>Données collectées : niveau scolaire, situation actuelle, centres d&apos;intérêt (réponses RIASEC), préférences sectorielles, auto-évaluation de compétences, projet professionnel. Si vous choisissez d&apos;être recontacté(e) : prénom, nom, email, téléphone, ville.</p>
+                <p>Données collectées : niveau scolaire, situation actuelle, centres d&apos;intérêt (réponses RIASEC), préférences sectorielles, auto-évaluation de compétences, projet professionnel. Si vous choisissez d&apos;être recontacté(e) : prénom, nom, email, téléphone, ville, commentaire ; votre profil et les formations recommandées par le questionnaire sont joints à votre demande.</p>
               </div>
 
               <div>
@@ -56,6 +56,10 @@ export default function PolitiqueConfidentialitePage() {
                 <h3 className="font-semibold text-gray-dark mb-1">Candidature ou demande d&apos;information (/candidater)</h3>
                 <p>Données collectées : prénom, nom, email, téléphone, situation actuelle, formations souhaitées, question posée.</p>
               </div>
+
+              <p>
+                Les candidatures, les demandes d&apos;information (/candidater) et les demandes de contact du questionnaire d&apos;orientation sont enregistrées dans <strong className="text-gray-dark">CADP Connect</strong>, l&apos;outil de recrutement du CADP (app.cadp.pro), avec votre accord donné en cochant la case prévue dans le formulaire.
+              </p>
 
               <div>
                 <h3 className="font-semibold text-gray-dark mb-1">Inscription candidat à un Alternance Dating (/dating-guilherand/candidat, /dating-pierrelatte/candidat)</h3>
@@ -79,6 +83,7 @@ export default function PolitiqueConfidentialitePage() {
                 <li>Vous fournir des recommandations d&apos;orientation personnalisées (questionnaire candidat)</li>
                 <li>Vous recommander un profil d&apos;alternant adapté à vos besoins (questionnaire entreprise)</li>
                 <li>Vous recontacter si vous en avez fait la demande</li>
+                <li>Enregistrer votre candidature ou votre demande dans CADP Connect et, pour une candidature, vous donner accès à votre espace candidat</li>
                 <li>Assurer la mise en relation entre candidats et entreprises partenaires</li>
                 <li>Organiser les Alternance Dating : préparer l&apos;accueil des participants et présenter les candidatures des candidats inscrits aux employeurs présents</li>
               </ul>
@@ -94,6 +99,9 @@ export default function PolitiqueConfidentialitePage() {
               </p>
               <p>
                 <strong className="text-gray-dark">Intérêt légitime</strong>{" "}(article 6.1.f du RGPD) : le traitement de vos données est également nécessaire pour répondre à vos demandes et assurer le bon fonctionnement de nos services d&apos;orientation.
+              </p>
+              <p>
+                <strong className="text-gray-dark">Mesures précontractuelles</strong>{" "}(article 6.1.b du RGPD) : l&apos;examen de votre candidature ou de votre demande d&apos;information, enregistrée dans CADP Connect, est réalisé à votre demande.
               </p>
             </div>
           </div>
@@ -123,7 +131,7 @@ export default function PolitiqueConfidentialitePage() {
                 Informations de contrat (/entreprises/infos-contrat) : elles sont transmises au CFA IFIR, partenaire du CADP, pour l&apos;établissement du contrat d&apos;apprentissage.
               </p>
               <p>
-                Sous-traitants techniques d&apos;acheminement des messages par email : Web3Forms pour les formulaires de contact et de candidature (/contact, /candidater), Resend pour les formulaires des Alternance Dating et des informations de contrat.
+                Sous-traitants techniques d&apos;acheminement des messages par email : Web3Forms pour le formulaire de contact (/contact) et, en secours seulement, pour les formulaires de candidature et d&apos;orientation lorsque CADP Connect ne répond pas ; Resend pour les formulaires des Alternance Dating et des informations de contrat, ainsi que pour les e-mails envoyés par CADP Connect.
               </p>
             </div>
           </div>
@@ -178,6 +186,9 @@ export default function PolitiqueConfidentialitePage() {
               </p>
               <p>
                 Les données sont susceptibles d&apos;être hébergées aux États-Unis. Le transfert de données hors de l&apos;Union européenne est encadré par les clauses contractuelles types (CCT) de la Commission européenne, conformément aux articles 46 et 47 du RGPD.
+              </p>
+              <p>
+                CADP Connect, où sont enregistrées les candidatures et les demandes, est hébergé par <strong className="text-gray-dark">Railway Corporation</strong>{" "}dans l&apos;Union européenne (région EU West, Amsterdam). Railway et Resend (envoi des e-mails, données stockées aux États-Unis) sont des sociétés américaines : un accès depuis les États-Unis reste possible, encadré par le cadre de protection des données UE-États-Unis et les clauses contractuelles types.
               </p>
             </div>
           </div>

@@ -7,7 +7,7 @@ import GratuiteBlock from "@/components/formations/GratuiteBlock";
 import ResultatsBlock from "@/components/formations/ResultatsBlock";
 import FormationCTA from "@/components/formations/FormationCTA";
 import FormationHeroActions from "@/components/formations/FormationHeroActions";
-import { inscriptionUrl } from "@/lib/inscription";
+import { candidatureUrl } from "@/lib/inscription";
 import { RENTREE } from "@/data/rentree";
 
 export const metadata = createPageMetadata({
@@ -225,7 +225,7 @@ export default function BachelorRQSEPage() {
           <p className="text-cream/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-8">
             {heroSubtitle}
           </p>
-          <FormationHeroActions href={inscriptionUrl("rqse", "site_fiche_hero")} />
+          <FormationHeroActions href={candidatureUrl("rqse", "site_fiche_hero")} />
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             <span className="px-4 py-2 bg-navy-light rounded-lg text-cream text-sm font-medium">
               Bac+3 — Niveau 6

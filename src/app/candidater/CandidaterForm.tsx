@@ -5,11 +5,14 @@ import Link from "next/link";
 import FormPrivacyNotice from "@/components/ui/FormPrivacyNotice";
 import { scrollBehavior } from "@/lib/utils";
 import NewTabHint from "@/components/ui/NewTabHint";
+import ConsentCheckbox from "@/components/ui/ConsentCheckbox";
+import { transmettreDemande } from "@/lib/preinscription/actions";
+import { envoyerParEmail } from "@/lib/preinscription/secours-email";
 
 type Intention = "candidater" | "info" | "orientation" | null;
 type Status = "idle" | "submitting" | "success" | "error";
-
-const WEB3FORMS_KEY = "71bda4ba-4321-4e90-bc67-28642b72f8a3";
+/** cree / existant : enregistrée dans CADP Connect ; email : envoi de secours par Web3Forms */
+type Resultat = "cree" | "existant" | "email";
 
 const formationsList = [
   { code: "mco", label: "BTS MCO — Management Commercial Opérationnel" },
@@ -25,17 +28,31 @@ const formationsList = [
 const inputClass =
   "w-full px-4 py-3 rounded-lg border-2 border-gray-200 text-base sm:text-sm transition-all focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent";
 
-export default function CandidaterForm() {
-  const [intention, setIntention] = useState<Intention>(null);
-  const [step, setStep] = useState(1);
-  const [selectedFormations, setSelectedFormations] = useState<Set<string>>(new Set());
+interface CandidaterFormProps {
+  /** ?formation= : arrivée depuis le bouton « Je candidate » d'une fiche */
+  formationInitiale?: string;
+  /** ?source= : bouton du site à l'origine de la demande, enregistré en url_source */
+  source?: string;
+}
+
+export default function CandidaterForm({ formationInitiale, source }: CandidaterFormProps) {
+  const depuisFiche = formationsList.some((f) => f.code === formationInitiale);
+  const urlSource = source && /^[a-z0-9_]{1,40}$/.test(source) ? source : "site_candidater";
+  const [intention, setIntention] = useState<Intention>(depuisFiche ? "candidater" : null);
+  const [step, setStep] = useState(depuisFiche ? 2 : 1);
+  const [selectedFormations, setSelectedFormations] = useState<Set<string>>(
+    new Set(depuisFiche && formationInitiale ? [formationInitiale] : []),
+  );
   const [question, setQuestion] = useState("");
   const [prenom, setPrenom] = useState("");
   const [nom, setNom] = useState("");
   const [email, setEmail] = useState("");
   const [telephone, setTelephone] = useState("");
   const [situation, setSituation] = useState("");
+  const [consentement, setConsentement] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
+  const [resultat, setResultat] = useState<Resultat | null>(null);
+  const [limite, setLimite] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const successRef = useRef<HTMLDivElement>(null);
 
@@ -71,57 +88,73 @@ export default function CandidaterForm() {
     if (!telephone.trim()) e.telephone = "Le téléphone est requis";
     if (intention === "candidater" && selectedFormations.size === 0) e.formations = "Sélectionne au moins une formation";
     if (intention === "info" && !question.trim()) e.question = "Dis-nous ce que tu veux savoir";
+    if (!consentement) e.consentement = "Coche cette case pour envoyer ta demande";
     setErrors(e);
     return Object.keys(e).length === 0;
   }
 
-  async function handleSubmit(ev: FormEvent) {
+  async function handleSubmit(ev: FormEvent<HTMLFormElement>) {
     ev.preventDefault();
+    const botcheck = (ev.currentTarget.elements.namedItem("botcheck") as HTMLInputElement | null)?.checked ?? false;
     if (!validate()) return;
 
     setStatus("submitting");
+    setLimite(false);
+    const candidature = intention === "candidater";
 
+    // 1. CADP Connect : prospect créé, lien d'accès à l'espace envoyé pour une candidature
+    try {
+      const r = await transmettreDemande({
+        intention: candidature ? "candidature" : "information",
+        prenom, nom, email, telephone,
+        formations: Array.from(selectedFormations),
+        situation: situation || undefined,
+        message: question.trim() || undefined,
+        url_source: urlSource,
+        consentement_rgpd: true,
+        botcheck,
+      });
+      if (r.ok) {
+        setResultat(r.statut);
+        setStatus("success");
+        return;
+      }
+      if (r.limite) {
+        setLimite(true);
+        setStatus("error");
+        return;
+      }
+    } catch {
+      // Action serveur injoignable : envoi de secours ci-dessous
+    }
+
+    // 2. Secours : la demande part par e-mail à l'équipe, comme avant CADP Connect
     const formationsText = Array.from(selectedFormations)
       .map((c) => formationsList.find((f) => f.code === c)?.label || c)
       .join(", ");
-
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject: `[CADP ${intention === "candidater" ? "Candidature" : "Demande d'info"}] ${prenom} ${nom}`,
-          from_name: `${prenom} ${nom}`,
-          email,
-          telephone,
-          situation,
-          intention: intention === "candidater" ? "Candidature" : "Demande d'information",
-          formations: formationsText || "Non précisé",
-          question: question || "-",
-          botcheck: "",
-        }),
-      });
-
-      const result = await response.json();
-      if (result.success) {
-        setStatus("success");
-      } else {
-        setStatus("error");
-      }
-    } catch {
+    const envoye = await envoyerParEmail({
+      subject: `[CADP ${candidature ? "Candidature" : "Demande d'info"}] ${prenom} ${nom}`,
+      from_name: `${prenom} ${nom}`,
+      email,
+      telephone,
+      situation,
+      intention: candidature ? "Candidature" : "Demande d'information",
+      formations: formationsText || "Non précisé",
+      question: question || "-",
+      source: urlSource,
+    });
+    if (envoye) {
+      setResultat("email");
+      setStatus("success");
+    } else {
       setStatus("error");
     }
   }
 
-  // Build inscription URL with params
+  // Envoi de secours : lien vers l'inscription CADP Connect (sans données personnelles dans l'URL)
   function buildInscriptionUrl(): string {
     const params = new URLSearchParams();
-    params.set("source", "site_candidater");
-    if (prenom) params.set("prenom", prenom);
-    if (nom) params.set("nom", nom);
-    if (email) params.set("email", email);
-    if (telephone) params.set("telephone", telephone);
+    params.set("source", urlSource);
     const firstFormation = Array.from(selectedFormations)[0];
     if (firstFormation) params.set("formation", firstFormation);
     return `https://app.cadp.pro/inscription?${params.toString()}`;
@@ -160,18 +193,33 @@ export default function CandidaterForm() {
               <p className="text-[#2E7D4F] font-medium mb-1">
                 On te recontacte sous 48h.
               </p>
-              <p className="text-gray-mid text-sm mb-6">
-                En attendant, tu peux créer ton espace candidat pour avancer sur ton dossier.
-              </p>
-              <a
-                href={buildInscriptionUrl()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-colors"
-              >
-                Créer mon espace candidat →
-                <NewTabHint />
-              </a>
+              {resultat === "email" ? (
+                intention === "candidater" && (
+                  <>
+                    <p className="text-gray-mid text-sm mb-6">
+                      En attendant, tu peux créer ton espace candidat pour avancer sur ton dossier.
+                    </p>
+                    <a
+                      href={buildInscriptionUrl()}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-colors"
+                    >
+                      Créer mon espace candidat →
+                      <NewTabHint />
+                    </a>
+                  </>
+                )
+              ) : (
+                <p className="text-gray-mid text-sm max-w-md mx-auto">
+                  {intention !== "candidater"
+                    ? "Tu vas recevoir un e-mail qui confirme la réception de ta question."
+                    : resultat === "existant"
+                      ? "Tu as déjà un espace candidat : on vient de t'envoyer par e-mail un lien pour t'y connecter, valable 24 heures."
+                      : "Ta candidature est enregistrée. Tu vas recevoir un e-mail avec un lien pour ouvrir ton espace candidat, sans mot de passe, valable 3 jours."}
+                  {" "}Pense à regarder dans tes courriers indésirables.
+                </p>
+              )}
             </div>
           )}
 
@@ -402,10 +450,18 @@ export default function CandidaterForm() {
                   </select>
                 </div>
 
+                {/* Consentement */}
+                <ConsentCheckbox
+                  id="consentement"
+                  checked={consentement}
+                  onChange={(c) => { setConsentement(c); if (errors.consentement) setErrors({ ...errors, consentement: "" }); }}
+                  error={errors.consentement}
+                />
+
                 {/* Error */}
                 {status === "error" && (
-                  <div className="bg-error/10 border border-error/20 rounded-lg p-4 text-error text-sm">
-                    Une erreur est survenue. Appelle-nous directement au{" "}
+                  <div role="alert" className="bg-error/10 border border-error/20 rounded-lg p-4 text-error text-sm">
+                    {limite ? "Trop de demandes envoyées depuis ta connexion. Réessaie dans quelques minutes ou appelle-nous au" : "Une erreur est survenue. Appelle-nous directement au"}{" "}
                     <a href="tel:+33475003456" className="font-semibold underline">04 75 00 34 56</a>.
                   </div>
                 )}
