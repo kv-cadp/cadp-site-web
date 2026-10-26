@@ -12,6 +12,11 @@ import {
   type ScoreResult,
 } from "@/data/orientation-candidat";
 import NewTabHint from "@/components/ui/NewTabHint";
+import ConsentCheckbox from "@/components/ui/ConsentCheckbox";
+import FormPrivacyNotice from "@/components/ui/FormPrivacyNotice";
+import { candidatureUrl } from "@/lib/inscription";
+import { transmettreDemande } from "@/lib/preinscription/actions";
+import { envoyerParEmail } from "@/lib/preinscription/secours-email";
 
 type Phase = "quiz" | "results";
 
@@ -48,6 +53,11 @@ export default function OrientationQuiz() {
   // Contact form
   const [showContact, setShowContact] = useState(false);
   const [contactSent, setContactSent] = useState(false);
+  const [contactEnvoi, setContactEnvoi] = useState<"idle" | "submitting" | "error">("idle");
+  /** true : enregistrée dans CADP Connect (accusé de réception envoyé) ; false : envoi de secours par e-mail */
+  const [contactConnect, setContactConnect] = useState(false);
+  const [consentement, setConsentement] = useState(false);
+  const [consentementErreur, setConsentementErreur] = useState("");
   const [contactForm, setContactForm] = useState({
     prenom: "", nom: "", email: "", telephone: "", ville: "", commentaire: "",
   });
@@ -165,20 +175,69 @@ export default function OrientationQuiz() {
     }
   }, [phase, riasecScores]);
 
-  // Contact submit
+  // Contact submit : CADP Connect, ou e-mail à l'équipe en secours
   const submitContact = async () => {
     if (!contactForm.prenom || !contactForm.nom || !contactForm.email || !contactForm.telephone) {
       alert("Merci de remplir au minimum : prénom, nom, email et téléphone.");
       return;
     }
-    // Fallback mailto
+    if (!consentement) {
+      setConsentementErreur("Coche cette case pour envoyer ta demande");
+      return;
+    }
+    setContactEnvoi("submitting");
     const sorted = Object.entries(riasecScores).sort((a, b) => b[1] - a[1]);
     const profilCode = sorted[0][0] + sorted[1][0];
-    const top3 = results.slice(0, 3).map((r, i) => `${i + 1}. ${r.formation.name} — ${r.formation.full}`).join("\n");
-    const subject = `Candidature orientation — ${contactForm.prenom} ${contactForm.nom}`;
-    const body = `CANDIDAT : ${contactForm.prenom} ${contactForm.nom}\nEMAIL : ${contactForm.email}\nTEL : ${contactForm.telephone}\nPROFIL : ${profilCode}\nFORMATIONS :\n${top3}\n\nCordialement`;
-    window.location.href = `mailto:contact@cadp.pro?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    setContactSent(true);
+    const top3 = results.slice(0, 3).map((r) => r.formation);
+    const recommandations = top3.map((f) => `${f.name} — ${f.full}`);
+    const situationTexte = situation === "autre" ? autreSituation.trim() || "autre" : situation;
+
+    try {
+      const r = await transmettreDemande({
+        intention: "orientation",
+        prenom: contactForm.prenom,
+        nom: contactForm.nom,
+        email: contactForm.email,
+        telephone: contactForm.telephone,
+        formations: top3.filter((f) => f.isCadp).map((f) => f.key),
+        profil: profilCode,
+        recommandations,
+        situation: situationTexte || undefined,
+        ville: contactForm.ville.trim() || undefined,
+        message: contactForm.commentaire.trim() || undefined,
+        source: "site_riasec",
+        url_source: "site_orientation",
+        consentement_rgpd: true,
+      });
+      if (r.ok) {
+        setContactConnect(true);
+        setContactSent(true);
+        setContactEnvoi("idle");
+        return;
+      }
+    } catch {
+      // Action serveur injoignable : envoi de secours ci-dessous
+    }
+
+    const envoye = await envoyerParEmail({
+      subject: `Candidature orientation — ${contactForm.prenom} ${contactForm.nom}`,
+      from_name: `${contactForm.prenom} ${contactForm.nom}`,
+      email: contactForm.email,
+      telephone: contactForm.telephone,
+      ville: contactForm.ville || "-",
+      situation: situationTexte || "-",
+      profil: profilCode,
+      formations: recommandations.map((f, i) => `${i + 1}. ${f}`).join("\n"),
+      commentaire: contactForm.commentaire || "-",
+      source: "site_orientation",
+    });
+    if (envoye) {
+      setContactConnect(false);
+      setContactSent(true);
+      setContactEnvoi("idle");
+    } else {
+      setContactEnvoi("error");
+    }
   };
 
   // Restart
@@ -192,7 +251,8 @@ export default function OrientationQuiz() {
     setCompOral(3); setCompChiffres(3); setCompOrga(3); setCompEcoute(3);
     setDuree(""); setPriorite(""); setPermis("");
     setResults([]); setRiasecScores({});
-    setShowContact(false); setContactSent(false);
+    setShowContact(false); setContactSent(false); setContactEnvoi("idle"); setContactConnect(false);
+    setConsentement(false); setConsentementErreur("");
     setContactForm({ prenom: "", nom: "", email: "", telephone: "", ville: "", commentaire: "" });
     window.scrollTo(0, 0);
   };
@@ -675,17 +735,9 @@ export default function OrientationQuiz() {
                       {/* CTA */}
                       {isCadp ? (
                         <div className="mt-3 flex flex-wrap gap-2">
+                          {/* Nouvel onglet : les résultats du test restent ouverts */}
                           <a
-                            href={(() => {
-                              const params = new URLSearchParams();
-                              params.set("formation", f.key);
-                              params.set("source", "site_riasec");
-                              if (contactForm.prenom) params.set("prenom", contactForm.prenom);
-                              if (contactForm.nom) params.set("nom", contactForm.nom);
-                              if (contactForm.email) params.set("email", contactForm.email);
-                              if (contactForm.telephone) params.set("telephone", contactForm.telephone);
-                              return `https://app.cadp.pro/inscription?${params.toString()}`;
-                            })()}
+                            href={candidatureUrl(f.key, "site_riasec")}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-4 py-2 bg-gold text-navy-deep rounded-lg font-semibold text-xs hover:bg-gold-light transition-colors"
@@ -778,12 +830,30 @@ export default function OrientationQuiz() {
                       className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg text-sm focus:outline-none focus:border-navy-deep resize-none"
                     />
                   </div>
+                  <div className="mb-4">
+                    <ConsentCheckbox
+                      id="orientation-consentement"
+                      checked={consentement}
+                      onChange={(c) => { setConsentement(c); if (c) setConsentementErreur(""); }}
+                      error={consentementErreur}
+                    />
+                  </div>
+                  {contactEnvoi === "error" && (
+                    <div role="alert" className="bg-error/10 border border-error/20 rounded-lg p-4 text-error text-sm mb-4">
+                      Une erreur est survenue. Appelle-nous directement au{" "}
+                      <a href="tel:+33475003456" className="font-semibold underline">04 75 00 34 56</a>.
+                    </div>
+                  )}
                   <button
                     onClick={submitContact}
-                    className="px-6 py-3 bg-success text-white rounded-lg font-semibold text-sm hover:opacity-90 transition-all"
+                    disabled={contactEnvoi === "submitting"}
+                    className="px-6 py-3 bg-success text-white rounded-lg font-semibold text-sm hover:opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Envoyer ma demande
+                    {contactEnvoi === "submitting" ? "Envoi en cours..." : "Envoyer ma demande"}
                   </button>
+                  <div className="mt-4">
+                    <FormPrivacyNotice />
+                  </div>
                 </div>
               )}
 
@@ -798,6 +868,12 @@ export default function OrientationQuiz() {
                   <p className="text-gray-mid text-sm">
                     Merci <strong>{contactForm.prenom}</strong>, un conseiller CADP te recontactera pour discuter de ton orientation.
                   </p>
+                  {contactConnect && (
+                    <p className="text-gray-mid text-sm mt-2">
+                      Tu vas recevoir un e-mail de confirmation qui rappelle les formations recommandées.
+                      Pense à regarder dans tes courriers indésirables.
+                    </p>
+                  )}
                   <p className="text-xs text-gray-mid mt-2">
                     Campus Alternance Drôme Provence — 04 75 00 34 56 — contact@cadp.pro
                   </p>

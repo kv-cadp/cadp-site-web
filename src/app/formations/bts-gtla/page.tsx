@@ -13,8 +13,7 @@ import Accordion from "@/components/ui/Accordion";
 import GratuiteBlock from "@/components/formations/GratuiteBlock";
 import ResultatsBlock from "@/components/formations/ResultatsBlock";
 import FormationStickyBar from "@/components/formations/FormationStickyBar";
-import { inscriptionUrl } from "@/lib/inscription";
-import NewTabHint from "@/components/ui/NewTabHint";
+import { candidatureUrl } from "@/lib/inscription";
 
 export const metadata = createPageMetadata({
   title: "BTS GTLA en alternance à Pierrelatte — Transport et Logistique",
@@ -130,12 +129,9 @@ export default function BTSGTLAPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <a href={inscriptionUrl("gtla", "site_fiche_hero")} target="_blank" rel="noopener noreferrer">
-              <Button variant="gold" className="text-lg px-8 py-4">
-                Je me pré-inscris
-              </Button>
-              <NewTabHint />
-            </a>
+            <Button href={candidatureUrl("gtla", "site_fiche_hero")} variant="gold" className="text-lg px-8 py-4">
+              Je me pré-inscris
+            </Button>
             <Button href="/entreprises" variant="white-outline" className="text-lg px-8 py-4">
               Espace entreprises
             </Button>
@@ -286,12 +282,9 @@ export default function BTSGTLAPage() {
             Les pré-inscriptions pour la rentrée 2027 sont ouvertes. Contacte-nous pour en savoir plus.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={inscriptionUrl("gtla", "site_fiche")} target="_blank" rel="noopener noreferrer">
-              <Button variant="gold" className="px-8">
-                Je me pré-inscris
-              </Button>
-              <NewTabHint />
-            </a>
+            <Button href={candidatureUrl("gtla", "site_fiche")} variant="gold" className="px-8">
+              Je me pré-inscris
+            </Button>
             <a
               href="tel:+33475003456"
               className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-navy-deep transition-all"
@@ -302,7 +295,7 @@ export default function BTSGTLAPage() {
         </div>
       </section>
 
-      <FormationStickyBar href={inscriptionUrl("gtla", "site_fiche_barre")} label="Je me pré-inscris" />
+      <FormationStickyBar href={candidatureUrl("gtla", "site_fiche_barre")} label="Je me pré-inscris" />
 
       <ResultatsBlock />
     </article>
