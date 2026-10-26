@@ -12,6 +12,7 @@ import {
   getAide,
   entrepriseFormations,
 } from "@/data/orientation-entreprise";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 type Phase = "quiz" | "results";
 
@@ -465,6 +466,7 @@ export default function EntrepriseQuiz() {
                     className="px-6 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-all"
                   >
                     Créer mon espace entreprise
+                    <NewTabHint />
                   </a>
                   <a
                     href="https://app.cadp.pro/connexion"
@@ -473,6 +475,7 @@ export default function EntrepriseQuiz() {
                     className="px-6 py-3 border border-gold text-gold rounded-lg font-semibold text-sm hover:bg-gold hover:text-navy-deep transition-all"
                   >
                     Déjà partenaire ? Mon espace
+                    <NewTabHint />
                   </a>
                 </div>
                 <div className="flex gap-3 justify-center flex-wrap mt-3">

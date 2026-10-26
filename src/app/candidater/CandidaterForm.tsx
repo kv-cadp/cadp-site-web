@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, type FormEvent } from "react";
 import Link from "next/link";
 import FormPrivacyNotice from "@/components/ui/FormPrivacyNotice";
 import { scrollBehavior } from "@/lib/utils";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 type Intention = "candidater" | "info" | "orientation" | null;
 type Status = "idle" | "submitting" | "success" | "error";
@@ -169,6 +170,7 @@ export default function CandidaterForm() {
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold-light transition-colors"
               >
                 Créer mon espace candidat →
+                <NewTabHint />
               </a>
             </div>
           )}

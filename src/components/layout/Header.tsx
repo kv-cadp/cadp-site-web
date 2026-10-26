@@ -7,6 +7,7 @@ import MobileMenu from "./MobileMenu";
 import CadpWordmark from "@/components/brand/CadpWordmark";
 import { RENTREE } from "@/data/rentree";
 import type { MenuFormation } from "@/lib/menu-formations";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 const formations = [
   { href: "/formations/bts-mco", label: "BTS MCO", full: "Management Commercial Opérationnel" },
@@ -111,6 +112,7 @@ export default function Header({ menuFormations }: { menuFormations: MenuFormati
               className="inline-flex items-center whitespace-nowrap shrink-0 px-4 py-2 border-2 border-gold text-navy-deep rounded-lg font-semibold text-sm hover:bg-gold transition-colors"
             >
               Mon espace
+              <NewTabHint />
             </a>
             <Link
               href="/candidater"

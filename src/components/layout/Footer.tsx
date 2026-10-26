@@ -4,6 +4,7 @@ import CadpWordmark from "@/components/brand/CadpWordmark";
 import { SITE } from "@/data/site";
 import { getUpcomingDatings } from "@/lib/dating/events";
 import { formatEventDateShort } from "@/lib/format-event";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 const formationLinks = [
   { href: "/formations/bts-mco", label: "BTS MCO" },
@@ -37,7 +38,7 @@ export default function Footer() {
                 href={SITE.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram"
+                aria-label="Instagram (nouvel onglet)"
                 className="text-cream/60 hover:text-gold transition-colors"
               >
                 <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
@@ -48,7 +49,7 @@ export default function Footer() {
                 href={SITE.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn"
+                aria-label="LinkedIn (nouvel onglet)"
                 className="text-cream/60 hover:text-gold transition-colors"
               >
                 <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
@@ -59,7 +60,7 @@ export default function Footer() {
                 href={SITE.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Facebook"
+                aria-label="Facebook (nouvel onglet)"
                 className="text-cream/60 hover:text-gold transition-colors"
               >
                 <svg className="size-5" fill="currentColor" viewBox="0 0 24 24">
@@ -158,16 +159,19 @@ export default function Footer() {
               <li>
                 <a href="https://app.cadp.pro/connexion" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
                   Espace candidat
+                  <NewTabHint />
                 </a>
               </li>
               <li>
                 <a href="https://app.cadp.pro/connexion" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
                   Espace entreprise
+                  <NewTabHint />
                 </a>
               </li>
               <li>
                 <a href="https://app.cadp.pro" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
                   Équipe pédagogique
+                  <NewTabHint />
                 </a>
               </li>
             </ul>
@@ -186,6 +190,7 @@ export default function Footer() {
                 height={60}
                 className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
               />
+              <NewTabHint />
             </a>
           </div>
           <p className="text-xs text-cream/50 text-center max-w-xl">
