@@ -1,5 +1,6 @@
 import FormationStickyBar from "@/components/formations/FormationStickyBar";
 import { inscriptionUrl } from "@/lib/inscription";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 interface FormationCTAProps {
   formationName: string;
@@ -28,6 +29,7 @@ export default function FormationCTA({ formationName, formationCode, title, text
               className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-base hover:bg-gold-light transition-colors"
             >
               Je candidate à cette formation
+              <NewTabHint />
             </a>
             <a
               href="https://app.cadp.pro/connexion"
@@ -36,6 +38,7 @@ export default function FormationCTA({ formationName, formationCode, title, text
               className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-gold text-gold rounded-lg font-semibold text-base hover:bg-gold hover:text-navy-deep transition-colors"
             >
               Déjà inscrit ? Mon espace
+              <NewTabHint />
             </a>
           </div>
         </div>

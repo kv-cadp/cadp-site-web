@@ -8,6 +8,7 @@ import CadpWordmark from "@/components/brand/CadpWordmark";
 import { RENTREE } from "@/data/rentree";
 import { SITE } from "@/data/site";
 import type { MenuFormation } from "@/lib/menu-formations";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -209,6 +210,7 @@ export default function MobileMenu({ isOpen, onClose, formations }: MobileMenuPr
           className="inline-flex items-center justify-center min-h-12 px-4 border-2 border-gold text-gold rounded-lg font-semibold"
         >
           Mon espace (candidat ou entreprise)
+          <NewTabHint />
         </a>
         <p className="text-center text-cream/85">
           Une question ?{" "}

@@ -102,9 +102,16 @@ export default function RootLayout({
       className={`${dmSans.variable} ${dmSerifDisplay.variable} ${dmMono.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col font-sans text-gray-dark bg-white">
+        {/* Lien d'évitement : premier élément atteint au clavier, visible au focus (B7). */}
+        <a
+          href="#contenu"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:px-4 focus:py-2 focus:bg-gold focus:text-navy-deep focus:font-semibold focus:rounded-lg"
+        >
+          Aller au contenu
+        </a>
         <TopBanner message={getTopBannerMessage()} />
         <Header menuFormations={getMenuFormations()} />
-        <main className="flex-1 pt-30 md:pt-34">{children}</main>
+        <main id="contenu" tabIndex={-1} className="flex-1 pt-30 md:pt-34 focus:outline-none">{children}</main>
         <Footer />
       </body>
     </html>

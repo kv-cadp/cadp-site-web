@@ -6,6 +6,7 @@ import { PHONE_FR_REGEX, SIRET_REGEX } from "@/lib/validation";
 import { scrollBehavior } from "@/lib/utils";
 import { lookupSiret, submitInfosContrat } from "./actions";
 import { FORMATIONS_CONTRAT, NIVEAUX_DIPLOME, OPCO_LIST } from "./schema";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const IDCC_REGEX = /^\d{1,4}$/;
@@ -812,6 +813,7 @@ export default function InfosContratForm() {
               className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep"
             >
               Retrouver ma convention collective
+              <NewTabHint />
             </a>
           </HelpText>
           <FieldError id="err-idcc" errors={err.idcc} />
@@ -848,6 +850,7 @@ export default function InfosContratForm() {
               className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep"
             >
               Trouver mon OPCO avec mon SIRET
+              <NewTabHint />
             </a>
           </HelpText>
           <FieldError id="err-opco" errors={err.opco} />

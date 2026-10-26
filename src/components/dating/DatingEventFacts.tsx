@@ -5,6 +5,7 @@ import {
   formatEventTimeRange,
   formatVenueAddress,
 } from "@/lib/format-event";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 function capitalize(input: string): string {
   return input.charAt(0).toUpperCase() + input.slice(1);
@@ -60,6 +61,7 @@ export default function DatingEventFacts({
             className={`inline-block mt-1 text-sm font-semibold transition-colors ${link}`}
           >
             Voir l&apos;itinéraire
+            <NewTabHint />
           </a>
           {event.hostNote && (
             <span className={`block mt-2 text-sm ${soft}`}>{event.hostNote}</span>

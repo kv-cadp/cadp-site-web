@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { SITE } from "@/data/site";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 interface FormationStickyBarProps {
   /** Lien vers le formulaire d'inscription (voir lib/inscription.ts) */
@@ -60,6 +61,7 @@ export default function FormationStickyBar({ href, label }: FormationStickyBarPr
         className="flex-1 inline-flex items-center justify-center min-h-11 px-4 bg-gold text-navy-deep rounded-lg font-semibold text-base"
       >
         {label}
+        <NewTabHint />
       </a>
       <a
         href={SITE.phoneHref}

@@ -20,6 +20,7 @@ import {
   inputClass,
 } from "./form-ui";
 import { useDatingForm, withNetworkFallback } from "./use-dating-form";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 const POSTES_OPTIONS = POSTES_VALUES.map((value) => ({
   value,
@@ -172,6 +173,7 @@ export default function DatingEmployeurForm({
               {eventDateLabel} et me recontacter à ce sujet. Voir la{" "}
               <Link href="/politique-de-confidentialite" target="_blank" className="font-semibold text-navy-deep underline decoration-gold underline-offset-2">
                 politique de confidentialité
+                <NewTabHint />
               </Link>
               . <span className="text-navy-deep" aria-hidden="true">*</span>
             </span>

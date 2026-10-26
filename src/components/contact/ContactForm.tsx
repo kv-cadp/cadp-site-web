@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import FormPrivacyNotice from "@/components/ui/FormPrivacyNotice";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 // TODO: Remplacer par la vraie clé Web3Forms
 // 1. Va sur https://web3forms.com
@@ -124,6 +125,7 @@ export default function ContactForm() {
             className="inline-flex items-center gap-2 mt-4 text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
           >
             Tu veux aller plus loin ? Crée ton espace candidat →
+            <NewTabHint />
           </a>
         )}
         <button

@@ -20,6 +20,7 @@ import {
   inputClass,
 } from "./form-ui";
 import { useDatingForm, withNetworkFallback } from "./use-dating-form";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 const PERMIS_OPTIONS = PERMIS_VALUES.map((value) => ({
   value,
@@ -178,6 +179,7 @@ function CandidatForm({
             présenter ma candidature aux employeurs présents. Voir la{" "}
             <Link href="/politique-de-confidentialite" target="_blank" className="font-semibold text-navy-deep underline decoration-gold underline-offset-2">
               politique de confidentialité
+              <NewTabHint />
             </Link>
             . <span className="text-navy-deep" aria-hidden="true">*</span>
           </span>

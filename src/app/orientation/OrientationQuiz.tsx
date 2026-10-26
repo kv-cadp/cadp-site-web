@@ -11,6 +11,7 @@ import {
   calculateScores,
   type ScoreResult,
 } from "@/data/orientation-candidat";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 type Phase = "quiz" | "results";
 
@@ -690,6 +691,7 @@ export default function OrientationQuiz() {
                             className="px-4 py-2 bg-gold text-navy-deep rounded-lg font-semibold text-xs hover:bg-gold-light transition-colors"
                           >
                             Candidater à cette formation
+                            <NewTabHint />
                           </a>
                           <Link
                             href={`/formations/${f.slug}`}
@@ -704,6 +706,7 @@ export default function OrientationQuiz() {
                           Renseigne-toi sur{" "}
                           <a href="https://www.parcoursup.gouv.fr" target="_blank" rel="noopener noreferrer" className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4">
                             Parcoursup
+                            <NewTabHint />
                           </a>{" "}
                           ou auprès des CFA de ta région.
                         </p>

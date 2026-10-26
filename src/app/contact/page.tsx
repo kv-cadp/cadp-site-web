@@ -3,6 +3,7 @@ import { createPageMetadata } from "@/lib/metadata";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 import { JsonLd, generateContactJsonLd } from "@/lib/structured-data";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 export const metadata = createPageMetadata({
   title: "Contacter le CADP — Campus Alternance Drôme Provence",
@@ -65,6 +66,7 @@ export default function ContactPage() {
                   className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
                 >
                   Espace candidat
+                  <NewTabHint />
                 </a>
                 <span className="text-gray-mid/30" aria-hidden="true">|</span>
                 <a
@@ -74,6 +76,7 @@ export default function ContactPage() {
                   className="text-navy-deep font-semibold underline decoration-gold decoration-2 underline-offset-4 hover:decoration-navy-deep text-sm transition-colors"
                 >
                   Espace entreprise
+                  <NewTabHint />
                 </a>
               </div>
             </div>

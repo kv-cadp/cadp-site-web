@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CADP_ORG_NAME } from "@/data/org";
 import { SITE } from "@/data/site";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 interface FormPrivacyNoticeProps {
   /** Vouvoiement pour une entreprise ; tutoiement par défaut (candidat). */
@@ -31,6 +32,7 @@ export default function FormPrivacyNotice({ vous = false }: FormPrivacyNoticePro
       . Voir la{" "}
       <Link href="/politique-de-confidentialite" target="_blank" className={linkClass}>
         politique de confidentialité
+        <NewTabHint />
       </Link>
       .
     </p>

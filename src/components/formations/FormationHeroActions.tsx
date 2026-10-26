@@ -1,4 +1,5 @@
 import { SITE } from "@/data/site";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 interface FormationHeroActionsProps {
   /** Lien vers le formulaire d'inscription (voir lib/inscription.ts) */
@@ -20,6 +21,7 @@ export default function FormationHeroActions({
         className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gold text-navy-deep rounded-lg font-semibold text-base hover:bg-gold-light transition-colors"
       >
         {label}
+        <NewTabHint />
       </a>
       <a
         href={SITE.phoneHref}

@@ -14,6 +14,7 @@ import GratuiteBlock from "@/components/formations/GratuiteBlock";
 import ResultatsBlock from "@/components/formations/ResultatsBlock";
 import FormationStickyBar from "@/components/formations/FormationStickyBar";
 import { inscriptionUrl } from "@/lib/inscription";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 export const metadata = createPageMetadata({
   title: "BTS GTLA en alternance à Pierrelatte — Transport et Logistique",
@@ -133,6 +134,7 @@ export default function BTSGTLAPage() {
               <Button variant="gold" className="text-lg px-8 py-4">
                 Je me pré-inscris
               </Button>
+              <NewTabHint />
             </a>
             <Button href="/entreprises" variant="white-outline" className="text-lg px-8 py-4">
               Espace entreprises
@@ -288,6 +290,7 @@ export default function BTSGTLAPage() {
               <Button variant="gold" className="px-8">
                 Je me pré-inscris
               </Button>
+              <NewTabHint />
             </a>
             <a
               href="tel:+33475003456"
