@@ -88,7 +88,7 @@ export default function CandidaterForm({ formationInitiale, source }: Candidater
     if (!telephone.trim()) e.telephone = "Le téléphone est requis";
     if (intention === "candidater" && selectedFormations.size === 0) e.formations = "Sélectionne au moins une formation";
     if (intention === "info" && !question.trim()) e.question = "Dis-nous ce que tu veux savoir";
-    if (!consentement) e.consentement = "Coche cette case pour envoyer ta demande";
+    if (intention === "candidater" && !consentement) e.consentement = "Coche cette case pour envoyer ta candidature";
     setErrors(e);
     return Object.keys(e).length === 0;
   }
@@ -111,7 +111,7 @@ export default function CandidaterForm({ formationInitiale, source }: Candidater
         situation: situation || undefined,
         message: question.trim() || undefined,
         url_source: urlSource,
-        consentement_rgpd: true,
+        consentement_rgpd: candidature ? true : undefined,
         botcheck,
       });
       if (r.ok) {
@@ -450,13 +450,15 @@ export default function CandidaterForm({ formationInitiale, source }: Candidater
                   </select>
                 </div>
 
-                {/* Consentement */}
-                <ConsentCheckbox
-                  id="consentement"
-                  checked={consentement}
-                  onChange={(c) => { setConsentement(c); if (errors.consentement) setErrors({ ...errors, consentement: "" }); }}
-                  error={errors.consentement}
-                />
+                {/* Accord de présentation aux entreprises : candidature seulement */}
+                {intention === "candidater" && (
+                  <ConsentCheckbox
+                    id="consentement"
+                    checked={consentement}
+                    onChange={(c) => { setConsentement(c); if (errors.consentement) setErrors({ ...errors, consentement: "" }); }}
+                    error={errors.consentement}
+                  />
+                )}
 
                 {/* Error */}
                 {status === "error" && (
@@ -477,7 +479,7 @@ export default function CandidaterForm({ formationInitiale, source }: Candidater
                     : intention === "candidater" ? "Envoyer ma candidature" : "Envoyer ma question"}
                 </button>
 
-                <FormPrivacyNotice />
+                <FormPrivacyNotice candidature={intention === "candidater"} />
               </form>
             </div>
           )}

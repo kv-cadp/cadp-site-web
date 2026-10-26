@@ -58,7 +58,7 @@ export default function PolitiqueConfidentialitePage() {
               </div>
 
               <p>
-                Les candidatures, les demandes d&apos;information (/candidater) et les demandes de contact du questionnaire d&apos;orientation sont enregistrées dans <strong className="text-gray-dark">CADP Connect</strong>, l&apos;outil de recrutement du CADP (app.cadp.pro), avec votre accord donné en cochant la case prévue dans le formulaire.
+                Les candidatures, les demandes d&apos;information (/candidater) et les demandes de contact du questionnaire d&apos;orientation sont enregistrées dans <strong className="text-gray-dark">CADP Connect</strong>, l&apos;outil de recrutement du CADP (app.cadp.pro). Pour une candidature, une case à cocher recueille en plus votre accord pour que votre profil soit présenté aux entreprises qui recrutent des alternants.
               </p>
 
               <div>
@@ -95,13 +95,10 @@ export default function PolitiqueConfidentialitePage() {
             <h2 className="font-serif text-xl text-navy-deep mb-3">4. Base légale du traitement</h2>
             <div className="text-gray-mid space-y-2">
               <p>
-                <strong className="text-gray-dark">Consentement</strong> (article 6.1.a du RGPD) : en soumettant un formulaire sur ce site, vous consentez au traitement de vos données pour les finalités décrites ci-dessus.
+                <strong className="text-gray-dark">Mesures précontractuelles</strong>{" "}(article 6.1.b du RGPD) : répondre à vos demandes (contact, information, test d&apos;orientation), examiner votre candidature, organiser votre venue à un Alternance Dating, préparer le contrat d&apos;apprentissage.
               </p>
               <p>
-                <strong className="text-gray-dark">Intérêt légitime</strong>{" "}(article 6.1.f du RGPD) : le traitement de vos données est également nécessaire pour répondre à vos demandes et assurer le bon fonctionnement de nos services d&apos;orientation.
-              </p>
-              <p>
-                <strong className="text-gray-dark">Mesures précontractuelles</strong>{" "}(article 6.1.b du RGPD) : l&apos;examen de votre candidature ou de votre demande d&apos;information, enregistrée dans CADP Connect, est réalisé à votre demande.
+                <strong className="text-gray-dark">Consentement</strong>{" "}(article 6.1.a du RGPD), recueilli par une case à cocher : présentation de votre candidature aux entreprises (candidature sur le site, inscription à un Alternance Dating). Vous pouvez le retirer à tout moment en nous écrivant (voir « Vos droits » ci-dessous).
               </p>
             </div>
           </div>
@@ -119,13 +116,16 @@ export default function PolitiqueConfidentialitePage() {
             <h2 className="font-serif text-xl text-navy-deep mb-3">6. Destinataires des données</h2>
             <div className="text-gray-mid space-y-2">
               <p>
-                Vos données sont destinées exclusivement à l&apos;équipe pédagogique et administrative du CADP.
+                Vos données sont destinées à l&apos;équipe pédagogique et administrative du CADP, et aux seuls destinataires indiqués ci-dessous.
               </p>
               <p>
                 <strong className="text-gray-dark">Aucune donnée n&apos;est vendue ou louée, ni transmise à des tiers à des fins commerciales ou publicitaires.</strong>
               </p>
               <p>
                 Alternance Dating : la candidature des candidats inscrits est présentée aux employeurs présents le jour de l&apos;événement, pour organiser les entretiens, avec l&apos;accord donné lors de l&apos;inscription.
+              </p>
+              <p>
+                Candidature (/candidater) : avec l&apos;accord donné en cochant la case du formulaire, votre profil est présenté aux entreprises qui recrutent des alternants.
               </p>
               <p>
                 Informations de contrat (/entreprises/infos-contrat) : elles sont transmises au CFA IFIR, partenaire du CADP, pour l&apos;établissement du contrat d&apos;apprentissage.
