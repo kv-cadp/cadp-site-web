@@ -55,7 +55,8 @@ const demandeSchema = z.object({
   message: z.string().trim().max(2000).optional(),
   source: code.optional(),
   url_source: code.optional(),
-  consentement_rgpd: z.literal(true),
+  // Accord de présentation aux entreprises : candidature seulement
+  consentement_rgpd: z.literal(true).optional(),
   botcheck: z.boolean().optional(),
 });
 

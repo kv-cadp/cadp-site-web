@@ -12,7 +12,6 @@ import {
   type ScoreResult,
 } from "@/data/orientation-candidat";
 import NewTabHint from "@/components/ui/NewTabHint";
-import ConsentCheckbox from "@/components/ui/ConsentCheckbox";
 import FormPrivacyNotice from "@/components/ui/FormPrivacyNotice";
 import { candidatureUrl } from "@/lib/inscription";
 import { transmettreDemande } from "@/lib/preinscription/actions";
@@ -56,8 +55,6 @@ export default function OrientationQuiz() {
   const [contactEnvoi, setContactEnvoi] = useState<"idle" | "submitting" | "error">("idle");
   /** true : enregistrée dans CADP Connect (accusé de réception envoyé) ; false : envoi de secours par e-mail */
   const [contactConnect, setContactConnect] = useState(false);
-  const [consentement, setConsentement] = useState(false);
-  const [consentementErreur, setConsentementErreur] = useState("");
   const [contactForm, setContactForm] = useState({
     prenom: "", nom: "", email: "", telephone: "", ville: "", commentaire: "",
   });
@@ -181,10 +178,6 @@ export default function OrientationQuiz() {
       alert("Merci de remplir au minimum : prénom, nom, email et téléphone.");
       return;
     }
-    if (!consentement) {
-      setConsentementErreur("Coche cette case pour envoyer ta demande");
-      return;
-    }
     setContactEnvoi("submitting");
     const sorted = Object.entries(riasecScores).sort((a, b) => b[1] - a[1]);
     const profilCode = sorted[0][0] + sorted[1][0];
@@ -207,7 +200,6 @@ export default function OrientationQuiz() {
         message: contactForm.commentaire.trim() || undefined,
         source: "site_riasec",
         url_source: "site_orientation",
-        consentement_rgpd: true,
       });
       if (r.ok) {
         setContactConnect(true);
@@ -252,7 +244,6 @@ export default function OrientationQuiz() {
     setDuree(""); setPriorite(""); setPermis("");
     setResults([]); setRiasecScores({});
     setShowContact(false); setContactSent(false); setContactEnvoi("idle"); setContactConnect(false);
-    setConsentement(false); setConsentementErreur("");
     setContactForm({ prenom: "", nom: "", email: "", telephone: "", ville: "", commentaire: "" });
     window.scrollTo(0, 0);
   };
@@ -828,14 +819,6 @@ export default function OrientationQuiz() {
                       value={contactForm.commentaire}
                       onChange={(e) => setContactForm({ ...contactForm, commentaire: e.target.value })}
                       className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg text-sm focus:outline-none focus:border-navy-deep resize-none"
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <ConsentCheckbox
-                      id="orientation-consentement"
-                      checked={consentement}
-                      onChange={(c) => { setConsentement(c); if (c) setConsentementErreur(""); }}
-                      error={consentementErreur}
                     />
                   </div>
                   {contactEnvoi === "error" && (
