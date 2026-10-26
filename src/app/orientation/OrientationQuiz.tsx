@@ -289,6 +289,8 @@ export default function OrientationQuiz() {
                 {stepLabels.map((label, i) => (
                   <span
                     key={i}
+                    aria-hidden={label === "·" || undefined}
+                    aria-current={i === (step - 1) * 2 ? "step" : undefined}
                     className={
                       i === (step - 1) * 2
                         ? "text-gold"
@@ -299,7 +301,14 @@ export default function OrientationQuiz() {
                   </span>
                 ))}
               </div>
-              <div className="w-full h-1 bg-white/15 rounded mt-2.5 overflow-hidden">
+              <div
+                role="progressbar"
+                aria-label="Progression du test"
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-valuenow={Math.round(progress)}
+                className="w-full h-1 bg-white/15 rounded mt-2.5 overflow-hidden"
+              >
                 <div
                   className="h-full bg-gold rounded transition-all duration-400"
                   style={{ width: `${progress}%` }}
@@ -330,7 +339,7 @@ export default function OrientationQuiz() {
                     <button
                       key={opt.v}
                       type="button"
-                      onClick={() => setNiveau(opt.v)}
+                      onClick={() => setNiveau(opt.v)} aria-pressed={niveau === opt.v}
                       className={`text-left px-4 py-3 rounded-lg border-2 text-sm transition-all ${
                         niveau === opt.v
                           ? "border-gold bg-gold/5 font-semibold"
@@ -355,7 +364,7 @@ export default function OrientationQuiz() {
                     <button
                       key={opt.v}
                       type="button"
-                      onClick={() => setSituation(opt.v)}
+                      onClick={() => setSituation(opt.v)} aria-pressed={situation === opt.v}
                       className={`text-left px-4 py-3 rounded-lg border-2 text-sm transition-all ${
                         situation === opt.v
                           ? "border-gold bg-gold/5 font-semibold"
@@ -397,12 +406,13 @@ export default function OrientationQuiz() {
                 {riasecQs.map((q, idx) => (
                   <div key={idx} className="bg-gray-50 border-2 border-gray-200 rounded-lg p-4">
                     <p className="text-sm font-semibold text-gray-dark mb-3">{q.text}</p>
-                    <div className="flex items-center justify-between gap-1">
+                    <div role="group" aria-label={q.text} className="flex items-center justify-between gap-1">
                       {[1, 2, 3, 4, 5].map((score) => (
                         <button
                           key={score}
                           type="button"
                           onClick={() => setRiasecScore(idx, score)}
+                          aria-pressed={riasecAnswers[idx] === score}
                           className={`flex-1 py-2 px-1 rounded-md text-xs text-center transition-all ${
                             riasecAnswers[idx] === score
                               ? "bg-gold/15 text-navy-deep font-bold border-2 border-gold"
@@ -441,6 +451,7 @@ export default function OrientationQuiz() {
                     key={s.value}
                     type="button"
                     onClick={() => toggleSecteur(s.value)}
+                    aria-pressed={selectedSecteurs.has(s.value)}
                     className={`text-left px-4 py-3 rounded-lg border-2 transition-all ${
                       selectedSecteurs.has(s.value)
                         ? "border-gold bg-gold/5"
@@ -501,7 +512,7 @@ export default function OrientationQuiz() {
                     { v: "24", l: "24 mois (BTS)" },
                     { v: "indiff", l: "Peu importe" },
                   ].map((opt) => (
-                    <button key={opt.v} type="button" onClick={() => setDuree(opt.v)}
+                    <button key={opt.v} type="button" onClick={() => setDuree(opt.v)} aria-pressed={duree === opt.v}
                       className={`text-left px-4 py-3 rounded-lg border-2 text-sm transition-all ${duree === opt.v ? "border-gold bg-gold/5 font-semibold" : "border-gray-200 hover:border-gray-300"}`}
                     >{opt.l}</button>
                   ))}
@@ -517,7 +528,7 @@ export default function OrientationQuiz() {
                     { v: "salaire", l: "Avoir un bon salaire" },
                     { v: "polyvalence", l: "Être polyvalent(e)" },
                   ].map((opt) => (
-                    <button key={opt.v} type="button" onClick={() => setPriorite(opt.v)}
+                    <button key={opt.v} type="button" onClick={() => setPriorite(opt.v)} aria-pressed={priorite === opt.v}
                       className={`text-left px-4 py-3 rounded-lg border-2 text-sm transition-all ${priorite === opt.v ? "border-gold bg-gold/5 font-semibold" : "border-gray-200 hover:border-gray-300"}`}
                     >{opt.l}</button>
                   ))}
@@ -533,7 +544,7 @@ export default function OrientationQuiz() {
                     { v: "encours", l: "Permis en cours" },
                     { v: "non", l: "Non" },
                   ].map((opt) => (
-                    <button key={opt.v} type="button" onClick={() => setPermis(opt.v)}
+                    <button key={opt.v} type="button" onClick={() => setPermis(opt.v)} aria-pressed={permis === opt.v}
                       className={`text-left px-4 py-3 rounded-lg border-2 text-sm transition-all ${permis === opt.v ? "border-gold bg-gold/5 font-semibold" : "border-gray-200 hover:border-gray-300"}`}
                     >{opt.l}</button>
                   ))}

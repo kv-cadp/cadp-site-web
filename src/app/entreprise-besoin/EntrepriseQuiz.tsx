@@ -150,10 +150,10 @@ export default function EntrepriseQuiz() {
             <>
               <div className="flex justify-center gap-1.5 mt-4 text-xs font-semibold uppercase tracking-wider">
                 {stepLabels.map((label, i) => (
-                  <span key={i} className={i === (step - 1) * 2 ? "text-gold" : "text-white/60"}>{label}</span>
+                  <span key={i} aria-hidden={label === "·" || undefined} aria-current={i === (step - 1) * 2 ? "step" : undefined} className={i === (step - 1) * 2 ? "text-gold" : "text-white/60"}>{label}</span>
                 ))}
               </div>
-              <div className="w-full h-1 bg-white/15 rounded mt-2.5 overflow-hidden">
+              <div role="progressbar" aria-label="Progression du questionnaire" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress)} className="w-full h-1 bg-white/15 rounded mt-2.5 overflow-hidden">
                 <div className="h-full bg-gold rounded transition-all duration-400" style={{ width: `${progress}%` }} />
               </div>
             </>
@@ -169,7 +169,7 @@ export default function EntrepriseQuiz() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
                 {entrepriseSecteurs.map((s) => (
-                  <button key={s.value} type="button" onClick={() => setSecteur(s.value)}
+                  <button key={s.value} type="button" onClick={() => setSecteur(s.value)} aria-pressed={secteur === s.value}
                     className={`text-left px-4 py-3 rounded-lg border-2 transition-all ${secteur === s.value ? "border-gold bg-gold/5" : "border-gray-200 hover:border-gray-300"}`}>
                     <span className="text-sm font-semibold text-gray-dark block">{s.label}</span>
                     <span className="text-xs text-gray-mid">{s.desc}</span>
@@ -222,7 +222,7 @@ export default function EntrepriseQuiz() {
                   <p className="text-sm font-semibold text-gray-dark mb-3">{section.title}</p>
                   <div className="flex flex-col gap-2">
                     {section.items.map((m) => (
-                      <button key={m.value} type="button" onClick={() => toggle(section.set, m.value, section.setter)}
+                      <button key={m.value} type="button" onClick={() => toggle(section.set, m.value, section.setter)} aria-pressed={section.set.has(m.value)}
                         className={`text-left px-4 py-3 rounded-lg border-2 transition-all flex items-start gap-3 ${section.set.has(m.value) ? "border-gold bg-gold/5" : "border-gray-200 hover:border-gray-300"}`}>
                         <div className={`size-5 rounded border-2 flex items-center justify-center shrink-0 mt-0.5 transition-colors ${section.set.has(m.value) ? "bg-gold border-gold" : "border-gray-300"}`}>
                           {section.set.has(m.value) && (
@@ -263,7 +263,7 @@ export default function EntrepriseQuiz() {
                     { v: "bachelor", l: "Niveau Bac+3 (Bachelor)", d: "12 mois, cycle court après un Bac+2" },
                     { v: "indifferent", l: "Indifférent — conseillez-moi", d: "Le profil compte plus que le diplôme" },
                   ].map((opt) => (
-                    <button key={opt.v} type="button" onClick={() => toggle(niveaux, opt.v, setNiveaux)}
+                    <button key={opt.v} type="button" onClick={() => toggle(niveaux, opt.v, setNiveaux)} aria-pressed={niveaux.has(opt.v)}
                       className={`text-left px-4 py-3 rounded-lg border-2 transition-all flex items-start gap-3 ${niveaux.has(opt.v) ? "border-gold bg-gold/5" : "border-gray-200 hover:border-gray-300"}`}>
                       <div className={`size-5 rounded border-2 flex items-center justify-center shrink-0 mt-0.5 ${niveaux.has(opt.v) ? "bg-gold border-gold" : "border-gray-300"}`}>
                         {niveaux.has(opt.v) && <svg className="size-3 text-navy-deep" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>}
@@ -282,7 +282,7 @@ export default function EntrepriseQuiz() {
                   <p className="text-sm font-semibold text-gray-dark mb-2">Travail le samedi ?</p>
                   <div className="flex gap-2">
                     {[{ v: "oui", l: "Oui" }, { v: "non", l: "Non" }].map((o) => (
-                      <button key={o.v} type="button" onClick={() => setSamedi(o.v)}
+                      <button key={o.v} type="button" onClick={() => setSamedi(o.v)} aria-pressed={samedi === o.v}
                         className={`flex-1 px-4 py-2.5 rounded-lg border-2 text-sm font-semibold transition-all ${samedi === o.v ? "border-gold bg-gold/5" : "border-gray-200 hover:border-gray-300"}`}>
                         {o.l}
                       </button>
@@ -293,7 +293,7 @@ export default function EntrepriseQuiz() {
                   <p className="text-sm font-semibold text-gray-dark mb-2">Permis requis ?</p>
                   <div className="flex gap-2">
                     {[{ v: "oui", l: "Oui" }, { v: "non", l: "Non" }].map((o) => (
-                      <button key={o.v} type="button" onClick={() => setPermisReq(o.v)}
+                      <button key={o.v} type="button" onClick={() => setPermisReq(o.v)} aria-pressed={permisReq === o.v}
                         className={`flex-1 px-4 py-2.5 rounded-lg border-2 text-sm font-semibold transition-all ${permisReq === o.v ? "border-gold bg-gold/5" : "border-gray-200 hover:border-gray-300"}`}>
                         {o.l}
                       </button>
