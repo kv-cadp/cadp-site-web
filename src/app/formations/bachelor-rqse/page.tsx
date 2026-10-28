@@ -7,6 +7,7 @@ import GratuiteBlock from "@/components/formations/GratuiteBlock";
 import ResultatsBlock from "@/components/formations/ResultatsBlock";
 import FormationCTA from "@/components/formations/FormationCTA";
 import FormationHeroActions from "@/components/formations/FormationHeroActions";
+import NewTabHint from "@/components/ui/NewTabHint";
 import { candidatureUrl } from "@/lib/inscription";
 import { RENTREE } from "@/data/rentree";
 
@@ -23,7 +24,7 @@ const heroSubtitle =
   "Le Bachelor RQSE te forme en un an à piloter la démarche qualité, sécurité et environnement d'une entreprise : conformité réglementaire, audits ISO, prévention des risques, performance. Un Bac+3 en alternance, sur un marché qui manque de cadres.";
 
 const heroAeo =
-  "Le Bachelor Responsable Qualité Sécurité Environnement en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation de niveau 6 (Bac+3) sur 12 mois, en promos de 12 étudiants maximum, avec accompagnement individualisé. Le CADP est une unité de formation par apprentissage (UFA) du CFA IFIR. La certification Qualiopi est celle du CFA IFIR. Le titre est délivré par la CCI Portes de Normandie (RNCP 40563).";
+  "Le Bachelor Responsable Qualité Sécurité Environnement en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation de niveau 6 (Bac+3) sur 12 mois, en promos de 12 étudiants maximum, avec accompagnement individualisé. Le titre est délivré par la CCI Portes de Normandie (RNCP 40563).";
 
 const metierText =
   "Le Responsable QSE met en œuvre la politique de l'entreprise autour de trois objectifs : garantir la qualité des produits ou services, préserver la santé et la sécurité des salariés, et maîtriser l'impact environnemental de l'activité. Tu représentes la direction et tu fais le lien entre tous les services, dans un cadre réglementaire de plus en plus exigeant.";
@@ -178,7 +179,7 @@ const faq = [
   {
     question: "Le Bachelor RQSE est-il reconnu par l'État ?",
     answer:
-      "Oui. Le titre de Responsable Qualité Sécurité Environnement est enregistré au RNCP sous le numéro 40563 (niveau 6, Bac+3), délivré par la CCI Portes de Normandie. Au CADP, tu le prépares en alternance : le CADP est une UFA du CFA IFIR, et la certification Qualiopi est celle du CFA IFIR.",
+      "Oui. Le titre de Responsable Qualité Sécurité Environnement est enregistré au RNCP sous le numéro 40563 (niveau 6, Bac+3), délivré par la CCI Portes de Normandie. Au CADP, tu le prépares en apprentissage, en partenariat avec le CFA IFIR (www.ifir.fr).",
   },
 ];
 
@@ -239,6 +240,15 @@ export default function BachelorRQSEPage() {
           </div>
           <p className="text-cream/60 text-sm max-w-3xl mx-auto leading-relaxed">
             {heroAeo}
+          </p>
+          <p className="mt-4 text-cream/80 text-sm max-w-3xl mx-auto">
+            La formation est proposée en apprentissage en partenariat avec le CFA IFIR{" "}
+            (
+            <a href="https://www.ifir.fr" target="_blank" rel="noopener noreferrer" className="underline hover:text-gold transition-colors">
+              www.ifir.fr
+              <NewTabHint />
+            </a>
+            ).
           </p>
         </div>
       </section>

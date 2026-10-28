@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import CadpWordmark from "@/components/brand/CadpWordmark";
 import { SITE } from "@/data/site";
 import { getUpcomingDatings } from "@/lib/dating/events";
@@ -178,23 +177,14 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Logos partenaires */}
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col items-center gap-4">
-          <p className="text-xs text-cream/50 mb-2">UFA du CFA IFIR · Certification Qualiopi du CFA IFIR</p>
-          <div className="flex items-center gap-8">
-            <a href="https://www.ifir.fr/lifir/partenaires-formation/campus-drome-provence/" target="_blank" rel="noopener noreferrer">
-              <Image
-                src="/logo-ifir.png"
-                alt="CFA IFIR"
-                width={60}
-                height={60}
-                className="h-12 w-auto opacity-80 hover:opacity-100 transition-opacity"
-              />
+        {/* Partenariat CFA IFIR (texte seul : pas de logo ni de cartouche Qualiopi, consigne IFIR du 27/10/2026) */}
+        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col items-center">
+          <p className="text-xs text-cream/50 text-center">
+            Organisme de formation partenaire du CFA IFIR ·{" "}
+            <a href="https://www.ifir.fr" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+              www.ifir.fr
               <NewTabHint />
             </a>
-          </div>
-          <p className="text-xs text-cream/50 text-center max-w-xl">
-            Certificat Qualiopi du CFA IFIR délivré par CERTIFOPAC (n° 13712-2) au titre des actions de formation et des actions de formation par apprentissage.
           </p>
         </div>
 

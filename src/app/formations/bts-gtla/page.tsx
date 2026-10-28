@@ -125,7 +125,7 @@ export default function BTSGTLAPage() {
           </div>
 
           <p className="text-cream/60 text-sm max-w-3xl mx-auto leading-relaxed">
-            Le BTS Gestion des Transports et Logistique Associée en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation Bac+2 sur 2 ans, en promos de 12 étudiants maximum. Le CADP est une unité de formation par apprentissage (UFA) du CFA IFIR. La certification Qualiopi est celle du CFA IFIR.
+            Le BTS Gestion des Transports et Logistique Associée en alternance au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) est une formation Bac+2 sur 2 ans, en promos de 12 étudiants maximum.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
