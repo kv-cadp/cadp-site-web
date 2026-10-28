@@ -6,6 +6,7 @@ export const formations: Formation[] = [
   // ============================================================
   {
     slug: "bts-mco",
+    apprentissageIfir: true,
     code: "MCO",
     fullName: "BTS Management Commercial Opérationnel",
     shortName: "BTS MCO",
@@ -179,7 +180,7 @@ export const formations: Formation[] = [
       {
         question: "Le BTS MCO est-il reconnu par l'État ?",
         answer:
-          "Oui. Le BTS MCO est un diplôme national de l'Éducation nationale, inscrit au RNCP (niveau 5). Au CADP, tu le prépares en alternance : le CADP est une UFA du CFA IFIR, et la certification Qualiopi est celle du CFA IFIR.",
+          "Oui. Le BTS MCO est un diplôme national de l'Éducation nationale, inscrit au RNCP (niveau 5). Au CADP, tu le prépares en apprentissage, en partenariat avec le CFA IFIR (www.ifir.fr).",
       },
       {
         question: "Quels sont les prérequis pour intégrer le BTS MCO ?",
@@ -204,6 +205,7 @@ export const formations: Formation[] = [
   // ============================================================
   {
     slug: "bts-ndrc",
+    apprentissageIfir: true,
     code: "NDRC",
     fullName: "BTS Négociation et Digitalisation de la Relation Client",
     shortName: "BTS NDRC",
@@ -357,12 +359,12 @@ export const formations: Formation[] = [
       {
         question: "Le BTS NDRC est-il reconnu par l'État ?",
         answer:
-          "Oui, le BTS NDRC est un diplôme national inscrit au RNCP (niveau 5, Bac+2). Au CADP, tu le prépares en alternance : le CADP est une UFA du CFA IFIR, et la certification Qualiopi est celle du CFA IFIR.",
+          "Oui, le BTS NDRC est un diplôme national inscrit au RNCP (niveau 5, Bac+2). Au CADP, tu le prépares en apprentissage, en partenariat avec le CFA IFIR (www.ifir.fr).",
       },
       {
         question: "Quel est le taux de réussite du BTS NDRC au CADP ?",
         answer:
-          "La première promotion (2024-2026) a obtenu 86\u00a0% de réussite à l'examen : 6 admis sur 7 présentés. Un résultat porté par l'accompagnement individualisé en promo de 12 étudiants. Le BTS NDRC est un diplôme national, préparé au CADP, UFA du CFA IFIR.",
+          "La première promotion (2024-2026) a obtenu 86\u00a0% de réussite à l'examen : 6 admis sur 7 présentés. Un résultat porté par l'accompagnement individualisé en promo de 12 étudiants. Le BTS NDRC est un diplôme national, préparé au CADP en apprentissage, en partenariat avec le CFA IFIR (www.ifir.fr).",
       },
       {
         question: "Comment s'inscrire au BTS NDRC au CADP ?",
@@ -387,6 +389,7 @@ export const formations: Formation[] = [
   // ============================================================
   {
     slug: "bts-gpme",
+    apprentissageIfir: true,
     code: "GPME",
     fullName: "BTS Gestion de la PME",
     shortName: "BTS GPME",
@@ -557,7 +560,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le taux de réussite du BTS GPME au CADP ?",
         answer:
-          "La première promotion (2024-2026) a obtenu 100\u00a0% de réussite à l'examen : 12 admis sur 12 présentés. Un résultat porté par l'accompagnement individualisé en promo de 12 étudiants. Le BTS GPME est un diplôme national, préparé au CADP, UFA du CFA IFIR.",
+          "La première promotion (2024-2026) a obtenu 100\u00a0% de réussite à l'examen : 12 admis sur 12 présentés. Un résultat porté par l'accompagnement individualisé en promo de 12 étudiants. Le BTS GPME est un diplôme national, préparé au CADP en apprentissage, en partenariat avec le CFA IFIR (www.ifir.fr).",
       },
       {
         question: "Comment s'inscrire au BTS GPME au CADP ?",
@@ -581,6 +584,7 @@ export const formations: Formation[] = [
   // ============================================================
   {
     slug: "bts-cg",
+    apprentissageIfir: true,
     code: "CG",
     fullName: "BTS Comptabilité et Gestion",
     shortName: "BTS CG",
@@ -764,6 +768,7 @@ export const formations: Formation[] = [
   // ============================================================
   {
     slug: "bts-mos",
+    apprentissageIfir: true,
     code: "MOS",
     fullName: "BTS Management Opérationnel de la Sécurité",
     shortName: "BTS MOS",
@@ -914,7 +919,7 @@ export const formations: Formation[] = [
       {
         question: "Le BTS MOS est-il reconnu par l'État ?",
         answer:
-          "Oui, le BTS MOS est un diplôme national inscrit au RNCP (niveau 5, Bac+2). Au CADP, tu le prépares en alternance : le CADP est une UFA du CFA IFIR, et la certification Qualiopi est celle du CFA IFIR. Le BTS MOS est reconnu par le CNAPS pour l'obtention de la carte professionnelle.",
+          "Oui, le BTS MOS est un diplôme national inscrit au RNCP (niveau 5, Bac+2). Au CADP, tu le prépares en apprentissage, en partenariat avec le CFA IFIR (www.ifir.fr). Le BTS MOS est reconnu par le CNAPS pour l'obtention de la carte professionnelle.",
       },
       {
         question: "Peut-on poursuivre ses études après un BTS MOS ?",
@@ -929,7 +934,7 @@ export const formations: Formation[] = [
       {
         question: "Quel est le taux de réussite du BTS MOS au CADP ?",
         answer:
-          "La première promotion (2024-2026) a obtenu 100\u00a0% de réussite à l'examen : 6 admis sur 6 présentés. Un résultat porté par l'accompagnement individualisé en petite promo. Le BTS MOS est un diplôme national, préparé au CADP, UFA du CFA IFIR.",
+          "La première promotion (2024-2026) a obtenu 100\u00a0% de réussite à l'examen : 6 admis sur 6 présentés. Un résultat porté par l'accompagnement individualisé en petite promo. Le BTS MOS est un diplôme national, préparé au CADP en apprentissage, en partenariat avec le CFA IFIR (www.ifir.fr).",
       },
       {
         question: "Comment s'inscrire au BTS MOS au CADP ?",
@@ -1138,14 +1143,14 @@ export const formations: Formation[] = [
       {
         question: "Le TP ADVF est-il reconnu par l'État ?",
         answer:
-          "Oui. Le TP ADVF est un titre professionnel du Ministère du Travail (code TP-00391), inscrit au RNCP (niveau 3). À Pierrelatte comme à Guilherand-Granges, vous le préparez en apprentissage : le CADP est une UFA du CFA IFIR, et la certification Qualiopi est celle du CFA IFIR.",
+          "Oui. Le TP ADVF est un titre professionnel du Ministère du Travail (code TP-00391), inscrit au RNCP (niveau 3). À Pierrelatte comme à Guilherand-Granges, vous le préparez en apprentissage.",
       },
     ],
     metaTitle: "TP ADVF en alternance à Pierrelatte et Guilherand-Granges",
     metaDescription:
       "Titre Professionnel ADVF en 12 mois, en apprentissage, à Pierrelatte (Drôme) et Guilherand-Granges (Ardèche). Aucun diplôme exigé, formation gratuite.",
     definition:
-      "Le Titre Professionnel Assistant de vie aux familles (TP ADVF) se prépare en 12 mois, en contrat d'apprentissage, au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) et dans son antenne de Guilherand-Granges (Ardèche), le C2A. C'est un titre de niveau 3 (équivalent CAP/BEP), préparé en promotions de 12 personnes maximum, avec un accompagnement individualisé (Alternance Dating, ateliers CV, coaching). Le CADP est une unité de formation par apprentissage (UFA) du CFA IFIR. La certification Qualiopi est celle du CFA IFIR.",
+      "Le Titre Professionnel Assistant de vie aux familles (TP ADVF) se prépare en 12 mois, en contrat d'apprentissage, au Campus Alternance Drôme Provence (CADP) à Pierrelatte (Drôme) et dans son antenne de Guilherand-Granges (Ardèche), le C2A. C'est un titre de niveau 3 (équivalent CAP/BEP), préparé en promotions de 12 personnes maximum, avec un accompagnement individualisé (Alternance Dating, ateliers CV, coaching).",
     nextIntake: { label: "février 2027", until: "2027-02-01" },
   },
 ];

@@ -27,7 +27,7 @@ export default function ResultatsPromo() {
           </p>
           <p className="mx-auto mt-3 max-w-2xl text-center text-xs text-gray-mid">
             100&nbsp;% en BTS GPME et BTS MOS, 86&nbsp;% en BTS NDRC. Diplômes préparés au
-            CADP, UFA du CFA IFIR.
+            CADP en apprentissage, en partenariat avec le CFA IFIR.
           </p>
           <div className="mt-8">
             <Button href="/formations" variant="outline">

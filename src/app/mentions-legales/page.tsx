@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { createPageMetadata } from "@/lib/metadata";
+import NewTabHint from "@/components/ui/NewTabHint";
 
 export const metadata = createPageMetadata({
   title: "Mentions légales — Campus Alternance Drôme Provence",
@@ -57,11 +58,16 @@ export default function MentionsLegalesPage() {
 
           {/* 4. Certification */}
           <div>
-            <h2 className="font-serif text-xl text-navy-deep mb-3">CFA de rattachement et certification</h2>
+            <h2 className="font-serif text-xl text-navy-deep mb-3">Statut et partenariat</h2>
             <p className="text-gray-mid">
-              Le CADP est une unité de formation par apprentissage (UFA) du <strong className="text-gray-dark">CFA IFIR</strong> (IFIR ARL, NDA 82690331669).
-              Le CFA IFIR est certifié <strong className="text-gray-dark">Qualiopi</strong> par CERTIFOPAC (certificat n° 13712-2, valable jusqu’au 06/06/2027) au titre des actions de formation et des actions de formation par apprentissage.
-              Le CADP ne détient pas de certification Qualiopi en propre. Les formations sont dispensées dans le cadre réglementaire du CFA IFIR.
+              Le CADP est un organisme de formation (déclaration d’activité n° 84260401226, UAI 0261591N).
+              Ses BTS sont proposés en apprentissage en partenariat avec le <strong className="text-gray-dark">CFA IFIR</strong> (IFIR ARL, NDA 82690331669,{" "}
+              <a href="https://www.ifir.fr" target="_blank" rel="noopener noreferrer" className="underline hover:text-gold transition-colors">
+                www.ifir.fr
+                <NewTabHint />
+              </a>
+              ), dans le cadre d’unités de formation par apprentissage.
+              Le CADP ne détient pas de certification Qualiopi en propre.
             </p>
           </div>
 

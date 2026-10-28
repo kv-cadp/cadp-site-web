@@ -246,7 +246,7 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 
 <p><strong>Ancrage local.</strong> Campus à Pierrelatte, entreprises partenaires sur 4 départements (Drôme, Ardèche, Vaucluse, Gard). Formé ici, recruté ici.</p>
 
-<p><strong>UFA du CFA IFIR.</strong> Diplômes et titres reconnus par l'État. La certification Qualiopi est celle du CFA IFIR.</p>
+<p><strong>Partenaire du CFA IFIR.</strong> Diplômes et titres reconnus par l'État. Nos BTS sont proposés en apprentissage en partenariat avec le CFA IFIR (<a href="https://www.ifir.fr">www.ifir.fr</a>).</p>
 
 <h2>Questions fréquentes sur l'inscription</h2>
 
@@ -254,7 +254,7 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 Non. Tu peux t'inscrire au CADP avant d'avoir signé ton contrat d'alternance. C'est même recommandé : les entreprises préfèrent recruter des candidats déjà acceptés en formation. On t'accompagne dans ta recherche d'entreprise dès que ta candidature est validée.</p>
 
 <p><strong>Peut-on s'inscrire sans passer par Parcoursup ?</strong><br/>
-Oui. L'inscription au CADP se fait directement via notre site, sans passer par Parcoursup. Le CADP est une UFA du CFA IFIR — le processus d'admission est indépendant de la plateforme Parcoursup.</p>
+Oui. L'inscription au CADP se fait directement via notre site, sans passer par Parcoursup. Le processus d'admission du CADP est indépendant de la plateforme Parcoursup.</p>
 
 <p><strong>Y a-t-il un concours ou un examen d'entrée ?</strong><br/>
 Non. L'admission se fait sur entretien de motivation. On évalue ton projet, ta motivation et ta capacité à suivre la formation. Ce n'est pas un concours — c'est une discussion.</p>

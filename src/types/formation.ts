@@ -89,5 +89,10 @@ export interface Formation {
    * du texte générique « à Pierrelatte ».
    */
   definition?: string;
+  /**
+   * Formation proposée en apprentissage en partenariat avec le CFA IFIR :
+   * affiche la mention demandée par l'IFIR sur la fiche.
+   */
+  apprentissageIfir?: boolean;
   nextIntake?: FormationIntake;
 }
