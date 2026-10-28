@@ -7,6 +7,7 @@ import GratuiteBlock from "@/components/formations/GratuiteBlock";
 import ResultatsBlock from "@/components/formations/ResultatsBlock";
 import FormationCTA from "@/components/formations/FormationCTA";
 import FormationHeroActions from "@/components/formations/FormationHeroActions";
+import NewTabHint from "@/components/ui/NewTabHint";
 import { candidatureUrl } from "@/lib/inscription";
 import { RENTREE } from "@/data/rentree";
 
@@ -178,7 +179,7 @@ const faq = [
   {
     question: "Le Bachelor RQSE est-il reconnu par l'État ?",
     answer:
-      "Oui. Le titre de Responsable Qualité Sécurité Environnement est enregistré au RNCP sous le numéro 40563 (niveau 6, Bac+3), délivré par la CCI Portes de Normandie. Au CADP, tu le prépares en alternance.",
+      "Oui. Le titre de Responsable Qualité Sécurité Environnement est enregistré au RNCP sous le numéro 40563 (niveau 6, Bac+3), délivré par la CCI Portes de Normandie. Au CADP, tu le prépares en apprentissage, en partenariat avec le CFA IFIR (www.ifir.fr).",
   },
 ];
 
@@ -239,6 +240,15 @@ export default function BachelorRQSEPage() {
           </div>
           <p className="text-cream/60 text-sm max-w-3xl mx-auto leading-relaxed">
             {heroAeo}
+          </p>
+          <p className="mt-4 text-cream/80 text-sm max-w-3xl mx-auto">
+            La formation est proposée en apprentissage en partenariat avec le CFA IFIR{" "}
+            (
+            <a href="https://www.ifir.fr" target="_blank" rel="noopener noreferrer" className="underline hover:text-gold transition-colors">
+              www.ifir.fr
+              <NewTabHint />
+            </a>
+            ).
           </p>
         </div>
       </section>

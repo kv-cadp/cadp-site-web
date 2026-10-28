@@ -396,7 +396,7 @@ export function generateEntreprisePDF(params: PDFParams) {
     ["Formateurs en activite professionnelle", "Vos alternants apprennent les realites du terrain."],
     ["Accompagnement de A a Z", "Alternance Dating, matching candidat-entreprise, suivi en poste."],
     ["20+ ans d'experience des fondateurs", "Une expertise en formation et en insertion professionnelle."],
-    ["Partenaire du CFA IFIR", "Nos BTS sont proposes en apprentissage en partenariat avec le CFA IFIR (www.ifir.fr)."],
+    ["Partenaire du CFA IFIR", "Nos formations en apprentissage sont proposees en partenariat avec le CFA IFIR (www.ifir.fr)."],
   ];
 
   whyCadp.forEach(([title, desc]) => {

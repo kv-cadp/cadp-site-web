@@ -246,7 +246,7 @@ Une fois accepté, tu n'es pas lâché dans la nature. On transmet ton profil à
 
 <p><strong>Ancrage local.</strong> Campus à Pierrelatte, entreprises partenaires sur 4 départements (Drôme, Ardèche, Vaucluse, Gard). Formé ici, recruté ici.</p>
 
-<p><strong>Partenaire du CFA IFIR.</strong> Diplômes et titres reconnus par l'État. Nos BTS sont proposés en apprentissage en partenariat avec le CFA IFIR (<a href="https://www.ifir.fr">www.ifir.fr</a>).</p>
+<p><strong>Partenaire du CFA IFIR.</strong> Diplômes et titres reconnus par l'État. Nos formations en apprentissage sont proposées en partenariat avec le CFA IFIR (<a href="https://www.ifir.fr">www.ifir.fr</a>).</p>
 
 <h2>Questions fréquentes sur l'inscription</h2>
 

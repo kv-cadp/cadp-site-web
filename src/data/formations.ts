@@ -959,6 +959,7 @@ export const formations: Formation[] = [
   // ============================================================
   {
     slug: "tp-advf",
+    apprentissageIfir: true,
     code: "ADVF",
     fullName: "Titre Professionnel Assistant de vie aux familles",
     shortName: "TP ADVF",
@@ -1143,7 +1144,7 @@ export const formations: Formation[] = [
       {
         question: "Le TP ADVF est-il reconnu par l'État ?",
         answer:
-          "Oui. Le TP ADVF est un titre professionnel du Ministère du Travail (code TP-00391), inscrit au RNCP (niveau 3). À Pierrelatte comme à Guilherand-Granges, vous le préparez en apprentissage.",
+          "Oui. Le TP ADVF est un titre professionnel du Ministère du Travail (code TP-00391), inscrit au RNCP (niveau 3). À Pierrelatte comme à Guilherand-Granges, vous le préparez en apprentissage, en partenariat avec le CFA IFIR (www.ifir.fr).",
       },
     ],
     metaTitle: "TP ADVF en alternance à Pierrelatte et Guilherand-Granges",

@@ -61,7 +61,7 @@ export default function MentionsLegalesPage() {
             <h2 className="font-serif text-xl text-navy-deep mb-3">Statut et partenariat</h2>
             <p className="text-gray-mid">
               Le CADP est un organisme de formation (déclaration d’activité n° 84260401226, UAI 0261591N).
-              Ses BTS sont proposés en apprentissage en partenariat avec le <strong className="text-gray-dark">CFA IFIR</strong> (IFIR ARL, NDA 82690331669,{" "}
+              Ses formations en apprentissage sont proposées en partenariat avec le <strong className="text-gray-dark">CFA IFIR</strong> (IFIR ARL, NDA 82690331669,{" "}
               <a href="https://www.ifir.fr" target="_blank" rel="noopener noreferrer" className="underline hover:text-gold transition-colors">
                 www.ifir.fr
                 <NewTabHint />

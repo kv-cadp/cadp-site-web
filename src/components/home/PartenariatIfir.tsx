@@ -12,8 +12,8 @@ export default function PartenariatIfir() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
         <SectionTitle className="mb-6">Partenaire du CFA IFIR</SectionTitle>
         <p className="text-gray-dark leading-relaxed">
-          Le CADP est un organisme de formation. Ses BTS sont proposés en
-          apprentissage en partenariat avec le CFA IFIR. Pour en savoir plus sur
+          Le CADP est un organisme de formation. Ses formations en apprentissage
+          sont proposées en partenariat avec le CFA IFIR. Pour en savoir plus sur
           le CFA IFIR :{" "}
           <a
             href="https://www.ifir.fr"
